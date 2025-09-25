@@ -67,6 +67,43 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Sección de Historia y Curiosidades -->
+                <div class="local-heritage">
+                    <h3>🏛️ Riqueza Cultural de Nuestra Tierra</h3>
+                    <div class="heritage-grid">
+                        <div class="heritage-item">
+                            <div class="heritage-icon">🏰</div>
+                            <h4>Patrimonio Histórico</h4>
+                            <p>Nuestra región se enorgullece de contar con una impresionante ermita del siglo XVI, testimonio de siglos de devoción y tradición religiosa que se mantiene viva en cada celebración.</p>
+                        </div>
+                        <div class="heritage-item">
+                            <div class="heritage-icon">🌾</div>
+                            <h4>Tradición Agrícola</h4>
+                            <p>Durante generaciones, estas tierras han sido cultivadas por familias que han mantenido técnicas tradicionales, creando un paisaje único de campos de cereales y viñedos que cambian con las estaciones.</p>
+                        </div>
+                        <div class="heritage-item">
+                            <div class="heritage-icon">🎭</div>
+                            <h4>Folclore Ancestral</h4>
+                            <p>Las celebraciones locales conservan danzas y tradiciones que se remontan a la época medieval, con trajes típicos bordados a mano y canciones populares transmitidas de generación en generación.</p>
+                        </div>
+                        <div class="heritage-item">
+                            <div class="heritage-icon">🍷</div>
+                            <h4>Gastronomía Autóctona</h4>
+                            <p>La cocina local se caracteriza por platos únicos como el gazpacho manchego, las gachas dulces y los vinos de la región, recetas que han pasado de madres a hijas durante siglos.</p>
+                        </div>
+                        <div class="heritage-item">
+                            <div class="heritage-icon">⛪</div>
+                            <h4>Arquitectura Singular</h4>
+                            <p>Las construcciones tradicionales de piedra caliza y madera de la zona crean un conjunto arquitectónico único, con casas que han resistido el paso del tiempo y conservan su encanto original.</p>
+                        </div>
+                        <div class="heritage-item">
+                            <div class="heritage-icon">🌿</div>
+                            <h4>Naturaleza Preservada</h4>
+                            <p>El entorno natural se caracteriza por sus paisajes de páramo y pequeños arroyos estacionales, creando un ecosistema único donde conviven especies autóctonas y flora mediterránea.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -222,7 +259,10 @@
                         
                         <div class="contact-details">
                             <div class="contact-item">
-                                <strong>📧 Email:</strong> info@penamatagatos.es
+                                <strong>📧 Email general:</strong> info@penamatagatos.es
+                            </div>
+                            <div class="contact-item">
+                                <strong>📎 Archivos/Documentos:</strong> documentos@penamatagatos.es
                             </div>
                             <div class="contact-item">
                                 <strong>📱 WhatsApp:</strong> +34 123 456 789
@@ -245,7 +285,7 @@
                     
                     <div class="contact-form">
                         <h3>Contacta con nosotros</h3>
-                        <form>
+                        <form enctype="multipart/form-data">
                             <input type="text" placeholder="Tu nombre" required>
                             <input type="email" placeholder="Tu email" required>
                             <input type="tel" placeholder="Teléfono">
@@ -259,6 +299,23 @@
                                 <option>Otra ciudad</option>
                             </select>
                             <textarea placeholder="Cuéntanos por qué te gustaría unirte a la peña..." rows="4"></textarea>
+                            
+                            <div class="file-upload-section">
+                                <h4>📎 Compartir archivos (opcional)</h4>
+                                <p class="file-upload-info">¿Tienes inventarios, cuentas o documentos para compartir? ¡Súbelos aquí!</p>
+                                <div class="file-upload-container">
+                                    <label for="fileUpload" class="file-upload-label">
+                                        <span class="upload-icon">📂</span>
+                                        <span class="upload-text">Seleccionar archivos</span>
+                                        <span class="upload-subtext">PDF, Excel, Word, imágenes (máx. 5MB por archivo)</span>
+                                    </label>
+                                    <input type="file" id="fileUpload" name="files[]" multiple 
+                                           accept=".pdf,.doc,.docx,.xls,.xlsx,.txt,.jpg,.jpeg,.png,.gif"
+                                           class="file-input">
+                                </div>
+                                <div class="selected-files" id="selectedFiles"></div>
+                            </div>
+                            
                             <button type="submit">¡Quiero unirme! 🎉</button>
                         </form>
                     </div>

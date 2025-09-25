@@ -59,20 +59,126 @@ document.addEventListener('DOMContentLoaded', function() {
     // Manejo del formulario de contacto
     const contactForm = document.querySelector('.contact-form form');
     if (contactForm) {
+        // File upload functionality
+        const fileInput = document.getElementById('fileUpload');
+        const selectedFilesContainer = document.getElementById('selectedFiles');
+        let selectedFiles = [];
+
+        if (fileInput) {
+            fileInput.addEventListener('change', function(e) {
+                const files = Array.from(e.target.files);
+                
+                files.forEach(file => {
+                    // Check file size (5MB limit)
+                    if (file.size > 5 * 1024 * 1024) {
+                        utils.showNotification(`El archivo "${file.name}" es demasiado grande. Máximo 5MB.`, 'error');
+                        return;
+                    }
+                    
+                    // Add file to selected files if not already added
+                    if (!selectedFiles.some(f => f.name === file.name && f.size === file.size)) {
+                        selectedFiles.push(file);
+                        addFileToList(file);
+                    }
+                });
+                
+                // Clear the input so the same file can be selected again if removed and re-added
+                fileInput.value = '';
+            });
+        }
+
+        function addFileToList(file) {
+            const fileItem = document.createElement('div');
+            fileItem.className = 'file-item';
+            
+            const fileIcon = getFileIcon(file.name);
+            const fileSize = formatFileSize(file.size);
+            
+            fileItem.innerHTML = `
+                <div class="file-info">
+                    <span class="file-icon">${fileIcon}</span>
+                    <div class="file-details">
+                        <span class="file-name">${file.name}</span>
+                        <span class="file-size">${fileSize}</span>
+                    </div>
+                </div>
+                <button type="button" class="remove-file" onclick="removeFile('${file.name}', ${file.size})">×</button>
+            `;
+            
+            selectedFilesContainer.appendChild(fileItem);
+        }
+
+        window.removeFile = function(fileName, fileSize) {
+            selectedFiles = selectedFiles.filter(f => !(f.name === fileName && f.size === fileSize));
+            
+            // Remove from DOM
+            const fileItems = selectedFilesContainer.querySelectorAll('.file-item');
+            fileItems.forEach(item => {
+                const nameSpan = item.querySelector('.file-name');
+                if (nameSpan && nameSpan.textContent === fileName) {
+                    selectedFilesContainer.removeChild(item);
+                }
+            });
+        };
+
+        function getFileIcon(fileName) {
+            const extension = fileName.split('.').pop().toLowerCase();
+            const iconMap = {
+                'pdf': '📄',
+                'doc': '📝', 'docx': '📝',
+                'xls': '📊', 'xlsx': '📊',
+                'txt': '📄',
+                'jpg': '🖼️', 'jpeg': '🖼️', 'png': '🖼️', 'gif': '🖼️'
+            };
+            return iconMap[extension] || '📎';
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Animación de éxito
+            // Collect form data
+            const formData = new FormData();
+            const inputs = this.querySelectorAll('input, select, textarea');
+            
+            inputs.forEach(input => {
+                if (input.type !== 'file' && input.name) {
+                    formData.append(input.name, input.value);
+                }
+            });
+            
+            // Add selected files
+            selectedFiles.forEach(file => {
+                formData.append('files[]', file);
+            });
+            
+            // Show success message
             const button = this.querySelector('button');
             const originalText = button.textContent;
             
-            button.textContent = '¡Enviado! 🎉';
+            if (selectedFiles.length > 0) {
+                button.textContent = `¡Enviado con ${selectedFiles.length} archivo(s)! 🎉`;
+                utils.showNotification(`Formulario enviado con ${selectedFiles.length} archivo(s) adjunto(s)`, 'success');
+            } else {
+                button.textContent = '¡Enviado! 🎉';
+                utils.showNotification('Formulario enviado correctamente', 'success');
+            }
+            
             button.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
             
             setTimeout(() => {
                 button.textContent = originalText;
                 button.style.background = '';
                 this.reset();
+                selectedFiles = [];
+                selectedFilesContainer.innerHTML = '';
             }, 3000);
         });
     }
