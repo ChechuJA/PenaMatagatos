@@ -1,0 +1,33 @@
+# Configuración del sitio web de Peña Matagatos
+title: Peña Matagatos
+description: Peña de un pueblo de Cuenca, pequeña y acogedora
+url: "https://chechuja.github.io"
+baseurl: "/PenaMatagatos"
+
+# Configuración de Jekyll
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Configuración del autor
+author:
+  name: Peña Matagatos
+  
+# Configuración de redes sociales (opcional)
+# github_username: ChechuJA
+
+# Configuración de la navegación
+header_pages:
+  - index.md
+  - about.md
+  - events.md
+  - contact.md
+
+# Plugins de Jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Configuración SEO
+lang: es
