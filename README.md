@@ -23,6 +23,14 @@ Una peña joven y enérgica de un pueblo pequeño de Cuenca (300 habitantes) que
    ```
    Y visita `http://localhost:8000`
 
+## 🌐 Despliegue automático
+
+El sitio web se despliega automáticamente en GitHub Pages cuando se hace push a la rama `main`. 
+
+- **URL del sitio**: [matagatos.ddns.net](https://matagatos.ddns.net)
+- **Workflow**: Se ejecuta automáticamente en cada push a `main`
+- **Dominio personalizado**: Configurado para usar `matagatos.ddns.net`
+
 ## 🎯 Actividades que destacamos
 
 - 🏰 Castillos hinchables y toboganes
