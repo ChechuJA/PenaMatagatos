@@ -1233,3 +1233,105 @@ footer .container {
 html {
     scroll-behavior: smooth;
 }
+
+/* Responsive Styles for New Features */
+@media (max-width: 768px) {
+    /* Age-based activities responsive */
+    .instructions-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .activities-list {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .age-group {
+        padding: 1.5rem;
+    }
+    
+    .activity-item {
+        padding: 0.75rem;
+    }
+    
+    /* Gatito bot responsive */
+    .gatito-chat-container {
+        width: 300px;
+        max-height: 400px;
+        bottom: 60px;
+        right: 10px;
+    }
+    
+    .gatito-button {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .gatito-messages {
+        max-height: 150px;
+        padding: 0.75rem;
+    }
+    
+    .message-content {
+        max-width: 200px;
+        font-size: 0.85rem;
+    }
+    
+    .quick-question {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    /* Upload instructions responsive */
+    .upload-instructions {
+        padding: 1rem;
+    }
+    
+    .instruction-item {
+        padding: 0.75rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .instruction-icon {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gatito-chat-container {
+        width: 280px;
+        right: 5px;
+        bottom: 50px;
+    }
+    
+    .gatito-button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .gatito-name {
+        display: none;
+    }
+    
+    .age-group {
+        padding: 1rem;
+    }
+    
+    .activity-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .activity-icon {
+        align-self: center;
+    }
+}
