@@ -330,3 +330,161 @@ const utils = {
 
 // Hacer las utilidades disponibles globalmente
 window.penaUtils = utils;
+
+// Gatito Chat Bot Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const gatitoButton = document.getElementById('gatitoButton');
+    const gatitoChat = document.getElementById('gatitoChat');
+    const gatitoClose = document.getElementById('gatitoClose');
+    const gatitoSend = document.getElementById('gatitoSend');
+    const gatitoInput = document.getElementById('gatitoInput');
+    const gatitoMessages = document.getElementById('gatitoMessages');
+    const quickQuestions = document.querySelectorAll('.quick-question');
+
+    // Base de conocimiento de Gatito
+    const gatitoKnowledge = {
+        horarios: {
+            response: "📅 Los horarios sugeridos son:\n\n🌅 Mañana (10:00-12:00): Actividades energéticas y deportivas\n🌞 Mediodía (12:00-15:00): Talleres creativos bajo sombra\n🌅 Tarde (17:00-19:00): Juegos familiares y competiciones\n🌙 Noche (21:00-23:00): Espectáculos y actividades relajadas"
+        },
+        ubicacion: {
+            response: "📍 La Peña Matagatos se celebra en un pueblo pequeño de Cuenca, España. Durante las fiestas, el pueblo pasa de 300 habitantes a más de 900 personas. ¡Es toda una experiencia!"
+        },
+        contacto: {
+            response: "📧 Puedes contactar con nosotros:\n\n• Email general: info@penamatagatos.es\n• Documentos: documentos@penamatagatos.es\n• WhatsApp: +34 123 456 789\n\n¡Estaremos encantados de conocerte!"
+        },
+        actividades: {
+            response: "🎯 Tenemos actividades para todas las edades:\n\n👶 Peques (0-3): Castillos mini, pintura, juguetes blandos\n🧒 Exploradores (4-7): Carreras de sacos, búsqueda del tesoro\n⚡ Aventureros (8-13): Olimpiadas, escape room, experimentos\n👨‍👩‍👧‍👦 Familiares: Concursos de cocina, fútbol, torneos"
+        },
+        documentos: {
+            response: "📎 Para subir documentos:\n\n1. Ve al formulario de contacto\n2. Busca la sección 'Compartir archivos'\n3. Puedes subir: inventarios, cuentas, fotos, propuestas\n4. Los procesamos y añadimos a nuestro sistema\n5. Si es útil, lo compartimos con toda la peña"
+        },
+        niños: {
+            response: "👶 ¡Los niños son el alma de nuestra peña!\n\nTenemos actividades por edades:\n• 0-3 años: Espacios seguros y suaves\n• 4-7 años: Aventuras y exploración\n• 8-13 años: Desafíos y competiciones\n\n¡Y también actividades familiares donde adultos y niños jugamos juntos!"
+        }
+    };
+
+    // Mostrar/ocultar chat
+    gatitoButton.addEventListener('click', function() {
+        gatitoChat.classList.add('active');
+        gatitoButton.style.display = 'none';
+    });
+
+    gatitoClose.addEventListener('click', function() {
+        gatitoChat.classList.remove('active');
+        gatitoButton.style.display = 'flex';
+    });
+
+    // Preguntas rápidas
+    quickQuestions.forEach(button => {
+        button.addEventListener('click', function() {
+            const questionType = this.dataset.question;
+            const questionText = this.textContent;
+            
+            addUserMessage(questionText);
+            
+            setTimeout(() => {
+                if (gatitoKnowledge[questionType]) {
+                    addBotMessage(gatitoKnowledge[questionType].response);
+                } else {
+                    addBotMessage("Lo siento, no tengo información específica sobre eso. ¿Podrías contactar directamente con info@penamatagatos.es?");
+                }
+            }, 500);
+        });
+    });
+
+    // Enviar mensaje personalizado
+    function sendMessage() {
+        const message = gatitoInput.value.trim();
+        if (message === '') return;
+
+        addUserMessage(message);
+        gatitoInput.value = '';
+
+        setTimeout(() => {
+            const response = generateResponse(message);
+            addBotMessage(response);
+        }, 500);
+    }
+
+    gatitoSend.addEventListener('click', sendMessage);
+    gatitoInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+
+    function addUserMessage(message) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'gatito-message gatito-user-message';
+        messageDiv.innerHTML = `
+            <span class="message-avatar">👤</span>
+            <div class="message-content">${message}</div>
+        `;
+        gatitoMessages.appendChild(messageDiv);
+        gatitoMessages.scrollTop = gatitoMessages.scrollHeight;
+    }
+
+    function addBotMessage(message) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'gatito-message gatito-bot-message';
+        messageDiv.innerHTML = `
+            <span class="message-avatar">🐱</span>
+            <div class="message-content">${message.replace(/\n/g, '<br>')}</div>
+        `;
+        gatitoMessages.appendChild(messageDiv);
+        gatitoMessages.scrollTop = gatitoMessages.scrollHeight;
+    }
+
+    function generateResponse(message) {
+        const lowerMessage = message.toLowerCase();
+        
+        // Palabras clave para diferentes respuestas
+        if (lowerMessage.includes('hora') || lowerMessage.includes('cuando')) {
+            return gatitoKnowledge.horarios.response;
+        }
+        
+        if (lowerMessage.includes('donde') || lowerMessage.includes('ubicac') || lowerMessage.includes('lugar')) {
+            return gatitoKnowledge.ubicacion.response;
+        }
+        
+        if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('teléfon') || lowerMessage.includes('whatsapp')) {
+            return gatitoKnowledge.contacto.response;
+        }
+        
+        if (lowerMessage.includes('actividad') || lowerMessage.includes('juego') || lowerMessage.includes('hacer')) {
+            return gatitoKnowledge.actividades.response;
+        }
+        
+        if (lowerMessage.includes('document') || lowerMessage.includes('subir') || lowerMessage.includes('archivo')) {
+            return gatitoKnowledge.documentos.response;
+        }
+        
+        if (lowerMessage.includes('niño') || lowerMessage.includes('niña') || lowerMessage.includes('bebé') || lowerMessage.includes('pequeño')) {
+            return gatitoKnowledge.niños.response;
+        }
+        
+        if (lowerMessage.includes('precio') || lowerMessage.includes('coste') || lowerMessage.includes('dinero')) {
+            return "💰 La participación en la peña es gratuita, solo compartimos los gastos de material y comida entre todos. ¡Lo importante es la diversión y el buen ambiente!";
+        }
+        
+        if (lowerMessage.includes('unir') || lowerMessage.includes('apunt') || lowerMessage.includes('inscrib')) {
+            return "🎉 ¡Genial que quieras unirte! Puedes rellenar el formulario de contacto en la página o escribir directamente a info@penamatagatos.es. ¡Te esperamos!";
+        }
+        
+        if (lowerMessage.includes('comida') || lowerMessage.includes('comer') || lowerMessage.includes('paella')) {
+            return "🥘 ¡La comida es uno de nuestros puntos fuertes! Preparamos paellas gigantes, barbacoas y platos tradicionales todos juntos. Es parte de la diversión y la tradición de la peña.";
+        }
+        
+        // Respuesta por defecto
+        return `¡Hola! 🐱 Soy Gatito y estoy aquí para ayudarte. Puedes preguntarme sobre:
+        
+        📅 Horarios de actividades
+        📍 Ubicación de la peña  
+        📧 Información de contacto
+        🎯 Actividades y juegos
+        📎 Cómo subir documentos
+        👶 Actividades para niños
+        
+        O si prefieres, usa los botones de arriba para preguntas rápidas. ¡Miau!`;
+    }
+});
