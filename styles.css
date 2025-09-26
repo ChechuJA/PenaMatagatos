@@ -635,6 +635,462 @@ h3 {
     background: #ff3742;
 }
 
+/* Upload Instructions */
+.upload-instructions {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+.upload-instructions h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.instructions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.instruction-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.instruction-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.instruction-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.instruction-item strong {
+    color: var(--text-dark);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.instruction-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.upload-process {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.upload-process h5 {
+    margin-bottom: 1rem;
+}
+
+.upload-process ol {
+    padding-left: 1.5rem;
+    color: var(--text-dark);
+}
+
+.upload-process li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.upload-process strong {
+    color: var(--primary-color);
+}
+
+/* Sección Juegos por Edades */
+.age-games {
+    background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+    padding: 4rem 0;
+}
+
+.age-games h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.age-groups {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.age-group {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.age-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.family-activities {
+    background: linear-gradient(135deg, #fff5f0, #ffefe8);
+    border: 2px solid #ff6b35;
+}
+
+.age-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.age-header h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.family-activities .age-header h3 {
+    color: #ff6b35;
+}
+
+.age-header p {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.activities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.family-activities .activity-item {
+    border-left-color: #ff6b35;
+}
+
+.activity-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.activity-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.activity-item strong {
+    color: var(--text-dark);
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.activity-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.activity-schedule {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.activity-schedule h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.schedule-item {
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.schedule-item strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Gatito Chat Bot */
+.gatito-chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: inherit;
+}
+
+.gatito-button {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    transition: all 0.3s ease;
+    animation: gatitoPulse 2s infinite;
+}
+
+.gatito-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+}
+
+@keyframes gatitoPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.gatito-icon {
+    font-size: 1.5rem;
+}
+
+.gatito-name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.gatito-chat-container {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 350px;
+    max-height: 500px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.gatito-chat-container.active {
+    display: flex;
+}
+
+.gatito-header {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gatito-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.gatito-avatar {
+    font-size: 1.5rem;
+}
+
+.gatito-info strong {
+    display: block;
+    font-size: 1rem;
+}
+
+.gatito-info small {
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+.gatito-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.gatito-close:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.gatito-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.gatito-message {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+}
+
+.gatito-bot-message {
+    justify-content: flex-start;
+}
+
+.gatito-user-message {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.message-avatar {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.message-content {
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 10px;
+    max-width: 250px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.gatito-user-message .message-content {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+}
+
+.gatito-quick-questions {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    background: #f8f9fa;
+}
+
+.gatito-quick-questions h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.quick-question-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.quick-question {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-dark);
+}
+
+.quick-question:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.gatito-input-area {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    gap: 0.5rem;
+}
+
+#gatitoInput {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+#gatitoInput:focus {
+    border-color: var(--primary-color);
+}
+
+#gatitoSend {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+#gatitoSend:hover {
+    background: #e74c3c;
+}
+
 /* Footer */
 footer {
     background: var(--text-dark);
@@ -776,4 +1232,106 @@ footer .container {
 /* Scroll suave */
 html {
     scroll-behavior: smooth;
+}
+
+/* Responsive Styles for New Features */
+@media (max-width: 768px) {
+    /* Age-based activities responsive */
+    .instructions-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .activities-list {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .age-group {
+        padding: 1.5rem;
+    }
+    
+    .activity-item {
+        padding: 0.75rem;
+    }
+    
+    /* Gatito bot responsive */
+    .gatito-chat-container {
+        width: 300px;
+        max-height: 400px;
+        bottom: 60px;
+        right: 10px;
+    }
+    
+    .gatito-button {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .gatito-messages {
+        max-height: 150px;
+        padding: 0.75rem;
+    }
+    
+    .message-content {
+        max-width: 200px;
+        font-size: 0.85rem;
+    }
+    
+    .quick-question {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    /* Upload instructions responsive */
+    .upload-instructions {
+        padding: 1rem;
+    }
+    
+    .instruction-item {
+        padding: 0.75rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .instruction-icon {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gatito-chat-container {
+        width: 280px;
+        right: 5px;
+        bottom: 50px;
+    }
+    
+    .gatito-button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .gatito-name {
+        display: none;
+    }
+    
+    .age-group {
+        padding: 1rem;
+    }
+    
+    .activity-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .activity-icon {
+        align-self: center;
+    }
 }
