@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const gatitoMessages = document.getElementById('gatitoMessages');
     const quickQuestions = document.querySelectorAll('.quick-question');
 
-    // Base de conocimiento de Gatito
+    // Base de conocimiento de Gatito (expandida)
     const gatitoKnowledge = {
         horarios: {
             response: "📅 Los horarios sugeridos son:\n\n🌅 Mañana (10:00-12:00): Actividades energéticas y deportivas\n🌞 Mediodía (12:00-15:00): Talleres creativos bajo sombra\n🌅 Tarde (17:00-19:00): Juegos familiares y competiciones\n🌙 Noche (21:00-23:00): Espectáculos y actividades relajadas"
@@ -360,6 +360,25 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         niños: {
             response: "👶 ¡Los niños son el alma de nuestra peña!\n\nTenemos actividades por edades:\n• 0-3 años: Espacios seguros y suaves\n• 4-7 años: Aventuras y exploración\n• 8-13 años: Desafíos y competiciones\n\n¡Y también actividades familiares donde adultos y niños jugamos juntos!"
+        },
+        // Nuevas FAQ expandidas
+        alojamiento: {
+            response: "🏠 Para el alojamiento durante las fiestas:\n\n• Muchos traemos tiendas de campaña o caravanas\n• Algunos alquilan casas rurales en pueblos cercanos\n• También hay quien se queda en hoteles en Cuenca capital\n• ¡Lo importante es coordinarse con el grupo!"
+        },
+        transporte: {
+            response: "🚗 Sobre el transporte:\n\n• Organizamos viajes compartidos desde diferentes ciudades\n• Compartimos gastos de gasolina entre todos\n• Algunos van en coche, otros en furgonetas\n• ¡Contacta con nosotros para unirte a algún grupo!"
+        },
+        comida: {
+            response: "🥘 ¡La comida es lo mejor de nuestra peña!\n\n• Cocinamos todos juntos: paellas gigantes, barbacoas...\n• Cada familia aporta algo según sus posibilidades\n• Tenemos paelleras enormes para cocinar para todos\n• ¡Es parte de la diversión y la tradición!"
+        },
+        fechas: {
+            response: "📅 Las fechas de nuestras fiestas:\n\n• Normalmente coinciden con las fiestas patronales del pueblo\n• Suelen ser en verano (julio-agosto)\n• Duran varios días (generalmente un fin de semana largo)\n• ¡Te avisaremos con tiempo de las fechas exactas!"
+        },
+        tiempo: {
+            response: "☀️ Sobre el clima:\n\n• En verano en Cuenca suele hacer calor durante el día\n• Las noches son más frescas y agradables\n• Traer protector solar y gorra para el día\n• Una chaquetilla para la noche no viene mal\n• ¡El buen tiempo acompaña a la buena compañía!"
+        },
+        requisitos: {
+            response: "📋 Para unirte solo necesitas:\n\n• Ganas de pasarlo bien y hacer amigos\n• Espíritu colaborativo para las actividades\n• Amor por las tradiciones y la buena comida\n• Disponibilidad para las fechas de fiestas\n• ¡Y muchas ganas de diversión!"
         }
     };
 
@@ -438,52 +457,91 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateResponse(message) {
         const lowerMessage = message.toLowerCase();
         
-        // Palabras clave para diferentes respuestas
-        if (lowerMessage.includes('hora') || lowerMessage.includes('cuando')) {
+        // Palabras clave para diferentes respuestas (expandidas)
+        if (lowerMessage.includes('hora') || lowerMessage.includes('cuando') || lowerMessage.includes('tiempo') && lowerMessage.includes('actividad')) {
             return gatitoKnowledge.horarios.response;
         }
         
-        if (lowerMessage.includes('donde') || lowerMessage.includes('ubicac') || lowerMessage.includes('lugar')) {
+        if (lowerMessage.includes('donde') || lowerMessage.includes('ubicac') || lowerMessage.includes('lugar') || lowerMessage.includes('sitio')) {
             return gatitoKnowledge.ubicacion.response;
         }
         
-        if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('teléfon') || lowerMessage.includes('whatsapp')) {
+        if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('teléfon') || lowerMessage.includes('whatsapp') || lowerMessage.includes('llamar') || lowerMessage.includes('escribir')) {
             return gatitoKnowledge.contacto.response;
         }
         
-        if (lowerMessage.includes('actividad') || lowerMessage.includes('juego') || lowerMessage.includes('hacer')) {
+        if (lowerMessage.includes('actividad') || lowerMessage.includes('juego') || lowerMessage.includes('hacer') || lowerMessage.includes('diversión') || lowerMessage.includes('entretenimiento')) {
             return gatitoKnowledge.actividades.response;
         }
         
-        if (lowerMessage.includes('document') || lowerMessage.includes('subir') || lowerMessage.includes('archivo')) {
+        if (lowerMessage.includes('document') || lowerMessage.includes('subir') || lowerMessage.includes('archivo') || lowerMessage.includes('foto') || lowerMessage.includes('inventario')) {
             return gatitoKnowledge.documentos.response;
         }
         
-        if (lowerMessage.includes('niño') || lowerMessage.includes('niña') || lowerMessage.includes('bebé') || lowerMessage.includes('pequeño')) {
+        if (lowerMessage.includes('niño') || lowerMessage.includes('niña') || lowerMessage.includes('bebé') || lowerMessage.includes('pequeño') || lowerMessage.includes('peque') || lowerMessage.includes('hijo')) {
             return gatitoKnowledge.niños.response;
         }
         
-        if (lowerMessage.includes('precio') || lowerMessage.includes('coste') || lowerMessage.includes('dinero')) {
+        // Nuevas detecciones de palabras clave
+        if (lowerMessage.includes('aloj') || lowerMessage.includes('dormir') || lowerMessage.includes('hotel') || lowerMessage.includes('camping') || lowerMessage.includes('tienda') || lowerMessage.includes('casa rural')) {
+            return gatitoKnowledge.alojamiento.response;
+        }
+        
+        if (lowerMessage.includes('transport') || lowerMessage.includes('coche') || lowerMessage.includes('llegar') || lowerMessage.includes('viajar') || lowerMessage.includes('carretera') || lowerMessage.includes('conducir')) {
+            return gatitoKnowledge.transporte.response;
+        }
+        
+        if (lowerMessage.includes('comida') || lowerMessage.includes('comer') || lowerMessage.includes('paella') || lowerMessage.includes('cocina') || lowerMessage.includes('barbacoa') || lowerMessage.includes('hambre')) {
+            return gatitoKnowledge.comida.response;
+        }
+        
+        if (lowerMessage.includes('fecha') || lowerMessage.includes('día') || lowerMessage.includes('fiesta') || lowerMessage.includes('calendario') || lowerMessage.includes('cuándo')) {
+            return gatitoKnowledge.fechas.response;
+        }
+        
+        if (lowerMessage.includes('tiempo') || lowerMessage.includes('clima') || lowerMessage.includes('lluvia') || lowerMessage.includes('sol') || lowerMessage.includes('calor') || lowerMessage.includes('frío')) {
+            return gatitoKnowledge.tiempo.response;
+        }
+        
+        if (lowerMessage.includes('requisito') || lowerMessage.includes('necesito') || lowerMessage.includes('condicion') || lowerMessage.includes('unirme') || lowerMessage.includes('participar') || lowerMessage.includes('apuntar')) {
+            return gatitoKnowledge.requisitos.response;
+        }
+        
+        if (lowerMessage.includes('precio') || lowerMessage.includes('coste') || lowerMessage.includes('dinero') || lowerMessage.includes('cuesta') || lowerMessage.includes('pagar') || lowerMessage.includes('gratis')) {
             return "💰 La participación en la peña es gratuita, solo compartimos los gastos de material y comida entre todos. ¡Lo importante es la diversión y el buen ambiente!";
         }
         
-        if (lowerMessage.includes('unir') || lowerMessage.includes('apunt') || lowerMessage.includes('inscrib')) {
+        if (lowerMessage.includes('unir') || lowerMessage.includes('apunt') || lowerMessage.includes('inscrib') || lowerMessage.includes('participar') || lowerMessage.includes('sumar')) {
             return "🎉 ¡Genial que quieras unirte! Puedes rellenar el formulario de contacto en la página o escribir directamente a info@penamatagatos.es. ¡Te esperamos!";
         }
         
-        if (lowerMessage.includes('comida') || lowerMessage.includes('comer') || lowerMessage.includes('paella')) {
-            return "🥘 ¡La comida es uno de nuestros puntos fuertes! Preparamos paellas gigantes, barbacoas y platos tradicionales todos juntos. Es parte de la diversión y la tradición de la peña.";
+        // Respuestas de cortesía
+        if (lowerMessage.includes('hola') || lowerMessage.includes('buenas') || lowerMessage.includes('saludo')) {
+            return "¡Hola! 🐱 ¡Qué alegría verte por aquí! Soy Gatito, tu asistente virtual de la Peña Matagatos. ¿En qué puedo ayudarte hoy?";
         }
         
-        // Respuesta por defecto
+        if (lowerMessage.includes('gracias') || lowerMessage.includes('thank')) {
+            return "¡De nada! 😊 ¡Para eso estoy aquí! Si tienes más preguntas, no dudes en preguntarme. ¡Miau!";
+        }
+        
+        if (lowerMessage.includes('adiós') || lowerMessage.includes('bye') || lowerMessage.includes('hasta luego')) {
+            return "¡Hasta luego! 👋 ¡Espero verte pronto en nuestras fiestas! ¡Que tengas un día genial!";
+        }
+        
+        // Respuesta por defecto mejorada
         return `¡Hola! 🐱 Soy Gatito y estoy aquí para ayudarte. Puedes preguntarme sobre:
         
-        📅 Horarios de actividades
-        📍 Ubicación de la peña  
+        📅 Horarios y fechas de las fiestas
+        📍 Ubicación y cómo llegar  
         📧 Información de contacto
         🎯 Actividades y juegos
         📎 Cómo subir documentos
         👶 Actividades para niños
+        🏠 Alojamiento durante las fiestas
+        🚗 Transporte y viajes compartidos
+        🥘 Comida y tradiciones gastronómicas
+        ☀️ Clima y qué llevar
+        📋 Requisitos para participar
         
         O si prefieres, usa los botones de arriba para preguntas rápidas. ¡Miau!`;
     }
