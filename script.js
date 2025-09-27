@@ -340,6 +340,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const gatitoInput = document.getElementById('gatitoInput');
     const gatitoMessages = document.getElementById('gatitoMessages');
     const quickQuestions = document.querySelectorAll('.quick-question');
+    const quickQuestionsSection = document.querySelector('.gatito-quick-questions');
+    const toggleQuestionsBtn = document.getElementById('toggleQuickQuestions');
+
+    // Variables for mobile behavior
+    let isMobile = window.innerWidth <= 768;
+    let hasInteracted = false;
 
     // Base de conocimiento de Gatito (expandida)
     const gatitoKnowledge = {
@@ -379,6 +385,16 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         requisitos: {
             response: "📋 Para unirte solo necesitas:\n\n• Ganas de pasarlo bien y hacer amigos\n• Espíritu colaborativo para las actividades\n• Amor por las tradiciones y la buena comida\n• Disponibilidad para las fechas de fiestas\n• ¡Y muchas ganas de diversión!"
+        },
+        // Nuevas actividades grupales divertidas
+        juegos_nocturnos: {
+            response: "🌙 ¡Diversión nocturna garantizada!\n\n• 🏮 Búsqueda del tesoro con linternas\n• 🎭 Teatro de sombras improvisado\n• 🎵 Karaoke bajo las estrellas\n• 🔥 Hoguera con historias de miedo\n• 🎪 Concurso de talentos ocultos\n• 🎯 Diana con glow sticks\n• 🌟 Observación de estrellas con juegos"
+        },
+        retos_grupales: {
+            response: "🏆 ¡Retos épicos para toda la peña!\n\n• 🧩 Escape room gigante al aire libre\n• 🎪 Circo humano (acrobacias seguras)\n• 🥄 Masterchef rural con ingredientes sorpresa\n• 🎨 Mural colaborativo en tiempo récord\n• 🎯 Olimpiadas absurdas (carrera con huevos, etc.)\n• 🎭 Improvisación teatral por equipos\n• 🧠 Trivial personalizado de la peña"
+        },
+        tradiciones_inventadas: {
+            response: "🎉 ¡Nuestras tradiciones únicas!\n\n• 👑 Coronación del 'Rey/Reina del Caos'\n• 🏅 Premio al 'Mejor Desastre Culinario'\n• 🎪 Desfile de disfraces caseros épicos\n• 🎵 Himno de la peña (cantado muy mal)\n• 🏆 Trofeo al 'Dormilón más Madrugador'\n• 🎯 Ritual del 'Primer Chapuzón'\n• 📸 Foto grupal en formación imposible"
         }
     };
 
@@ -391,7 +407,28 @@ document.addEventListener('DOMContentLoaded', function() {
     gatitoClose.addEventListener('click', function() {
         gatitoChat.classList.remove('active');
         gatitoButton.style.display = 'flex';
+        // Reset quick questions state when closing
+        if (isMobile && hasInteracted) {
+            quickQuestionsSection.classList.remove('auto-collapsed');
+            hasInteracted = false;
+        }
     });
+
+    // Toggle quick questions functionality
+    toggleQuestionsBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        quickQuestionsSection.classList.toggle('collapsed');
+    });
+
+    // Auto-collapse on mobile after interaction
+    function autoCollapseOnMobile() {
+        if (isMobile && !hasInteracted) {
+            hasInteracted = true;
+            setTimeout(() => {
+                quickQuestionsSection.classList.add('auto-collapsed');
+            }, 1000); // Give time to see the response
+        }
+    }
 
     // Preguntas rápidas
     quickQuestions.forEach(button => {
@@ -400,6 +437,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const questionText = this.textContent;
             
             addUserMessage(questionText);
+            autoCollapseOnMobile(); // Auto-collapse on mobile
             
             setTimeout(() => {
                 if (gatitoKnowledge[questionType]) {
@@ -418,6 +456,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         addUserMessage(message);
         gatitoInput.value = '';
+        autoCollapseOnMobile(); // Auto-collapse on mobile
 
         setTimeout(() => {
             const response = generateResponse(message);
@@ -507,6 +546,19 @@ document.addEventListener('DOMContentLoaded', function() {
             return gatitoKnowledge.requisitos.response;
         }
         
+        // Nuevas actividades divertidas
+        if (lowerMessage.includes('noche') || lowerMessage.includes('nocturno') || lowerMessage.includes('oscuras') || lowerMessage.includes('estrella') || lowerMessage.includes('hoguera')) {
+            return gatitoKnowledge.juegos_nocturnos.response;
+        }
+        
+        if (lowerMessage.includes('reto') || lowerMessage.includes('desafío') || lowerMessage.includes('competencia') || lowerMessage.includes('olimpiada') || lowerMessage.includes('concurso')) {
+            return gatitoKnowledge.retos_grupales.response;
+        }
+        
+        if (lowerMessage.includes('tradición') || lowerMessage.includes('costumbre') || lowerMessage.includes('ritual') || lowerMessage.includes('especial') || lowerMessage.includes('único')) {
+            return gatitoKnowledge.tradiciones_inventadas.response;
+        }
+        
         if (lowerMessage.includes('precio') || lowerMessage.includes('coste') || lowerMessage.includes('dinero') || lowerMessage.includes('cuesta') || lowerMessage.includes('pagar') || lowerMessage.includes('gratis')) {
             return "💰 La participación en la peña es gratuita, solo compartimos los gastos de material y comida entre todos. ¡Lo importante es la diversión y el buen ambiente!";
         }
@@ -545,4 +597,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         O si prefieres, usa los botones de arriba para preguntas rápidas. ¡Miau!`;
     }
+
+    // Handle window resize for mobile detection
+    window.addEventListener('resize', function() {
+        isMobile = window.innerWidth <= 768;
+    });
 });

@@ -636,8 +636,13 @@
             </div>
             
             <div class="gatito-quick-questions">
-                <h4>Preguntas frecuentes:</h4>
-                <div class="quick-question-buttons">
+                <div class="quick-questions-header">
+                    <h4>Preguntas frecuentes:</h4>
+                    <button id="toggleQuickQuestions" class="toggle-questions-btn" title="Ocultar/Mostrar preguntas">
+                        <span class="toggle-icon">⬆</span>
+                    </button>
+                </div>
+                <div class="quick-question-buttons" id="quickQuestionButtons">
                     <button class="quick-question" data-question="horarios">📅 Horarios de actividades</button>
                     <button class="quick-question" data-question="ubicacion">📍 ¿Dónde es la peña?</button>
                     <button class="quick-question" data-question="contacto">📧 Información de contacto</button>
