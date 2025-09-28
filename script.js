@@ -141,46 +141,106 @@ document.addEventListener('DOMContentLoaded', function() {
             return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
         }
 
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // Collect form data
-            const formData = new FormData();
-            const inputs = this.querySelectorAll('input, select, textarea');
-            
-            inputs.forEach(input => {
-                if (input.type !== 'file' && input.name) {
-                    formData.append(input.name, input.value);
-                }
-            });
-            
-            // Add selected files
-            selectedFiles.forEach(file => {
-                formData.append('files[]', file);
-            });
-            
-            // Show success message
             const button = this.querySelector('button');
             const originalText = button.textContent;
             
-            if (selectedFiles.length > 0) {
-                button.textContent = `¡Enviado con ${selectedFiles.length} archivo(s)! 🎉`;
-                utils.showNotification(`Formulario enviado con ${selectedFiles.length} archivo(s) adjunto(s)`, 'success');
-            } else {
-                button.textContent = '¡Enviado! 🎉';
-                utils.showNotification('Formulario enviado correctamente', 'success');
+            // Show loading state
+            button.textContent = 'Enviando... ⏳';
+            button.disabled = true;
+            
+            try {
+                // Upload files if any are selected
+                let uploadResult = null;
+                if (selectedFiles.length > 0) {
+                    uploadResult = await uploadFiles(selectedFiles);
+                }
+                
+                // Collect other form data for future processing
+                const formData = new FormData();
+                const inputs = this.querySelectorAll('input, select, textarea');
+                
+                inputs.forEach(input => {
+                    if (input.type !== 'file' && input.name) {
+                        formData.append(input.name, input.value);
+                    }
+                });
+                
+                // Show success message
+                if (uploadResult && uploadResult.success) {
+                    const uploadCount = uploadResult.uploadedFiles.length;
+                    button.textContent = `¡Enviado con ${uploadCount} archivo(s) subido(s)! 🎉`;
+                    
+                    let message = `Formulario enviado correctamente. ${uploadCount} archivo(s) subido(s) exitosamente.`;
+                    if (uploadResult.errors && uploadResult.errors.length > 0) {
+                        message += ` Algunos archivos tuvieron errores: ${uploadResult.errors.join(', ')}`;
+                    }
+                    utils.showNotification(message, 'success');
+                } else if (selectedFiles.length > 0 && (!uploadResult || !uploadResult.success)) {
+                    // File upload failed
+                    button.textContent = 'Error al subir archivos ❌';
+                    const errorMsg = uploadResult ? uploadResult.message : 'Error desconocido al subir archivos';
+                    utils.showNotification(`Error: ${errorMsg}`, 'error');
+                } else {
+                    // No files, just form submission
+                    button.textContent = '¡Enviado! 🎉';
+                    utils.showNotification('Formulario enviado correctamente', 'success');
+                }
+                
+                button.style.background = uploadResult && uploadResult.success ? 
+                    'linear-gradient(135deg, #27ae60, #2ecc71)' : 
+                    'linear-gradient(135deg, #e74c3c, #c0392b)';
+                
+            } catch (error) {
+                console.error('Form submission error:', error);
+                button.textContent = 'Error al enviar ❌';
+                utils.showNotification('Error al procesar el formulario', 'error');
+                button.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
             }
             
-            button.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-            
+            // Reset form after delay
             setTimeout(() => {
                 button.textContent = originalText;
                 button.style.background = '';
+                button.disabled = false;
                 this.reset();
                 selectedFiles = [];
                 selectedFilesContainer.innerHTML = '';
             }, 3000);
         });
+        
+        // Function to upload files to server
+        async function uploadFiles(files) {
+            const formData = new FormData();
+            
+            files.forEach(file => {
+                formData.append('files[]', file);
+            });
+            
+            try {
+                const response = await fetch('upload.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                return result;
+                
+            } catch (error) {
+                console.error('Upload error:', error);
+                return {
+                    success: false,
+                    message: 'Error de conexión al subir archivos',
+                    errors: [error.message]
+                };
+            }
+        }
     }
 
     // Efectos adicionales de hover para las tarjetas

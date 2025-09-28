@@ -20,3 +20,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Uploaded files (keep folder structure but not content)
+documents/*
+!documents/README.md
