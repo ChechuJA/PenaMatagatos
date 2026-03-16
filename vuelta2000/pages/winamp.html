@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinAmp - Vuelta a los 2000</title>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/winamp.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎵</div>
+                    <div>
+                        <h1>WinAmp Player</h1>
+                        <div class="logo-tagline">It really whips the llama's ass!</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <a href="../index.html" class="back-link">← Volver al Menú</a>
+        
+        <div class="winamp-container">
+            <div class="winamp-player">
+                <!-- Title Bar -->
+                <div class="winamp-title-bar">
+                    <div class="winamp-title-text">
+                        <span>🎵</span>
+                        <span>Winamp 2.95</span>
+                    </div>
+                    <div class="winamp-controls-mini">
+                        <div class="winamp-btn-mini">_</div>
+                        <div class="winamp-btn-mini">□</div>
+                        <div class="winamp-btn-mini">×</div>
+                    </div>
+                </div>
+                
+                <!-- Display Area -->
+                <div class="winamp-display">
+                    <div class="winamp-track-info" id="winampTrackInfo">
+                        <div style="font-size: 16px; margin-bottom: 5px;">Winamp Player</div>
+                        <div style="font-size: 12px; color: #00cc00;">Selecciona una canción</div>
+                    </div>
+                    
+                    <div class="winamp-time" id="winampTime">0:00</div>
+                    
+                    <div class="winamp-visualizer" id="winampVisualizer">
+                        <!-- Las barras se generan dinámicamente -->
+                    </div>
+                    
+                    <div class="winamp-progress">
+                        <div class="progress-bar" onclick="seekTo(event)">
+                            <div class="progress-fill" id="winampProgressFill"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <div class="winamp-controls">
+                    <button class="winamp-btn" onclick="previousTrack()" title="Anterior">⏮</button>
+                    <button class="winamp-btn play" id="winampPlayBtn" onclick="togglePlayPause()" title="Play/Pausa">▶</button>
+                    <button class="winamp-btn" onclick="stopWinamp()" title="Stop">⏹</button>
+                    <button class="winamp-btn" onclick="nextTrack()" title="Siguiente">⏭</button>
+                </div>
+                
+                <!-- Volume Control -->
+                <div class="winamp-volume">
+                    <div class="volume-icon">🔊</div>
+                    <div class="volume-slider" onclick="setVolume((event.offsetX / this.offsetWidth) * 100)">
+                        <div class="volume-fill" id="winampVolumeFill"></div>
+                    </div>
+                    <button class="winamp-eq-button">EQ</button>
+                </div>
+                
+                <!-- Playlist -->
+                <div class="winamp-playlist">
+                    <div class="playlist-header">
+                        📋 Playlist - Los Temazos de los 2000
+                    </div>
+                    <div id="winampPlaylist">
+                        <!-- La playlist se genera dinámicamente -->
+                    </div>
+                </div>
+                
+                <!-- Footer Info -->
+                <div class="winamp-footer">
+                    💡 Tip: Descarga Winamp en www.winamp.com | 🎧 It really whips the llama's ass!
+                </div>
+            </div>
+            
+            <!-- Instrucciones -->
+            <div style="margin-top: 30px; text-align: center; color: #ccc; font-size: 13px;">
+                <p>🎶 <strong>Bienvenido a Winamp</strong> - El mejor reproductor mp3 de la historia 🎶</p>
+                <p style="margin-top: 10px;">
+                    Haz clic en cualquier canción de la playlist para seleccionarla.<br>
+                    Pulsa Play ▶ para empezar a "reproducir".<br>
+                    <small style="color: #999;">(Nota: Esto es una simulación nostálgica, no reproduce audio real)</small>
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p><strong>© Nullsoft WinAmp 2.95</strong> - Los temazos de los 2000</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/winamp.js"></script>
+</body>
+</html>

@@ -1,77 +1,56 @@
-# 🕰️ Vuelta a los 2000
+# 🕰️ Vuelta a los 2000 - Peña Matagatos Edition
 
-Proyecto web nostálgico que recrea experiencias emblemáticas de los años 2000.
+Proyecto nostálgico que recrea la estética y experiencia de internet de los años 2000.
 
-## 📁 Estructura del Proyecto
+## 🎨 Cambios de Color Aplicados
 
-```
+- **Header principal**: Verde MSN (`#7fba00`) - mucho más 2000s que el rosa
+- **Pestañas activas**: Verde brillante estilo MSN Messenger  
+- **VotaMiCuerpo**: Mantiene su rosa original (`#ff69b4`) en la sección interna
+- **Footer y enlaces**: Colores verdes
+
+## 📁 Nueva Estructura (Páginas Separadas)
+
+✨ **IMPORTANTE**: El proyecto ahora está reorganizado en páginas individuales para facilitar la depuración.
+
+\\\
 vuelta2000/
-├── index.html                    # HTML principal
-├── README.md                     # Este archivo
-├── css/                          # Carpeta de estilos
-│   ├── common.css               # Estilos comunes (header, footer, tabs)
-│   ├── votamicuerpo.css         # Estilos de VotaMiCuerpo
-│   ├── chat-terra.css           # Estilos del Chat de Terra
-│   └── encarta.css              # Estilos de Encarta 2000
-└── js/                           # Carpeta de scripts
-    ├── tabs.js                   # Sistema de navegación por pestañas
-    ├── votamicuerpo.js           # Lógica de votación y rating
-    ├── chat-terra.js             # Lógica del chat (envío, recepción)
-    └── encarta.js                # Navegación de artículos
+├── index.html                 # ✨ NUEVO: Menú principal con grid de opciones
+├── index-monolitico.html      # Archivo original con todas las secciones
+├── pages/                     # 📂 Páginas individuales
+│   ├── votamicuerpo.html      # 💕 VotaMiCuerpo.com
+│   ├── chat-terra.html        # 💬 Chat de Terra
+│   ├── encarta.html           # 📚 Encarta 2000
+│   ├── rincon-vago.html       # 📝 Rincón del Vago
+│   ├── winamp.html            # 🎵 WinAmp Player
+│   └── nokia.html             # 📱 Nokia 3310 Snake
+├── css/                       # Estilos modulares
+└── js/                        # JavaScript separado
+\\\
 
-```
+## 🎮 Las 6 Secciones
 
-## 🎨 Secciones
+1. **VotaMiCuerpo.com** 💕 - Sistema de votación con estrellas
+2. **Chat de Terra** 💬 - Chat retro tipo IRC
+3. **Encarta 2000** 📚 - Enciclopedia digital de La Peña
+4. **Rincón del Vago** 📝 - Trabajos y apuntes descargables
+5. **WinAmp** 🎵 - Reproductor MP3 con temazos de los 2000
+6. **Nokia 3310** 📱 - Juego Snake jugable
 
-### 1. 💕 VotaMiCuerpo.com
-Sistema de votación estilo 2000 con:
-- Perfiles de usuarios del pueblo
-- Sistema de estrellas para votación
-- Comentarios nostálgicos
-- Contador de usuarios online dinámico
+## 🚀 Ventajas de la Nueva Estructura
 
-### 2. 💬 Chat de Terra
-Chat interactivo con:
-- 15 usuarios con nicks típicos de la época
-- Mensajes automáticos aleatorios
-- Posibilidad de escribir y recibir respuestas
-- Contador de usuarios conectados
+✅ **Depuración fácil**: Cada sección en su propio archivo  
+✅ **Carga rápida**: Solo cargas lo que necesitas  
+✅ **Mantenimiento simple**: Editar sin tocar otras secciones  
+✅ **CSS modular**: Estilos organizados por funcionalidad  
 
-### 3. 📚 Encarta 2000
-Enciclopedia estilo Microsoft Encarta con:
-- 7 artículos sobre La Peña Matagatos
-- Navegación lateral
-- Diseño fiel al original
-- Contenido totalmente inventado pero creíble
+## 📝 Archivos Clave
 
-## 🚀 Cómo usar
-
-1. Abre `index.html` en tu navegador
-2. Navega entre las pestañas haciendo clic
-3. Interactúa con:
-   - Estrellas de votación en VotaMiCuerpo
-   - Campo de chat en Terra
-   - Artículos en Encarta
-
-## 🔧 Tecnologías
-
-- HTML5
-- CSS3 (sin frameworks)
-- JavaScript Vanilla (sin librerías)
-
-## 📝 Notas
-
-- Diseño optimizado para 960px de ancho (estándard de los 2000)
-- Funciones console.log para depuración
-- Todo el código es autocontenido (sin dependencias externas)
-
-## 🎯 Mejoras Futuras
-
-- [ ] Persistencia de votos en localStorage
-- [ ] Más artículos de Encarta
-- [ ] Sonidos retro (opcional)
-- [ ] Modo "Geocities" con gifs animados
+- **index.html**: Menú principal (landing page)
+- **pages/*.html**: Secciones individuales
+- **index-monolitico.html**: Archivo original con todo el contenido
+- **common.css**: Estilos compartidos (verde MSN)
 
 ---
 
-**Creado con nostalgia** 🎮📼💾
+¡Disfruta del viaje nostálgico! 🎮💾📟

@@ -1,0 +1,341 @@
+/* ============================================
+   NOKIA 3310 - Estilos
+   ============================================ */
+
+.nokia-container {
+    margin: 40px auto;
+    max-width: 400px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.nokia-3310 {
+    background: linear-gradient(to bottom, #2c3e50, #1a252f);
+    border-radius: 30px 30px 25px 25px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.nokia-header {
+    background: #34495e;
+    padding: 8px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    margin: -20px -20px 15px -20px;
+    border-bottom: 3px solid #1a252f;
+}
+
+.nokia-logo {
+    color: #3498db;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.nokia-screen-container {
+    background: #7f8c8d;
+    border: 4px solid #34495e;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.nokia-screen {
+    background: #9db4a0;
+    border: 2px solid #556b58;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.snake-game-area {
+    width: 100%;
+    height: 200px;
+    background: #9db4a0;
+    position: relative;
+}
+
+.snake-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.snake-score {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgba(0,0,0,0.6);
+    color: #000;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-family: 'Courier New', monospace;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.snake-info {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: rgba(0,0,0,0.6);
+    color: #000;
+    padding: 3px;
+    font-size: 9px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8);
+    color: #000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.game-over-screen.show {
+    display: block;
+}
+
+.game-over-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.game-over-score {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.nokia-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    max-width: 200px;
+    margin: 0 auto 15px;
+}
+
+.nokia-btn {
+    background: linear-gradient(to bottom, #3d5368, #2c3e50);
+    border: 2px outset #4a6075;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
+    font-size: 16px;
+}
+
+.nokia-btn:hover {
+    background: linear-gradient(to bottom, #4a6075, #3d5368);
+}
+
+.nokia-btn:active {
+    border-style: inset;
+    background: linear-gradient(to bottom, #2c3e50, #3d5368);
+}
+
+.nokia-dpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.nokia-arrow {
+    background: linear-gradient(to bottom, #3d5368, #2c3e50);
+    border: 2px outset #4a6075;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
+    font-size: 18px;
+}
+
+.nokia-arrow:hover {
+    background: linear-gradient(to bottom, #4a6075, #3d5368);
+}
+
+.nokia-arrow:active {
+    border-style: inset;
+    background: linear-gradient(to bottom, #2c3e50, #3d5368);
+}
+
+.nokia-arrow.up {
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 8px 8px 0 0;
+}
+
+.nokia-arrow.left {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 8px 0 0 8px;
+}
+
+.nokia-arrow.center {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #e74c3c, #c0392b);
+}
+
+.nokia-arrow.center:hover {
+    background: linear-gradient(to bottom, #ec7063, #e74c3c);
+}
+
+.nokia-arrow.right {
+    grid-column: 3;
+    grid-row: 2;
+    border-radius: 0 8px 8px 0;
+}
+
+.nokia-arrow.down {
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 0 0 8px 8px;
+}
+
+.nokia-numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.nokia-number {
+    background: linear-gradient(to bottom, #3d5368, #2c3e50);
+    border: 2px outset #4a6075;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.nokia-number:hover {
+    background: linear-gradient(to bottom, #4a6075, #3d5368);
+}
+
+.nokia-number:active {
+    border-style: inset;
+}
+
+.number-main {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.number-letters {
+    font-size: 10px;
+    color: #95a5a6;
+}
+
+.nokia-action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.nokia-action-btn {
+    background: linear-gradient(to bottom, #27ae60, #229954);
+    border: 2px outset #2ecc71;
+    border-radius: 8px;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nokia-action-btn:hover {
+    background: linear-gradient(to bottom, #2ecc71, #27ae60);
+}
+
+.nokia-action-btn:active {
+    border-style: inset;
+}
+
+.nokia-action-btn.red {
+    background: linear-gradient(to bottom, #e74c3c, #c0392b);
+    border-color: #ec7063;
+}
+
+.nokia-action-btn.red:hover {
+    background: linear-gradient(to bottom, #ec7063, #e74c3c);
+}
+
+.nokia-speaker {
+    width: 80px;
+    height: 8px;
+    background: #1a252f;
+    border-radius: 4px;
+    margin: 15px auto 5px;
+    border: 1px solid #0d1419;
+}
+
+.nokia-instructions {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    color: #ecf0f1;
+}
+
+.nokia-instructions h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.nokia-instructions ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.nokia-instructions li {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+.nokia-instructions li::before {
+    content: "▸ ";
+    color: #3498db;
+    font-weight: bold;
+}
+
+.nokia-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #95a5a6;
+    font-size: 11px;
+}

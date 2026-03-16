@@ -1,0 +1,334 @@
+/* ============================================
+   REVISTA ¡HOLA! - Estilos
+   ============================================ */
+
+.revista-container {
+    padding: 20px;
+    background: linear-gradient(to bottom, #fff5f8, #ffe0eb);
+}
+
+.revista-header {
+    background: linear-gradient(135deg, #ff1493, #ff69b4, #ff1493);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(255, 20, 147, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.revista-header::before {
+    content: '⭐';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 40px;
+    animation: twinkle 2s infinite;
+}
+
+.revista-header::after {
+    content: '⭐';
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    animation: twinkle 2s infinite 1s;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+.revista-logo {
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.revista-tagline {
+    color: #ffffcc;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.portada-section {
+    background: white;
+    border: 5px solid #ff1493;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.portada-title {
+    background: linear-gradient(to right, #ff1493, #ff69b4);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(255, 20, 147, 0.3);
+}
+
+.frase-famoso {
+    background: linear-gradient(135deg, #fff, #ffe0f0);
+    border-left: 8px solid #ff1493;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.frase-famoso:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.3);
+}
+
+.frase-famoso::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: 80px;
+    color: #ff69b4;
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.frase-texto {
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.frase-autor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.autor-foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 3px solid white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.autor-info {
+    flex: 1;
+}
+
+.autor-nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff1493;
+    margin-bottom: 3px;
+}
+
+.autor-descripcion {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+.contexto-frase {
+    background: #fffacd;
+    border: 2px dashed #ffb6c1;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.contexto-frase strong {
+    color: #ff1493;
+}
+
+.categoria-badge {
+    display: inline-block;
+    background: linear-gradient(to right, #ffb6c1, #ff69b4);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.categoria-badge.tele {
+    background: linear-gradient(to right, #9370db, #8a2be2);
+}
+
+.categoria-badge.ot {
+    background: linear-gradient(to right, #ff6347, #ff4500);
+}
+
+.categoria-badge.gh {
+    background: linear-gradient(to right, #3cb371, #2e8b57);
+}
+
+.categoria-badge.cronica {
+    background: linear-gradient(to right, #4169e1, #1e90ff);
+}
+
+.portada-grande {
+    background: linear-gradient(135deg, #ffebf0, #ffe0eb);
+    border: 8px double #ff1493;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.portada-grande-titulo {
+    font-size: 48px;
+    color: #ff1493;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.portada-grande-subtitulo {
+    font-size: 24px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.portada-foto-central {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    border: 10px solid white;
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+}
+
+.separador-corazones {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+    color: #ff69b4;
+}
+
+.programas-section {
+    background: linear-gradient(135deg, #fff, #fff5f8);
+    border: 4px solid #ff69b4;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.programa-titulo {
+    background: #ff1493;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.programa-descripcion {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.frases-programa {
+    padding-left: 20px;
+}
+
+.mini-frase {
+    background: linear-gradient(to right, #fff, #ffe0f0);
+    border-left: 4px solid #ff69b4;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 0 8px 8px 0;
+    font-size: 15px;
+}
+
+.mini-frase strong {
+    color: #ff1493;
+}
+
+.anuncio-revista {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    border: 5px double #ff1493;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.anuncio-texto {
+    font-size: 24px;
+    color: #ff1493;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.anuncio-pequeño {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.revista-footer {
+    background: linear-gradient(to bottom, #333, #555);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.revista-footer p {
+    margin: 5px 0;
+    font-size: 12px;
+}

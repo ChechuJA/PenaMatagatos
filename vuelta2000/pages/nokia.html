@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nokia 3310 Snake - Vuelta a los 2000</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/nokia.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">📱</div>
+                    <div>
+                        <h1>Nokia 3310</h1>
+                        <div class="logo-tagline">El teléfono indestructible</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <a href="../index.html" class="back-link">← Volver al Menú</a>
+        
+<div class="nokia-container">
+                <div class="nokia-3310">
+                    <!-- Header -->
+                    <div class="nokia-header">
+                        <div class="nokia-logo">NOKIA</div>
+                    </div>
+                    
+                    <!-- Pantalla -->
+                    <div class="nokia-screen-container">
+                        <div class="nokia-screen">
+                            <div class="snake-game-area">
+                                <canvas id="snakeCanvas" class="snake-canvas"></canvas>
+                                <div class="snake-score" id="snakeScore">Puntos: 0</div>
+                                <div class="snake-info">Usa las flechas o los botones para moverte</div>
+                                <div class="game-over-screen" id="gameOverScreen">
+                                    <div class="game-over-title">GAME OVER</div>
+                                    <div class="game-over-score">Puntos: <span id="finalScore">0</span></div>
+                                    <div style="margin-top: 10px; font-size: 12px;">Pulsa ▶ para jugar de nuevo</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- D-Pad (Cruceta direccional) -->
+                    <div class="nokia-dpad">
+                        <div class="nokia-arrow up" onclick="changeSnakeDirectionButton('up')">▲</div>
+                        <div class="nokia-arrow left" onclick="changeSnakeDirectionButton('left')">◀</div>
+                        <div class="nokia-arrow center" onclick="startSnake()">▶</div>
+                        <div class="nokia-arrow right" onclick="changeSnakeDirectionButton('right')">▶</div>
+                        <div class="nokia-arrow down" onclick="changeSnakeDirectionButton('down')">▼</div>
+                    </div>
+                    
+                    <!-- Botones de acción -->
+                    <div class="nokia-action-buttons">
+                        <button class="nokia-action-btn" onclick="startSnake()">▶ START</button>
+                        <button class="nokia-action-btn red" onclick="pauseSnake()">⏸ PAUSE</button>
+                    </div>
+                    
+                    <!-- Altavoz -->
+                    <div class="nokia-speaker"></div>
+                </div>
+                
+                <!-- Instrucciones -->
+                <div class="nokia-instructions">
+                    <h3>📱 Nokia 3310 - Snake II</h3>
+                    <ul>
+                        <li>Usa las <strong>flechas del teclado</strong> o los <strong>botones</strong> para moverte</li>
+                        <li>Come la comida (cuadrados) para crecer</li>
+                        <li>No choques con las paredes ni contigo mismo</li>
+                        <li>Alcanza la máxima puntuación posible</li>
+                        <li>Pulsa <strong>START</strong> para comenzar</li>
+                        <li>Pulsa <strong>PAUSE</strong> para pausar el juego</li>
+                    </ul>
+                </div>
+                
+                <div class="nokia-footer">
+                    💚 El teléfono más resistente de la historia | 🔋 Batería: 1 semana | 🎮 El juego que todos jugamos
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <p><strong>© Nokia 3310</strong> - Snake II Game</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/snake.js"></script>
+</body>
+</html>
