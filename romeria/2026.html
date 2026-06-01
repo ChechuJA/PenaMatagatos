@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romería 2026 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../LogoMatagatos.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .romeria-header {
+            background: var(--gradient-main);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .romeria-header h2 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .romeria-header p { opacity: 0.9; font-size: 1.1rem; }
+
+        .romeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .romeria-card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+        }
+        .romeria-card h3 {
+            font-family: 'Fredoka One', cursive;
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 0.5rem;
+        }
+        .romeria-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .romeria-card ul li {
+            padding: 0.35rem 0;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: 0.95rem;
+        }
+        .romeria-card ul li:last-child { border-bottom: none; }
+
+        .badge {
+            display: inline-block;
+            background: var(--gradient-main);
+            color: white;
+            border-radius: 20px;
+            padding: 0.15rem 0.7rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 0.4rem;
+            vertical-align: middle;
+        }
+        .pendiente-box {
+            background: #fff8e1;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .pendiente-box p { margin: 0.3rem 0; font-size: 0.95rem; }
+        .apuntes-box {
+            background: #e8f5e9;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .apuntes-box h3 {
+            color: var(--accent-color);
+            font-family: 'Fredoka One', cursive;
+            margin-bottom: 0.8rem;
+        }
+        .apuntes-box ul { list-style: none; padding: 0; }
+        .apuntes-box ul li { padding: 0.3rem 0; font-size: 0.95rem; }
+
+        .back-link {
+            display: inline-block;
+            margin: 1rem 0 0.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        .stat-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        .stat-pill {
+            background: var(--gradient-main);
+            color: white;
+            border-radius: 30px;
+            padding: 0.5rem 1.2rem;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../index.html#nosotros">Nosotros</a></li>
+                <li><a href="../index.html#actividades">Actividades</a></li>
+                <li><a href="index.html" class="active">Romerías</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 80px;">
+        <div class="romeria-header">
+            <h2>⛪ Romería 2026</h2>
+            <p>Inventario histórico de bebida y comida · Referencia para próximos años</p>
+        </div>
+
+        <div class="container">
+            <a href="index.html" class="back-link">← Volver a Romerías</a>
+
+            <div class="stat-row">
+                <div class="stat-pill">👥 34 personas</div>
+                <div class="stat-pill">🍺 96 latas de cerveza</div>
+                <div class="stat-pill">🥤 13 botellas de refresco</div>
+                <div class="stat-pill">🍞 10-13 panes (sobró)</div>
+            </div>
+
+            <div class="romeria-grid">
+
+                <!-- BEBIDA: consumo -->
+                <div class="romeria-card">
+                    <h3>🍺 Consumo de bebida por persona</h3>
+                    <ul>
+                        <li>Cerveza (con alcohol) <span class="badge">18</span></li>
+                        <li>Cerveza 0,0 / sin alcohol <span class="badge">3</span></li>
+                        <li>Coca-Cola 0,0 — sin cafeína, sin azúcar <span class="badge">6</span></li>
+                        <li>Coca-Cola Zero — sin azúcar, con cafeína <span class="badge">4</span></li>
+                        <li>Coca-Cola normal <span class="badge">1</span></li>
+                        <li>Agua <span class="badge">1</span></li>
+                        <li>Tinto de verano <span class="badge">1</span></li>
+                    </ul>
+                </div>
+
+                <!-- BEBIDA: compra -->
+                <div class="romeria-card">
+                    <h3>🛒 Bebida comprada</h3>
+                    <ul>
+                        <li>🍺 Mahou Clásica — 2 packs × 24 latas (48 latas)</li>
+                        <li>🍺 Victoria — 1 pack × 24 latas (24 latas)</li>
+                        <li>🍺 Mahou Roja — 1 pack × 24 latas (24 latas)</li>
+                        <li>🍺 Estrella Galicia 0,0 rubia — cogida de la peña <em>(cantidad pendiente)</em></li>
+                        <li>🥤 Coca-Cola normal — 3 botellas de 2 L</li>
+                        <li>🥤 Coca-Cola 0,0 (cero cero) — 4 botellas de 2 L</li>
+                        <li>🥤 Coca-Cola Zero (0) — 6 botellas de 2 L</li>
+                        <li>⚡ Aquarius — 2 botellas de 2 L</li>
+                        <li>🍷 Tinto de verano — 2 botellas de 2 L</li>
+                    </ul>
+                </div>
+
+                <!-- COMIDA: compra -->
+                <div class="romeria-card">
+                    <h3>🛒 Comida comprada (Mercadona)</h3>
+                    <ul>
+                        <li>🥚 Tortillas — 6 unidades</li>
+                        <li>🥟 Empanadas pollo y setas — 3 unidades</li>
+                        <li>🥟 Empanadas de atún — 3 unidades</li>
+                        <li>🍞 Pan — 10-13 unidades <em>(sobró)</em></li>
+                        <li>🥩 Embutido — ~½ kg de cada: chorizo, salchichón, lomo y queso</li>
+                        <li>🥔 Bolsas de patatas — 2</li>
+                        <li>🍳 Revuelto — 1</li>
+                        <li>🥜 Cubo de frutos secos — 1</li>
+                        <li>🌽 Gusanitos — 3 bolsas</li>
+                        <li>🍬 Bolsa de chuches — 1</li>
+                    </ul>
+                    <p style="margin-top:0.8rem; font-size:0.85rem; color: var(--text-light);">La hermandad aportó carne (otros años da más comida).</p>
+                </div>
+
+            </div>
+
+            <!-- PENDIENTE -->
+            <div class="pendiente-box">
+                <p><strong>⚠️ Pendiente de confirmar:</strong></p>
+                <p>· Cantidad exacta de Estrella Galicia 0,0 cogida de la peña</p>
+                <p>· Si sobró o faltó bebida</p>
+            </div>
+
+            <!-- APUNTES 2027 -->
+            <div class="apuntes-box">
+                <h3>📌 Apuntes para Romería 2027</h3>
+                <ul>
+                    <li>➕ Sumar 1 tortilla y 1 empanada más (por si la hermandad da solo carne)</li>
+                    <li>➕ Valorar añadir ensaladas u otro plato frío de acompañamiento</li>
+                    <li>🍞 Pan: con 7 unidades debería ser suficiente</li>
+                    <li>🍺 Confirmar cantidad de Estrella Galicia 0,0 para tenerla de referencia</li>
+                    <li>📝 Registrar si sobró o faltó bebida en cuanto se sepa</li>
+                </ul>
+            </div>
+
+            <a href="index.html" class="back-link" style="margin-bottom: 2rem; display:inline-block;">← Volver a Romerías</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Peña Matagatos - Un pueblo, una familia, mil recuerdos</p>
+            <div class="social-links">
+                <a href="#">📘 Facebook</a>
+                <a href="#">📷 Instagram</a>
+                <a href="#">📱 WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
