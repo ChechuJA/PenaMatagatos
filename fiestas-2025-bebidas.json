@@ -1,0 +1,149 @@
+{
+  "evento": "Fiestas 2025",
+  "fecha_registro": "2026-06-24",
+  "miembros": [
+    {
+      "nombre": "Malu",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["Aquarius naranja", "agua", "cerveza 0,0"],
+      "notas": "Alguna cerveza 0,0"
+    },
+    {
+      "nombre": "Ernesto",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["cerveza", "Seagrams tónica"]
+    },
+    {
+      "nombre": "Chechu",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["cerveza", "vodka con limón", "Barceló Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Esmeralda",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["cerveza 0,0 con limón", "Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Cristina",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza 0,0", "Coca-Cola 0,0"]
+    },
+    {
+      "nombre": "Raúl",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza 0,0", "Coca-Cola"]
+    },
+    {
+      "nombre": "Josemi",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Legendario limón"]
+    },
+    {
+      "nombre": "Eve",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Legendario limón"]
+    },
+    {
+      "nombre": "María",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["Seagrams limón", "cerveza", "tinto", "Coca-Cola"]
+    },
+    {
+      "nombre": "Samuel",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["Seagrams tónica", "cerveza"]
+    },
+    {
+      "nombre": "Leticia",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Cutty naranja"],
+      "alias_relacionado": "Javi (Leti)"
+    },
+    {
+      "nombre": "Albert",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["cerveza 0,0", "Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Sonia",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["cerveza 0,0", "Coca-Cola Zero Zero", "agua"]
+    },
+    {
+      "nombre": "Álvaro",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["Seagrams tónica y limón", "Beefeater tónica y limón", "cerveza"]
+    },
+    {
+      "nombre": "Elisa",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["Seagrams limón", "cerveza 0,0", "cerveza normal"],
+      "notas": "Asistencia indicada como probable (creo)"
+    },
+    {
+      "nombre": "Blanca",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["Seagrams tónica", "cerveza"]
+    },
+    {
+      "nombre": "Edu",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["cerveza"]
+    },
+    {
+      "nombre": "Helena",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["cerveza 0,0", "radler 0,0", "Fanta naranja"]
+    },
+    {
+      "nombre": "Tamara",
+      "asistencia": "viernes y sábado seguro, jueves pendiente",
+      "bebidas": ["Coca-Cola Zero", "cerveza con gaseosa", "agua"]
+    },
+    {
+      "nombre": "Pimen",
+      "asistencia": "jueves a domingo",
+      "bebidas": ["Coca-Cola Zero"],
+      "extras": ["helados si es posible"]
+    },
+    {
+      "nombre": "Zara",
+      "asistencia": "viernes y sábado, jueves pendiente",
+      "bebidas": ["Seagrams limón", "cerveza"]
+    },
+    {
+      "nombre": "Laura",
+      "asistencia": "todos los días",
+      "bebidas": ["Coca-Cola Zero", "cerveza tostada 0,0", "cerveza normal"]
+    },
+    {
+      "nombre": "Nacho",
+      "asistencia": "todos los días",
+      "bebidas": ["Coca-Cola Zero", "Cutty naranja"]
+    },
+    {
+      "nombre": "Juanvi",
+      "asistencia": "viernes y sábado, jueves pendiente",
+      "bebidas": ["cerveza", "Seagrams", "Coca-Cola Zero"]
+    },
+    {
+      "nombre": "David",
+      "asistencia": "todos los días",
+      "bebidas": ["Larios 12 limón", "cerveza"]
+    },
+    {
+      "nombre": "Ana",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["Barceló", "Coca-Cola Zero", "cerveza", "radler"]
+    },
+    {
+      "nombre": "Iris",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["cerveza", "Seagrams"]
+    }
+  ],
+  "notas_generales": [
+    "Base de bebidas del año 2025 registrada a partir del mensaje del usuario.",
+    "Hay asistencias con día jueves pendiente o con texto de duda que conviene confirmar más adelante."
+  ]
+}
