@@ -1,0 +1,93 @@
+{
+  "evento": "Fiestas 2026",
+  "fecha_registro": "2026-08-20",
+  "nota": "Todos los días = desde el miércoles hasta la carne del toro.",
+  "miembros": [
+    {
+      "nombre": "Marta",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "Flores",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Seagrams Sprite"]
+    },
+    {
+      "nombre": "Chechu",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "ron con limón"],
+      "notas": "Ron: Barceló, Brugal Legendario o similar, con limón."
+    },
+    {
+      "nombre": "Esmeralda",
+      "asistencia": "todos los días",
+      "bebidas": ["Coca-Cola Zero", "Aquarius naranja"]
+    },
+    {
+      "nombre": "Josemi",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Legendario limón"]
+    },
+    {
+      "nombre": "Eve",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Legendario limón"]
+    },
+    {
+      "nombre": "Leti",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Cutty naranja", "Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Javi",
+      "asistencia": "sábado y domingo",
+      "bebidas": ["cerveza", "ginebra con Sprite", "Coca-Cola"]
+    },
+    {
+      "nombre": "Andreas",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "Álvaro",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["cerveza", "ginebra limón", "ginebra tónica"]
+    },
+    {
+      "nombre": "Elisa",
+      "asistencia": "jueves a sábado",
+      "bebidas": ["cerveza", "ginebra limón"]
+    },
+    {
+      "nombre": "Laura",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "Nacho",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "David",
+      "asistencia": "jueves a domingo",
+      "bebidas": ["cerveza", "Larios 12 limón"]
+    },
+    {
+      "nombre": "Malu",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["Aquarius naranja", "Barceló Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Ernesto",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["cerveza", "gin-tonic Seagrams"]
+    },
+    {
+      "nombre": "Cristina",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza 0,0", "Coca-Cola 0,0"]
+    }
+  ]
+}
