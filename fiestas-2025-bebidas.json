@@ -1,6 +1,6 @@
 {
-  "evento": "Fiestas 2025",
-  "fecha_registro": "2026-06-24",
+  "evento": "Fiestas 2026",
+  "fecha_registro": "2026-08-20",
   "miembros": [
     {
       "nombre": "Malu",
@@ -140,10 +140,82 @@
       "nombre": "Iris",
       "asistencia": "viernes y sábado",
       "bebidas": ["cerveza", "Seagrams"]
+    },
+    {
+      "nombre": "Marta",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "Flores",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "Chechu",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "ron", "Barceló", "Brugal Legendario", "limón"],
+      "notas": "Ron a gusto: Barcelo, Brugal Legendario o similar, con limón."
+    },
+    {
+      "nombre": "Esmeralda",
+      "asistencia": "todos los días",
+      "bebidas": ["Coca-Cola Zero", "Aquarius naranja"],
+      "notas": "Prefiere Coca-Cola 0 y Aquarius de naranja."
+    },
+    {
+      "nombre": "Josemi",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Legendario limón"]
+    },
+    {
+      "nombre": "Eve",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Legendario limón"]
+    },
+    {
+      "nombre": "Leti",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Cutty naranja", "Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Javi",
+      "asistencia": "sábado y domingo",
+      "bebidas": ["cerveza", "ginebra con Sprite", "Coca-Cola"]
+    },
+    {
+      "nombre": "Andreas",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "Álvaro",
+      "asistencia": "jueves a domingo",
+      "bebidas": ["cerveza", "ginebra limón", "ginebra tónica"]
+    },
+    {
+      "nombre": "Elisa",
+      "asistencia": "jueves a domingo",
+      "bebidas": ["cerveza", "ginebra limón"]
+    },
+    {
+      "nombre": "Laura",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "Nacho",
+      "asistencia": "todos los días",
+      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+    },
+    {
+      "nombre": "David",
+      "asistencia": "jueves a domingo",
+      "bebidas": ["cerveza", "Larios 12 limón"]
     }
   ],
   "notas_generales": [
-    "Base de bebidas del año 2025 registrada a partir del mensaje del usuario.",
-    "Hay asistencias con día jueves pendiente o con texto de duda que conviene confirmar más adelante."
+    "Listado inicial para Fiestas 2026, ampliado con la información aportada por el usuario.",
+    "Se mantienen las entradas previas como base de referencia y se van completando con los nuevos datos."
   ]
 }
