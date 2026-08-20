@@ -62,21 +62,21 @@
 | Helados | 34 |
 | Bolsas de hielo | 13 |
 
-## Agrupado para plan de compra 2026
+## Agrupado por categorías para plan de compra 2026
 
-| Categoría | Cantidad agregada |
-|---|---:|
-| Cerveza normal (botellines + latas) | 86 |
-| Cerveza sin alcohol | 34 |
-| Refresco cola zero | 16 |
-| Tónica | 5 |
-| Ginebra (Seagrams + otras) | 8 |
-| Whisky (Cutty) | 1 |
-| Ron (Barceló) | 5 |
-| Vodka (Absolut) | 1 |
-| Tinto de verano | 2 |
-| Helados | 34 |
-| Hielo (bolsas) | 13 |
+| Categoría | Productos | Cantidad agregada |
+|---|---|---:|
+| Alcohol | Cerveza, licores y mezclas | 86 + 8 + 5 + 1 + 1 + 2 + 3 = 106 |
+| Refrescos | Sin alcohol, cola, tónicos y casera | 34 + 16 + 5 + 1 = 56 |
+| Varios | Helados, hielo, utensilios y limpieza | 34 + 13 + 11 + 3 + 1 + 1 + 3 + 3 + 1.5 + infinito = resumen operativo |
+
+## Orden visual recomendado para comprar
+
+| Categoría | Productos clave |
+|---|---|
+| Alcohol | Botellines mahou, Estrella Galicia, Barceló, Seagrams, Larios, Absolut, Cutty Sark, Tanqueray |
+| Refrescos | Estrella Galicia sin alcohol, Coca-Cola 0, Fanta limón, Fanta naranja, Tónica |
+| Varios | Helados, bolsas de hielo, platos, aluminio, cucharas, estropajos, bolsas de basura |
 
 ## Notas
 

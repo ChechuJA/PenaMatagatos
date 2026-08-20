@@ -61,6 +61,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const animatedElements = document.querySelectorAll('.activity-card, .inventory-category, .tip, .gallery-item');
     animatedElements.forEach(el => observer.observe(el));
 
+    // Filtro de inventario por categoría
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const inventoryRows = document.querySelectorAll('.inventory-row');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedFilter = button.dataset.filter;
+
+            filterButtons.forEach(btn => btn.classList.toggle('active', btn === button));
+
+            inventoryRows.forEach(row => {
+                const matches = selectedFilter === 'all' || row.dataset.category === selectedFilter;
+                row.style.display = matches ? '' : 'none';
+            });
+        });
+    });
+
     // Manejo del formulario de contacto
     const contactForm = document.querySelector('.contact-form form');
     if (contactForm) {
