@@ -489,6 +489,108 @@ h3 {
     line-height: 1.6;
 }
 
+/* Launcher: botones grandes de navegación (móvil primero) */
+.launcher {
+    padding: 2rem 0 1rem;
+    margin-top: -2.5rem;
+    position: relative;
+    z-index: 3;
+}
+
+.launcher-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.launch-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.25rem;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--text-dark);
+    border: 2px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    min-height: 84px;
+}
+
+.launch-card:hover,
+.launch-card:active {
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 28px rgba(231, 76, 60, 0.18);
+}
+
+.launch-icon {
+    display: inline-flex;
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-main);
+    color: white;
+    font-size: 1.8rem;
+}
+
+.launch-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1 1 auto;
+}
+
+.launch-text strong {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.launch-text small {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+
+.launch-arrow {
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1;
+    flex: 0 0 auto;
+}
+
+.launch-card.featured {
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, #fff9f4, #ffece0);
+    min-height: 104px;
+}
+
+.launch-card.featured .launch-icon {
+    width: 68px;
+    height: 68px;
+    flex-basis: 68px;
+    font-size: 2.1rem;
+}
+
+.launch-card.featured .launch-text strong {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 700px) {
+    .launcher-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .launch-card.featured {
+        grid-column: 1 / -1;
+    }
+}
+
 .page-shell {
     padding-top: 90px;
 }
@@ -593,6 +695,62 @@ h3 {
     margin: 0;
 }
 
+.dashboard-label {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    margin: 0 0 1rem;
+}
+
+.dashboard-label.secondary {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.dashboard-priority {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.fiesta-dashboard-card.priority {
+    position: relative;
+    padding: 2.75rem 2rem;
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 30px rgba(231, 76, 60, 0.18);
+}
+
+.fiesta-dashboard-card.priority:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(231, 76, 60, 0.28);
+}
+
+.fiesta-dashboard-card.priority .dashboard-icon {
+    width: 88px;
+    height: 88px;
+    font-size: 2.5rem;
+}
+
+.fiesta-dashboard-card.priority h3 {
+    font-size: 1.4rem;
+}
+
+.priority-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-main);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+}
+
 .feature-block {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -600,6 +758,10 @@ h3 {
 
 .feature-block.alt {
     background: linear-gradient(135deg, #fffaf0, #fff4d9);
+}
+
+.priority-section .content-panel {
+    border-left: 5px solid var(--primary-color);
 }
 
 .accordion-panel {
