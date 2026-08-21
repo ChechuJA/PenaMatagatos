@@ -1,62 +1,72 @@
 # Plan de bebida - Fiestas 2026
 
 ## 1) Punto de partida
-- Grupo confirmado: 17 personas (listado cerrado agosto 2026).
-- Asistencia estimada total: 76 persona-dias.
+- Grupo confirmado: 24 personas con la lista final del 2026-08-21.
+- Asistencia estimada total: 88 persona-dias (cota conservadora, ajustada con la lista final).
 - Criterio: comprar en modo conservador y ajustar con el sobrante real 2025.
 
-### Detalle asistencia
+### Resumen de asistencia
 | Persona | Asistencia | Dias |
 |---|---|---:|
-| Marta | todos los dias (mie-dom) | 5 |
-| Flores | todos los dias | 5 |
-| Chechu | todos los dias | 5 |
-| Esmeralda | todos los dias | 5 |
-| Josemi | todos los dias | 5 |
-| Eve | todos los dias | 5 |
-| Leti | todos los dias | 5 |
-| Andreas | todos los dias | 5 |
-| Laura | todos los dias | 5 |
-| Nacho | todos los dias | 5 |
-| Cristina | todos los dias | 5 |
+| Marta | jueves a domingo | 4 |
+| Flores | jueves a domingo | 4 |
+| Chechu | todos los días | 5 |
+| Esmeralda | todos los días | 5 |
+| Josemi | todos los días | 5 |
+| Eve | todos los días | 5 |
+| Leti | todos los días | 5 |
+| Javi | sábado y domingo | 2 |
+| Andreas | todos los días | 5 |
+| Álvaro | jueves a sábado | 3 |
+| Elisa | jueves a sábado | 3 |
+| Laura | todos los días | 5 |
+| Nacho | todos los días | 5 |
 | David | jueves a domingo | 4 |
-| Alvaro | jueves a sabado | 3 |
-| Elisa | jueves a sabado | 3 |
-| Javi | sabado y domingo | 2 |
-| Malu | viernes y sabado | 2 |
-| Ernesto | viernes y sabado | 2 |
-| **TOTAL** | | **76** |
+| Malu | viernes y sábado | 2 |
+| Ernesto | viernes y sábado | 2 |
+| Cristina | todos los días | 5 |
+| Blanca | jueves a sábado | 3 |
+| María | jueves, viernes y sábado | 3 |
+| Samuel | viernes y sábado | 2 |
+| María Rubia | viernes y sábado | 2 |
+| Pimen | hasta el sábado por la tarde | 3 |
+| Albert | jueves a sábado | 3 |
+| Sonia | jueves a sábado | 3 |
+| **TOTAL** | | **88** |
 
 ## 2) Preferencias confirmadas 2026
-- Cerveza normal: bebida principal del grupo (14 personas).
-- Cerveza 0,0: solo Cristina de forma clara.
-- Coca-Cola Zero: Esmeralda, Leti, Malu, Cristina + ocasional del resto.
-- Ginebra (Seagrams): Flores (Sprite), Ernesto (tonica), Javi (Sprite), Alvaro (limon/tonica), Elisa (limon).
-- Ron: Chechu (Barcelo o Legendario + limon), Josemi y Eve (Legendario + limon).
-- Destilados secundarios: Cutty naranja (Leti), Larios 12 limon (David).
-- Aquarius naranja: Esmeralda (todos los dias), Malu (vie-sab).
-- Eliminados respecto a 2025: Beefeater, vodka, radler 0,0, Fanta naranja, tinto.
+- Cerveza normal: bebida principal del grupo.
+- Cerveza 0,0: Marta, Cristina, Albert, Sonia + otra gente puntual.
+- Coca-Cola Zero: Esmeralda, Leti, Cristina, Malu, Albert, Sonia y apoyo puntual.
+- Ginebra: Alvaro, Elisa, Blanca, Samuel, Javi, María, con limón/tónica/Sprite según cada uno.
+- Ron: Chechu con Barceló/Brugal Legendario + limón.
+- Destilados secundarios: Cutty naranja (Leti), Larios 12 limón (David), María Rubia (Cutty limón + Jägermeister).
+- Aquarius naranja: Esmeralda, Malu, Sonia.
+- Pimen: agua, Coca-Cola Zero y helados; aporta comida si puede.
+- Eliminados respecto a 2025: Fanta naranja, tinto, vodka de referencia, algunas mezclas puntuales.
 
 ## 3) Compra base recomendada 2026 (ANTES de restar sobrante)
 
-Calculada sobre 76 persona-dias. Cerveza: ~2,5 latas/dia/persona que la toma.
+Calculada sobre 88 persona-dias y la nueva lista final.
 
 | Producto | Objetivo base 2026 | Unidad orientativa |
 |---|---:|---|
-| Cerveza normal | 130 | latas 33cl |
-| Cerveza 0,0 | 24 | latas 33cl |
-| Coca-Cola Zero | 60 | latas 33cl |
-| Coca-Cola normal | 12 | latas 33cl |
-| Aquarius naranja | 20 | latas 33cl |
-| Agua | 48 | botellas 1,5L |
-| Sprite / refresco limon | 8 | botellas 1L |
-| Mezclador limon (Kas, 7up...) | 18 | botellas 1L |
-| Tonica | 6 | botellas 1L |
-| Seagrams | 4 | botellas 70cl |
-| Cutty Sark naranja | 1 | botella 70cl |
-| Barcelo | 2 | botellas 70cl |
-| Legendario | 3 | botellas 70cl |
-| Larios 12 | 1 | botella 70cl |
+| Cerveza normal | 145 | latas 33cl |
+| Cerveza 0,0 | 30 | latas 33cl |
+| Coca-Cola normal 2L | 12 | garrafas / bidones |
+| Coca-Cola Zero 2L | 30 | garrafas / bidones |
+| Coca-Cola Zero Zero 2L | 10 | garrafas / bidones |
+| Aquarius naranja | 24 | latas 33cl |
+| Agua | 55 | botellas 1,5L |
+| Sprite / refresco limon | 10 | botellas 1L |
+| Mezclador limon | 20 | botellas 1L |
+| Tonica | 8 | botellas 1L |
+| Seagrams | 6 | botellas 70cl |
+| Cutty naranja | 2 | botellas 70cl |
+| Barceló | 3 | botellas 70cl |
+| Legendario | 4 | botellas 70cl |
+| Larios 12 | 2 | botellas 70cl |
+| Jägermeister | 1 | botella 70cl |
 
 ## 4) Ajuste por sobrante 2025 (regla simple)
 Formula de compra final por producto:
@@ -68,61 +78,42 @@ Recomendacion de colchon:
 - 5% en destilados.
 
 Sobrante real encontrado en Excel 2025 (hoja Sobras-Del grupo):
-- Cerveza normal: 86 unidades (53 botellines mahou + 30 Estrella Galicia + 3 mixtas).
-- Cerveza 0,0: 34 unidades (Estrella Galicia sin alcohol).
-- Coca-Cola Zero: 16 unidades (aparece como Coca-Cola 0).
+- Cerveza normal: 86 unidades.
+- Cerveza 0,0: 34 unidades.
+- Coca-Cola Zero: 16 unidades.
 - Tonica: 5 unidades.
 - Seagrams: 7 botellas.
-- Barceló: 5 botellas (dos lineas: 3 y 2).
+- Barceló: 5 botellas.
 - Larios 12: 2 botellas.
 - Cutty Sark: 1 botella.
-- Vodka (Absolut): 1 botella.
 - Fanta naranja: 1 unidad.
 - Helados: 34 unidades.
 - Hielo: 13 bolsas.
 
-## 5) Hoja final para cerrar pedido
-Rellena la columna Sobrante util 2025 y sale la compra final.
+## 5) Compra orientativa 2026 ya ajustada con sobrante real
 
-| Producto | Objetivo base 2026 | Sobrante util 2025 | Colchon | Compra final 2026 |
-|---|---:|---:|---:|---:|
-| Cerveza normal (latas) | 130 |  | 13 |  |
-| Cerveza 0,0 (latas) | 24 |  | 2 |  |
-| Coca-Cola Zero (latas) | 60 |  | 6 |  |
-| Coca-Cola normal (latas) | 12 |  | 1 |  |
-| Aquarius naranja (latas) | 20 |  | 2 |  |
-| Agua 1,5L (botellas) | 48 |  | 5 |  |
-| Sprite / limon 1L (botellas) | 8 |  | 1 |  |
-| Mezclador limon 1L (botellas) | 18 |  | 2 |  |
-| Tonica 1L (botellas) | 6 |  | 1 |  |
-| Seagrams 70cl (botellas) | 4 |  | 0 |  |
-| Cutty naranja 70cl (botellas) | 1 |  | 0 |  |
-| Barcelo 70cl (botellas) | 2 |  | 0 |  |
-| Legendario 70cl (botellas) | 3 |  | 0 |  |
-| Larios 12 70cl (botellas) | 1 |  | 0 |  |
-
-## 5.1) Compra orientativa 2026 ya ajustada con sobrante real
-
-Aplicando la formula con los sobrantes del Excel 2025:
+Aplicando la formula con los sobrantes 2025 y la nueva lista definitiva:
 
 | Producto | Base 2026 | Sobrante 2025 | Colchon | **Compra orientativa 2026** |
 |---|---:|---:|---:|---:|
-| Cerveza normal (latas) | 130 | 86 | 13 | **57** |
-| Cerveza 0,0 (latas) | 24 | 34 | 2 | **0** (cubierto) |
-| Coca-Cola Zero (latas) | 60 | 16 | 6 | **50** |
-| Coca-Cola normal (latas) | 12 | 0 | 1 | **13** |
-| Aquarius naranja (latas) | 20 | 0 | 2 | **22** |
-| Agua 1,5L (botellas) | 48 | 0 | 5 | **53** |
-| Sprite / limon 1L (botellas) | 8 | 0 | 1 | **9** |
-| Mezclador limon 1L (botellas) | 18 | 0 | 2 | **20** |
-| Tonica 1L (botellas) | 6 | 5 | 1 | **2** |
-| Seagrams 70cl (botellas) | 4 | 7 | 0 | **0** (cubierto) |
-| Cutty naranja 70cl (botellas) | 1 | 1 | 0 | **0** (cubierto) |
-| Barcelo 70cl (botellas) | 2 | 5 | 0 | **0** (cubierto) |
-| Legendario 70cl (botellas) | 3 | 0 | 0 | **3** |
-| Larios 12 70cl (botellas) | 1 | 2 | 0 | **0** (cubierto) |
+| Cerveza normal | 145 | 86 | 15 | **74** |
+| Cerveza 0,0 | 30 | 34 | 3 | **0** (cubierto) |
+| Coca-Cola normal 2L | 12 | 6 | 1 | **7** |
+| Coca-Cola Zero 2L | 36 | 30 | 3 | **9** |
+| Coca-Cola Zero Zero 2L | 6 | 10 | 1 | **0** (faltó 2025) |
+| Aquarius naranja | 24 | 0 | 2 | **26** |
+| Agua 1,5L | 55 | 0 | 5 | **60** |
+| Sprite / limon 1L | 10 | 0 | 1 | **11** |
+| Mezclador limon 1L | 20 | 0 | 2 | **22** |
+| Tonica 1L | 8 | 5 | 1 | **4** |
+| Seagrams 70cl | 6 | 7 | 0 | **0** (cubierto) |
+| Cutty naranja 70cl | 2 | 1 | 0 | **1** |
+| Barceló 70cl | 3 | 5 | 0 | **0** (cubierto) |
+| Legendario 70cl | 4 | 0 | 0 | **4** |
+| Larios 12 70cl | 2 | 2 | 0 | **0** (cubierto) |
+| Jägermeister 70cl | 1 | 0 | 0 | **1** |
 
-**Nota:** Para el sobrante de Seagrams (7 botellas) hay que revisar que sigan siendo aptas (sin abrir / bien almacenadas). Idem Barcelo (5).
+**Nota:** Para el sobrante de Seagrams y Barceló, comprobar primero que estén en buen estado antes de comprar nuevas botellas.
 
 ## 6) Reglas para no pasarse este ano
 - Prioridad 1: gastar primero sobrante abierto/no retornable.
