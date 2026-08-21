@@ -602,6 +602,48 @@ h3 {
     background: linear-gradient(135deg, #fffaf0, #fff4d9);
 }
 
+.accordion-panel {
+    border: 1px solid rgba(231, 76, 60, 0.12);
+    border-radius: var(--border-radius);
+    background: white;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.accordion-panel summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.4rem;
+    background: linear-gradient(135deg, #fffaf4, #fff1d9);
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+.accordion-panel summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-panel summary::after {
+    content: "+";
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--primary-color);
+    transition: transform 0.2s ease;
+}
+
+.accordion-panel[open] summary::after {
+    content: "−";
+}
+
+.accordion-content {
+    padding: 1.25rem;
+}
+
 .narrow {
     max-width: 900px;
 }

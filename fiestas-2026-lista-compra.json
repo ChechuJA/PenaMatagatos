@@ -1,0 +1,33 @@
+{
+  "evento": "Fiestas 2026",
+  "titulo": "Lista general de compra 2026",
+  "objetivo": "Comprar lo necesario para cubrir el evento sin acumular sobrante excesivo",
+  "regla": "Compra objetivo = consumo estimado 2026 x 1,05 - sobrante disponible real 2025",
+  "lista_compras": [
+    { "producto": "Cerveza normal", "cantidad": 74, "unidad": "latas 33cl", "estado": "comprar", "prioridad": "alta" },
+    { "producto": "Cerveza 0,0", "cantidad": 0, "unidad": "latas 33cl", "estado": "revisar sobrante 2025", "prioridad": "media" },
+    { "producto": "Coca-Cola normal 2L", "cantidad": 7, "unidad": "garrafas / bidones", "estado": "comprar", "prioridad": "alta" },
+    { "producto": "Coca-Cola Zero 2L", "cantidad": 9, "unidad": "garrafas / bidones", "estado": "comprar", "prioridad": "alta" },
+    { "producto": "Coca-Cola Zero Zero 2L", "cantidad": 0, "unidad": "garrafas / bidones", "estado": "revisar falta 2025", "prioridad": "media" },
+    { "producto": "Aquarius naranja", "cantidad": 26, "unidad": "latas 33cl", "estado": "comprar", "prioridad": "alta" },
+    { "producto": "Agua 1,5L", "cantidad": 60, "unidad": "botellas", "estado": "comprar", "prioridad": "alta" },
+    { "producto": "Sprite / refresco limón 1L", "cantidad": 11, "unidad": "botellas", "estado": "comprar", "prioridad": "media" },
+    { "producto": "Mezclador limón 1L", "cantidad": 22, "unidad": "botellas", "estado": "comprar", "prioridad": "media" },
+    { "producto": "Tónica 1L", "cantidad": 4, "unidad": "botellas", "estado": "comprar", "prioridad": "media" },
+    { "producto": "Cutty naranja 70cl", "cantidad": 1, "unidad": "botella", "estado": "comprar", "prioridad": "media" },
+    { "producto": "Legendario 70cl", "cantidad": 4, "unidad": "botellas", "estado": "comprar", "prioridad": "media" },
+    { "producto": "Jägermeister 70cl", "cantidad": 1, "unidad": "botella", "estado": "comprar", "prioridad": "baja" },
+    { "producto": "Hielo", "cantidad": 10, "unidad": "bolsas aprox.", "estado": "comprar por tramos", "prioridad": "alta" },
+    { "producto": "Papel continuo / kraft", "cantidad": 2, "unidad": "rollos", "estado": "tener", "prioridad": "media" },
+    { "producto": "Rotuladores gruesos y finos", "cantidad": 1, "unidad": "set", "estado": "tener", "prioridad": "media" },
+    { "producto": "Pintura / témperas", "cantidad": 1, "unidad": "set", "estado": "tener", "prioridad": "media" },
+    { "producto": "Pinceles", "cantidad": 1, "unidad": "set", "estado": "tener", "prioridad": "media" },
+    { "producto": "Vasos / cubiertos / servilletas", "cantidad": 1, "unidad": "stock base", "estado": "revisar y reponer", "prioridad": "media" }
+  ],
+  "notas": [
+    "Se prioriza la compra de cerveza, agua, refrescos y hielo por consumo real y sobrante del año anterior.",
+    "Los productos en estado 'revisar sobrante 2025' deben comprobarse antes de comprar nuevas unidades.",
+    "La compra de hielo y agua se puede fraccionar en varias compras para evitar sobrestock.",
+    "La lista es orientativa y se corregirá con la última asistencia confirmada antes del evento."
+  ]
+}

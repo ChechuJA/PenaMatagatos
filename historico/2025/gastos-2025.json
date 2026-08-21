@@ -1,0 +1,56 @@
+{
+  "anio": 2025,
+  "titulo": "Gastos y cuentas 2025 - Peña Matagatos",
+  "fuente": "Datos consolidados a partir de ingresos y gastos del evento",
+  "totales": {
+    "ingresos_totales": 2039.33,
+    "gastos_totales": 2019.18,
+    "saldo": 20.15,
+    "formula": "2039.33 - 2019.18 = 20.15",
+    "notas": [
+      "Los ingresos y gastos se consolidan en una única cuenta de cierre del evento.",
+      "El saldo final queda en 20,15 € a favor del grupo.",
+      "Se deja el registro para comparación con la compra del año siguiente."
+    ]
+  },
+  "ingresos": [
+    { "concepto": "Dinero total 65 x 17", "importe": 1105.00, "categoria": "ingresos" },
+    { "concepto": "Dinero total 75 x 8", "importe": 600.00, "categoria": "ingresos" },
+    { "concepto": "Dinero total 5 x 2", "importe": 110.00, "categoria": "ingresos" },
+    { "concepto": "Debe Álvaro", "importe": 160.00, "categoria": "ingresos" },
+    { "concepto": "Comisión", "importe": 54.93, "categoria": "ingresos" },
+    { "concepto": "Debe Pimen", "importe": 5.00, "categoria": "ingresos" },
+    { "concepto": "Años anteriores", "importe": 7.40, "categoria": "ingresos" }
+  ],
+  "gastos": [
+    { "concepto": "Bebida JM", "importe": 874.80, "categoria": "bebida", "origen": "JM" },
+    { "concepto": "Hielos", "importe": 55.00, "categoria": "hielo", "origen": "Varios" },
+    { "concepto": "Vasos", "importe": 116.16, "categoria": "material", "origen": "Varios" },
+    { "concepto": "Mercadona", "importe": 328.98, "categoria": "alimentacion", "origen": "Mercadona" },
+    { "concepto": "Alcampo 1", "importe": 45.29, "categoria": "bebida", "origen": "Alcampo" },
+    { "concepto": "Alcampo 2", "importe": 120.15, "categoria": "bebida", "origen": "Alcampo" },
+    { "concepto": "Mercokash", "importe": 17.14, "categoria": "alimentacion", "origen": "Mercokash" },
+    { "concepto": "Mari Carmen / Tienda del pueblo", "importe": 5.00, "categoria": "material", "origen": "Tienda del pueblo" },
+    { "concepto": "Panadería", "importe": 20.40, "categoria": "panaderia", "origen": "Panadería" },
+    { "concepto": "Panadería extra", "importe": 5.00, "categoria": "panaderia", "origen": "Panadería" },
+    { "concepto": "Comida Edu", "importe": 20.00, "categoria": "alimentacion", "origen": "Edu" },
+    { "concepto": "Mercadona Lety", "importe": 26.30, "categoria": "alimentacion", "origen": "Mercadona" },
+    { "concepto": "Carrefour", "importe": 12.90, "categoria": "alimentacion", "origen": "Carrefour" },
+    { "concepto": "Carne Luis / embutidos", "importe": 211.57, "categoria": "carniceria", "origen": "Luis" }
+  ],
+  "resumen_por_categoria": [
+    { "categoria": "Bebida", "importe": 1040.24 },
+    { "categoria": "Alimentación", "importe": 703.52 },
+    { "categoria": "Carnicería y embutidos", "importe": 211.57 },
+    { "categoria": "Material", "importe": 121.16 },
+    { "categoria": "Panadería", "importe": 25.40 },
+    { "categoria": "Hielo", "importe": 55.00 }
+  ],
+  "observaciones": [
+    "La parte más pesada del presupuesto fue la bebida, especialmente en la compra de cerveza y refrescos.",
+    "La sección de panadería y snacks tuvo un impacto moderado pero no excesivo.",
+    "La compra de embutidos y carne pasaron a ser una línea relevante del gasto total.",
+    "La diferencia final quedó muy ajustada, con un saldo positivo de 20,15 €.",
+    "Este registro sirve como base para ajustar la compra del siguiente año y controlar el sobrante." 
+  ]
+}

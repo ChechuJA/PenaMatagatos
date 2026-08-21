@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos 2025 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .historico-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        .historico-card {
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .historico-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #fffaf3, #fff1d6);
+            border-radius: 14px;
+            border: 1px solid rgba(231, 76, 60, 0.12);
+            padding: 1rem;
+        }
+
+        .metric-box span {
+            display: block;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .metric-box strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+        }
+
+        .historico-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .historico-table th,
+        .historico-table td {
+            border: 1px solid #f1d9d7;
+            padding: 0.8rem 0.9rem;
+            text-align: left;
+        }
+
+        .historico-table th {
+            background: #fff0ef;
+            color: var(--primary-color);
+        }
+
+        .table-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .note-list {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../Fiestas/index.html">Fiestas</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="historico-shell">
+        <section>
+            <div class="panel-head">
+                <span class="tag">Histórico 2025</span>
+                <h2>Gastos y cuentas</h2>
+            </div>
+
+            <div class="historico-card">
+                <p>Este histórico recoge los gastos y los ingresos del año 2025 para poder comparar compras, revisar costes y ajustar mejor el siguiente evento.</p>
+
+                <div class="historico-metrics">
+                    <div class="metric-box">
+                        <span>Ingresos</span>
+                        <strong>2.039,33 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Gastos</span>
+                        <strong>2.019,18 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Saldo</span>
+                        <strong>20,15 €</strong>
+                    </div>
+                </div>
+
+                <h3>Resumen por categoría</h3>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Bebida</td><td>1.040,24 €</td></tr>
+                        <tr><td>Alimentación</td><td>703,52 €</td></tr>
+                        <tr><td>Carnicería y embutidos</td><td>211,57 €</td></tr>
+                        <tr><td>Material</td><td>121,16 €</td></tr>
+                        <tr><td>Panadería</td><td>25,40 €</td></tr>
+                        <tr><td>Hielo</td><td>55,00 €</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Gastos detallados</h3>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Importe</th>
+                            <th>Origen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Bebida JM</td><td>874,80 €</td><td>JM</td></tr>
+                        <tr><td>Hielos</td><td>55,00 €</td><td>Varios</td></tr>
+                        <tr><td>Vasos</td><td>116,16 €</td><td>Varios</td></tr>
+                        <tr><td>Mercadona</td><td>328,98 €</td><td>Mercadona</td></tr>
+                        <tr><td>Alcampo 1</td><td>45,29 €</td><td>Alcampo</td></tr>
+                        <tr><td>Alcampo 2</td><td>120,15 €</td><td>Alcampo</td></tr>
+                        <tr><td>Mercokash</td><td>17,14 €</td><td>Mercokash</td></tr>
+                        <tr><td>Mari Carmen / Tienda del pueblo</td><td>5,00 €</td><td>Tienda del pueblo</td></tr>
+                        <tr><td>Panadería</td><td>20,40 €</td><td>Panadería</td></tr>
+                        <tr><td>Panadería extra</td><td>5,00 €</td><td>Panadería</td></tr>
+                        <tr><td>Comida Edu</td><td>20,00 €</td><td>Edu</td></tr>
+                        <tr><td>Mercadona Lety</td><td>26,30 €</td><td>Mercadona</td></tr>
+                        <tr><td>Carrefour</td><td>12,90 €</td><td>Carrefour</td></tr>
+                        <tr><td>Carne Luis / embutidos</td><td>211,57 €</td><td>Luis</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Ingresos detallados</h3>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Dinero total 65 x 17</td><td>1.105,00 €</td></tr>
+                        <tr><td>Dinero total 75 x 8</td><td>600,00 €</td></tr>
+                        <tr><td>Dinero total 5 x 2</td><td>110,00 €</td></tr>
+                        <tr><td>Comisión</td><td>54,93 €</td></tr>
+                        <tr><td>Años anteriores</td><td>7,40 €</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Observaciones</h3>
+                <ul class="note-list">
+                    <li>La parte más pesada del presupuesto fue la bebida, especialmente en cerveza y refrescos.</li>
+                    <li>La sección de panadería y snacks tuvo un impacto moderado pero no excesivo.</li>
+                    <li>La compra de embutidos y carne pasó a ser una línea relevante del gasto total.</li>
+                    <li>La diferencia final quedó muy ajustada, con un saldo positivo de 20,15 €.</li>
+                    <li>Este registro sirve como base para ajustar la compra del siguiente año y controlar el sobrante.</li>
+                </ul>
+
+                <div class="table-actions">
+                    <a href="../../Fiestas/index.html" class="primary-button">← Volver atrás</a>
+                    <a href="gastos-2025.json" class="secondary-button" target="_blank" rel="noopener">Ver JSON</a>
+                    <a href="sobrantes-2025-resumen.md" class="secondary-button" target="_blank" rel="noopener">Ver sobrantes</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
