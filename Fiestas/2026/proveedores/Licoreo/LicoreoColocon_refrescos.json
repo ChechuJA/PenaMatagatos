@@ -1,0 +1,274 @@
+{
+  "proveedor": "Licoreo Colocón",
+  "categoria": "refrescos",
+  "productos": [
+    {
+      "subcategoria": "24_botellines",
+      "nombre": "Bitter Kas",
+      "formato": "24x20cl",
+      "precio": 20.56
+    },
+    {
+      "subcategoria": "24_botellines",
+      "nombre": "Coca-Cola Clásica / Zero",
+      "formato": "24x20cl",
+      "precio": 23.99
+    },
+    {
+      "subcategoria": "24_botellines",
+      "nombre": "Fanta Naranja / Limón",
+      "formato": "24x20cl",
+      "precio": 23.20
+    },
+    {
+      "subcategoria": "24_botellines",
+      "nombre": "Schweppes Naranja / Limón",
+      "formato": "24x20cl",
+      "precio": 20.14
+    },
+    {
+      "subcategoria": "24_botellines",
+      "nombre": "Ginger Ale",
+      "formato": "24x20cl",
+      "precio": 24.52
+    },
+    {
+      "subcategoria": "24_botellines",
+      "nombre": "Sprite",
+      "formato": "24x20cl",
+      "precio": 24.50
+    },
+    {
+      "subcategoria": "24_botellines",
+      "nombre": "Tónica Schweppes",
+      "formato": "24x20cl",
+      "precio": 23.78
+    },
+
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Aquarius Naranja / Limón",
+      "formato": "24x33cl",
+      "precio": 21.35
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Coca-Cola Clásica / Zero",
+      "formato": "24x33cl",
+      "precio": 19.17
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Coca-Cola Light / Zero Zero",
+      "formato": "24x33cl",
+      "precio": 19.17
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Coca-Cola Clásica Import",
+      "formato": "24x33cl",
+      "precio": 18.57
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Coca-Cola Zero Import",
+      "formato": "24x33cl",
+      "precio": 18.57
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Fanta Naranja / Limón",
+      "formato": "24x33cl",
+      "precio": 17.84
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Nestea Limón",
+      "formato": "24x33cl",
+      "precio": 19.35
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Pepsi",
+      "formato": "24x33cl",
+      "precio": 15.71
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Sprite",
+      "formato": "24x33cl",
+      "precio": 14.61
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Tónica Schweppes",
+      "formato": "24x33cl",
+      "precio": 22.97
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Trina Naranja / Limón",
+      "formato": "24x33cl",
+      "precio": 14.22
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Tinto de Verano La Casera",
+      "formato": "24x33cl",
+      "precio": 24.18
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Red Bull",
+      "formato": "24x25cl",
+      "precio": 30.49
+    },
+    {
+      "subcategoria": "24_latas",
+      "nombre": "Energética 25cl",
+      "formato": "24x25cl",
+      "precio": 14.99
+    },
+
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Aquarius Limón / Naranja",
+      "formato": "1.5L",
+      "precio": 10.98
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Coca-Cola Normal / Zero / Zero Zero",
+      "formato": "2L",
+      "precio": 11.43
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Fanta Naranja / Limón",
+      "formato": "2L",
+      "precio": 9.99
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Nestea",
+      "formato": "1.5L",
+      "precio": 12.40
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Sprite",
+      "formato": "2L",
+      "precio": 9.25
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Trina Naranja / Limón",
+      "formato": "1.5L",
+      "precio": 9.49
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Schweppes",
+      "formato": "1L",
+      "precio": 23.29
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Schweppes Limón",
+      "formato": "1L",
+      "precio": 21.47
+    },
+    {
+      "subcategoria": "botellas_pet",
+      "nombre": "Don Simón Normal / Limón",
+      "formato": "1.5L",
+      "precio": 10.22
+    },
+
+    {
+      "subcategoria": "zumos",
+      "nombre": "Cofrutos Melocotón",
+      "formato": "12x1L",
+      "precio": 22.32
+    },
+    {
+      "subcategoria": "zumos",
+      "nombre": "Cofrutos Piña/Naranja",
+      "formato": "12x1L",
+      "precio": 22.32
+    },
+    {
+      "subcategoria": "zumos",
+      "nombre": "Juver Melocotón/Naranja/Tomate",
+      "formato": "24x20cl",
+      "precio": 15.06
+    },
+    {
+      "subcategoria": "zumos",
+      "nombre": "Piña / Mosto",
+      "formato": "24x20cl",
+      "precio": 15.06
+    },
+
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Aquadeus Gourmet",
+      "formato": "6x1L",
+      "precio": 3.62
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Aquadeus Garrafa",
+      "formato": "5L",
+      "precio": 1.36
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Aquadeus PET",
+      "formato": "6x1.5L",
+      "precio": 3.02
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Aquadeus PET",
+      "formato": "24x50cl",
+      "precio": 6.13
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Solán de Cabras",
+      "formato": "6x1.5L",
+      "precio": 5.38
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Solán de Cabras",
+      "formato": "20x50cl",
+      "precio": 17.30
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Sousas con Gas",
+      "formato": "24x50cl",
+      "precio": 15.72
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "Vichy Catalán",
+      "formato": "24x30cl",
+      "precio": 23.73
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "La Casera",
+      "formato": "15x1.5L",
+      "precio": 6.35
+    },
+    {
+      "subcategoria": "agua_y_gaseosa",
+      "nombre": "La Casera",
+      "formato": "12x50cl",
+      "precio": 8.37
+    }
+  ]
+}

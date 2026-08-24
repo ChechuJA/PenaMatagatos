@@ -1,0 +1,916 @@
+{
+  "catalogo": "Licoreo",
+  "productos": [
+    {
+      "categoria": "vodka",
+      "nombre": "Absolut",
+      "formato": "70cl",
+      "precio": 14.50
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Absolut",
+      "formato": "1L",
+      "precio": 18.99
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Caramelo",
+      "formato": "70cl",
+      "precio": 8.15
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Eristoff",
+      "formato": "70cl",
+      "precio": 10.22
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Eristoff",
+      "formato": "1L",
+      "precio": 14.21
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Eristoff Black",
+      "formato": "70cl",
+      "precio": 12.08
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Grey Goose",
+      "formato": "70cl",
+      "precio": 38.91
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Moskovskaya",
+      "formato": "70cl",
+      "precio": 11.19
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Smirnoff",
+      "formato": "70cl",
+      "precio": 12.08
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Smirnoff",
+      "formato": "1L",
+      "precio": 15.42
+    },
+    {
+      "categoria": "vodka",
+      "nombre": "Stolichnaya",
+      "formato": "70cl",
+      "precio": 12.64
+    },
+
+    {
+      "categoria": "ginebra",
+      "nombre": "Beefeater",
+      "formato": "70cl",
+      "precio": 13.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Beefeater",
+      "formato": "1L",
+      "precio": 18.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Beefeater Light 20º",
+      "formato": "70cl",
+      "precio": 13.25
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Bombay",
+      "formato": "70cl",
+      "precio": 13.73
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Bombay Sapphire",
+      "formato": "70cl",
+      "precio": 16.54
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Botanicals",
+      "formato": "70cl",
+      "precio": 23.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Brockmans",
+      "formato": "70cl",
+      "precio": 30.23
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Bulldog Premium",
+      "formato": "70cl",
+      "precio": 18.69
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Citadelle",
+      "formato": "70cl",
+      "precio": 21.76
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Gin MG",
+      "formato": "70cl",
+      "precio": 12.89
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "G-Vine Floraison",
+      "formato": "70cl",
+      "precio": 30.45
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Gordon's",
+      "formato": "70cl",
+      "precio": 11.25
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Hendrick's",
+      "formato": "70cl",
+      "precio": 30.20
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Larios",
+      "formato": "1L",
+      "precio": 12.52
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Larios 12",
+      "formato": "70cl",
+      "precio": 15.72
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Larios Rosé",
+      "formato": "70cl",
+      "precio": 15.72
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "London Nº1",
+      "formato": "70cl",
+      "precio": 25.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Martin Miller's",
+      "formato": "70cl",
+      "precio": 25.11
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Mombasa Club",
+      "formato": "70cl",
+      "precio": 19.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Nordés Galician",
+      "formato": "70cl",
+      "precio": 23.41
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Plata o Plomo",
+      "formato": "70cl",
+      "precio": 12.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Puerto de Indias Lemonberry",
+      "formato": "70cl",
+      "precio": 15.04
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Puerto de Indias Mora",
+      "formato": "70cl",
+      "precio": 15.04
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Puerto de Indias Strawberry",
+      "formato": "70cl",
+      "precio": 15.04
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Puerto de Indias Sweet Melon",
+      "formato": "70cl",
+      "precio": 15.25
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Seagram's Extra Dry",
+      "formato": "70cl",
+      "precio": 17.24
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Seagram's 0,0",
+      "formato": "70cl",
+      "precio": 16.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Tanqueray",
+      "formato": "70cl",
+      "precio": 14.70
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Tanqueray",
+      "formato": "1L",
+      "precio": 21.99
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Tanqueray 0,0",
+      "formato": "70cl",
+      "precio": 14.82
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Tanqueray Ten",
+      "formato": "70cl",
+      "precio": 34.67
+    },
+
+    {
+      "categoria": "whisky",
+      "nombre": "100 Pipers",
+      "formato": "70cl",
+      "precio": 13.30
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Ballantine's",
+      "formato": "70cl",
+      "precio": 13.84
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Ballantine's",
+      "formato": "1L",
+      "precio": 17.35
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Buchanan's Deluxe",
+      "formato": "1L",
+      "precio": 31.44
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Cardhu",
+      "formato": "70cl",
+      "precio": 32.65
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Chivas Regal 12 Años",
+      "formato": "70cl",
+      "precio": 29.34
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Cutty Sark",
+      "formato": "70cl",
+      "precio": 11.79
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Cutty Sark",
+      "formato": "1L",
+      "precio": 15.06
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Dewar's White Label",
+      "formato": "70cl",
+      "precio": 13.25
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Dewar's White Label",
+      "formato": "1L",
+      "precio": 17.48
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "DYC",
+      "formato": "70cl",
+      "precio": 10.22
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "DYC",
+      "formato": "1L",
+      "precio": 12.92
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "DYC 8 Años",
+      "formato": "70cl",
+      "precio": 13.61
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Four Roses Bourbon",
+      "formato": "70cl",
+      "precio": 17.24
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "J&B",
+      "formato": "70cl",
+      "precio": 12.09
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "J&B",
+      "formato": "1L",
+      "precio": 15.72
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "J&B 15 Años",
+      "formato": "70cl",
+      "precio": 36.60
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Jack Daniel's",
+      "formato": "70cl",
+      "precio": 20.55
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Jameson",
+      "formato": "70cl",
+      "precio": 18.69
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Jameson",
+      "formato": "1L",
+      "precio": 22.92
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Jim Beam",
+      "formato": "70cl",
+      "precio": 13.61
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Johnnie Walker Red Label",
+      "formato": "70cl",
+      "precio": 13.85
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Johnnie Walker Red Label",
+      "formato": "1L",
+      "precio": 19.35
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Johnnie Walker Black Label",
+      "formato": "70cl",
+      "precio": 27.41
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Johnnie Walker Black Label",
+      "formato": "1L",
+      "precio": 34.42
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Johnnie Walker Double Black",
+      "formato": "70cl",
+      "precio": 38.05
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Johnnie Walker Gold Label",
+      "formato": "70cl",
+      "precio": 41.80
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Johnnie Walker Green Label",
+      "formato": "70cl",
+      "precio": 48.38
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Old Parr",
+      "formato": "70cl",
+      "precio": 35.07
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Passport",
+      "formato": "70cl",
+      "precio": 13.90
+    },
+
+    {
+      "categoria": "ron",
+      "nombre": "Arehucas Blanco",
+      "formato": "70cl",
+      "precio": 14.12
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Arehucas Carta de Oro",
+      "formato": "70cl",
+      "precio": 13.85
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Arehucas Miel",
+      "formato": "70cl",
+      "precio": 10.99
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Bacardí",
+      "formato": "70cl",
+      "precio": 16.93
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Barceló",
+      "formato": "70cl",
+      "precio": 16.03
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Barceló",
+      "formato": "1L",
+      "precio": 22.32
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Brugal Blanco",
+      "formato": "70cl",
+      "precio": 13.64
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Brugal Añejo",
+      "formato": "70cl",
+      "precio": 14.09
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Brugal Añejo",
+      "formato": "1L",
+      "precio": 18.14
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Brugal Extra Viejo",
+      "formato": "70cl",
+      "precio": 20.90
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Cacique",
+      "formato": "70cl",
+      "precio": 13.12
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Cacique",
+      "formato": "1L",
+      "precio": 17.75
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Cacique 500",
+      "formato": "70cl",
+      "precio": 29.99
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Captain Morgan Spiced Gold",
+      "formato": "70cl",
+      "precio": 12.64
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Flor de Caña 7 Años",
+      "formato": "1L",
+      "precio": 17.48
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Havana Club 3 Años",
+      "formato": "70cl",
+      "precio": 14.10
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Havana Club 5 Años",
+      "formato": "70cl",
+      "precio": 15.42
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Havana Club 7 Años",
+      "formato": "70cl",
+      "precio": 24.01
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Legendario Elixir",
+      "formato": "70cl",
+      "precio": 16.51
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Matusalem Añejo",
+      "formato": "70cl",
+      "precio": 15.24
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Matusalem 7 Años",
+      "formato": "70cl",
+      "precio": 19.78
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Matusalem 15 Años",
+      "formato": "70cl",
+      "precio": 41.12
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Negrita Blanco",
+      "formato": "70cl",
+      "precio": 10.22
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Negrita Blanco",
+      "formato": "1L",
+      "precio": 12.88
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Negrita",
+      "formato": "70cl",
+      "precio": 10.20
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Negrita",
+      "formato": "1L",
+      "precio": 13.85
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Pampero",
+      "formato": "70cl",
+      "precio": 16.03
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Santa Teresa",
+      "formato": "70cl",
+      "precio": 15.30
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Viejo de Caldas 3 Años",
+      "formato": "70cl",
+      "precio": 12.40
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Zacapa 23 Centenario",
+      "formato": "70cl",
+      "precio": 38.70
+    },
+  {
+    "categoria": "tequila",
+    "nombre": "Crema de Fresa con Tequila Black Flame",
+    "formato": "70cl",
+    "precio": 9.01
+  },
+  {
+    "categoria": "tequila",
+    "nombre": "Crema de Mango con Tequila Black Flame",
+    "formato": "70cl",
+    "precio": 9.01
+  },
+  {
+    "categoria": "tequila",
+    "nombre": "José Cuervo",
+    "formato": "70cl",
+    "precio": 16.15
+  },
+  {
+    "categoria": "tequila",
+    "nombre": "José Cuervo Blanco",
+    "formato": "70cl",
+    "precio": 15.52
+  },
+  {
+    "categoria": "tequila",
+    "nombre": "Sombrero Mexicano Gold",
+    "formato": "70cl",
+    "precio": 12.03
+  },
+  {
+    "categoria": "tequila",
+    "nombre": "Tequila Chapala",
+    "formato": "70cl",
+    "precio": 7.80
+  },
+  {
+    "categoria": "tequila",
+    "nombre": "Don Julio Blanco",
+    "formato": "70cl",
+    "precio": 45.99
+  },
+  {
+    "categoria": "tequila",
+    "nombre": "Don Julio Reposado",
+    "formato": "70cl",
+    "precio": 56.85
+  },
+
+  {
+    "categoria": "licor",
+    "subcategoria": "principal",
+    "nombre": "Licor 43",
+    "formato": "70cl",
+    "precio": 15.06
+  },
+  {
+    "categoria": "licor",
+    "subcategoria": "principal",
+    "nombre": "Absenta 80",
+    "formato": "70cl",
+    "precio": 15.45
+  },
+  {
+    "categoria": "licor",
+    "subcategoria": "principal",
+    "nombre": "Amaretto Disaronno",
+    "formato": "70cl",
+    "precio": 16.63
+  },
+  {
+    "categoria": "licor",
+    "subcategoria": "principal",
+    "nombre": "Aperol",
+    "formato": "1L",
+    "precio": 18.51
+  },
+  {
+    "categoria": "licor",
+    "subcategoria": "principal",
+    "nombre": "Campari",
+    "formato": "1L",
+    "precio": 17.24
+  },
+  {
+    "categoria": "licor",
+    "subcategoria": "principal",
+    "nombre": "Cointreau",
+    "formato": "1L",
+    "precio": 24.98
+  },
+  {
+    "categoria": "licor",
+    "subcategoria": "principal",
+    "nombre": "Cointreau",
+    "formato": "70cl",
+    "precio": 17.67
+  },
+
+  {
+    "categoria": "licor_cafe",
+    "nombre": "Café Xantiamen",
+    "formato": "70cl",
+    "precio": 7.50
+  },
+  {
+    "categoria": "licor_cafe",
+    "nombre": "Café Ruavieja",
+    "formato": "70cl",
+    "precio": 13.79
+  },
+  {
+    "categoria": "licor_cafe",
+    "nombre": "Café Garrafa by Jan",
+    "formato": "3L",
+    "precio": 20.55
+  },
+
+  {
+    "categoria": "licor_hierbas",
+    "nombre": "Hierbas Xantiamen",
+    "formato": "70cl",
+    "precio": 7.56
+  },
+  {
+    "categoria": "licor_hierbas",
+    "nombre": "Hierbas Ruavieja",
+    "formato": "70cl",
+    "precio": 9.22
+  },
+  {
+    "categoria": "licor_hierbas",
+    "nombre": "Hierbas Jägermeister",
+    "formato": "70cl",
+    "precio": 13.91
+  },
+  {
+    "categoria": "licor_hierbas",
+    "nombre": "Jägermeister",
+    "formato": "1L",
+    "precio": 17.97
+  },
+  {
+    "categoria": "licor_hierbas",
+    "nombre": "Hierbas Garrafa by Jan",
+    "formato": "3L",
+    "precio": 20.55
+  },
+
+  {
+    "categoria": "licor_fruta",
+    "nombre": "Licor de Manzana Trial",
+    "formato": "70cl",
+    "precio": 5.44
+  },
+  {
+    "categoria": "licor_fruta",
+    "nombre": "Licor de Melocotón Trial",
+    "formato": "70cl",
+    "precio": 5.44
+  },
+  {
+    "categoria": "licor_fruta",
+    "nombre": "Licor de Mora Ritmo",
+    "formato": "70cl",
+    "precio": 3.09
+  },
+  {
+    "categoria": "licor_fruta",
+    "nombre": "Licor de Manzana Ritmo",
+    "formato": "70cl",
+    "precio": 3.09
+  },
+  {
+    "categoria": "licor_fruta",
+    "nombre": "Licor de Melocotón Ritmo",
+    "formato": "70cl",
+    "precio": 3.09
+  },
+
+  {
+    "categoria": "crema",
+    "nombre": "Dama de Baza Azul",
+    "formato": "1L",
+    "precio": 4.64
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Dama de Baza Granadina",
+    "formato": "1L",
+    "precio": 4.64
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Dama de Baza Kiwi",
+    "formato": "1L",
+    "precio": 4.64
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Dama de Baza Lima",
+    "formato": "1L",
+    "precio": 4.64
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Dama de Baza Maracuyá",
+    "formato": "1L",
+    "precio": 4.64
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Dama de Baza Menta",
+    "formato": "1L",
+    "precio": 4.64
+  },
+
+  {
+    "categoria": "licor",
+    "nombre": "Fireball Canela",
+    "formato": "70cl",
+    "precio": 13.61
+  },
+  {
+    "categoria": "licor",
+    "nombre": "Thunder Bitch",
+    "formato": "70cl",
+    "precio": 16.03
+  },
+  {
+    "categoria": "licor",
+    "nombre": "Licor Frangélico",
+    "formato": "70cl",
+    "precio": 15.85
+  },
+  {
+    "categoria": "licor",
+    "nombre": "Licor Malibu",
+    "formato": "70cl",
+    "precio": 12.88
+  },
+  {
+    "categoria": "licor",
+    "nombre": "Licor Pisco Capel",
+    "formato": "70cl",
+    "precio": 15.12
+  },
+  {
+    "categoria": "licor",
+    "nombre": "Licor Triple Sec",
+    "formato": "1L",
+    "precio": 7.45
+  },
+
+  {
+    "categoria": "crema",
+    "nombre": "Crema de Xantiamen",
+    "formato": "70cl",
+    "precio": 9.01
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Crema de Orujo Ruavieja",
+    "formato": "70cl",
+    "precio": 12.52
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Crema de Orujo by Jan",
+    "formato": "3L",
+    "precio": 20.55
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Crema de Whisky Baileys",
+    "formato": "70cl",
+    "precio": 13.67
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Capitán Fresón",
+    "formato": "70cl",
+    "precio": 9.01
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Tequila Mariachi Mango",
+    "formato": "70cl",
+    "precio": 9.01
+  },
+  {
+    "categoria": "crema",
+    "nombre": "Ponche Caballero",
+    "formato": "70cl",
+    "precio": 12.06
+  }
+  ]
+}

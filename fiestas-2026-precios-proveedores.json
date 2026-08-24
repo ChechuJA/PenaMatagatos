@@ -1,0 +1,25 @@
+{
+  "evento": "Fiestas 2026",
+  "descripcion": "Precios de bebida por proveedor para comparar antes de comprar. Rellenar 'precios' con el precio unitario (por la unidad indicada en 'formato') de cada proveedor.",
+  "actualizado": "2026-08-24",
+  "moneda": "EUR",
+  "proveedores": [],
+  "productos": [
+    { "id": "cerveza-normal", "categoria": "Cerveza", "nombre": "Cerveza normal", "formato": "lata 33cl", "cantidad": 74, "precios": {} },
+    { "id": "cerveza-00", "categoria": "Cerveza", "nombre": "Cerveza 0,0", "formato": "lata 33cl", "cantidad": 0, "precios": {} },
+    { "id": "cocacola-normal", "categoria": "Refresco", "nombre": "Coca-Cola normal 2L", "formato": "botella 2L", "cantidad": 7, "precios": {} },
+    { "id": "cocacola-zero", "categoria": "Refresco", "nombre": "Coca-Cola Zero 2L", "formato": "botella 2L", "cantidad": 9, "precios": {} },
+    { "id": "cocacola-zerozero", "categoria": "Refresco", "nombre": "Coca-Cola Zero Zero 2L", "formato": "botella 2L", "cantidad": 0, "precios": {} },
+    { "id": "aquarius-naranja", "categoria": "Refresco", "nombre": "Aquarius naranja", "formato": "lata 33cl", "cantidad": 26, "precios": {} },
+    { "id": "agua", "categoria": "Agua", "nombre": "Agua", "formato": "botella 1,5L", "cantidad": 60, "precios": {} },
+    { "id": "sprite-limon", "categoria": "Refresco", "nombre": "Sprite / refresco limon", "formato": "botella 1L", "cantidad": 11, "precios": {} },
+    { "id": "mezclador-limon", "categoria": "Refresco", "nombre": "Mezclador limon", "formato": "botella 1L", "cantidad": 22, "precios": {} },
+    { "id": "tonica", "categoria": "Refresco", "nombre": "Tonica", "formato": "botella 1L", "cantidad": 4, "precios": {} },
+    { "id": "seagrams", "categoria": "Destilado", "nombre": "Seagrams", "formato": "botella 70cl", "cantidad": 0, "precios": {} },
+    { "id": "cutty-naranja", "categoria": "Destilado", "nombre": "Cutty naranja", "formato": "botella 70cl", "cantidad": 1, "precios": {} },
+    { "id": "barcelo", "categoria": "Destilado", "nombre": "Barcelo", "formato": "botella 70cl", "cantidad": 0, "precios": {} },
+    { "id": "legendario", "categoria": "Destilado", "nombre": "Legendario", "formato": "botella 70cl", "cantidad": 4, "precios": {} },
+    { "id": "larios-12", "categoria": "Destilado", "nombre": "Larios 12", "formato": "botella 70cl", "cantidad": 0, "precios": {} },
+    { "id": "jagermeister", "categoria": "Destilado", "nombre": "Jagermeister", "formato": "botella 70cl", "cantidad": 1, "precios": {} }
+  ]
+}

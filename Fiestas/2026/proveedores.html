@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores y precios de bebida 2026 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .prov-toolbar { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+        .prov-meta { color: var(--text-dark); font-size: 0.95rem; }
+        .best-price { background: #eafaf1; font-weight: 700; color: #1e8449; }
+        .price-cell { text-align: right; white-space: nowrap; }
+        .empty-note { padding: 1.5rem; background: #fff1ee; border-radius: 12px; color: var(--primary-color); }
+        .total-row td { border-top: 2px solid var(--primary-color); font-weight: 700; background: #fff8f1; }
+        .prov-legend { font-size: 0.85rem; color: #777; margin-top: 0.5rem; }
+        .cat-search { flex: 1 1 260px; min-width: 220px; padding: 0.65rem 1rem; border: 2px solid var(--primary-color, #ff6b4a); border-radius: 999px; font-size: 1rem; font-family: inherit; }
+        .cat-search:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,107,74,0.2); }
+        .cat-sub { margin: 1.2rem 0 0.4rem; color: var(--primary-color, #ff6b4a); font-size: 1rem; text-transform: capitalize; }
+        .cat-sub:first-child { margin-top: 0; }
+        .cat-count { color: #999; font-weight: 400; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../index.html">Fiestas</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="fiesta-page-hero">
+            <div class="container">
+                <p class="eyebrow">Fiestas 2026</p>
+                <h1>Proveedores y precios de bebida</h1>
+                <p class="lead">Comparativa de precios por proveedor para decidir dónde comprar cada producto. Descarga los datos en JSON o CSV para trabajar con ellos aparte.</p>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2 style="margin-top: 0;">Catálogo Licoreo Colocón</h2>
+                    <div class="prov-toolbar">
+                        <input type="search" id="cat-search" class="cat-search" placeholder="🔍 Buscar producto…" aria-label="Buscar producto en el catálogo">
+                        <div class="prov-meta" id="cat-meta">Cargando catálogo…</div>
+                    </div>
+                    <div id="cat-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <div class="prov-toolbar">
+                        <div class="prov-meta" id="prov-meta">Cargando datos…</div>
+                        <div class="action-row" style="margin: 0;">
+                            <button type="button" class="secondary-button" id="btn-json">⬇️ Descargar JSON</button>
+                            <button type="button" class="secondary-button" id="btn-csv">⬇️ Descargar CSV</button>
+                        </div>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table id="prov-table">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                    <p class="prov-legend">El precio marcado en <span class="best-price" style="padding: 0 0.4rem; border-radius: 4px;">verde</span> es el más barato de cada producto. La columna «Mejor» toma siempre el precio más bajo disponible.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Peña Matagatos</p>
+        </div>
+    </footer>
+
+    <script>
+    const DATA_URL = "../../fiestas-2026-precios-proveedores.json";
+    let DATA = null;
+
+    function fmt(n) {
+        return new Intl.NumberFormat("es-ES", { style: "currency", currency: DATA.moneda || "EUR" }).format(n);
+    }
+
+    function bestPrice(prod) {
+        const vals = Object.values(prod.precios || {}).filter(v => typeof v === "number" && v > 0);
+        return vals.length ? Math.min(...vals) : null;
+    }
+
+    function render() {
+        const meta = document.getElementById("prov-meta");
+        const thead = document.querySelector("#prov-table thead");
+        const tbody = document.querySelector("#prov-table tbody");
+        const provs = DATA.proveedores || [];
+
+        meta.textContent = `${DATA.evento} · actualizado ${DATA.actualizado} · ${provs.length} proveedor(es) · ${DATA.productos.length} productos`;
+
+        if (!provs.length) {
+            thead.innerHTML = "";
+            tbody.innerHTML = `<tr><td><div class="empty-note">Todavía no hay proveedores cargados. En cuanto se añadan precios en <code>fiestas-2026-precios-proveedores.json</code>, aparecerán aquí para comparar.</div></td></tr>`;
+            return;
+        }
+
+        // Cabecera
+        let head = "<tr><th>Producto</th><th>Formato</th><th>Cant.</th>";
+        provs.forEach(p => head += `<th class="price-cell">${p.nombre}</th>`);
+        head += `<th class="price-cell">Mejor</th></tr>`;
+        thead.innerHTML = head;
+
+        // Filas de producto
+        let rows = "";
+        const totalPorProv = {};
+        provs.forEach(p => totalPorProv[p.id] = 0);
+        let totalMejor = 0;
+
+        DATA.productos.forEach(prod => {
+            const best = bestPrice(prod);
+            let row = `<tr><td>${prod.nombre}</td><td>${prod.formato}</td><td>${prod.cantidad}</td>`;
+            provs.forEach(p => {
+                const price = prod.precios ? prod.precios[p.id] : null;
+                if (typeof price === "number" && price > 0) {
+                    const cls = price === best ? "price-cell best-price" : "price-cell";
+                    row += `<td class="${cls}">${fmt(price)}</td>`;
+                    totalPorProv[p.id] += price * (prod.cantidad || 0);
+                } else {
+                    row += `<td class="price-cell">—</td>`;
+                }
+            });
+            row += `<td class="price-cell best-price">${best !== null ? fmt(best) : "—"}</td>`;
+            if (best !== null) totalMejor += best * (prod.cantidad || 0);
+            row += "</tr>";
+            rows += row;
+        });
+
+        // Fila de totales (precio unitario × cantidad)
+        let totalRow = `<tr class="total-row"><td colspan="3">Total estimado (precio × cantidad)</td>`;
+        provs.forEach(p => totalRow += `<td class="price-cell">${fmt(totalPorProv[p.id])}</td>`);
+        totalRow += `<td class="price-cell best-price">${fmt(totalMejor)}</td></tr>`;
+
+        tbody.innerHTML = rows + totalRow;
+    }
+
+    function download(filename, text, type) {
+        const blob = new Blob([text], { type });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+    }
+
+    function toCSV() {
+        const provs = DATA.proveedores || [];
+        const sep = ";";
+        const header = ["Producto", "Formato", "Cantidad", ...provs.map(p => p.nombre), "Mejor"];
+        const lines = [header.join(sep)];
+        DATA.productos.forEach(prod => {
+            const best = bestPrice(prod);
+            const cells = [prod.nombre, prod.formato, prod.cantidad];
+            provs.forEach(p => {
+                const price = prod.precios ? prod.precios[p.id] : null;
+                cells.push(typeof price === "number" && price > 0 ? String(price).replace(".", ",") : "");
+            });
+            cells.push(best !== null ? String(best).replace(".", ",") : "");
+            lines.push(cells.join(sep));
+        });
+        return lines.join("\r\n");
+    }
+
+    document.getElementById("btn-json").addEventListener("click", () => {
+        download("fiestas-2026-precios-proveedores.json", JSON.stringify(DATA, null, 2), "application/json");
+    });
+    document.getElementById("btn-csv").addEventListener("click", () => {
+        download("fiestas-2026-precios-proveedores.csv", "\uFEFF" + toCSV(), "text/csv;charset=utf-8");
+    });
+
+    fetch(DATA_URL)
+        .then(r => r.json())
+        .then(json => { DATA = json; render(); })
+        .catch(() => {
+            document.getElementById("prov-meta").textContent = "No se pudieron cargar los datos.";
+        });
+    </script>
+
+    <script>
+    // Catálogo del proveedor Licoreo Colocón (archivos por familia)
+    const CATALOGOS = [
+        { file: "./proveedores/Licoreo/LicoreoColocon_cerveza.json",  grupo: "Cerveza" },
+        { file: "./proveedores/Licoreo/LicoreoColocon_vinos.json",    grupo: "Vinos" },
+        { file: "./proveedores/Licoreo/LicoreoColocon_alcohol.json",  grupo: "Destilados y licores" },
+        { file: "./proveedores/Licoreo/LicoreoColocon_refrescos.json", grupo: "Refrescos" }
+    ];
+    let CATALOGO = [];
+
+    const eur = n => new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" }).format(n);
+    const eurL = n => new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n) + "/L";
+    const pretty = s => (s || "General").replace(/_/g, " ").replace(/^\w/, c => c.toUpperCase());
+    const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+    // Convierte un formato ("75cl", "70cl", "1L", "5L", "24x20cl", "6x1.5L"…) a litros totales.
+    function parseLitros(formato) {
+        if (!formato) return null;
+        const m = String(formato).trim().replace(",", ".").match(/^(?:(\d+)\s*x\s*)?([\d.]+)\s*(cl|ml|l)$/i);
+        if (!m) return null;
+        const uds = m[1] ? parseFloat(m[1]) : 1;
+        const vol = parseFloat(m[2]);
+        const unidad = m[3].toLowerCase();
+        const litrosUnidad = unidad === "cl" ? vol / 100 : unidad === "ml" ? vol / 1000 : vol;
+        return uds * litrosUnidad;
+    }
+
+    async function loadCatalogo() {
+        CATALOGO = await Promise.all(CATALOGOS.map(async c => {
+            try {
+                const r = await fetch(c.file);
+                if (!r.ok) return { grupo: c.grupo, productos: [] };
+                const txt = (await r.text()).trim();
+                if (!txt) return { grupo: c.grupo, productos: [] };
+                const json = JSON.parse(txt);
+                const productos = (json.productos || []).map(p => {
+                    const litros = parseLitros(p.formato);
+                    return {
+                        grupo: c.grupo,
+                        sub: pretty(p.categoria || p.subcategoria),
+                        nombre: p.nombre,
+                        formato: p.formato,
+                        precio: p.precio,
+                        litros,
+                        precioLitro: (litros && p.precio) ? p.precio / litros : null
+                    };
+                });
+                return { grupo: c.grupo, productos };
+            } catch (e) {
+                return { grupo: c.grupo, productos: [] };
+            }
+        }));
+        renderCatalogo("");
+    }
+
+    function tablaCatalogo(items, showSub) {
+        items = items.slice().sort((a, b) => {
+            if (a.precioLitro == null) return 1;
+            if (b.precioLitro == null) return -1;
+            return a.precioLitro - b.precioLitro;
+        });
+        const rows = items.map(p =>
+            `<tr><td>${escapeHtml(p.nombre)}</td>${showSub ? `<td>${escapeHtml(p.sub)}</td>` : ""}<td>${escapeHtml(p.formato)}</td><td class="price-cell">${eur(p.precio)}</td><td class="price-cell">${p.precioLitro != null ? eurL(p.precioLitro) : "—"}</td></tr>`
+        ).join("");
+        return `<div class="table-wrap"><table><thead><tr><th>Producto</th>${showSub ? "<th>Categoría</th>" : ""}<th>Formato</th><th class="price-cell">Precio</th><th class="price-cell">€/L</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+
+    function renderCatalogo(query) {
+        const cont = document.getElementById("cat-content");
+        const meta = document.getElementById("cat-meta");
+        const q = (query || "").trim().toLowerCase();
+        const total = CATALOGO.reduce((a, g) => a + g.productos.length, 0);
+
+        if (q) {
+            const matches = [];
+            CATALOGO.forEach(g => g.productos.forEach(p => {
+                if (p.nombre.toLowerCase().includes(q)) matches.push(p);
+            }));
+            meta.textContent = `${matches.length} resultado(s) de ${total} productos`;
+            cont.innerHTML = matches.length
+                ? tablaCatalogo(matches, true)
+                : `<div class="empty-note">Sin resultados para «${escapeHtml(query)}».</div>`;
+            return;
+        }
+
+        const conDatos = CATALOGO.filter(g => g.productos.length);
+        meta.textContent = `${total} productos en ${conDatos.length} familia(s)`;
+
+        cont.innerHTML = CATALOGO.map(g => {
+            if (!g.productos.length) {
+                return `<details class="accordion-panel"><summary>${g.grupo} <span class="cat-count">(sin datos)</span></summary><div class="accordion-content"><p class="empty-note">Todavía no hay precios cargados para ${g.grupo.toLowerCase()}.</p></div></details>`;
+            }
+            const subs = {};
+            g.productos.forEach(p => { (subs[p.sub] = subs[p.sub] || []).push(p); });
+            const inner = Object.keys(subs).map(sub =>
+                `<h4 class="cat-sub">${escapeHtml(sub)}</h4>${tablaCatalogo(subs[sub], false)}`
+            ).join("");
+            return `<details class="accordion-panel"><summary>${g.grupo} <span class="cat-count">(${g.productos.length})</span></summary><div class="accordion-content">${inner}</div></details>`;
+        }).join("");
+    }
+
+    document.getElementById("cat-search").addEventListener("input", e => renderCatalogo(e.target.value));
+    loadCatalogo();
+    </script>
+</body>
+</html>

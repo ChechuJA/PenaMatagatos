@@ -1,0 +1,290 @@
+{
+  "catalogo": "Licoreo",
+  "productos": [
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Barbadillo Castillo San Diego",
+      "formato": "75cl",
+      "precio": 5.02
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Albariño Rectoral Do Umia",
+      "formato": "75cl",
+      "precio": 8.60
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Albariño Freixas",
+      "formato": "75cl",
+      "precio": 8.20
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Albariño Mar de Frades",
+      "formato": "75cl",
+      "precio": 17.35
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Ribeiro Castelo dos Condes",
+      "formato": "75cl",
+      "precio": 5.98
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Valdeorras Guitián Godello",
+      "formato": "75cl",
+      "precio": 15.24
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Verdejo Doña Raquel",
+      "formato": "75cl",
+      "precio": 4.27
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Verdejo Marqués de Cáceres",
+      "formato": "75cl",
+      "precio": 6.47
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Verdejo Marqués de Riscal",
+      "formato": "75cl",
+      "precio": 9.36
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Verdejo Mayor de Castilla",
+      "formato": "75cl",
+      "precio": 3.93
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Verdejo Protos",
+      "formato": "75cl",
+      "precio": 7.18
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Verdejo Quintaluna",
+      "formato": "75cl",
+      "precio": 14.55
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Vino de Mesa Tío Cayo",
+      "formato": "75cl",
+      "precio": 2.11
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Vino de Mesa Garrafa",
+      "formato": "5L",
+      "precio": 7.80
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Semidulce Alma",
+      "formato": "75cl",
+      "precio": 4.75
+    },
+    {
+      "categoria": "vino_blanco",
+      "nombre": "Semidulce Rioja Diamante",
+      "formato": "75cl",
+      "precio": 4.50
+    },
+
+    {
+      "categoria": "vino_rosado",
+      "nombre": "Vino de Mesa",
+      "formato": "75cl",
+      "precio": 2.11
+    },
+    {
+      "categoria": "vino_rosado",
+      "nombre": "Gran Feudo Joven",
+      "formato": "75cl",
+      "precio": 4.45
+    },
+    {
+      "categoria": "vino_rosado",
+      "nombre": "Peñascal Joven",
+      "formato": "75cl",
+      "precio": 4.29
+    },
+    {
+      "categoria": "vino_rosado",
+      "nombre": "Lambrusco Espumoso",
+      "formato": "75cl",
+      "precio": 3.61
+    },
+
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera Protos Reserva",
+      "formato": "75cl",
+      "precio": 26.92
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ramón Bilbao Reserva",
+      "formato": "75cl",
+      "precio": 18.11
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera Arzuaga Crianza",
+      "formato": "75cl",
+      "precio": 22.65
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera Pesquera Crianza",
+      "formato": "75cl",
+      "precio": 20.26
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera Viña Hijos Crianza",
+      "formato": "75cl",
+      "precio": 6.13
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Antaño Crianza",
+      "formato": "75cl",
+      "precio": 3.84
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Azpilicueta Crianza",
+      "formato": "75cl",
+      "precio": 9.06
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Cune Crianza",
+      "formato": "75cl",
+      "precio": 7.82
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Finca Besaya Crianza",
+      "formato": "75cl",
+      "precio": 4.77
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Marqués de Cáceres Crianza",
+      "formato": "75cl",
+      "precio": 8.45
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Ramón Bilbao Crianza",
+      "formato": "75cl",
+      "precio": 9.25
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Finca Besaya Joven",
+      "formato": "75cl",
+      "precio": 3.63
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rioja Marcos Ayllón",
+      "formato": "75cl",
+      "precio": 4.24
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rib Mayor Castilla Roble",
+      "formato": "75cl",
+      "precio": 4.85
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera Prado Rey Roble",
+      "formato": "75cl",
+      "precio": 7.44
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera Protos Roble",
+      "formato": "75cl",
+      "precio": 8.89
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera La Planta Arzuaga",
+      "formato": "75cl",
+      "precio": 8.89
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Rib Privilegio Montebello",
+      "formato": "75cl",
+      "precio": 4.35
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Ribera Viña Hijos",
+      "formato": "75cl",
+      "precio": 4.45
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Toro Románico Crianza",
+      "formato": "75cl",
+      "precio": 10.98
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Vino de Mesa Tío Cayo",
+      "formato": "75cl",
+      "precio": 2.11
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Vino de Mesa Sr. Duque",
+      "formato": "1L",
+      "precio": 1.45
+    },
+    {
+      "categoria": "vino_tinto",
+      "nombre": "Vino de Mesa Tío Cayo",
+      "formato": "5L",
+      "precio": 7.80
+    },
+
+    {
+      "categoria": "otros_vinos",
+      "nombre": "Freixenet Semiseco",
+      "formato": "75cl",
+      "precio": 7.86
+    },
+    {
+      "categoria": "otros_vinos",
+      "nombre": "Fino de Jerez Tío Pepe",
+      "formato": "75cl",
+      "precio": 7.80
+    },
+    {
+      "categoria": "otros_vinos",
+      "nombre": "Manzanilla La Guita",
+      "formato": "75cl",
+      "precio": 7.56
+    },
+    {
+      "categoria": "otros_vinos",
+      "nombre": "Sidra El Gaitero",
+      "formato": "75cl",
+      "precio": 3.32
+    }
+  ]
+}
