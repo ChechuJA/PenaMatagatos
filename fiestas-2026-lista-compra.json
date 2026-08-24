@@ -4,7 +4,7 @@
   "objetivo": "Cubrir el consumo real dejando solo ~5% de sobrante",
   "regla": "Compra = consumo real 2025 x 1,05 - sobrante reutilizable. Reutilizable SOLO cerveza normal y destilados. Refrescos, cerveza 0,0 y tónica CADUCAN (compra completa).",
   "lista_compras": [
-    { "producto": "Cerveza normal", "cantidad": 176, "unidad": "botellines 25cl", "estado": "comprar", "prioridad": "alta", "calculo": "consumo 2025 ~250 x1,05=262 - 86 reutilizables = 176" },
+    { "producto": "Cerveza normal", "cantidad": 176, "unidad": "botellines 25cl", "estado": "comprar", "prioridad": "alta", "calculo": "consumo real 2025 ~250 x1,05=262 - 86 reutilizables = 176 (menos que 2025 para gastar sobrante)" },
     { "producto": "Cerveza 0,0", "cantidad": 48, "unidad": "botellines 25cl", "estado": "comprar completo (caduca, no reutilizar)", "prioridad": "alta", "calculo": "consumo 2025 ~62 -> compra completa; bebedores: Marta, Cristina, Albert, Sonia, Raúl, Elisa, Malu, Laura, Helena" },
     { "producto": "Coca-Cola normal 2L", "cantidad": 5, "unidad": "botellas 2L", "estado": "comprar completo (caduca)", "prioridad": "alta", "calculo": "consumo 2025 ~4 x1,05" },
     { "producto": "Coca-Cola Zero 2L", "cantidad": 21, "unidad": "botellas 2L", "estado": "comprar completo (caduca)", "prioridad": "alta", "calculo": "consumo 2025 20 (comprado 36 - sobrante 16) x1,05" },
@@ -33,12 +33,12 @@
     { "producto": "Vasos / cubiertos / servilletas", "cantidad": 1, "unidad": "stock base", "estado": "revisar y reponer", "prioridad": "media" }
   ],
   "notas": [
-    "Objetivo 2026: dejar solo ~5% de sobrante. Cantidades = consumo real 2025 x1,05 menos lo reutilizable.",
-    "Reutilizable (se resta): SOLO cerveza normal (86) y destilados (Barceló 5, Seagrams 7, Larios 2, Cutty 1). Revisar su estado antes de comprar.",
-    "Caducan (compra completa, NO se resta): refrescos (Fanta, Coca-Cola, Sprite, Aquarius), cerveza 0,0 y tónica.",
-    "Consumo real 2025 = comprado - sobrante. Ej.: Coca-Cola Zero 36-16=20; Fanta limón 24-6=18; Tónica 15-5=10.",
-    "AVISO cerveza normal: el 176 asume que los 86 botellines sobrantes se reutilizan. Si también han caducado, subir a ~262.",
-    "Actualización lista definitiva: 27 personas (añadidos Edu y Helena).",
+    "Objetivo 2026: mismo grupo y consumo similar -> comprar lo mismo o MENOS que 2025 para dejar solo ~5% de sobrante. Nunca inflar.",
+    "Base = consumo real 2025 (comprado - sobrante). Si 2025 sobro bastante, este ano se compra menos.",
+    "Reutilizable (se resta para comprar aun menos): SOLO cerveza normal (86) y destilados (Barcelo 5, Seagrams 7, Larios 2, Cutty 1). Revisar su estado antes de comprar.",
+    "Caducan (compra = consumo real, NO se resta sobrante): refrescos (Fanta, Coca-Cola, Sprite, Aquarius), cerveza 0,0 y tonica.",
+    "Consumo real 2025 = comprado - sobrante. Ej.: Coca-Cola Zero 36-16=20; Fanta limon 24-6=18; Tonica 15-5=10.",
+    "Actualizacion lista definitiva: 27 personas (anadidos Edu y Helena).",
     "Nuevos productos 2026: radler y tinto de verano (Helena).",
     "La compra de hielo y agua se puede fraccionar en varias compras para evitar sobrestock."
   ]
