@@ -6,7 +6,7 @@
     {
       "nombre": "Marta",
       "asistencia": "jueves a domingo",
-      "bebidas": ["cerveza 0,0 casera", "Coca-Cola Zero"]
+      "bebidas": ["cerveza 0,0 casera", "Coca-Cola Zero Zero (0,0)"]
     },
     {
       "nombre": "Flores",
@@ -47,7 +47,7 @@
     {
       "nombre": "Andreas",
       "asistencia": "todos los días",
-      "bebidas": ["cerveza", "Coca-Cola", "agua"]
+      "bebidas": ["gin-tonic"]
     },
     {
       "nombre": "Álvaro",
@@ -87,7 +87,7 @@
     {
       "nombre": "Cristina",
       "asistencia": "todos los días",
-      "bebidas": ["cerveza 0,0", "Coca-Cola Zero"]
+      "bebidas": ["cerveza 0,0", "Coca-Cola Zero Zero (0,0)"]
     },
     {
       "nombre": "Blanca",
@@ -123,12 +123,22 @@
     {
       "nombre": "Sonia",
       "asistencia": "jueves a sábado",
-      "bebidas": ["cerveza 0,0", "Coca-Cola Zero", "Aquarius limón", "agua"]
+      "bebidas": ["cerveza 0,0", "Coca-Cola Zero Zero (0,0)", "Aquarius limón", "agua"]
     },
     {
       "nombre": "Raúl",
       "asistencia": "todos los días",
       "bebidas": ["cerveza 0,0", "Coca-Cola"]
+    },
+    {
+      "nombre": "Edu",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["cerveza Estrella Galicia"]
+    },
+    {
+      "nombre": "Helena",
+      "asistencia": "viernes y sábado (jueves incógnita)",
+      "bebidas": ["radler", "tinto de verano", "Barceló con Coca-Cola Zero"]
     }
   ]
 }
