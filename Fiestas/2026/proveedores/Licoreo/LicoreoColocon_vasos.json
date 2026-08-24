@@ -1,0 +1,54 @@
+{
+  "catalogo": "Licoreo",
+  "categoria": "vasos",
+  "productos": [
+    {
+      "categoria": "desechable",
+      "nombre": "Caña Desechable",
+      "formato": "33cl",
+      "unidades": 50,
+      "precio": 2.96
+    },
+    {
+      "categoria": "desechable",
+      "nombre": "Ancho Desechable",
+      "formato": "50cl",
+      "unidades": 25,
+      "precio": 5.86
+    },
+    {
+      "categoria": "desechable",
+      "nombre": "Litrona Desechable",
+      "formato": "1L",
+      "unidades": 25,
+      "precio": 4.42
+    },
+    {
+      "categoria": "desechable",
+      "nombre": "Tubo Desechable",
+      "formato": "30cl",
+      "unidades": 10,
+      "precio": 1.75
+    },
+    {
+      "categoria": "cristal",
+      "nombre": "Sidra Cristal",
+      "formato": "50cl",
+      "unidades": 12,
+      "precio": 11.67
+    },
+    {
+      "categoria": "cristal",
+      "nombre": "Tubo Cristal",
+      "formato": "30cl",
+      "unidades": 24,
+      "precio": 19.60
+    },
+    {
+      "categoria": "cristal",
+      "nombre": "Copa Balón Cristal",
+      "unidades": 6,
+      "precio": 14.74
+    }
+  ]
+}

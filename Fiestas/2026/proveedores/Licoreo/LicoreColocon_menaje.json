@@ -1,0 +1,149 @@
+{
+  "catalogo": "Licoreo",
+  "categoria": "menaje",
+  "productos": [
+    {
+      "categoria": "limpieza",
+      "nombre": "Lavavajillas Manual",
+      "formato": "5L",
+      "precio": 7.59
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Lavavajillas Fairy",
+      "formato": "5L",
+      "precio": 13.60
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Desengrasante",
+      "formato": "5L",
+      "precio": 8.84
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Desengrasante Brumol",
+      "formato": "1L",
+      "precio": 2.25
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Amoniaco La Tuna",
+      "formato": "1L",
+      "precio": 1.35
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Fregasuelos La Tuna",
+      "formato": "1.5L",
+      "precio": 1.64
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Lejía Perfumada La Tuna",
+      "formato": "2L",
+      "precio": 1.75
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Desinfectante",
+      "formato": "750ml",
+      "precio": 3.84
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Gel de Manos",
+      "formato": "50cl",
+      "unidades": 12,
+      "precio": 12.49
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Papel Higiénico",
+      "unidades": 12,
+      "precio": 3.93
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Rollo Papel",
+      "formato": "45m",
+      "unidades": 6,
+      "precio": 18.74
+    },
+
+    {
+      "categoria": "aceites",
+      "nombre": "AOVE Carbonell",
+      "formato": "1L",
+      "precio": 7.25
+    },
+    {
+      "categoria": "aceites",
+      "nombre": "AOVE La Española",
+      "formato": "1L",
+      "precio": 7.25
+    },
+    {
+      "categoria": "aceites",
+      "nombre": "Aceite Oliva Coosur Virgen",
+      "formato": "1L",
+      "precio": 6.70
+    },
+    {
+      "categoria": "aceites",
+      "nombre": "Aceite Girasol Madrid Sol",
+      "formato": "5L",
+      "precio": 13.46
+    },
+
+    {
+      "categoria": "lacteos",
+      "nombre": "Lauki Entera Brick",
+      "formato": "6x1L",
+      "precio": 8.40
+    },
+    {
+      "categoria": "lacteos",
+      "nombre": "Lauki Semidesnatada Brick",
+      "formato": "6x1L",
+      "precio": 8.40
+    },
+    {
+      "categoria": "lacteos",
+      "nombre": "Asturiana Entera",
+      "formato": "6x1.5L",
+      "precio": 14.25
+    },
+    {
+      "categoria": "lacteos",
+      "nombre": "Asturiana Semidesnatada",
+      "formato": "6x1.5L",
+      "precio": 14.25
+    },
+
+    {
+      "categoria": "complementos",
+      "nombre": "Golosinas Variadas",
+      "formato": "1kg",
+      "precio": 5.70
+    },
+    {
+      "categoria": "complementos",
+      "nombre": "Azúcar",
+      "formato": "820 sobres de 6g",
+      "precio": 14.50
+    },
+    {
+      "categoria": "complementos",
+      "nombre": "Cola Cao",
+      "formato": "50 sobres de 16g",
+      "precio": 19.12
+    },
+    {
+      "categoria": "complementos",
+      "nombre": "Edulcorantes",
+      "formato": "60 sobres",
+      "precio": 1.28
+    }
+  ]
+}
