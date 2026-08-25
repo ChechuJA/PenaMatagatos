@@ -1,0 +1,63 @@
+{
+  "evento": "Fiestas 2024",
+  "documento_origen": "Fiestas/2024/Documentos escaneados.pdf",
+  "descripcion": "Transcripción de la hoja manuscrita escaneada con el cálculo de compra de bebidas de las fiestas 2024 (alcohol, refrescos/mezcla, cerveza e hielo) y la cuota recaudada.",
+  "notas_transcripcion": [
+    "Datos extraídos por lectura manual del documento escaneado; algunos precios unitarios manuscritos son aproximados y se han deducido del total escrito.",
+    "El subtotal de alcohol escrito en la hoja es 602 € (la suma exacta de las líneas da 601,09 €, pequeña diferencia de redondeo del original).",
+    "'Jagger' = Jägermeister. 'Cutty Shark' = Cutty Sark. 'Limón' y 'Naranja' son refrescos tipo Fanta usados como mezcla."
+  ],
+  "categorias": {
+    "alcohol": {
+      "subtotal": 602.00,
+      "items": [
+        { "producto": "Seagrams", "personas": "7 + 1 (Juani/Lucía)", "cantidad": 10, "extra": 1, "unidad": "botellas", "precio_unitario": 15.65, "total": 156.50 },
+        { "producto": "Larios 12", "personas": 2, "cantidad": 5, "extra": 1, "unidad": "botellas", "precio_unitario": 13.84, "total": 69.20 },
+        { "producto": "Larios Rosa", "personas": 3, "cantidad": 9, "extra": 0, "unidad": "botellas", "precio_unitario": 14.00, "total": 126.00 },
+        { "producto": "Barceló", "personas": 2, "cantidad": 6, "extra": 0, "unidad": "botellas", "precio_unitario": 14.64, "total": 87.84 },
+        { "producto": "Legendario", "personas": 2, "cantidad": 2, "extra": 1, "unidad": "botellas", "precio_unitario": 15.65, "total": 31.30 },
+        { "producto": "Cutty Sark", "personas": 3, "cantidad": 9, "extra": 1, "unidad": "botellas", "precio_unitario": 13.00, "total": 117.00 },
+        { "producto": "Jägermeister", "personas": null, "cantidad": 1, "extra": 0, "unidad": "botellas", "precio_unitario": 13.25, "total": 13.25 }
+      ]
+    },
+    "mezcla": {
+      "subtotal": 636.11,
+      "items": [
+        { "producto": "Sprite", "personas": 5, "cantidad": 20, "unidad": "botellas", "precio_unitario": 1.35, "total": 27.00 },
+        { "producto": "Coca-Cola Zero", "personas": 2, "cantidad": 5, "unidad": "botellas", "precio_unitario": 1.85, "total": 9.25 },
+        { "producto": "Tónica", "personas": 5, "cantidad": 25, "unidad": "botellas", "precio_unitario": 1.85, "total": 46.25 },
+        { "producto": "Fanta Limón", "personas": 5, "cantidad": 18, "unidad": "botellas", "precio_unitario": 1.29, "total": 23.25, "nota": "precio unitario aproximado" },
+        { "producto": "Fanta Naranja", "personas": 3, "cantidad": 10, "unidad": "botellas", "precio_unitario": 1.55, "total": 15.50 },
+        { "producto": "Coca-Cola 0,0", "personas": 4, "cantidad": 12, "unidad": "botellas", "precio_unitario": 1.85, "total": 22.20 },
+        { "producto": "Coca-Cola", "personas": null, "cantidad": 4, "unidad": "botellas", "precio_unitario": 1.85, "total": 7.40 },
+        { "producto": "Cerveza Tostada 0,0", "personas": 4, "cantidad": 3, "unidad": "paquetes", "precio_unitario": 32.00, "total": 96.00 },
+        { "producto": "Cerveza con limón", "personas": 3, "cantidad": 3, "unidad": "paquetes", "precio_unitario": 15.00, "total": 45.00 },
+        { "producto": "Agua con gas", "personas": 1, "cantidad": 2, "unidad": "botellas", "precio_unitario": null, "total": 0.00, "nota": "sin precio en la hoja" },
+        { "producto": "Tinto de verano", "personas": 3, "cantidad": 6, "unidad": "botellas", "precio_unitario": 1.78, "total": 10.68 },
+        { "producto": "Tinto de verano 0,0", "personas": 1, "cantidad": 1, "unidad": "botellas", "precio_unitario": 1.78, "total": 1.78 },
+        { "producto": "Cerveza normal", "personas": null, "cantidad": 28, "unidad": "paquetes", "precio_unitario": 11.85, "total": 331.80 }
+      ]
+    },
+    "hielo": {
+      "subtotal": 60.00,
+      "items": [
+        { "producto": "Hielo", "cantidad": 12, "unidad": "sacos", "precio_unitario": 5.00, "total": 60.00 }
+      ]
+    }
+  },
+  "totales": {
+    "alcohol": 602.00,
+    "mezcla": 636.11,
+    "suma_bebida": 1238.11,
+    "hielo": 60.00,
+    "total_gasto": 1298.11
+  },
+  "cuota": {
+    "descripcion": "Reparto de la cuota entre los asistentes.",
+    "tramos": [
+      { "personas": 20, "asistencia": "todos los días (4 días)", "importe_por_persona": 70.00, "subtotal": 1400.00 },
+      { "personas": 5, "asistencia": "2 días", "importe_por_persona": 55.00, "subtotal": 275.00 }
+    ],
+    "total_recaudado": 1675.00
+  }
+}

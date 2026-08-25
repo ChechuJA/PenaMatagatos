@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../LogoMatagatos.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .historico-shell {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        .year-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .year-card {
+            display: block;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            border: 1px solid rgba(231, 76, 60, 0.12);
+            padding: 1.6rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .year-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+        }
+
+        .year-card .year-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+
+        .year-card h3 {
+            margin: 0 0 0.4rem;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+        }
+
+        .year-card p {
+            margin: 0 0 0.8rem;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        .year-card .year-total {
+            display: inline-block;
+            background: linear-gradient(135deg, #fffaf3, #fff1d6);
+            border-radius: 10px;
+            padding: 0.3rem 0.7rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Fiestas/index.html">Fiestas</a></li>
+                <li><a href="../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="historico-shell">
+        <section>
+            <div class="panel-head">
+                <span class="tag">Histórico</span>
+                <h2>Compras y gastos por año</h2>
+            </div>
+
+            <p>Consulta lo que se compró y se gastó en años anteriores para comparar precios y cantidades. Cada año abre una tabla consultable con buscador, JSON descargable y el documento original.</p>
+
+            <div class="year-grid">
+                <a href="2023/index.html" class="year-card">
+                    <span class="year-icon">🍾</span>
+                    <h3>2023</h3>
+                    <p>Albarán de venta de bebida (29/08/2023). Importes exactos por producto.</p>
+                    <span class="year-total">Bebida: 1.231,22 €</span>
+                </a>
+
+                <a href="2024/index.html" class="year-card">
+                    <span class="year-icon">🥤</span>
+                    <h3>2024</h3>
+                    <p>Hoja manuscrita: alcohol, refrescos, cerveza e hielo, más la cuota recaudada.</p>
+                    <span class="year-total">Total: 1.298,11 €</span>
+                </a>
+
+                <a href="2025/index.html" class="year-card">
+                    <span class="year-icon">💶</span>
+                    <h3>2025</h3>
+                    <p>Ingresos, gastos y cierre completo del evento, con detalle por categoría.</p>
+                    <span class="year-total">Gastos: 2.019,18 €</span>
+                </a>
+            </div>
+
+            <div class="action-row" style="margin-top: 2rem;">
+                <a href="../Fiestas/index.html" class="primary-button">← Volver a Fiestas</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Peña Matagatos</p>
+        </div>
+    </footer>
+</body>
+</html>

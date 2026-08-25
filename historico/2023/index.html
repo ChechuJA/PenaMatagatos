@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de bebidas 2023 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .historico-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        .historico-card {
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .historico-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #fffaf3, #fff1d6);
+            border-radius: 14px;
+            border: 1px solid rgba(231, 76, 60, 0.12);
+            padding: 1rem;
+        }
+
+        .metric-box span {
+            display: block;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .metric-box strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+        }
+
+        .historico-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .historico-table th,
+        .historico-table td {
+            border: 1px solid #f1d9d7;
+            padding: 0.7rem 0.8rem;
+            text-align: left;
+        }
+
+        .historico-table th {
+            background: #fff0ef;
+            color: var(--primary-color);
+        }
+
+        .historico-table td.num,
+        .historico-table th.num {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .historico-table tfoot td {
+            font-weight: 700;
+            background: #fffaf3;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 360px;
+            padding: 0.7rem 1rem;
+            border: 1px solid #f1d9d7;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            margin: 1.2rem 0 0.4rem;
+        }
+
+        .table-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .note-list {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../Fiestas/index.html">Fiestas</a></li>
+                <li><a href="../index.html">Histórico</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="historico-shell">
+        <section>
+            <div class="panel-head">
+                <span class="tag">Histórico 2023</span>
+                <h2>Compra de bebidas</h2>
+            </div>
+
+            <div class="historico-card">
+                <p>Datos transcritos del albarán de venta de bebidas de las fiestas 2023 (fecha 29/08/2023). Es un documento impreso, por lo que los importes son exactos y la suma cuadra con el total. Usa el buscador para filtrar productos.</p>
+
+                <div class="historico-metrics">
+                    <div class="metric-box">
+                        <span>Fecha albarán</span>
+                        <strong>29/08/2023</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Nº líneas</span>
+                        <strong>18 productos</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Total bebida</span>
+                        <strong>1.231,22 €</strong>
+                    </div>
+                </div>
+
+                <input type="text" id="buscador" class="search-box" placeholder="Buscar producto..." oninput="filtrar()">
+
+                <h3 style="margin-top: 1.5rem;">Detalle del albarán</h3>
+                <table class="historico-table" data-tabla>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th class="num">Unidades</th>
+                            <th class="num">Precio ud.</th>
+                            <th class="num">Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cerveza Mahou Clásica 250cc pack-6</td><td class="num">28</td><td class="num">12,50 €</td><td class="num">350,00 €</td></tr>
+                        <tr><td>Ginebra Seagram's 0.70L</td><td class="num">10</td><td class="num">15,65 €</td><td class="num">156,50 €</td></tr>
+                        <tr><td>Ginebra Larios 12 Años 0.70L</td><td class="num">5</td><td class="num">13,84 €</td><td class="num">69,20 €</td></tr>
+                        <tr><td>Ginebra Larios Rosé 0.70L</td><td class="num">9</td><td class="num">13,92 €</td><td class="num">125,28 €</td></tr>
+                        <tr><td>Ron Barceló Añejo 0.70L</td><td class="num">6</td><td class="num">14,64 €</td><td class="num">87,84 €</td></tr>
+                        <tr><td>Ron Legendario 7 Años 70cl 34°</td><td class="num">2</td><td class="num">15,78 €</td><td class="num">31,56 €</td></tr>
+                        <tr><td>Whisky Cutty Sark 0.70L</td><td class="num">9</td><td class="num">11,71 €</td><td class="num">105,39 €</td></tr>
+                        <tr><td>Jägermeister 0.70L</td><td class="num">1</td><td class="num">13,25 €</td><td class="num">13,25 €</td></tr>
+                        <tr><td>Sprite 2L</td><td class="num">20</td><td class="num">1,35 €</td><td class="num">27,00 €</td></tr>
+                        <tr><td>Tónica Schweppes 1L</td><td class="num">25</td><td class="num">1,72 €</td><td class="num">43,00 €</td></tr>
+                        <tr><td>Fanta Limón 2L</td><td class="num">18</td><td class="num">1,55 €</td><td class="num">27,90 €</td></tr>
+                        <tr><td>Fanta Naranja 2L</td><td class="num">10</td><td class="num">1,55 €</td><td class="num">15,50 €</td></tr>
+                        <tr><td>Coca-Cola 2L</td><td class="num">6</td><td class="num">1,85 €</td><td class="num">11,10 €</td></tr>
+                        <tr><td>Coca-Cola Zero 2L</td><td class="num">6</td><td class="num">1,85 €</td><td class="num">11,10 €</td></tr>
+                        <tr><td>Coca-Cola Zero Zero 2L</td><td class="num">12</td><td class="num">1,85 €</td><td class="num">22,20 €</td></tr>
+                        <tr><td>Cerveza Mahou Tostada 0,0 33 cristal</td><td class="num">3</td><td class="num">27,59 €</td><td class="num">82,77 €</td></tr>
+                        <tr><td>Tinto de verano Limón 1.5L</td><td class="num">6</td><td class="num">1,78 €</td><td class="num">10,68 €</td></tr>
+                        <tr><td>Cerveza Radler lata 33cl</td><td class="num">3</td><td class="num">13,65 €</td><td class="num">40,95 €</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3">TOTAL</td><td class="num">1.231,22 €</td></tr>
+                    </tfoot>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Observaciones</h3>
+                <ul class="note-list">
+                    <li>El albarán solo recoge bebida (no incluye comida, hielo ni menaje de ese año).</li>
+                    <li>Al ser un documento impreso, la transcripción es exacta: la suma de las 18 líneas da justo 1.231,22 €.</li>
+                    <li>La cerveza Mahou Clásica (28 packs de 6) fue la partida más cara con 350,00 €.</li>
+                </ul>
+
+                <div class="table-actions">
+                    <a href="../../Fiestas/index.html" class="primary-button">← Volver atrás</a>
+                    <a href="compra-bebidas-2023.json" class="secondary-button" target="_blank" rel="noopener">Ver JSON</a>
+                    <a href="Compra_29082023.jpeg" class="secondary-button" download>📄 Descargar albarán original</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function filtrar() {
+            const q = document.getElementById('buscador').value.toLowerCase();
+            document.querySelectorAll('table[data-tabla]').forEach(tabla => {
+                tabla.querySelectorAll('tbody tr').forEach(fila => {
+                    const texto = fila.textContent.toLowerCase();
+                    fila.style.display = texto.includes(q) ? '' : 'none';
+                });
+            });
+        }
+    </script>
+</body>
+</html>

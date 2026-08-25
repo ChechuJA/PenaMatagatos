@@ -1,0 +1,50 @@
+{
+  "evento": "Fiestas 2023",
+  "documento_origen": "historico/2023/Compra_29082023.jpeg",
+  "tipo_documento": "Albarán de venta",
+  "albaran": "*230000347",
+  "fecha_albaran": "2023-08-29",
+  "vendedor": "Venta directa - Raúl Santana",
+  "descripcion": "Transcripción del albarán de venta de bebidas de las fiestas 2023. Documento impreso, importes exactos (el total cuadra con la suma de líneas). Solo hay bebida (cerveza), alcohol y refrescos.",
+  "categorias": {
+    "alcohol": {
+      "items": [
+        { "producto": "Ginebra Seagram's 0.70L", "unidades": 10, "precio_unitario": 15.65, "total": 156.50 },
+        { "producto": "Ginebra Larios 12 Años 0.70L", "unidades": 5, "precio_unitario": 13.84, "total": 69.20 },
+        { "producto": "Ginebra Larios Rosé 0.70L", "unidades": 9, "precio_unitario": 13.92, "total": 125.28 },
+        { "producto": "Ron Barceló Añejo 0.70L", "unidades": 6, "precio_unitario": 14.64, "total": 87.84 },
+        { "producto": "Ron Legendario 7 Años 70cl 34°", "unidades": 2, "precio_unitario": 15.78, "total": 31.56 },
+        { "producto": "Whisky Cutty Sark 0.70L", "unidades": 9, "precio_unitario": 11.71, "total": 105.39 },
+        { "producto": "Jägermeister 0.70L", "unidades": 1, "precio_unitario": 13.25, "total": 13.25 }
+      ],
+      "subtotal": 589.02
+    },
+    "cerveza": {
+      "items": [
+        { "producto": "Cerveza Mahou Clásica 250cc pack-6", "unidades": 28, "precio_unitario": 12.50, "total": 350.00 },
+        { "producto": "Cerveza Mahou Tostada 0,0 33 cristal", "unidades": 3, "precio_unitario": 27.59, "total": 82.77 },
+        { "producto": "Cerveza Radler lata 33cl", "unidades": 3, "precio_unitario": 13.65, "total": 40.95 }
+      ],
+      "subtotal": 473.72
+    },
+    "refrescos": {
+      "items": [
+        { "producto": "Sprite 2L", "unidades": 20, "precio_unitario": 1.35, "total": 27.00 },
+        { "producto": "Tónica Schweppes 1L", "unidades": 25, "precio_unitario": 1.72, "total": 43.00 },
+        { "producto": "Fanta Limón 2L", "unidades": 18, "precio_unitario": 1.55, "total": 27.90 },
+        { "producto": "Fanta Naranja 2L", "unidades": 10, "precio_unitario": 1.55, "total": 15.50 },
+        { "producto": "Coca-Cola 2L", "unidades": 6, "precio_unitario": 1.85, "total": 11.10 },
+        { "producto": "Coca-Cola Zero 2L", "unidades": 6, "precio_unitario": 1.85, "total": 11.10 },
+        { "producto": "Coca-Cola Zero Zero 2L", "unidades": 12, "precio_unitario": 1.85, "total": 22.20 },
+        { "producto": "Tinto de verano Limón 1.5L", "unidades": 6, "precio_unitario": 1.78, "total": 10.68 }
+      ],
+      "subtotal": 168.48
+    }
+  },
+  "totales": {
+    "alcohol": 589.02,
+    "cerveza": 473.72,
+    "refrescos": 168.48,
+    "total_bebida": 1231.22
+  }
+}

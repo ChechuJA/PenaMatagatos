@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de bebidas 2024 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .historico-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        .historico-card {
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .historico-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #fffaf3, #fff1d6);
+            border-radius: 14px;
+            border: 1px solid rgba(231, 76, 60, 0.12);
+            padding: 1rem;
+        }
+
+        .metric-box span {
+            display: block;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .metric-box strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+        }
+
+        .historico-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .historico-table th,
+        .historico-table td {
+            border: 1px solid #f1d9d7;
+            padding: 0.7rem 0.8rem;
+            text-align: left;
+        }
+
+        .historico-table th {
+            background: #fff0ef;
+            color: var(--primary-color);
+        }
+
+        .historico-table td.num,
+        .historico-table th.num {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .historico-table tfoot td {
+            font-weight: 700;
+            background: #fffaf3;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 360px;
+            padding: 0.7rem 1rem;
+            border: 1px solid #f1d9d7;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            margin: 1.2rem 0 0.4rem;
+        }
+
+        .table-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .note-list {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../Fiestas/index.html">Fiestas</a></li>
+                <li><a href="../index.html">Histórico</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="historico-shell">
+        <section>
+            <div class="panel-head">
+                <span class="tag">Histórico 2024</span>
+                <h2>Compra de bebidas</h2>
+            </div>
+
+            <div class="historico-card">
+                <p>Datos transcritos de la hoja manuscrita escaneada de las fiestas 2024. Recoge el cálculo de compra de alcohol, refrescos (mezcla), cerveza e hielo, junto con la cuota recaudada. Usa el buscador para filtrar productos.</p>
+
+                <div class="historico-metrics">
+                    <div class="metric-box">
+                        <span>Alcohol</span>
+                        <strong>602,00 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Mezcla / Refrescos</span>
+                        <strong>636,11 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Hielo</span>
+                        <strong>60,00 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Total gasto</span>
+                        <strong>1.298,11 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Cuota recaudada</span>
+                        <strong>1.675,00 €</strong>
+                    </div>
+                </div>
+
+                <input type="text" id="buscador" class="search-box" placeholder="Buscar producto..." oninput="filtrar()">
+
+                <h3 style="margin-top: 1.5rem;">Alcohol</h3>
+                <table class="historico-table" data-tabla>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Personas</th>
+                            <th class="num">Cantidad</th>
+                            <th>Unidad</th>
+                            <th class="num">Precio ud.</th>
+                            <th class="num">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Seagrams</td><td>7 + 1 (Juani/Lucía)</td><td class="num">10 (+1)</td><td>botellas</td><td class="num">15,65 €</td><td class="num">156,50 €</td></tr>
+                        <tr><td>Larios 12</td><td>2</td><td class="num">5 (+1)</td><td>botellas</td><td class="num">13,84 €</td><td class="num">69,20 €</td></tr>
+                        <tr><td>Larios Rosa</td><td>3</td><td class="num">9</td><td>botellas</td><td class="num">14,00 €</td><td class="num">126,00 €</td></tr>
+                        <tr><td>Barceló</td><td>2</td><td class="num">6</td><td>botellas</td><td class="num">14,64 €</td><td class="num">87,84 €</td></tr>
+                        <tr><td>Legendario</td><td>2</td><td class="num">2 (+1)</td><td>botellas</td><td class="num">15,65 €</td><td class="num">31,30 €</td></tr>
+                        <tr><td>Cutty Sark</td><td>3</td><td class="num">9 (+1)</td><td>botellas</td><td class="num">13,00 €</td><td class="num">117,00 €</td></tr>
+                        <tr><td>Jägermeister</td><td>—</td><td class="num">1</td><td>botellas</td><td class="num">13,25 €</td><td class="num">13,25 €</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="5">Subtotal alcohol</td><td class="num">602,00 €</td></tr>
+                    </tfoot>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Mezcla, refrescos y cerveza</h3>
+                <table class="historico-table" data-tabla>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Personas</th>
+                            <th class="num">Cantidad</th>
+                            <th>Unidad</th>
+                            <th class="num">Precio ud.</th>
+                            <th class="num">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sprite</td><td>5</td><td class="num">20</td><td>botellas</td><td class="num">1,35 €</td><td class="num">27,00 €</td></tr>
+                        <tr><td>Coca-Cola Zero</td><td>2</td><td class="num">5</td><td>botellas</td><td class="num">1,85 €</td><td class="num">9,25 €</td></tr>
+                        <tr><td>Tónica</td><td>5</td><td class="num">25</td><td>botellas</td><td class="num">1,85 €</td><td class="num">46,25 €</td></tr>
+                        <tr><td>Fanta Limón</td><td>5</td><td class="num">18</td><td>botellas</td><td class="num">1,29 €</td><td class="num">23,25 €</td></tr>
+                        <tr><td>Fanta Naranja</td><td>3</td><td class="num">10</td><td>botellas</td><td class="num">1,55 €</td><td class="num">15,50 €</td></tr>
+                        <tr><td>Coca-Cola 0,0</td><td>4</td><td class="num">12</td><td>botellas</td><td class="num">1,85 €</td><td class="num">22,20 €</td></tr>
+                        <tr><td>Coca-Cola</td><td>—</td><td class="num">4</td><td>botellas</td><td class="num">1,85 €</td><td class="num">7,40 €</td></tr>
+                        <tr><td>Cerveza Tostada 0,0</td><td>4</td><td class="num">3</td><td>paquetes</td><td class="num">32,00 €</td><td class="num">96,00 €</td></tr>
+                        <tr><td>Cerveza con limón</td><td>3</td><td class="num">3</td><td>paquetes</td><td class="num">15,00 €</td><td class="num">45,00 €</td></tr>
+                        <tr><td>Agua con gas</td><td>1</td><td class="num">2</td><td>botellas</td><td class="num">—</td><td class="num">—</td></tr>
+                        <tr><td>Tinto de verano</td><td>3</td><td class="num">6</td><td>botellas</td><td class="num">1,78 €</td><td class="num">10,68 €</td></tr>
+                        <tr><td>Tinto de verano 0,0</td><td>1</td><td class="num">1</td><td>botellas</td><td class="num">1,78 €</td><td class="num">1,78 €</td></tr>
+                        <tr><td>Cerveza normal</td><td>—</td><td class="num">28</td><td>paquetes</td><td class="num">11,85 €</td><td class="num">331,80 €</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="5">Subtotal mezcla</td><td class="num">636,11 €</td></tr>
+                    </tfoot>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Hielo</h3>
+                <table class="historico-table" data-tabla>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th class="num">Cantidad</th>
+                            <th>Unidad</th>
+                            <th class="num">Precio ud.</th>
+                            <th class="num">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Hielo</td><td class="num">12</td><td>sacos</td><td class="num">5,00 €</td><td class="num">60,00 €</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="4">Subtotal hielo</td><td class="num">60,00 €</td></tr>
+                    </tfoot>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Cuota recaudada</h3>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th class="num">Personas</th>
+                            <th>Asistencia</th>
+                            <th class="num">Importe/persona</th>
+                            <th class="num">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="num">20</td><td>Todos los días (4 días)</td><td class="num">70,00 €</td><td class="num">1.400,00 €</td></tr>
+                        <tr><td class="num">5</td><td>2 días</td><td class="num">55,00 €</td><td class="num">275,00 €</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="3">Total recaudado</td><td class="num">1.675,00 €</td></tr>
+                    </tfoot>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Observaciones</h3>
+                <ul class="note-list">
+                    <li>Datos transcritos de una hoja manuscrita escaneada; algunos precios unitarios son aproximados y se han deducido del total anotado.</li>
+                    <li>El subtotal de alcohol de la hoja es 602 € (la suma exacta de las líneas da 601,09 €, pequeña diferencia de redondeo del original).</li>
+                    <li>El gasto total en bebida más hielo fue de 1.298,11 €, frente a una cuota recaudada de 1.675,00 €.</li>
+                    <li>La cerveza normal (28 paquetes) fue la partida individual más cara con 331,80 €.</li>
+                </ul>
+
+                <div class="table-actions">
+                    <a href="../../Fiestas/index.html" class="primary-button">← Volver atrás</a>
+                    <a href="compra-bebidas-2024.json" class="secondary-button" target="_blank" rel="noopener">Ver JSON</a>
+                    <a href="../../Fiestas/2024/Documentos%20escaneados.pdf" class="secondary-button" download>📄 Descargar PDF original</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function filtrar() {
+            const q = document.getElementById('buscador').value.toLowerCase();
+            document.querySelectorAll('table[data-tabla]').forEach(tabla => {
+                tabla.querySelectorAll('tbody tr').forEach(fila => {
+                    const texto = fila.textContent.toLowerCase();
+                    fila.style.display = texto.includes(q) ? '' : 'none';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
