@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda para cuentas 2026 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .ac-meta { color: #777; font-size: 0.9rem; margin: 0.2rem 0 1.2rem; }
+        .ac-kpis { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+        .ac-kpi { flex: 1 1 150px; background: #fff8f1; border-radius: 14px; padding: 1rem 1.2rem; text-align: center; border: 1px solid #ffe3d3; }
+        .ac-kpi .num { font-family: "Fredoka One", cursive; font-size: 2rem; color: var(--primary-color, #ff6b4a); line-height: 1; }
+        .ac-kpi .lbl { font-size: 0.85rem; color: #666; margin-top: 0.3rem; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 1rem; }
+        th, td { padding: 0.6rem 0.8rem; border-bottom: 1px solid #eee; text-align: left; vertical-align: top; }
+        thead th { background: var(--primary-color, #ff6b4a); color: #fff; font-size: 0.9rem; position: sticky; top: 0; }
+        tbody tr:nth-child(even) { background: #fcfcfc; }
+        td.num, th.num { text-align: right; white-space: nowrap; }
+        .peak td { background: #eafaf1; font-weight: 600; }
+        .total-row td { border-top: 2px solid var(--primary-color, #ff6b4a); font-weight: 700; background: #fff8f1; }
+        .beer-hi td { background: #fff3cd; }
+        .who { color: #666; font-size: 0.85rem; }
+        .note-box { padding: 1rem 1.2rem; background: #fff1ee; border-left: 4px solid var(--primary-color, #ff6b4a); border-radius: 10px; margin: 1rem 0; }
+        .note-box strong { color: var(--primary-color, #ff6b4a); }
+        .cubierto { color: #1e8449; font-weight: 700; }
+        h2 { margin-top: 0; }
+        .legend { font-size: 0.85rem; color: #777; margin-top: 0.4rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../index.html">Fiestas</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="fiesta-page-hero">
+            <div class="container">
+                <p class="eyebrow">Fiestas 2026</p>
+                <h1>Ayuda para cuentas</h1>
+                <p class="lead">Relación de asistencia y bebida para hacer las cuentas del grupo: cuánta gente hay cada día, cuánta gente bebe cada cosa y una aproximación de compra ya ajustada con el sobrante de 2025.</p>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2>Resumen del grupo</h2>
+                    <p class="ac-meta">Lista definitiva de 27 miembros · actualizado 2026-08-21 · «todos los días» = desde el miércoles hasta la carne del toro.</p>
+                    <div class="ac-kpis">
+                        <div class="ac-kpi"><div class="num">27</div><div class="lbl">Personas</div></div>
+                        <div class="ac-kpi"><div class="num">98</div><div class="lbl">Persona-días</div></div>
+                        <div class="ac-kpi"><div class="num">27</div><div class="lbl">Pico (sábado)</div></div>
+                        <div class="ac-kpi"><div class="num">17</div><div class="lbl">Beben cerveza normal</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2>1) Cuánta gente hay cada día</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th class="num">Personas</th>
+                                    <th>Quién entra / cambia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Miércoles</td><td class="num">11</td><td class="who">Solo los de «todos los días»</td></tr>
+                                <tr><td>Jueves</td><td class="num">20</td><td class="who">+Marta, Flores, Álvaro, Elisa, David, Blanca, María, Pimen, Sonia</td></tr>
+                                <tr class="peak"><td>Viernes</td><td class="num">26</td><td class="who">Entra casi todo el grupo (falta solo Javi)</td></tr>
+                                <tr class="peak"><td>Sábado</td><td class="num">27</td><td class="who">Pico: está todo el mundo</td></tr>
+                                <tr><td>Domingo</td><td class="num">14</td><td class="who">«Todos los días» + Marta, Flores, Javi</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="legend">El pico de consumo es <strong>viernes y sábado</strong>: ahí se concentra la compra.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2>2) Relación de bebida (cuánta gente bebe cada cosa)</h2>
+                    <p class="ac-meta"><strong>Personas</strong> = nº de bebedores · <strong>Persona-días</strong> = suma de días que están esos bebedores (mejor indicador de consumo real).</p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Bebida</th>
+                                    <th class="num">Personas</th>
+                                    <th class="num">Persona-días</th>
+                                    <th>Formato</th>
+                                    <th>Quién</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="beer-hi"><td><strong>Cerveza normal</strong></td><td class="num">17</td><td class="num">59</td><td>botellines 25cl</td><td class="who">Flores, Chechu, Josemi, Eve, Leti, Javi, Álvaro, Elisa, Laura, Nacho, David, Ernesto, Blanca, María, Samuel, Mª Rubia, Edu</td></tr>
+                                <tr><td>Cerveza 0,0</td><td class="num">5</td><td class="num">22</td><td>botellines 25cl</td><td class="who">Marta, Cristina, Albert, Sonia, Raúl (+ Helena radler)</td></tr>
+                                <tr><td>Coca-Cola normal</td><td class="num">6</td><td class="num">22</td><td>botellas 2L</td><td class="who">Javi, Laura, Nacho, María, Samuel, Raúl</td></tr>
+                                <tr><td>Coca-Cola Zero</td><td class="num">5</td><td class="num">20</td><td>botellas 2L</td><td class="who">Esmeralda, Leti, Pimen, Albert, Malu (mezcla)</td></tr>
+                                <tr><td>Coca-Cola Zero Zero</td><td class="num">3</td><td class="num">12</td><td>botellas 2L</td><td class="who">Marta, Cristina, Sonia</td></tr>
+                                <tr><td>Aquarius naranja</td><td class="num">2</td><td class="num">7</td><td>latas / botellas</td><td class="who">Esmeralda, Malu</td></tr>
+                                <tr><td>Aquarius limón</td><td class="num">1</td><td class="num">3</td><td>latas / botellas</td><td class="who">Sonia</td></tr>
+                                <tr><td>Agua</td><td class="num">4</td><td class="num">16</td><td>garrafa + botellas 1,5-2L</td><td class="who">Laura, Nacho, Pimen, Sonia (+ cocinar)</td></tr>
+                                <tr><td>Ginebra (gin-tonic / limón / Sprite)</td><td class="num">9</td><td class="num">27</td><td>botellas 70cl (Seagrams/Beefeater/Larios)</td><td class="who">Andreas, Álvaro, Elisa, Ernesto, Blanca, María, Samuel, Javi, Flores</td></tr>
+                                <tr><td>Ron (Barceló / Brugal)</td><td class="num">3</td><td class="num">9</td><td>botellas 70cl</td><td class="who">Chechu, Malu, Helena</td></tr>
+                                <tr><td>Legendario limón</td><td class="num">2</td><td class="num">10</td><td>botellas 70cl</td><td class="who">Josemi, Eve</td></tr>
+                                <tr><td>Cutty (naranja / limón)</td><td class="num">2</td><td class="num">7</td><td>botellas 70cl</td><td class="who">Leti, Mª Rubia</td></tr>
+                                <tr><td>Larios 12 limón</td><td class="num">1</td><td class="num">3</td><td>botella 70cl</td><td class="who">David</td></tr>
+                                <tr><td>Jägermeister</td><td class="num">1</td><td class="num">2</td><td>botella 70cl</td><td class="who">Mª Rubia</td></tr>
+                                <tr><td>Tinto de verano</td><td class="num">1</td><td class="num">2</td><td>botellas 1,5L</td><td class="who">Helena</td></tr>
+                                <tr><td>Tónica (mezclador gin)</td><td class="num">5</td><td class="num">15</td><td>botellas 1L</td><td class="who">Andreas, Álvaro, Ernesto, Blanca, Samuel</td></tr>
+                                <tr><td>Mezclador limón (tipo Fanta limón)</td><td class="num">8</td><td class="num">29</td><td>botellas 1L</td><td class="who">Chechu, Josemi, Eve, Álvaro, Elisa, María, David, Mª Rubia</td></tr>
+                                <tr><td>Sprite</td><td class="num">2</td><td class="num">6</td><td>botellas 1L / 2L</td><td class="who">Javi, Flores</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2>3) Aproximación de compra (ya ajustada)</h2>
+                    <p class="ac-meta">Regla: <em>consumo real 2025 × 1,05 − sobrante reutilizable</em> (objetivo: sobrar ~5%). Cerveza normal y destilados se restan del sobrante 2025; refrescos, cerveza 0,0 y tónica <strong>caducan</strong> y no se restan.</p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th class="num">Base</th>
+                                    <th class="num">Sobrante 2025</th>
+                                    <th class="num">Comprar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="beer-hi"><td>Cerveza normal (25cl)</td><td class="num">145</td><td class="num">86</td><td class="num">~74</td></tr>
+                                <tr><td>Cerveza 0,0</td><td class="num">30</td><td class="num">34</td><td class="num cubierto">0 (cubierto)</td></tr>
+                                <tr><td>Coca-Cola normal 2L</td><td class="num">12</td><td class="num">—</td><td class="num">~7</td></tr>
+                                <tr><td>Coca-Cola Zero 2L</td><td class="num">36</td><td class="num">caduca</td><td class="num">~30</td></tr>
+                                <tr><td>Coca-Cola Zero Zero 2L</td><td class="num">10</td><td class="num">caduca</td><td class="num">~10</td></tr>
+                                <tr><td>Aquarius naranja</td><td class="num">24</td><td class="num">0</td><td class="num">~26</td></tr>
+                                <tr><td>Agua 1,5L</td><td class="num">55</td><td class="num">0</td><td class="num">~60</td></tr>
+                                <tr><td>Sprite / limón 1L</td><td class="num">10</td><td class="num">0</td><td class="num">~11</td></tr>
+                                <tr><td>Mezclador limón 1L</td><td class="num">20</td><td class="num">0</td><td class="num">~22</td></tr>
+                                <tr><td>Tónica 1L</td><td class="num">8</td><td class="num">5</td><td class="num">~4</td></tr>
+                                <tr><td>Seagrams 70cl</td><td class="num">6</td><td class="num">7</td><td class="num cubierto">0 (cubierto)*</td></tr>
+                                <tr><td>Barceló 70cl</td><td class="num">3</td><td class="num">5</td><td class="num cubierto">0 (cubierto)*</td></tr>
+                                <tr><td>Legendario 70cl</td><td class="num">4</td><td class="num">0</td><td class="num">~4</td></tr>
+                                <tr><td>Cutty naranja 70cl</td><td class="num">2</td><td class="num">1</td><td class="num">~1</td></tr>
+                                <tr><td>Larios 12 70cl</td><td class="num">2</td><td class="num">2</td><td class="num cubierto">0*</td></tr>
+                                <tr><td>Jägermeister 70cl</td><td class="num">1</td><td class="num">0</td><td class="num">~1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="legend">* Antes de dar por cubierto Seagrams / Barceló / Larios, comprobar que las botellas del año pasado están en buen estado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2>Avisos para la reunión</h2>
+                    <div class="note-box">
+                        <p>🍺 <strong>La cerveza normal es la partida a vigilar</strong>: 17 bebedores y 59 persona-días (≈60% del volumen). El año pasado sobraron 86 botellines, por eso este año se compra bastante menos.</p>
+                    </div>
+                    <div class="note-box">
+                        <p>✅ <strong>Lista definitiva de 27 personas</strong> (incluye a Raúl, Edu y Helena). Con la tabla del punto 2 podéis ir persona a persona confirmando quién bebe qué y ajustar en el sitio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Peña Matagatos</p>
+        </div>
+    </footer>
+</body>
+</html>
