@@ -854,6 +854,34 @@ h3 {
     color: var(--text-dark);
 }
 
+.mural-figure {
+    margin: 0 0 1.5rem;
+    text-align: center;
+}
+
+.mural-figure .mural-img {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(231, 76, 60, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mural-figure a:hover .mural-img {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.mural-figure figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--text-muted, #6b6b6b);
+}
+
 .materials-box {
     background: linear-gradient(135deg, #fffaf3, #fff4d9);
     border: 2px dashed rgba(231, 76, 60, 0.35);
