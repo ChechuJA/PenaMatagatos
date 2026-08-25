@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de bebida 2026 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .calc-meta { color: #777; font-size: 0.9rem; margin: 0.2rem 0 1.2rem; }
+        .calc-toolbar { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-bottom: 1rem; }
+        .calc-toolbar label { font-size: 0.9rem; color: #555; display: flex; align-items: center; gap: 0.4rem; }
+        .calc-toolbar input[type="number"] { width: 70px; padding: 0.4rem 0.5rem; border: 2px solid #ffd9c9; border-radius: 8px; font-family: inherit; font-size: 0.95rem; }
+        .calc-kpis { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.4rem; }
+        .calc-kpi { flex: 1 1 130px; background: #fff8f1; border-radius: 14px; padding: 0.9rem 1rem; text-align: center; border: 1px solid #ffe3d3; }
+        .calc-kpi .num { font-family: "Fredoka One", cursive; font-size: 1.8rem; color: var(--primary-color, #ff6b4a); line-height: 1; }
+        .calc-kpi .lbl { font-size: 0.8rem; color: #666; margin-top: 0.3rem; }
+        .day-bar { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.6rem 0 1.2rem; }
+        .day-chip { background: #eafaf1; border: 1px solid #cdeedd; border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.85rem; color: #1e8449; font-weight: 600; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 0.5rem 0 1rem; }
+        th, td { padding: 0.55rem 0.7rem; border-bottom: 1px solid #eee; text-align: left; vertical-align: middle; }
+        thead th { background: var(--primary-color, #ff6b4a); color: #fff; font-size: 0.85rem; position: sticky; top: 0; z-index: 2; }
+        tbody tr:nth-child(even) { background: #fcfcfc; }
+        td.num, th.num { text-align: right; white-space: nowrap; }
+        td.center, th.center { text-align: center; }
+        .buy-cell { font-family: "Fredoka One", cursive; font-size: 1.15rem; color: var(--primary-color, #ff6b4a); }
+        .buy-zero { color: #1e8449; font-size: 0.9rem; font-family: inherit; font-weight: 700; }
+        .mini-input { width: 62px; padding: 0.3rem 0.4rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.9rem; text-align: right; }
+        .unit { color: #999; font-size: 0.8rem; }
+        details.people { border: 1px solid #ffe3d3; border-radius: 12px; padding: 0.4rem 1rem; margin-bottom: 1.4rem; background: #fffdfb; }
+        details.people summary { cursor: pointer; font-weight: 700; color: var(--primary-color, #ff6b4a); padding: 0.5rem 0; }
+        .people-table th, .people-table td { padding: 0.35rem 0.5rem; font-size: 0.88rem; }
+        .people-table input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--primary-color, #ff6b4a); }
+        .btn { padding: 0.55rem 1.1rem; border: none; border-radius: 999px; font-family: inherit; font-weight: 600; cursor: pointer; font-size: 0.9rem; }
+        .btn-ghost { background: #fff1ee; color: var(--primary-color, #ff6b4a); border: 2px solid #ffd9c9; }
+        .note-box { padding: 0.9rem 1.1rem; background: #fff1ee; border-left: 4px solid var(--primary-color, #ff6b4a); border-radius: 10px; margin: 1rem 0; font-size: 0.92rem; }
+        .note-box strong { color: var(--primary-color, #ff6b4a); }
+        h2 { margin-top: 0; }
+        .legend { font-size: 0.82rem; color: #777; margin-top: 0.4rem; }
+        .destilado-row td:first-child::after { content: " · destilado"; color: #b98; font-size: 0.72rem; }
+        .saved-flag { font-size: 0.8rem; color: #1e8449; margin-left: 0.5rem; opacity: 0; transition: opacity 0.3s; }
+        .saved-flag.show { opacity: 1; }
+        @media print { header, footer, .calc-toolbar, details.people, .no-print { display: none !important; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../index.html">Fiestas</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="fiesta-page-hero">
+            <div class="container">
+                <p class="eyebrow">Fiestas 2026</p>
+                <h1>Calculadora de bebida</h1>
+                <p class="lead">Marca quién viene cada día y ajusta las raciones: la compra se recalcula sola. Todo se guarda en tu navegador (móvil u ordenador), así que al volver sigue como lo dejaste.</p>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2>Resumen en vivo <span id="saved-flag" class="saved-flag">✓ guardado</span></h2>
+                    <p class="calc-meta">Base: lista definitiva de 27 miembros con sus preferencias. Los cambios se guardan automáticamente en este dispositivo.</p>
+
+                    <div class="calc-kpis" id="kpis"></div>
+
+                    <p class="dashboard-label secondary" style="margin-bottom:0.3rem;">Personas por día</p>
+                    <div class="day-bar" id="day-bar"></div>
+
+                    <div class="calc-toolbar">
+                        <label>Colchón bebida/refresco:
+                            <input type="number" id="colchon-bebida" min="0" max="50" step="1" value="10">%
+                        </label>
+                        <label>Colchón destilados:
+                            <input type="number" id="colchon-dest" min="0" max="50" step="1" value="5">%
+                        </label>
+                        <button type="button" class="btn btn-ghost" id="btn-print">🖨️ Imprimir</button>
+                        <button type="button" class="btn btn-ghost" id="btn-reset">↺ Restablecer valores</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <details class="people">
+                        <summary>👥 Quién viene cada día (pulsa para editar)</summary>
+                        <p class="calc-meta">Marca o desmarca días. La compra se ajusta al instante. «Mié» = desde el miércoles (los de «todos los días»).</p>
+                        <div class="table-wrap">
+                            <table class="people-table">
+                                <thead>
+                                    <tr>
+                                        <th>Persona</th>
+                                        <th class="center">Mié</th>
+                                        <th class="center">Jue</th>
+                                        <th class="center">Vie</th>
+                                        <th class="center">Sáb</th>
+                                        <th class="center">Dom</th>
+                                        <th class="num">Días</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="people-body"></tbody>
+                            </table>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <h2>Compra recomendada</h2>
+                    <p class="calc-meta">Fórmula: <em>compra = ración × persona-días × (1 + colchón) − sobrante reutilizable</em>. Los refrescos, cerveza 0,0 y tónica caducan (no se resta sobrante); cerveza normal y destilados sí se restan.</p>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Bebida</th>
+                                    <th class="num">Ración<br><span class="unit">ud/persona-día</span></th>
+                                    <th class="num">Persona-días</th>
+                                    <th class="num">Consumo</th>
+                                    <th class="center">Comprado 2025</th>
+                                    <th class="center">Sobrante 2025</th>
+                                    <th class="center">¿Se resta?</th>
+                                    <th class="num">Comprar</th>
+                                    <th>Formato</th>
+                                </tr>
+                            </thead>
+                            <tbody id="drinks-body"></tbody>
+                        </table>
+                    </div>
+                    <p class="legend">La cerveza normal se reparte en <strong>Mahou Clásica (verde, ≈31%)</strong>, <strong>Mahou 5 Estrellas (roja, ≈32%)</strong> y <strong>Estrella Galicia (≈37%)</strong> según el consumo real de 2025, cada una con su propio sobrante (30 / 23 / 30). «Comprado 2025» es solo referencia de lo que se compró el año pasado (— = no registrado en cantidad). «Consumo» = ración × persona-días. «Comprar» aplica el colchón y resta el sobrante solo si está marcado «¿Se resta?». Todo es editable: ración, sobrante y si se reutiliza.</p>
+                    <div class="note-box">
+                        <p>🍺 <strong>Tres tipos de cerveza:</strong> este año la gente no ha indicado marca, así que repartimos el consumo total de cerveza según lo comprado y sobrado en 2025: <strong>Mahou Clásica (verde) ≈31%</strong>, <strong>Mahou 5 Estrellas (roja) ≈32%</strong> y <strong>Estrella Galicia ≈37%</strong> (Edu + ≈1/3 del grupo). Comprado 2025: 192 Clásica + 144 5 Estrellas + 192 Estrella Galicia (ticket Alcampo). Sobrante Mahou 2025 = 53 (roja+verde juntas), repartido ≈30/23 según lo comprado. Cuando se confirme el gusto de cada uno, se ajusta el reparto.</p>
+                    </div>
+                    <div class="note-box">
+                        <p>💡 <strong>Consejo:</strong> antes de dar por cubierto un destilado con el sobrante (Seagrams, Barceló, Larios…), comprueba que las botellas del año pasado están en buen estado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Peña Matagatos</p>
+        </div>
+    </footer>
+
+    <script>
+    "use strict";
+    const STORAGE_KEY = "pm-calc-bebida-2026-v6";
+    const DAYS = ["Mié", "Jue", "Vie", "Sáb", "Dom"];
+
+    // Patrones de asistencia (Mié, Jue, Vie, Sáb, Dom)
+    const P = {
+        todos:        [true,  true,  true,  true,  true],
+        jueDom:       [false, true,  true,  true,  true],
+        jueSab:       [false, true,  true,  true,  false],
+        vieSab:       [false, false, true,  true,  false],
+        sabDom:       [false, false, false, true,  true],
+    };
+
+    // Miembros con sus bebidas (claves de DRINKS). Lista definitiva 27.
+    const MEMBERS_DEFAULT = [
+        { name: "Marta",       days: P.jueDom, drinks: ["cerveza00", "cocacolazerozero"] },
+        { name: "Flores",      days: P.jueDom, drinks: ["cerveza", "ginebra", "sprite"] },
+        { name: "Chechu",      days: P.todos,  drinks: ["cerveza", "ron", "mezclador_limon"] },
+        { name: "Esmeralda",   days: P.todos,  drinks: ["cocacolazero", "aquarius_naranja"] },
+        { name: "Josemi",      days: P.todos,  drinks: ["cerveza", "legendario", "mezclador_limon"] },
+        { name: "Eve",         days: P.todos,  drinks: ["cerveza", "legendario", "mezclador_limon"] },
+        { name: "Leti",        days: P.todos,  drinks: ["cerveza", "cutty", "cocacolazero"] },
+        { name: "Javi",        days: P.sabDom, drinks: ["cerveza", "ginebra", "sprite", "cocacola"] },
+        { name: "Andreas",     days: P.todos,  drinks: ["ginebra", "tonica"] },
+        { name: "Álvaro",      days: P.jueSab, drinks: ["cerveza", "ginebra", "mezclador_limon", "tonica"] },
+        { name: "Elisa",       days: P.jueSab, drinks: ["cerveza", "ginebra", "mezclador_limon"] },
+        { name: "Laura",       days: P.todos,  drinks: ["cerveza", "cocacola", "agua"] },
+        { name: "Nacho",       days: P.todos,  drinks: ["cerveza", "cocacola", "agua"] },
+        { name: "David",       days: P.jueSab, drinks: ["cerveza", "larios", "mezclador_limon"] },
+        { name: "Malu",        days: P.vieSab, drinks: ["aquarius_naranja", "ron", "cocacolazero"] },
+        { name: "Ernesto",     days: P.vieSab, drinks: ["cerveza", "ginebra", "tonica"] },
+        { name: "Cristina",    days: P.todos,  drinks: ["cerveza00", "cocacolazerozero"] },
+        { name: "Blanca",      days: P.jueSab, drinks: ["cerveza", "ginebra", "tonica"] },
+        { name: "María",       days: P.jueSab, drinks: ["cerveza", "cocacola", "ginebra", "mezclador_limon"] },
+        { name: "Samuel",      days: P.vieSab, drinks: ["cerveza", "cocacola", "ginebra", "tonica"] },
+        { name: "María Rubia", days: P.vieSab, drinks: ["cerveza", "cutty", "mezclador_limon", "jager"] },
+        { name: "Pimen",       days: P.jueSab, drinks: ["agua", "cocacolazero"] },
+        { name: "Albert",      days: P.todos,  drinks: ["cerveza00", "cocacolazero"] },
+        { name: "Sonia",       days: P.jueSab, drinks: ["cerveza00", "cocacolazerozero", "aquarius_limon", "agua"] },
+        { name: "Raúl",        days: P.todos,  drinks: ["cerveza00", "cocacola"] },
+        { name: "Edu",         days: P.vieSab, drinks: ["cerveza"] },
+        { name: "Helena",      days: P.vieSab, drinks: ["cerveza00", "tinto", "ron", "cocacolazero"] },
+    ];
+
+    // Config de bebidas: ración (ud/persona-día), sobrante 2025, reutiliza, destilado, formato
+    // comprado2025 = referencia de lo que se compró el año pasado (null = no registrado en cantidad)
+    const DRINKS_DEFAULT = [
+        { key: "cerveza_clasica",  label: "Mahou Clásica (verde)",   racion: 2.5,  share: 0.31, pdSource: "cerveza", comprado2025: 192,  sobrante: 30, reutiliza: true,  destilado: false, unidad: "botellines 25cl" },
+        { key: "cerveza_5estrellas", label: "Mahou 5 Estrellas (roja)", racion: 2.5, share: 0.32, pdSource: "cerveza", comprado2025: 144, sobrante: 23, reutiliza: true, destilado: false, unidad: "botellines 25cl" },
+        { key: "cerveza_galicia",  label: "Estrella Galicia",        racion: 2.5,  share: 0.37, pdSource: "cerveza", comprado2025: 192, sobrante: 30, reutiliza: true, destilado: false, unidad: "botellines 25cl" },
+        { key: "cerveza00",        label: "Cerveza 0,0 / radler",    racion: 1.25, comprado2025: 96, sobrante: 34, reutiliza: false, destilado: false, unidad: "botellines 25cl" },
+        { key: "cocacola",         label: "Coca-Cola normal",        racion: 0.55, comprado2025: 6,    sobrante: 6,  reutiliza: false, destilado: false, unidad: "botellas 2L" },
+        { key: "cocacolazero",     label: "Coca-Cola Zero",          racion: 1.6,  comprado2025: 36,   sobrante: 30, reutiliza: false, destilado: false, unidad: "botellas 2L" },
+        { key: "cocacolazerozero", label: "Coca-Cola Zero Zero",     racion: 0.85, comprado2025: 6,    sobrante: 0,  reutiliza: false, destilado: false, unidad: "botellas 2L" },
+        { key: "aquarius_naranja", label: "Aquarius naranja",        racion: 3.4,  comprado2025: null, sobrante: 0,  reutiliza: false, destilado: false, unidad: "latas / botellas" },
+        { key: "aquarius_limon",   label: "Aquarius limón",          racion: 1.0,  comprado2025: null, sobrante: 0,  reutiliza: false, destilado: false, unidad: "latas / botellas" },
+        { key: "agua",             label: "Agua",                    racion: 3.4,  comprado2025: null, sobrante: 0,  reutiliza: false, destilado: false, unidad: "botellas 1,5L" },
+        { key: "ginebra",          label: "Ginebra (Seagrams/Beefeater)", racion: 0.25, comprado2025: 14, sobrante: 7, reutiliza: true, destilado: true, unidad: "botellas 70cl" },
+        { key: "ron",              label: "Ron (Barceló/Brugal)",    racion: 0.35, comprado2025: 8,   sobrante: 5,  reutiliza: true,  destilado: true,  unidad: "botellas 70cl" },
+        { key: "legendario",       label: "Legendario",              racion: 0.4,  comprado2025: 2,   sobrante: 0,  reutiliza: true,  destilado: true,  unidad: "botellas 70cl" },
+        { key: "cutty",            label: "Cutty (naranja/limón)",   racion: 0.4,  comprado2025: 6,   sobrante: 1,  reutiliza: true,  destilado: true,  unidad: "botellas 70cl" },
+        { key: "larios",           label: "Larios 12",               racion: 0.65, comprado2025: 4,   sobrante: 2,  reutiliza: true,  destilado: true,  unidad: "botellas 70cl" },
+        { key: "jager",            label: "Jägermeister",            racion: 0.5,  comprado2025: null, sobrante: 0,  reutiliza: true,  destilado: true,  unidad: "botellas 70cl" },
+        { key: "tinto",            label: "Tinto de verano",         racion: 1.0,  comprado2025: 0,    sobrante: 0,  reutiliza: false, destilado: false, unidad: "botellas 1,5L" },
+        { key: "tonica",           label: "Tónica (mezclador)",      racion: 0.53, comprado2025: 15,   sobrante: 5,  reutiliza: false, destilado: false, unidad: "botellas 1L" },
+        { key: "mezclador_limon",  label: "Mezclador limón (Fanta limón)", racion: 0.69, comprado2025: 24, sobrante: 6, reutiliza: false, destilado: false, unidad: "botellas 1L" },
+        { key: "sprite",           label: "Sprite",                  racion: 1.67, comprado2025: null, sobrante: 0,  reutiliza: false, destilado: false, unidad: "botellas 1L" },
+    ];
+
+    // Estado (clonado de los defaults, sobreescrito por localStorage)
+    let members = [];
+    let drinks = [];
+    let colchonBebida = 10;
+    let colchonDest = 5;
+
+    function clone(o) { return JSON.parse(JSON.stringify(o)); }
+
+    function loadState() {
+        members = clone(MEMBERS_DEFAULT);
+        drinks = clone(DRINKS_DEFAULT);
+        colchonBebida = 10;
+        colchonDest = 5;
+        try {
+            const raw = localStorage.getItem(STORAGE_KEY);
+            if (!raw) return;
+            const s = JSON.parse(raw);
+            if (typeof s.colchonBebida === "number") colchonBebida = s.colchonBebida;
+            if (typeof s.colchonDest === "number") colchonDest = s.colchonDest;
+            if (s.days) {
+                members.forEach(m => { if (Array.isArray(s.days[m.name])) m.days = s.days[m.name].slice(0, 5); });
+            }
+            if (s.drinks) {
+                drinks.forEach(d => {
+                    const o = s.drinks[d.key];
+                    if (!o) return;
+                    if (typeof o.racion === "number") d.racion = o.racion;
+                    if (typeof o.sobrante === "number") d.sobrante = o.sobrante;
+                    if (typeof o.reutiliza === "boolean") d.reutiliza = o.reutiliza;
+                });
+            }
+        } catch (e) { /* estado corrupto: usar defaults */ }
+    }
+
+    let saveTimer = null;
+    function saveState() {
+        const s = { colchonBebida, colchonDest, days: {}, drinks: {} };
+        members.forEach(m => { s.days[m.name] = m.days; });
+        drinks.forEach(d => { s.drinks[d.key] = { racion: d.racion, sobrante: d.sobrante, reutiliza: d.reutiliza }; });
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch (e) { /* sin storage */ }
+        const flag = document.getElementById("saved-flag");
+        flag.classList.add("show");
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(() => flag.classList.remove("show"), 1200);
+    }
+
+    // Cálculos
+    function personDays(m) { return m.days.reduce((a, b) => a + (b ? 1 : 0), 0); }
+
+    function keyPersonDays(key) {
+        let total = 0;
+        members.forEach(m => { if (m.drinks.includes(key)) total += personDays(m); });
+        return total;
+    }
+
+    // Persona-días de una bebida: usa su clave de origen (pdSource) y su cuota (share) si los tiene
+    function drinkPersonDays(d) {
+        const key = (typeof d === "string") ? d : (d.pdSource || d.key);
+        const share = (typeof d === "string") ? 1 : (d.share || 1);
+        return keyPersonDays(key) * share;
+    }
+
+    function peoplePerDay() {
+        return DAYS.map((_, i) => members.reduce((a, m) => a + (m.days[i] ? 1 : 0), 0));
+    }
+
+    function totalPeople() { return members.filter(m => personDays(m) > 0).length; }
+    function totalPersonDays() { return members.reduce((a, m) => a + personDays(m), 0); }
+
+    function computeBuy(d) {
+        const pd = drinkPersonDays(d);
+        const consumo = d.racion * pd;
+        const colchon = d.destilado ? colchonDest : colchonBebida;
+        const resta = d.reutiliza ? d.sobrante : 0;
+        const buy = Math.max(Math.ceil(consumo * (1 + colchon / 100) - resta), 0);
+        return { pd, consumo, buy };
+    }
+
+    // Render
+    function renderKpis() {
+        const el = document.getElementById("kpis");
+        el.innerHTML = `
+            <div class="calc-kpi"><div class="num">${totalPeople()}</div><div class="lbl">Personas</div></div>
+            <div class="calc-kpi"><div class="num">${totalPersonDays()}</div><div class="lbl">Persona-días</div></div>
+            <div class="calc-kpi"><div class="num">${Math.max(...peoplePerDay())}</div><div class="lbl">Pico (día)</div></div>
+            <div class="calc-kpi"><div class="num">${keyPersonDays("cerveza")}</div><div class="lbl">Persona-días cerveza</div></div>
+        `;
+    }
+
+    function renderDayBar() {
+        const el = document.getElementById("day-bar");
+        const ppd = peoplePerDay();
+        el.innerHTML = DAYS.map((d, i) => `<span class="day-chip">${d}: ${ppd[i]}</span>`).join("");
+    }
+
+    function renderPeople() {
+        const body = document.getElementById("people-body");
+        body.innerHTML = members.map((m, mi) => `
+            <tr>
+                <td>${m.name}</td>
+                ${m.days.map((v, di) => `<td class="center"><input type="checkbox" data-m="${mi}" data-d="${di}" ${v ? "checked" : ""}></td>`).join("")}
+                <td class="num" id="pd-${mi}">${personDays(m)}</td>
+            </tr>
+        `).join("");
+        body.querySelectorAll("input[type=checkbox]").forEach(cb => {
+            cb.addEventListener("change", e => {
+                const mi = +e.target.dataset.m, di = +e.target.dataset.d;
+                members[mi].days[di] = e.target.checked;
+                document.getElementById("pd-" + mi).textContent = personDays(members[mi]);
+                renderAll();
+                saveState();
+            });
+        });
+    }
+
+    function renderDrinks() {
+        const body = document.getElementById("drinks-body");
+        body.innerHTML = drinks.map((d, di) => {
+            const { pd, consumo, buy } = computeBuy(d);
+            const buyCell = buy > 0
+                ? `<span class="buy-cell">${buy}</span>`
+                : `<span class="buy-zero">0 · cubierto</span>`;
+            return `
+            <tr class="${d.destilado ? "destilado-row" : ""}">
+                <td>${d.label}</td>
+                <td class="num"><input type="number" class="mini-input" min="0" step="0.05" value="${d.racion}" data-field="racion" data-i="${di}"></td>
+                <td class="num">${Math.round(pd)}</td>
+                <td class="num">${consumo.toFixed(1)}</td>
+                <td class="center unit">${d.comprado2025 === null ? "—" : d.comprado2025}</td>
+                <td class="center"><input type="number" class="mini-input" min="0" step="1" value="${d.sobrante}" data-field="sobrante" data-i="${di}"></td>
+                <td class="center"><input type="checkbox" data-field="reutiliza" data-i="${di}" ${d.reutiliza ? "checked" : ""}></td>
+                <td class="num">${buyCell}</td>
+                <td class="unit">${d.unidad}</td>
+            </tr>`;
+        }).join("");
+        body.querySelectorAll("input").forEach(inp => {
+            inp.addEventListener("change", e => {
+                const i = +e.target.dataset.i, f = e.target.dataset.field;
+                if (f === "reutiliza") drinks[i].reutiliza = e.target.checked;
+                else drinks[i][f] = Math.max(0, parseFloat(e.target.value) || 0);
+                renderDrinks();
+                renderKpis();
+                saveState();
+            });
+        });
+    }
+
+    function renderAll() {
+        renderKpis();
+        renderDayBar();
+        renderDrinks();
+    }
+
+    // Init
+    function init() {
+        loadState();
+        document.getElementById("colchon-bebida").value = colchonBebida;
+        document.getElementById("colchon-dest").value = colchonDest;
+        renderPeople();
+        renderAll();
+
+        document.getElementById("colchon-bebida").addEventListener("input", e => {
+            colchonBebida = Math.max(0, parseFloat(e.target.value) || 0);
+            renderDrinks(); saveState();
+        });
+        document.getElementById("colchon-dest").addEventListener("input", e => {
+            colchonDest = Math.max(0, parseFloat(e.target.value) || 0);
+            renderDrinks(); saveState();
+        });
+        document.getElementById("btn-print").addEventListener("click", () => window.print());
+        document.getElementById("btn-reset").addEventListener("click", () => {
+            if (!confirm("¿Restablecer todos los valores a los datos originales? Se perderán tus cambios guardados.")) return;
+            localStorage.removeItem(STORAGE_KEY);
+            loadState();
+            document.getElementById("colchon-bebida").value = colchonBebida;
+            document.getElementById("colchon-dest").value = colchonDest;
+            renderPeople();
+            renderAll();
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+    </script>
+</body>
+</html>
