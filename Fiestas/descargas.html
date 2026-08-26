@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../LogoMatagatos.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .dl-search { width: 100%; padding: 0.75rem 1.1rem; border: 2px solid var(--primary-color, #ff6b4a); border-radius: 999px; font-size: 1rem; font-family: inherit; margin-bottom: 1.5rem; }
+        .dl-search:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,107,74,0.2); }
+        .dl-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+        .dl-item { display: flex; align-items: center; gap: 0.9rem; padding: 0.85rem 1rem; background: #fff8f1; border: 1px solid #f0e2d4; border-radius: 12px; text-decoration: none; color: var(--text-dark, #333); transition: transform 0.12s ease, box-shadow 0.12s ease; }
+        .dl-item:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+        .dl-ico { font-size: 1.6rem; flex-shrink: 0; }
+        .dl-body { flex: 1; min-width: 0; }
+        .dl-name { font-weight: 600; display: block; }
+        .dl-path { font-size: 0.8rem; color: #999; word-break: break-all; }
+        .dl-tag { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em; background: var(--primary-color, #ff6b4a); color: #fff; padding: 0.15rem 0.55rem; border-radius: 999px; flex-shrink: 0; }
+        .dl-empty { padding: 1.2rem; color: #999; text-align: center; display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="index.html">Fiestas</a></li>
+                <li><a href="../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="fiesta-page-hero">
+            <div class="container">
+                <p class="eyebrow">Peña Matagatos</p>
+                <h1>Descargas</h1>
+                <p class="lead">Todos los documentos, PDF, imágenes, Excel y datos del repositorio en un solo sitio para consultar o descargar. Usa el buscador para filtrar.</p>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <input type="search" id="dl-search" class="dl-search" placeholder="🔍 Buscar archivo…" aria-label="Buscar archivo descargable">
+                    <p class="dl-empty" id="dl-empty">No hay resultados para tu búsqueda.</p>
+
+                    <h2 style="margin-top: 0;">🍺 Pedidos y presupuestos 2026</h2>
+                    <ul class="dl-list">
+                        <li><a class="dl-item" href="../historico/2026/cuentas/estimacion/MATAGATOS-2026-pedido-whatsapp.txt" download><span class="dl-ico">📝</span><span class="dl-body"><span class="dl-name">Lista de pedido (WhatsApp)</span><span class="dl-path">MATAGATOS-2026-pedido-whatsapp.txt</span></span><span class="dl-tag">TXT</span></a></li>
+                        <li><a class="dl-item" href="../historico/2026/cuentas/estimacion/MATAGATOS-2026-lista-presupuestos.md" download><span class="dl-ico">📋</span><span class="dl-body"><span class="dl-name">Lista para presupuestos</span><span class="dl-path">MATAGATOS-2026-lista-presupuestos.md</span></span><span class="dl-tag">MD</span></a></li>
+                        <li><a class="dl-item" href="../historico/2026/cuentas/estimacion/MATAGATOS-2026-estimacion.md" download><span class="dl-ico">🧮</span><span class="dl-body"><span class="dl-name">Estimación de bebida 2026</span><span class="dl-path">MATAGATOS-2026-estimacion.md</span></span><span class="dl-tag">MD</span></a></li>
+                        <li><a class="dl-item" href="../historico/2026/cuentas/estimacion/MATAGATOS 2026.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">Cuaderno estimación 2026 (escaneado)</span><span class="dl-path">MATAGATOS 2026.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../fiestas-2026-plan-bebida.md" download><span class="dl-ico">📋</span><span class="dl-body"><span class="dl-name">Plan de bebida 2026</span><span class="dl-path">fiestas-2026-plan-bebida.md</span></span><span class="dl-tag">MD</span></a></li>
+                        <li><a class="dl-item" href="../fiestas-2026-lista-compra.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Lista de compra 2026</span><span class="dl-path">fiestas-2026-lista-compra.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../fiestas-2026-bebidas.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Bebidas 2026</span><span class="dl-path">fiestas-2026-bebidas.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../fiestas-2026-comida.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Comida 2026</span><span class="dl-path">fiestas-2026-comida.json</span></span><span class="dl-tag">JSON</span></a></li>
+                    </ul>
+
+                    <h2>🏷️ Proveedores 2026</h2>
+                    <ul class="dl-list">
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/Licoreo Precios 2026.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">Licoreo · Precios 2026</span><span class="dl-path">Licoreo Precios 2026.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/Albaran_26_7992_VENTA_CONTADODAVID_CAAVERAS_.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">Licoreo · Albarán 26_7992</span><span class="dl-path">Albaran_26_7992_VENTA_CONTADODAVID_CAAVERAS_.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../historico/2026/otras_peñas/JM_PresupuestoAlbaran_26_9083_SALVA__CAAVERAS__.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">JM · Presupuesto/Albarán 26_9083</span><span class="dl-path">JM_PresupuestoAlbaran_26_9083_SALVA__CAAVERAS__.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../historico/2025/JMDistribuidores_2025.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">JM Distribuidores 2025</span><span class="dl-path">JMDistribuidores_2025.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../fiestas-2026-precios-proveedores.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Comparativa precios proveedores</span><span class="dl-path">fiestas-2026-precios-proveedores.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/LicoreoColocon_cerveza.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Licoreo · Cerveza</span><span class="dl-path">LicoreoColocon_cerveza.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/LicoreoColocon_refrescos.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Licoreo · Refrescos</span><span class="dl-path">LicoreoColocon_refrescos.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/LicoreoColocon_alcohol.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Licoreo · Alcohol</span><span class="dl-path">LicoreoColocon_alcohol.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/LicoreoColocon_vinos.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Licoreo · Vinos</span><span class="dl-path">LicoreoColocon_vinos.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/LicoreoColocon_vasos.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Licoreo · Vasos</span><span class="dl-path">LicoreoColocon_vasos.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/Licoreo/LicoreColocon_menaje.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Licoreo · Menaje</span><span class="dl-path">LicoreColocon_menaje.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/JM/JMBBmas_cerveza.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">JM · Cerveza</span><span class="dl-path">JMBBmas_cerveza.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/JM/JMBBmas_refrescos.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">JM · Refrescos</span><span class="dl-path">JMBBmas_refrescos.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/JM/JMBBmas_alcohol.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">JM · Alcohol</span><span class="dl-path">JMBBmas_alcohol.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/JM/JMBBmas_vinos.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">JM · Vinos</span><span class="dl-path">JMBBmas_vinos.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/proveedores/JM/JMBBmas_menaje.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">JM · Menaje</span><span class="dl-path">JMBBmas_menaje.json</span></span><span class="dl-tag">JSON</span></a></li>
+                    </ul>
+
+                    <h2>💶 Cuentas y tickets 2026</h2>
+                    <ul class="dl-list">
+                        <li><a class="dl-item" href="../historico/2026/cuentas/tickets-bebida.json" download><span class="dl-ico">🧾</span><span class="dl-body"><span class="dl-name">Tickets bebida</span><span class="dl-path">tickets-bebida.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../historico/2026/cuentas/tickets-comida.json" download><span class="dl-ico">🧾</span><span class="dl-body"><span class="dl-name">Tickets comida</span><span class="dl-path">tickets-comida.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../historico/2026/cuentas/tickets-menaje.json" download><span class="dl-ico">🧾</span><span class="dl-body"><span class="dl-name">Tickets menaje</span><span class="dl-path">tickets-menaje.json</span></span><span class="dl-tag">JSON</span></a></li>
+                    </ul>
+
+                    <h2>📚 Histórico</h2>
+                    <ul class="dl-list">
+                        <li><a class="dl-item" href="../historico/2025/Peña Matagatos 2025.xlsx" download><span class="dl-ico">📊</span><span class="dl-body"><span class="dl-name">Peña Matagatos 2025 (hoja de cálculo)</span><span class="dl-path">Peña Matagatos 2025.xlsx</span></span><span class="dl-tag">XLSX</span></a></li>
+                        <li><a class="dl-item" href="../historico/2025/gastos-2025.json" download><span class="dl-ico">💶</span><span class="dl-body"><span class="dl-name">Gastos 2025</span><span class="dl-path">gastos-2025.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../historico/2025/sobrantes-2025-resumen.md" download><span class="dl-ico">📦</span><span class="dl-body"><span class="dl-name">Sobrantes 2025 (resumen)</span><span class="dl-path">sobrantes-2025-resumen.md</span></span><span class="dl-tag">MD</span></a></li>
+                        <li><a class="dl-item" href="../historico/2024/Documentos escaneados.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">Documentos escaneados 2024</span><span class="dl-path">Documentos escaneados.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../historico/2024/compra-bebidas-2024.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Compra bebidas 2024</span><span class="dl-path">compra-bebidas-2024.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../historico/2023/Compra_29082023.jpeg" download><span class="dl-ico">🖼️</span><span class="dl-body"><span class="dl-name">Compra 29/08/2023 (foto)</span><span class="dl-path">Compra_29082023.jpeg</span></span><span class="dl-tag">JPEG</span></a></li>
+                        <li><a class="dl-item" href="../historico/2023/compra-bebidas-2023.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Compra bebidas 2023</span><span class="dl-path">compra-bebidas-2023.json</span></span><span class="dl-tag">JSON</span></a></li>
+                        <li><a class="dl-item" href="../fiestas-2025-bebidas.json" download><span class="dl-ico">🗂️</span><span class="dl-body"><span class="dl-name">Bebidas 2025</span><span class="dl-path">fiestas-2025-bebidas.json</span></span><span class="dl-tag">JSON</span></a></li>
+                    </ul>
+
+                    <h2>🎨 Mural y tareas</h2>
+                    <ul class="dl-list">
+                        <li><a class="dl-item" href="../Fiestas/2026/mural/TAREAS PEÑAS.docx" download><span class="dl-ico">📝</span><span class="dl-body"><span class="dl-name">Tareas Peñas 2026</span><span class="dl-path">TAREAS PEÑAS.docx</span></span><span class="dl-tag">DOCX</span></a></li>
+                        <li><a class="dl-item" href="../Fiestas/2026/mural/mural2026.jpeg" download><span class="dl-ico">🖼️</span><span class="dl-body"><span class="dl-name">Mural 2026</span><span class="dl-path">mural2026.jpeg</span></span><span class="dl-tag">JPEG</span></a></li>
+                    </ul>
+
+                    <h2>🎵 Bingo Musical</h2>
+                    <ul class="dl-list">
+                        <li><a class="dl-item" href="../BingoMusical/2026/cartones-matagatos-verano-2026.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">Cartones Matagatos verano 2026</span><span class="dl-path">cartones-matagatos-verano-2026.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../BingoMusical/Comision/DirectoParaJugar.zip" download><span class="dl-ico">🗜️</span><span class="dl-body"><span class="dl-name">Comisión · Directo para jugar</span><span class="dl-path">DirectoParaJugar.zip</span></span><span class="dl-tag">ZIP</span></a></li>
+                        <li><a class="dl-item" href="../BingoMusical/Comision/_zip_preview/Cartones Corregidos 14 dic 2025.pdf" download><span class="dl-ico">📄</span><span class="dl-body"><span class="dl-name">Comisión · Cartones corregidos (14 dic 2025)</span><span class="dl-path">Cartones Corregidos 14 dic 2025.pdf</span></span><span class="dl-tag">PDF</span></a></li>
+                        <li><a class="dl-item" href="../BingoMusical/Comision/_zip_preview/canciones-bingo-musical.zip" download><span class="dl-ico">🗜️</span><span class="dl-body"><span class="dl-name">Comisión · Canciones bingo musical</span><span class="dl-path">canciones-bingo-musical.zip</span></span><span class="dl-tag">ZIP</span></a></li>
+                    </ul>
+
+                    <h2>🖼️ Logos e imágenes</h2>
+                    <ul class="dl-list">
+                        <li><a class="dl-item" href="../LogoMatagatos.png" download><span class="dl-ico">🖼️</span><span class="dl-body"><span class="dl-name">Logo Peña Matagatos</span><span class="dl-path">LogoMatagatos.png</span></span><span class="dl-tag">PNG</span></a></li>
+                        <li><a class="dl-item" href="../BingoMusical/Comision/logocomision.png" download><span class="dl-ico">🖼️</span><span class="dl-body"><span class="dl-name">Logo Comisión de Fiestas</span><span class="dl-path">logocomision.png</span></span><span class="dl-tag">PNG</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Peña Matagatos</p>
+        </div>
+    </footer>
+
+    <script>
+    (function () {
+        const search = document.getElementById("dl-search");
+        const empty = document.getElementById("dl-empty");
+        const items = Array.from(document.querySelectorAll(".dl-item"));
+        const headings = Array.from(document.querySelectorAll(".content-panel h2"));
+
+        search.addEventListener("input", function () {
+            const q = search.value.trim().toLowerCase();
+            let visible = 0;
+
+            items.forEach(function (it) {
+                const text = it.textContent.toLowerCase();
+                const show = !q || text.includes(q);
+                it.parentElement.style.display = show ? "" : "none";
+                if (show) visible++;
+            });
+
+            // Ocultar cabeceras y listas sin resultados visibles
+            headings.forEach(function (h) {
+                let ul = h.nextElementSibling;
+                while (ul && ul.tagName !== "UL") ul = ul.nextElementSibling;
+                if (!ul) return;
+                const anyVisible = Array.from(ul.children).some(function (li) { return li.style.display !== "none"; });
+                h.style.display = anyVisible ? "" : "none";
+                ul.style.display = anyVisible ? "" : "none";
+            });
+
+            empty.style.display = visible ? "none" : "block";
+        });
+    })();
+    </script>
+</body>
+</html>

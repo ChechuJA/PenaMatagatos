@@ -27,7 +27,7 @@
 | Aquarius limón | 8 | 1,5 L | | |
 | Fanta naranja | 6 | 2 L | | |
 | Tónica | 12 | 1 L | | |
-| Gaseosa | 2 | pack ×6, 1,5 L | | |
+| Gaseosa | 4 | 1,5 L | | |
 | Tinto de verano con limón | 2 | 1,5 L | | |
 | Agua | ~50 L | garrafa + botella 1,5 L | | |
 
