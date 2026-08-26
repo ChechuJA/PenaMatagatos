@@ -1,0 +1,23 @@
+{
+  "anio": 2025,
+  "titulo": "Pedido de carne 2025 - Peña Matagatos",
+  "proveedor": "Carnicería Luis",
+  "coste_total_eur": 211.57,
+  "fuente": "Detalle facilitado manualmente; el ticket original solo tenía números sin nombre de corte",
+  "productos": [
+    { "producto": "Hamburguesas de pollo", "cantidad": 20, "unidad": "ud" },
+    { "producto": "Hamburguesas de ternera", "cantidad": 20, "unidad": "ud" },
+    { "producto": "Magro", "cantidad": 5, "unidad": "kg" },
+    { "producto": "Filetes de panceta", "cantidad": 35, "unidad": "ud" },
+    { "producto": "Filetes de lomo", "cantidad": 35, "unidad": "ud" },
+    { "producto": "Tiras de bacon", "cantidad": 40, "unidad": "ud" },
+    { "producto": "Chorizos", "cantidad": 20, "unidad": "ud" },
+    { "producto": "Morcillas", "cantidad": 15, "unidad": "ud" },
+    { "producto": "Pollo", "cantidad": 3, "unidad": "kg" },
+    { "producto": "Conejo", "cantidad": 1.5, "unidad": "kg" }
+  ],
+  "notas_2026": [
+    "Comprar 2 kg más de magro (poco sobrante en 2025) -> 7 kg",
+    "Comprar más hamburguesas que en 2025"
+  ]
+}
