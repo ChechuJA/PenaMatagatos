@@ -139,6 +139,16 @@
       "nombre": "Helena",
       "asistencia": "viernes y sábado (jueves incógnita)",
       "bebidas": ["radler", "tinto de verano", "Barceló con Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Tamara",
+      "asistencia": "2 días",
+      "bebidas": ["cerveza con gaseosa", "Coca-Cola Zero"]
+    },
+    {
+      "nombre": "Zara",
+      "asistencia": "viernes y sábado",
+      "bebidas": ["cerveza", "Seagrams limón"]
     }
   ]
 }

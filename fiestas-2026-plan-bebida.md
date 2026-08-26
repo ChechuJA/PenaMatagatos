@@ -1,8 +1,8 @@
 # Plan de bebida - Fiestas 2026
 
 ## 1) Punto de partida
-- Grupo confirmado: 24 personas con la lista final del 2026-08-21.
-- Asistencia estimada total: 88 persona-dias (cota conservadora, ajustada con la lista final).
+- Grupo confirmado: 29 personas con la lista definitiva (anadidas Tamara y Zara).
+- Asistencia estimada total: 101 persona-dias (cota conservadora, ajustada con la lista final).
 - Criterio: comprar en modo conservador y ajustar con el sobrante real 2025.
 
 ### Resumen de asistencia
@@ -21,7 +21,7 @@
 | Elisa | jueves a sábado | 3 |
 | Laura | todos los días | 5 |
 | Nacho | todos los días | 5 |
-| David | jueves a domingo | 4 |
+| David | jueves a sábado | 3 |
 | Malu | viernes y sábado | 2 |
 | Ernesto | viernes y sábado | 2 |
 | Cristina | todos los días | 5 |
@@ -32,7 +32,12 @@
 | Pimen | hasta el sábado por la tarde | 3 |
 | Albert | jueves a sábado | 3 |
 | Sonia | jueves a sábado | 3 |
-| **TOTAL** | | **88** |
+| Raúl | todos los días | 5 |
+| Edu | viernes y sábado | 2 |
+| Helena | viernes y sábado (jueves incógnita) | 3 |
+| Tamara | 2 días | 2 |
+| Zara | viernes y sábado | 2 |
+| **TOTAL** | | **101** |
 
 ## 2) Preferencias confirmadas 2026
 - Cerveza normal: bebida principal del grupo.
