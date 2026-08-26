@@ -1,0 +1,21 @@
+{
+  "evento": "Fiestas 2026",
+  "categoria": "comida",
+  "descripcion": "Datos normalizados de COMIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de comida.",
+  "actualizado": "2026-08-26",
+  "moneda": "EUR",
+  "tickets": [
+    {
+      "id": "ejemplo-borrar",
+      "foto": "real_comprado/comida/alcampo-2026-08-20.jpg",
+      "proveedor": "Alcampo",
+      "fecha": "2026-08-20",
+      "nota": "Ejemplo. Ticket mixto (bebida+comida): aqui solo las lineas de comida. Borrar al meter datos reales.",
+      "lineas": [
+        { "producto": "Carne para barbacoa", "cantidad": 0, "unidad": "kg", "precio_unitario": 0.0, "importe": 0.0 }
+      ],
+      "subtotal": 0.0
+    }
+  ],
+  "total_categoria": 0.0
+}

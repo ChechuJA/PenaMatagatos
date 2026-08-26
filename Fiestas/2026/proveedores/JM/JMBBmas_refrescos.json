@@ -1,0 +1,72 @@
+{
+  "proveedor": "JM Distribuciones (Distrib. y Repres. José Miguel S.L.U.)",
+  "fuente": "Presupuesto / Albarán Serie 26 Nº 009083 - 28/08/2026 (Salva Cañaveras)",
+  "categoria": "refrescos",
+  "nota": "El precio es por botella (unidad). Vienen en pack de 6 (1 caja = 6 botellas). Ej: 2 cajas = 12 botellas, como las Coca-Cola. precio_litro = precio / litros del formato.",
+  "productos": [
+    {
+      "subcategoria": "refresco_2L",
+      "nombre": "Coca-Cola",
+      "formato": "2L",
+      "precio": 1.50,
+      "precio_litro": 0.75,
+      "unidades_pack": 6
+    },
+    {
+      "subcategoria": "refresco_2L",
+      "nombre": "Coca-Cola Zero",
+      "formato": "2L",
+      "precio": 1.50,
+      "precio_litro": 0.75,
+      "unidades_pack": 6
+    },
+    {
+      "subcategoria": "refresco_2L",
+      "nombre": "Fanta Naranja",
+      "formato": "2L",
+      "precio": 1.39,
+      "precio_litro": 0.695,
+      "unidades_pack": 6
+    },
+    {
+      "subcategoria": "refresco_2L",
+      "nombre": "Fanta Limón",
+      "formato": "2L",
+      "precio": 1.39,
+      "precio_litro": 0.695,
+      "unidades_pack": 6
+    },
+    {
+      "subcategoria": "refresco_2L",
+      "nombre": "Sprite Lima-Limón",
+      "formato": "2L",
+      "precio": 1.45,
+      "precio_litro": 0.725,
+      "unidades_pack": 6
+    },
+    {
+      "subcategoria": "tonica",
+      "nombre": "Tónica Schweppes",
+      "formato": "1L",
+      "precio": 1.39,
+      "precio_litro": 1.39,
+      "unidades_pack": 6
+    },
+    {
+      "subcategoria": "aquarius",
+      "nombre": "Aquarius Limón",
+      "formato": "1,5L",
+      "precio": 1.62,
+      "precio_litro": 1.08,
+      "unidades_pack": 6
+    },
+    {
+      "subcategoria": "aquarius",
+      "nombre": "Aquarius Naranja",
+      "formato": "1,5L",
+      "precio": 1.62,
+      "precio_litro": 1.08,
+      "unidades_pack": 6
+    }
+  ]
+}

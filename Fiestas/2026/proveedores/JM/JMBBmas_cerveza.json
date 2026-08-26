@@ -1,0 +1,26 @@
+{
+  "proveedor": "JM Distribuciones (Distrib. y Repres. José Miguel S.L.U.)",
+  "fuente": "Presupuesto / Albarán Serie 26 Nº 009083 - 28/08/2026 (Salva Cañaveras)",
+  "categoria": "cerveza",
+  "nota": "El precio del presupuesto es por PACK-6. Una caja = 4 packs = 24 botellines de 25cl. precio_caja = precio_pack6 x 4.",
+  "productos": [
+    {
+      "categoria": "cerveza_normal",
+      "nombre": "Mahou Clásica 250cc",
+      "formato": "pack-6 botellines 25cl",
+      "precio": 2.45,
+      "precio_botellin": 0.408,
+      "unidades_caja": 24,
+      "precio_caja": 9.80
+    },
+    {
+      "categoria": "cerveza_mixta",
+      "nombre": "Mixta (clara) botellín",
+      "formato": "pack-6 botellines 25cl",
+      "precio": 2.50,
+      "precio_botellin": 0.417,
+      "unidades_caja": 24,
+      "precio_caja": 10.00
+    }
+  ]
+}

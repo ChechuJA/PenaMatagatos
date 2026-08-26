@@ -1,0 +1,22 @@
+{
+  "proveedor": "JM Distribuciones (Distrib. y Repres. José Miguel S.L.U.)",
+  "fuente": "Presupuesto / Albarán Serie 26 Nº 009083 - 28/08/2026 (Salva Cañaveras)",
+  "categoria": "menaje",
+  "productos": [
+    {
+      "categoria": "vasos",
+      "nombre": "Vaso Sidra Alto 470cc",
+      "formato": "paquete 25 u (caja 20 paq = 500 u)",
+      "precio": 2.90,
+      "precio_vaso": 0.116,
+      "precio_caja": 58.00
+    },
+    {
+      "categoria": "hielo",
+      "nombre": "Hielo Cubitos",
+      "formato": "bolsa 2 kg (caja 5 bolsas)",
+      "precio": 0.90,
+      "precio_caja": 4.50
+    }
+  ]
+}

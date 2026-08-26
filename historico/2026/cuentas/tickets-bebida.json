@@ -1,0 +1,21 @@
+{
+  "evento": "Fiestas 2026",
+  "categoria": "bebida",
+  "descripcion": "Datos normalizados de BEBIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de bebida.",
+  "actualizado": "2026-08-26",
+  "moneda": "EUR",
+  "tickets": [
+    {
+      "id": "ejemplo-borrar",
+      "foto": "real_comprado/bebida/alcampo-2026-08-20.jpg",
+      "proveedor": "Alcampo",
+      "fecha": "2026-08-20",
+      "nota": "Ejemplo. Ticket mixto (bebida+comida): aqui solo las lineas de bebida. Borrar al meter datos reales.",
+      "lineas": [
+        { "producto": "Cerveza Mahou 5 Estrellas", "cantidad": 0, "unidad": "botellin 25cl", "precio_unitario": 0.0, "importe": 0.0 }
+      ],
+      "subtotal": 0.0
+    }
+  ],
+  "total_categoria": 0.0
+}

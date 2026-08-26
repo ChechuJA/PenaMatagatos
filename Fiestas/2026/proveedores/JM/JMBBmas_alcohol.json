@@ -1,0 +1,37 @@
+{
+  "proveedor": "JM Distribuciones (Distrib. y Repres. José Miguel S.L.U.)",
+  "fuente": "Presupuesto / Albarán Serie 26 Nº 009083 - 28/08/2026 (Salva Cañaveras)",
+  "categoria": "alcohol",
+  "productos": [
+    {
+      "categoria": "ron",
+      "nombre": "Ron Añejo Barceló 37,5º",
+      "formato": "70cl",
+      "precio": 13.10
+    },
+    {
+      "categoria": "ron",
+      "nombre": "Ron Brugal Añejo 38º",
+      "formato": "70cl",
+      "precio": 11.90
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Ginebra Seagram's 40º",
+      "formato": "70cl",
+      "precio": 13.90
+    },
+    {
+      "categoria": "ginebra",
+      "nombre": "Ginebra Larios Rosé 37,5º",
+      "formato": "70cl",
+      "precio": 11.70
+    },
+    {
+      "categoria": "whisky",
+      "nombre": "Whisky White Label",
+      "formato": "70cl",
+      "precio": 11.50
+    }
+  ]
+}

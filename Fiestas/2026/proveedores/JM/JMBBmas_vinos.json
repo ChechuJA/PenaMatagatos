@@ -1,0 +1,15 @@
+{
+  "proveedor": "JM Distribuciones (Distrib. y Repres. José Miguel S.L.U.)",
+  "fuente": "Presupuesto / Albarán Serie 26 Nº 009083 - 28/08/2026 (Salva Cañaveras)",
+  "categoria": "vinos",
+  "productos": [
+    {
+      "categoria": "tinto_de_verano",
+      "nombre": "Tinto de Verano Don Simón Limón",
+      "formato": "1,5L",
+      "precio": 1.27,
+      "precio_litro": 0.847,
+      "unidades_pack": 6
+    }
+  ]
+}
