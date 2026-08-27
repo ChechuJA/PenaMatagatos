@@ -1,0 +1,49 @@
+{
+  "titulo": "Comparativa precios Licoreo vs JM - Fiestas 2026 Peña Matagatos",
+  "fecha_generacion": "2026-08-27",
+  "criterio_iva": "SIN IVA (base imponible)",
+  "cantidades_fuente": "Presupuesto Licoreo PRV03866 (26/08/2026); las cantidades de la peña mandan",
+  "referencia_total_licoreo_con_iva": 932.67,
+  "nota_precio_dia": "precio_dia_con_iva es el PVP con IVA rastreado en dia.es (enero 2026). NO comparable directamente con precio_licoreo/precio_jm, que son SIN IVA. Cervezas convertidas a caja 24x25cl: Mahou Clásica 2x pack12x25 (6,89€)=13,78; Estrella Galicia 2x pack12x25 (7,35€)=14,70; Mahou 5E 4x pack6x25 (3,89€)=15,56. null = DIA no lo vende con formato equivalente.",
+  "proveedores": {
+    "licoreo": {
+      "referencia": "Licoreo/Presupuestos/PRV03866-presupuesto.json",
+      "fecha": "2026-08-26"
+    },
+    "jm": {
+      "referencia": "Albarán Serie 26 Nº 009083",
+      "fecha": "2026-08-28"
+    }
+  },
+  "lineas": [
+    { "producto": "Mahou Sin 0,0", "categoria": "cerveza", "formato": "caja 24x25cl", "cantidad": 6, "precio_licoreo": 11.75, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 70.50, "nota": "JM no lo tiene" },
+    { "producto": "Estrella de Galicia", "categoria": "cerveza", "formato": "caja 24x25cl", "cantidad": 12, "precio_licoreo": 11.44, "precio_jm": null, "precio_dia_con_iva": 14.70, "mejor_proveedor": "licoreo", "importe_mejor": 137.28, "nota": "JM no lo tiene" },
+    { "producto": "Mahou Clásica", "categoria": "cerveza", "formato": "caja 24x25cl", "cantidad": 5, "precio_licoreo": 11.52, "precio_jm": 9.80, "precio_dia_con_iva": 13.78, "mejor_proveedor": "jm", "importe_mejor": 49.00, "nota": "JM pack6 x4 = caja" },
+    { "producto": "Mahou 5 Estrellas", "categoria": "cerveza", "formato": "caja 24x25cl", "cantidad": 6, "precio_licoreo": 10.75, "precio_jm": null, "precio_dia_con_iva": 15.56, "mejor_proveedor": "licoreo", "importe_mejor": 64.50, "nota": "JM no lo tiene" },
+    { "producto": "Coca-Cola 2L", "categoria": "refresco", "formato": "botella 2L", "cantidad": 12, "precio_licoreo": 1.58, "precio_jm": 1.50, "precio_dia_con_iva": 1.99, "mejor_proveedor": "jm", "importe_mejor": 18.00, "nota": "" },
+    { "producto": "Coca-Cola Zero 2L", "categoria": "refresco", "formato": "botella 2L", "cantidad": 24, "precio_licoreo": 1.58, "precio_jm": 1.50, "precio_dia_con_iva": 1.99, "mejor_proveedor": "jm", "importe_mejor": 36.00, "nota": "" },
+    { "producto": "Coca-Cola Zero Zero 2L", "categoria": "refresco", "formato": "botella 2L", "cantidad": 12, "precio_licoreo": 1.58, "precio_jm": null, "precio_dia_con_iva": 1.99, "mejor_proveedor": "licoreo", "importe_mejor": 18.96, "nota": "JM no lo tiene" },
+    { "producto": "Sprite 2L", "categoria": "refresco", "formato": "botella 2L", "cantidad": 6, "precio_licoreo": 1.28, "precio_jm": 1.45, "precio_dia_con_iva": 1.65, "mejor_proveedor": "licoreo", "importe_mejor": 7.68, "nota": "" },
+    { "producto": "Fanta Limón 2L", "categoria": "refresco", "formato": "botella 2L", "cantidad": 18, "precio_licoreo": 1.38, "precio_jm": 1.39, "precio_dia_con_iva": 1.85, "mejor_proveedor": "licoreo", "importe_mejor": 24.84, "nota": "" },
+    { "producto": "Fanta Naranja 2L", "categoria": "refresco", "formato": "botella 2L", "cantidad": 6, "precio_licoreo": 1.38, "precio_jm": 1.39, "precio_dia_con_iva": 1.85, "mejor_proveedor": "licoreo", "importe_mejor": 8.28, "nota": "" },
+    { "producto": "Aquarius Naranja 1,5L", "categoria": "refresco", "formato": "botella 1,5L", "cantidad": 12, "precio_licoreo": 1.52, "precio_jm": 1.62, "precio_dia_con_iva": 2.09, "mejor_proveedor": "licoreo", "importe_mejor": 18.24, "nota": "" },
+    { "producto": "Aquarius Limón 1,5L", "categoria": "refresco", "formato": "botella 1,5L", "cantidad": 8, "precio_licoreo": 1.52, "precio_jm": 1.62, "precio_dia_con_iva": 2.09, "mejor_proveedor": "licoreo", "importe_mejor": 12.16, "nota": "" },
+    { "producto": "Tónica Schweppes 1L", "categoria": "refresco", "formato": "botella 1L", "cantidad": 12, "precio_licoreo": 1.61, "precio_jm": 1.39, "precio_dia_con_iva": 1.99, "mejor_proveedor": "jm", "importe_mejor": 16.68, "nota": "" },
+    { "producto": "Gaseosa La Casera", "categoria": "refresco", "formato": "pack 6x1,5L", "cantidad": 1, "precio_licoreo": 5.25, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 5.25, "nota": "JM no lo tiene" },
+    { "producto": "Tinto de Verano Don Simón Limón 1,5L", "categoria": "vino_tinto_verano", "formato": "botella 1,5L", "cantidad": 2, "precio_licoreo": 1.41, "precio_jm": 1.27, "precio_dia_con_iva": 1.55, "mejor_proveedor": "jm", "importe_mejor": 2.54, "nota": "" },
+    { "producto": "Agua Aquadeus garrafa 5L", "categoria": "agua", "formato": "garrafa 5L", "cantidad": 4, "precio_licoreo": 1.24, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 4.96, "nota": "JM no lo tiene" },
+    { "producto": "Agua Aquadeus 1,5L", "categoria": "agua", "formato": "botella 1,5L", "cantidad": 20, "precio_licoreo": 0.42, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 8.40, "nota": "JM no lo tiene" },
+    { "producto": "Seagram's Extra Dry", "categoria": "alcohol", "formato": "botella 70cl", "cantidad": 4, "precio_licoreo": 14.25, "precio_jm": 13.90, "precio_dia_con_iva": 15.45, "mejor_proveedor": "jm", "importe_mejor": 55.60, "nota": "Ginebra Seagram's 40º" },
+    { "producto": "Puerto de Indias Strawberry", "categoria": "alcohol", "formato": "botella 70cl", "cantidad": 2, "precio_licoreo": 12.43, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 24.86, "nota": "JM no lo tiene" },
+    { "producto": "Beefeater", "categoria": "alcohol", "formato": "botella 70cl", "cantidad": 2, "precio_licoreo": 11.56, "precio_jm": null, "precio_dia_con_iva": 13.49, "mejor_proveedor": "licoreo", "importe_mejor": 23.12, "nota": "JM no lo tiene" },
+    { "producto": "Legendario Elixir", "categoria": "alcohol", "formato": "botella 70cl", "cantidad": 4, "precio_licoreo": 13.65, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 54.60, "nota": "JM no lo tiene" },
+    { "producto": "Cutty Sark", "categoria": "alcohol", "formato": "botella 70cl", "cantidad": 3, "precio_licoreo": 9.75, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 29.25, "nota": "JM ofrece White Label, NO equivalente" },
+    { "producto": "Barceló", "categoria": "alcohol", "formato": "botella 70cl", "cantidad": 4, "precio_licoreo": 13.25, "precio_jm": 13.10, "precio_dia_con_iva": 15.45, "mejor_proveedor": "jm", "importe_mejor": 52.40, "nota": "Ron Añejo Barceló 37,5º" },
+    { "producto": "Larios 12", "categoria": "alcohol", "formato": "botella 70cl", "cantidad": 1, "precio_licoreo": 12.99, "precio_jm": null, "precio_dia_con_iva": null, "mejor_proveedor": "licoreo", "importe_mejor": 12.99, "nota": "JM ofrece Larios Rosé 37,5º, NO equivalente" }
+  ],
+  "totales": {
+    "solo_licoreo": 772.49,
+    "cesta_mixta": 756.09,
+    "ahorro": 16.40
+  }
+}
