@@ -1,0 +1,31 @@
+{
+  "proveedor": "Licoreo Colocón",
+  "categoria": "cerveza",
+  "nota": "Precios de cerveza tomados del presupuesto PRV03866 (26/08/2026). Caja = 24 botellines de 25cl; 'precio' es por caja (sin IVA).",
+  "productos": [
+    {
+      "subcategoria": "caja_24_botellines",
+      "nombre": "Mahou Sin (0,0)",
+      "formato": "24x25cl",
+      "precio": 11.75
+    },
+    {
+      "subcategoria": "caja_24_botellines",
+      "nombre": "Estrella de Galicia",
+      "formato": "24x25cl",
+      "precio": 11.44
+    },
+    {
+      "subcategoria": "caja_24_botellines",
+      "nombre": "Mahou Clásica",
+      "formato": "24x25cl",
+      "precio": 11.52
+    },
+    {
+      "subcategoria": "caja_24_botellines",
+      "nombre": "Mahou 5 Estrellas",
+      "formato": "24x25cl",
+      "precio": 10.75
+    }
+  ]
+}
