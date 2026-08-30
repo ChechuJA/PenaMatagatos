@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Base de conocimiento de Gatito (expandida)
     const gatitoKnowledge = {
         horarios: {
-            response: "📅 Los horarios sugeridos son:\n\n🌅 Mañana (10:00-12:00): Actividades energéticas y deportivas\n🌞 Mediodía (12:00-15:00): Talleres creativos bajo sombra\n🌅 Tarde (17:00-19:00): Juegos familiares y competiciones\n🌙 Noche (21:00-23:00): Espectáculos y actividades relajadas"
+            response: "📅 En actividades 2026, ahora mismo solo hay una actividad confirmada: mural a las 11:00 h."
         },
         ubicacion: {
             response: "📍 La Peña Matagatos se celebra en un pueblo pequeño de Cuenca, España. Durante las fiestas, el pueblo pasa de 300 habitantes a más de 900 personas. ¡Es toda una experiencia!"
@@ -441,13 +441,13 @@ document.addEventListener('DOMContentLoaded', function() {
             response: "📧 Puedes contactar con nosotros:\n\n• Email general: info@penamatagatos.es\n• Documentos: documentos@penamatagatos.es\n• WhatsApp: +34 123 456 789\n\n¡Estaremos encantados de conocerte!"
         },
         actividades: {
-            response: "🎯 Tenemos actividades para todas las edades:\n\n👶 Peques (0-3): Castillos mini, pintura, juguetes blandos\n🧒 Exploradores (4-7): Carreras de sacos, búsqueda del tesoro\n⚡ Aventureros (8-13): Olimpiadas, escape room, experimentos\n👨‍👩‍👧‍👦 Familiares: Concursos de cocina, fútbol, torneos"
+            response: "🎯 Actividades 2026 confirmadas: mural a las 11:00 h.\n\nSi se confirman más actividades, las añadiremos aquí."
         },
         documentos: {
             response: "📎 Para subir documentos:\n\n1. Ve al formulario de contacto\n2. Busca la sección 'Compartir archivos'\n3. Puedes subir: inventarios, cuentas, fotos, propuestas\n4. Los procesamos y añadimos a nuestro sistema\n5. Si es útil, lo compartimos con toda la peña"
         },
         niños: {
-            response: "👶 ¡Los niños son el alma de nuestra peña!\n\nTenemos actividades por edades:\n• 0-3 años: Espacios seguros y suaves\n• 4-7 años: Aventuras y exploración\n• 8-13 años: Desafíos y competiciones\n\n¡Y también actividades familiares donde adultos y niños jugamos juntos!"
+            response: "👶 Sobre actividades para niños en 2026, ahora mismo solo tenemos confirmada una actividad general: mural a las 11:00 h."
         },
         // Nuevas FAQ expandidas
         alojamiento: {
@@ -457,7 +457,7 @@ document.addEventListener('DOMContentLoaded', function() {
             response: "🚗 Sobre el transporte:\n\n• Organizamos viajes compartidos desde diferentes ciudades\n• Compartimos gastos de gasolina entre todos\n• Algunos van en coche, otros en furgonetas\n• ¡Contacta con nosotros para unirte a algún grupo!"
         },
         comida: {
-            response: "🥘 ¡La comida es lo mejor de nuestra peña!\n\n• Cocinamos todos juntos: paellas gigantes, barbacoas...\n• Cada familia aporta algo según sus posibilidades\n• Tenemos paelleras enormes para cocinar para todos\n• ¡Es parte de la diversión y la tradición!"
+            response: "🥘 Sobre comida no tengo un plan 2026 confirmado para compartir en Gatito.\n\nPrefiero no inventar datos."
         },
         fechas: {
             response: "📅 Las fechas de nuestras fiestas:\n\n• Normalmente coinciden con las fiestas patronales del pueblo\n• Suelen ser en verano (julio-agosto)\n• Duran varios días (generalmente un fin de semana largo)\n• ¡Te avisaremos con tiempo de las fechas exactas!"
@@ -470,13 +470,13 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         // Nuevas actividades grupales divertidas
         juegos_nocturnos: {
-            response: "🌙 ¡Diversión nocturna garantizada!\n\n• 🏮 Búsqueda del tesoro con linternas\n• 🎭 Teatro de sombras improvisado\n• 🎵 Karaoke bajo las estrellas\n• 🔥 Hoguera con historias de miedo\n• 🎪 Concurso de talentos ocultos\n• 🎯 Diana con glow sticks\n• 🌟 Observación de estrellas con juegos"
+            response: "🌙 No hay actividades nocturnas 2026 confirmadas en Gatito.\n\nLa única actividad confirmada ahora mismo es el mural a las 11:00 h."
         },
         retos_grupales: {
-            response: "🏆 ¡Retos épicos para toda la peña!\n\n• 🧩 Escape room gigante al aire libre\n• 🎪 Circo humano (acrobacias seguras)\n• 🥄 Masterchef rural con ingredientes sorpresa\n• 🎨 Mural colaborativo en tiempo récord\n• 🎯 Olimpiadas absurdas (carrera con huevos, etc.)\n• 🎭 Improvisación teatral por equipos\n• 🧠 Trivial personalizado de la peña"
+            response: "🏆 En 2026 no hay más retos confirmados en Gatito.\n\nSolo está confirmado el mural a las 11:00 h."
         },
         tradiciones_inventadas: {
-            response: "🎉 ¡Nuestras tradiciones únicas!\n\n• 👑 Coronación del 'Rey/Reina del Caos'\n• 🏅 Premio al 'Mejor Desastre Culinario'\n• 🎪 Desfile de disfraces caseros épicos\n• 🎵 Himno de la peña (cantado muy mal)\n• 🏆 Trofeo al 'Dormilón más Madrugador'\n• 🎯 Ritual del 'Primer Chapuzón'\n• 📸 Foto grupal en formación imposible"
+            response: "🎉 Ahora mismo no tengo tradiciones 2026 confirmadas para compartir.\n\nSolo puedo confirmar el mural a las 11:00 h."
         },
         // Compras 2025
         menaje2025: {
