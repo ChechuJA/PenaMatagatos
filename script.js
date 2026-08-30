@@ -477,6 +477,19 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         tradiciones_inventadas: {
             response: "🎉 ¡Nuestras tradiciones únicas!\n\n• 👑 Coronación del 'Rey/Reina del Caos'\n• 🏅 Premio al 'Mejor Desastre Culinario'\n• 🎪 Desfile de disfraces caseros épicos\n• 🎵 Himno de la peña (cantado muy mal)\n• 🏆 Trofeo al 'Dormilón más Madrugador'\n• 🎯 Ritual del 'Primer Chapuzón'\n• 📸 Foto grupal en formación imposible"
+        },
+        // Compras 2025
+        menaje2025: {
+            response: "🧻 Menaje comprado en 2025:\n\n• 🍽️ Bandejas 3 pisos: 5 ud (se quedaron cortas, en 2026 se dobla)\n• 🥤 Vasos: sets + varios — 116 €\n• 🍽️ Platos: 16 packs (quedan 11 packs = 132 u)\n• 🧻 Servilletas: 2 packs\n• 🍴 Tenedores reutilizables: 8 ud (quedan 45 u)\n• 🥄 Cucharas: 6 packs (quedan 25 u)\n• 📜 Rollo mantel de papel: 2 ud\n• 🗑️ Sacos de basura: 2 packs\n• 🥡 Film transparente: 2 ud\n• 🥡 Papel aluminio: varias ud\n• 🧽 Bavetas y paneles de limpieza\n\nTotal material 2025: 121,16 €\n\n💡 Para 2026: comprar más bandejas de 3 pisos (10 ud) y reponer vasos."
+        },
+        bebida2025: {
+            response: "🍺 Bebida comprada en 2025:\n\nPrincipalmente en JM Distribuidores:\n• Cerveza (Mahou Clásica, 5 Estrellas, Estrella...)\n• Cerveza 0,0\n• Refrescos (Cola, Aquarius, Tónica...)\n• Agua\n• Destilados (Ginebra, Whisky, Ron, Vodka...)\n• Vino\n\nGasto total bebida: 874,80 € en JM + compras en Alcampo (165,44 €)\n💰 Total bebida 2025: ~1.040 €\n\n📦 Sobrantes: 86 cervezas normales, 34 sin alcohol, 16 Cola zero"
+        },
+        gastos2025: {
+            response: "💰 Cuentas 2025 de la Peña:\n\n📥 Ingresos: 2.039,33 €\n📤 Gastos: 2.019,18 €\n✅ Saldo: +20,15 €\n\nDesglose de gastos:\n• 🍺 Bebida: 1.040,24 €\n• 🥘 Alimentación: 703,52 €\n• 🥩 Carnicería y embutidos: 211,57 €\n• 🧻 Material: 121,16 €\n• 🥖 Panadería: 25,40 €\n• 🧊 Hielo: 55,00 €\n\nProveedores: JM Distribuidores, Mercadona, Alcampo, Carrefour, Mercokash, Luis (carne)"
+        },
+        sobrantes2025: {
+            response: "📦 Sobrantes de 2025 (útil para planificar 2026):\n\n🍺 Bebida:\n• Cerveza normal: 86 ud\n• Cerveza sin alcohol: 34 ud\n• Cola zero: 16 ud\n• Helados: 34 ud\n\n🧻 Menaje (queda de sobra):\n• Platos: 11 packs (132 ud)\n• Tenedores: 45 ud\n• Cucharas: 25 ud\n• Cucharillas: 75 ud\n• Papel aluminio: 3 ud\n• Film transparente: 1 ud\n• Estropajos / esponjas / bavetas\n\n⚠️ Falta reponer: bandejas de 3 pisos (se quedaron cortas), vasos y servilletas"
         }
     };
 
@@ -640,6 +653,23 @@ document.addEventListener('DOMContentLoaded', function() {
         if (lowerMessage.includes('tradición') || lowerMessage.includes('costumbre') || lowerMessage.includes('ritual') || lowerMessage.includes('especial') || lowerMessage.includes('único')) {
             return gatitoKnowledge.tradiciones_inventadas.response;
         }
+
+        // Compras 2025
+        if (lowerMessage.includes('menaje') || (lowerMessage.includes('vasos') && lowerMessage.includes('2025')) || (lowerMessage.includes('platos') && lowerMessage.includes('2025')) || (lowerMessage.includes('servilletas') && lowerMessage.includes('2025')) || (lowerMessage.includes('bandeja') && lowerMessage.includes('2025'))) {
+            return gatitoKnowledge.menaje2025.response;
+        }
+
+        if ((lowerMessage.includes('bebida') || lowerMessage.includes('cerveza') || lowerMessage.includes('refresco')) && lowerMessage.includes('2025')) {
+            return gatitoKnowledge.bebida2025.response;
+        }
+
+        if ((lowerMessage.includes('gasto') || lowerMessage.includes('cuenta') || lowerMessage.includes('ingreso') || lowerMessage.includes('compra')) && lowerMessage.includes('2025')) {
+            return gatitoKnowledge.gastos2025.response;
+        }
+
+        if (lowerMessage.includes('sobrante') || (lowerMessage.includes('2025') && (lowerMessage.includes('sobró') || lowerMessage.includes('sobra') || lowerMessage.includes('quedó') || lowerMessage.includes('queda')))) {
+            return gatitoKnowledge.sobrantes2025.response;
+        }
         
         if (lowerMessage.includes('precio') || lowerMessage.includes('coste') || lowerMessage.includes('dinero') || lowerMessage.includes('cuesta') || lowerMessage.includes('pagar') || lowerMessage.includes('gratis')) {
             return "💰 La participación en la peña es gratuita, solo compartimos los gastos de material y comida entre todos. ¡Lo importante es la diversión y el buen ambiente!";
@@ -665,17 +695,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Respuesta por defecto mejorada
         return `¡Hola! 🐱 Soy Gatito y estoy aquí para ayudarte. Puedes preguntarme sobre:
         
+        🧻 Menaje comprado en 2025
+        🍺 Bebida comprada en 2025
+        💰 Gastos y cuentas de 2025
+        📦 Sobrantes del año anterior
         📅 Horarios y fechas de las fiestas
         📍 Ubicación y cómo llegar  
         📧 Información de contacto
         🎯 Actividades y juegos
-        📎 Cómo subir documentos
         👶 Actividades para niños
-        🏠 Alojamiento durante las fiestas
-        🚗 Transporte y viajes compartidos
         🥘 Comida y tradiciones gastronómicas
-        ☀️ Clima y qué llevar
-        📋 Requisitos para participar
         
         O si prefieres, usa los botones de arriba para preguntas rápidas. ¡Miau!`;
     }

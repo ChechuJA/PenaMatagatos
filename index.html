@@ -109,5 +109,53 @@
             <p>&copy; 2026 Peña Matagatos</p>
         </div>
     </footer>
+
+    <!-- Gatito Chat Widget -->
+    <div class="gatito-chat-widget">
+        <button class="gatito-button" id="gatitoButton" aria-label="Abrir chat con Gatito">
+            <span class="gatito-icon">🐱</span>
+            <span class="gatito-name">Gatito</span>
+        </button>
+        <div class="gatito-chat-container" id="gatitoChat">
+            <div class="gatito-header">
+                <div class="gatito-info">
+                    <span class="gatito-avatar">🐱</span>
+                    <div>
+                        <strong>Gatito</strong>
+                        <small>Asistente de la Peña</small>
+                    </div>
+                </div>
+                <button class="gatito-close" id="gatitoClose" aria-label="Cerrar chat">✕</button>
+            </div>
+            <div class="gatito-messages" id="gatitoMessages">
+                <div class="gatito-message gatito-bot-message">
+                    <span class="message-avatar">🐱</span>
+                    <div class="message-content">¡Hola! Soy Gatito 🐱 Tu asistente de la Peña Matagatos. Puedo contarte qué se compró en 2025, el menaje, las bebidas y mucho más. ¿En qué te ayudo?</div>
+                </div>
+            </div>
+            <div class="gatito-quick-questions">
+                <div class="quick-questions-header">
+                    <span>Preguntas rápidas</span>
+                    <button id="toggleQuickQuestions" class="toggle-questions-btn" aria-label="Mostrar u ocultar preguntas rápidas">
+                        <span class="toggle-icon">▲</span>
+                    </button>
+                </div>
+                <div class="quick-question-buttons">
+                    <button class="quick-question" data-question="menaje2025">🧻 Menaje 2025</button>
+                    <button class="quick-question" data-question="bebida2025">🍺 Bebida 2025</button>
+                    <button class="quick-question" data-question="gastos2025">💰 Gastos 2025</button>
+                    <button class="quick-question" data-question="sobrantes2025">📦 Sobrantes</button>
+                    <button class="quick-question" data-question="actividades">🎯 Actividades</button>
+                    <button class="quick-question" data-question="comida">🥘 Comida</button>
+                </div>
+            </div>
+            <div class="gatito-input-area">
+                <input type="text" id="gatitoInput" placeholder="Pregúntame algo..." aria-label="Escribe tu pregunta">
+                <button id="gatitoSend" aria-label="Enviar mensaje">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
