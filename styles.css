@@ -1191,6 +1191,145 @@ h3 {
     line-height: 1.5;
 }
 
+/* Programa de Fiestas 2026 */
+.programa {
+    background: var(--bg-light);
+}
+
+.programa-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 820px;
+    margin: 0 auto 2rem;
+}
+
+.programa-days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.programa-day-btn {
+    border: 1px solid rgba(231, 76, 60, 0.2);
+    background: white;
+    color: var(--text-dark);
+    border-radius: 999px;
+    padding: 0.55rem 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.programa-day-btn small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.72rem;
+    color: var(--text-light);
+}
+
+.programa-day-btn:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.programa-day-btn.active {
+    background: var(--gradient-main);
+    color: white;
+    border-color: transparent;
+    box-shadow: var(--shadow);
+}
+
+.programa-day-btn.active small {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.programa-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.programa-card {
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    border: 1px solid rgba(231, 76, 60, 0.08);
+}
+
+.programa-card h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.programa-card .programa-card-note {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.programa-event {
+    display: flex;
+    gap: 0.85rem;
+    padding: 0.7rem 0;
+    border-top: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.programa-event:first-of-type {
+    border-top: none;
+}
+
+.programa-time {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--secondary-color);
+    background: linear-gradient(135deg, #fffaf0, #fff1cd);
+    border-radius: 8px;
+    padding: 0.25rem 0.55rem;
+    height: fit-content;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.programa-text {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.programa-organiza {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .programa-timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .programa-event {
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .programa-time {
+        align-self: flex-start;
+    }
+}
+
 /* Sección Inventario */
 .inventory {
     background: var(--bg-white);

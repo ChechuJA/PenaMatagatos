@@ -1,3 +1,155 @@
+// Programa de Fiestas 2026 (fuente: Fiestas/2026/ProgramaFiestas2026, ver fiestas-2026-programa.json)
+const programaFiestas2026 = {
+    evento: "Fiestas Patronales de Cañaveras en honor a Nuestra Señora del Pinar y Semana Cultural",
+    fechas: "del 28 de agosto al 7 de septiembre de 2026",
+    dias: [
+        {
+            corto: "Vie 28", mes: "agosto", titulo: "Viernes 28 de agosto",
+            eventos: [
+                { hora: "20:00", texto: "Rosario en la Ermita de Ntra. Sra. del Pinar." },
+                { hora: "20:30", texto: "Salida en procesión de la virgen desde la Ermita." },
+                { hora: "21:00", texto: "El Sr. Cura Párroco recibe a la Virgen en el cementerio (responso) y procesión hasta la Iglesia con Bailes y Paloteos del Grupo de Danzas. Acompaña la Banda \"Quinteto de metales Harem Brass\". Al finalizar, novena en la Iglesia." },
+                { hora: "22:30", texto: "Inicio de la \"Fiesta del Hermano\" en el Atrio de la Iglesia: Barbacoa Solidaria (ticket 10€: chorizo, panceta, butifarra, morcilla y lomo), Bingo musical y Verbena popular." }
+            ]
+        },
+        {
+            corto: "Sáb 29", mes: "agosto", titulo: "Sábado 29 de agosto",
+            nota: "Del sábado 29 de agosto al viernes 4 de septiembre, a las 20:00 h.",
+            eventos: [
+                { hora: "17:00-20:00", texto: "Besamanos Extraordinario a la Virgen del Pinar. A continuación, Novenario a la Virgen del Pinar." },
+                { hora: "22:30", texto: "Homenaje musical (concierto del \"Alcarria String Quartet\") por el 825 Aniversario, cortesía de la Fundación Globalcaja, en la Iglesia San Martín Obispo." }
+            ]
+        },
+        {
+            corto: "Dom 30", mes: "agosto", titulo: "Domingo 30 de agosto",
+            eventos: [
+                { hora: "19:30", texto: "Santa Misa en la Parroquia San Martín Obispo de Tours en recuerdo de los difuntos Dña. Mª Jesús Pérez y D. Bartolomé Navarrete." },
+                { hora: "20:00", texto: "Novenario a la Virgen del Pinar." }
+            ]
+        },
+        {
+            corto: "Lun 31", mes: "agosto", titulo: "Lunes 31 de agosto",
+            nota: "Banderines a cargo de la peña la Bota.",
+            eventos: [
+                { hora: "10:00", texto: "Pádel infantil hasta 12 años (apuntarse antes del domingo con la Comisión de Fiestas)." },
+                { hora: "18:30", texto: "Tarde de juegos de mesa (parchís, oca, ajedrez, monopoly, trivial...) en la Plaza de España. Llevar vuestros juegos favoritos.", organiza: "BB+ y Mañaneo" }
+            ]
+        },
+        {
+            corto: "Mar 1", mes: "septiembre", titulo: "Martes 1 de septiembre",
+            eventos: [
+                { hora: "11:00", texto: "Encierro infantil desde la Plaza de España. Vestíos al estilo San Fermín: de blanco y con pañuelo rojo (pañuelos a 2€ en el Ayuntamiento).", organiza: "Vigilantes" },
+                { hora: "18:30", texto: "Gymkana infantil organizada por las peñas de Cañaveras en el frontón.", organiza: "Guayabita y Panzalagos (lista de materiales)" }
+            ]
+        },
+        {
+            corto: "Mié 2", mes: "septiembre", titulo: "Miércoles 2 de septiembre",
+            eventos: [
+                { hora: "11:00-12:00", texto: "Pintura infantil. En el atrio.", organiza: "Matagatos y \"Y tú de quién eres\" (lista de materiales)" },
+                { hora: "18:30", texto: "Visita a los enfermos con la \"talla infantil de la Virgen del Pinar\" y el estandarte." },
+                { hora: "19:30", texto: "Cine infantil en el Centro Joven.", organiza: "Colocón y Mortimers (película y proyector)" },
+                { hora: "22:30", texto: "Espectáculo de Canción española con Yesvi Manjavacas & CIA en la Plaza de España (finalista de \"A tu vera\" en Castilla-La Mancha TV)." }
+            ]
+        },
+        {
+            corto: "Jue 3", mes: "septiembre", titulo: "Jueves 3 de septiembre",
+            eventos: [
+                { hora: "11:00-14:00 y 16:00-18:00", texto: "Rampa acuática y castillos hinchables en la Cuesta Garcibela." },
+                { hora: "16:30", texto: "Campeonato de Mus en la plaza.", organiza: "Vigilantes" },
+                { hora: "17:30", texto: "Desfile desde la Plaza de España al campo de fútbol para la 8ª Holi run de Cañaveras (acudir con camiseta blanca). Al finalizar, bingo musical.", organiza: "BBT2" },
+                { hora: "23:00", texto: "Verbena amenizada por DAIQUIRY SHOW. En el descanso (aprox. 00:30 h) Bingo y Toro de fuego sin carretillas en la Plaza de España. Al finalizar, DJ TORRES." }
+            ]
+        },
+        {
+            corto: "Vie 4", mes: "septiembre", titulo: "Viernes 4 de septiembre",
+            eventos: [
+                { hora: "12:30", texto: "Desfile de disfraces para niños, desde la Plaza de España." },
+                { hora: "16:30", texto: "Campeonato de Tute en Bar Los Canos.", organiza: "Comisión" },
+                { hora: "19:30", texto: "Pasacalles con la charanga Los Trota de Las Mesas (Cuenca) y concentración de peñas para recoger a la Reina en las Cuatro Esquinas.", organiza: "Coordinación del desfile: Anónimos y La Peña" },
+                { hora: "20:00", texto: "Novena en honor a Ntra. Sra. del Pinar." },
+                { hora: "21:00", texto: "Desfile de la Reina de las Fiestas 2026 y su corte de honor desde Santa Águeda. Pregón (Beatriz Chacón Ruiz y Salvador Perales Morillas), Coronación de la Reina 2026 Almudena Blanco Chacón y entrega de premios a las peñas (1º Jamón, 2º Ibéricos, 3º Queso)." },
+                { hora: "01:00", texto: "GRUPO MARENGO hasta altas horas. En el descanso (aprox. 03:00 h) Bingo." }
+            ]
+        },
+        {
+            corto: "Sáb 5", mes: "septiembre", titulo: "Sábado 5 de septiembre",
+            eventos: [
+                { hora: "11:00-14:00 y 17:00-19:00", texto: "Parque Infantil en el frontón. Sobre las 13:00 h, Fiesta de la espuma en la pista de Fútbol Sala (no cubierta)." },
+                { hora: "18:00", texto: "En la Plaza de España, baile a cargo del grupo flamenco CARAMELO." },
+                { hora: "22:20", texto: "Ofrenda floral a la Virgen y ofrecimiento de los niños nacidos desde 2023 (apuntarse en la Hermandad hasta el 5 de septiembre)." },
+                { hora: "22:30", texto: "Novena y Salve en honor a Ntra. Sra. del Pinar. A la salida, Cuadro de la Virgen con pólvora en la puerta del Centro de Salud." },
+                { hora: "00:00", texto: "Castillo de fuegos artificiales en el campo de fútbol a cargo de la pirotécnica Vulcano." },
+                { hora: "01:00", texto: "ORQUESTA CHEROKEE hasta altas horas. En el descanso (aprox. 03:00 h) BINGO DE 1.000€." }
+            ]
+        },
+        {
+            corto: "Dom 6", mes: "septiembre", titulo: "Domingo 6 de septiembre",
+            eventos: [
+                { hora: "08:00", texto: "Despedida de la Virgen y subida a hombros hasta su ermita, con traca de despedida en la Báscula." },
+                { hora: "11:30", texto: "Pasacalles con los Dulzaineros Pipirigay." },
+                { hora: "13:00", texto: "Solemne Misa en la ermita (celebra el párroco Juan Carlos Hernández Bula) y ofrenda con trajes regionales. A continuación, procesión con Dulzaineros Pipirigay, bailes y paloteos." },
+                { hora: "21:30", texto: "Sesión de baile con SANTY Y SUS TECLADOS. Cena entre Amigos y Peñas en la Plaza (lleva tu cena)." },
+                { hora: "00:00", texto: "Continuación de la verbena con SANTY Y SUS TECLADOS. En el descanso (aprox. 01:30 h) BINGO y dos Toros de fuego sin carretillas en la Plaza de España." }
+            ]
+        },
+        {
+            corto: "Lun 7", mes: "septiembre", titulo: "Lunes 7 de septiembre",
+            eventos: [
+                { hora: "11:00", texto: "Misa en la parroquia por los hermanos difuntos de la Hermandad de Ntra. Sra. del Pinar." },
+                { hora: "11:30-12:00", texto: "Reparto de la carne y Comida de Hermandad en el sitio de costumbre (no se reparte carne después de las 12 h)." },
+                { hora: "15:00", texto: "Muestra de las sartenes para el Concurso de calderetas.", organiza: "Cotolengo" },
+                { hora: "17:00", texto: "Juegos Populares en el Campo de Fútbol (barra castellana, billa y petanca).", organiza: "Roneo" },
+                { hora: "21:30", texto: "Entrega de premios (cartas, calderetas y juegos populares) y Chocolatada de la Hermandad. Al finalizar, Traca Fin de Fiesta." }
+            ]
+        }
+    ]
+};
+
+// Render del Programa de Fiestas 2026 en el inicio
+document.addEventListener('DOMContentLoaded', function() {
+    const daysNav = document.getElementById('programaDays');
+    const timeline = document.getElementById('programaTimeline');
+    if (!daysNav || !timeline) return;
+
+    function escapeHtml(str) {
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+    }
+
+    function renderDay(index) {
+        const dia = programaFiestas2026.dias[index];
+        const notaHtml = dia.nota ? `<p class="programa-card-note">${escapeHtml(dia.nota)}</p>` : '';
+        const eventosHtml = dia.eventos.map(ev => `
+            <div class="programa-event">
+                <span class="programa-time">${escapeHtml(ev.hora)}</span>
+                <span class="programa-text">${escapeHtml(ev.texto)}${ev.organiza ? `<span class="programa-organiza">🎪 Organiza: ${escapeHtml(ev.organiza)}</span>` : ''}</span>
+            </div>
+        `).join('');
+        timeline.innerHTML = `
+            <div class="programa-card">
+                <h3>📅 ${escapeHtml(dia.titulo)}</h3>
+                ${notaHtml}
+                ${eventosHtml}
+            </div>
+        `;
+        daysNav.querySelectorAll('.programa-day-btn').forEach((btn, i) => {
+            btn.classList.toggle('active', i === index);
+        });
+    }
+
+    programaFiestas2026.dias.forEach((dia, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'programa-day-btn';
+        btn.innerHTML = `${escapeHtml(dia.corto)}<small>${escapeHtml(dia.mes)}</small>`;
+        btn.addEventListener('click', () => renderDay(i));
+        daysNav.appendChild(btn);
+    });
+
+    renderDay(0);
+});
+
 // Smooth scrolling para la navegación
 document.addEventListener('DOMContentLoaded', function() {
     // Navegación suave
@@ -429,10 +581,59 @@ document.addEventListener('DOMContentLoaded', function() {
     let isMobile = window.innerWidth <= 768;
     let hasInteracted = false;
 
+    // Texto del programa de fiestas 2026 para Gatito (misma fuente que la sección de inicio)
+    const programaTextoCompleto = (function() {
+        const cabecera = `📅 Programa de Fiestas 2026\n${programaFiestas2026.evento} (${programaFiestas2026.fechas}).\n`;
+        const cuerpo = programaFiestas2026.dias.map(dia => {
+            const notaTxt = dia.nota ? `\n(${dia.nota})` : '';
+            const eventos = dia.eventos.map(ev => `• ${ev.hora} — ${ev.texto}${ev.organiza ? ` [Organiza: ${ev.organiza}]` : ''}`).join('\n');
+            return `\n📆 ${dia.titulo}${notaTxt}\n${eventos}`;
+        }).join('\n');
+        return cabecera + cuerpo;
+    })();
+
+    function programaDelDia(lowerMessage) {
+        const dia = programaFiestas2026.dias.find(d => {
+            const t = d.titulo.toLowerCase();
+            const partes = t.split(' ');
+            const diaSemana = partes[0];
+            const numero = partes[1];
+            const mes = partes[3];
+            return lowerMessage.includes(`${diaSemana} ${numero}`) ||
+                   lowerMessage.includes(`${numero} de ${mes}`) ||
+                   (lowerMessage.includes(diaSemana) && lowerMessage.includes(numero));
+        });
+        if (!dia) return null;
+        const notaTxt = dia.nota ? `\n(${dia.nota})` : '';
+        const eventos = dia.eventos.map(ev => `• ${ev.hora} — ${ev.texto}${ev.organiza ? ` [Organiza: ${ev.organiza}]` : ''}`).join('\n');
+        return `📆 ${dia.titulo}${notaTxt}\n${eventos}`;
+    }
+
+    // Resumen de qué peña organiza cada actividad (cruce con el Word de tareas de peñas)
+    const organizadoresTexto = (function() {
+        const lineas = [];
+        programaFiestas2026.dias.forEach(dia => {
+            dia.eventos.forEach(ev => {
+                if (ev.organiza) {
+                    const actividad = ev.texto.split(/[.(]/)[0].trim();
+                    lineas.push(`• ${dia.titulo} · ${ev.hora} — ${actividad}: ${ev.organiza}`);
+                }
+            });
+            if (dia.nota) lineas.push(`• ${dia.titulo} — ${dia.nota}`);
+        });
+        return "🎪 Reparto de tareas por peñas (Fiestas 2026):\n\n" + lineas.join('\n');
+    })();
+
     // Base de conocimiento de Gatito (expandida)
     const gatitoKnowledge = {
         horarios: {
-            response: "📅 En actividades 2026, ahora mismo solo hay una actividad confirmada: mural a las 11:00 h."
+            response: programaTextoCompleto
+        },
+        programa: {
+            response: programaTextoCompleto
+        },
+        organizadores: {
+            response: organizadoresTexto
         },
         ubicacion: {
             response: "📍 La Peña Matagatos se celebra en un pueblo pequeño de Cuenca, España. Durante las fiestas, el pueblo pasa de 300 habitantes a más de 900 personas. ¡Es toda una experiencia!"
@@ -590,7 +791,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function generateResponse(message) {
         const lowerMessage = message.toLowerCase();
-        
+
+        // Quién organiza / reparto de tareas por peñas
+        if (lowerMessage.includes('organiza') || lowerMessage.includes('quien se encarga') ||
+            lowerMessage.includes('quién se encarga') || lowerMessage.includes('reparto') ||
+            lowerMessage.includes('tareas') || (lowerMessage.includes('peña') && lowerMessage.includes('encarg'))) {
+            return gatitoKnowledge.organizadores.response;
+        }
+
+        // Programa de un día concreto (ej. "qué hay el sábado 5", "programa del 3 de septiembre")
+        const respuestaDia = programaDelDia(lowerMessage);
+        if (respuestaDia) {
+            return respuestaDia;
+        }
+
+        // Programa / horarios completos de las fiestas
+        if (lowerMessage.includes('programa') || lowerMessage.includes('horario') || lowerMessage.includes('agenda') ||
+            (lowerMessage.includes('que') && lowerMessage.includes('hay')) ||
+            lowerMessage.includes('procesion') || lowerMessage.includes('verbena') || lowerMessage.includes('orquesta') ||
+            lowerMessage.includes('encierro') || lowerMessage.includes('caldereta') || lowerMessage.includes('reina') ||
+            lowerMessage.includes('holi') || lowerMessage.includes('fuegos') || lowerMessage.includes('novena')) {
+            return gatitoKnowledge.programa.response;
+        }
+
         // Palabras clave para diferentes respuestas (expandidas)
         if (lowerMessage.includes('hora') || lowerMessage.includes('cuando') || lowerMessage.includes('tiempo') && lowerMessage.includes('actividad')) {
             return gatitoKnowledge.horarios.response;
@@ -695,6 +918,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Respuesta por defecto mejorada
         return `¡Hola! 🐱 Soy Gatito y estoy aquí para ayudarte. Puedes preguntarme sobre:
         
+        📅 Programa de Fiestas 2026 (horarios día a día)
         🧻 Menaje comprado en 2025
         🍺 Bebida comprada en 2025
         💰 Gastos y cuentas de 2025
