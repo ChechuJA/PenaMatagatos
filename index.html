@@ -9,14 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <div class="logo">
                 <img src="LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
                 <h1>Peña Matagatos</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#indice">Índice</a></li>
                 <li><a href="#programa">Programa</a></li>
                 <li><a href="Fiestas/index.html">Fiestas</a></li>
                 <li><a href="Fiestas/descargas.html">Descargas</a></li>
@@ -26,11 +28,74 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido-principal" tabindex="-1">
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h2>Peña Matagatos</h2>
                 <p class="hero-subtitle">Todo lo importante de las fiestas, ordenado y fácil de consultar desde el móvil.</p>
+            </div>
+        </section>
+
+        <section id="indice" class="site-index" aria-labelledby="indice-title">
+            <div class="container">
+                <div class="index-header">
+                    <p class="dashboard-label">Índice rápido</p>
+                    <h2 id="indice-title">Dinos qué necesitas y te llevamos al sitio correcto</h2>
+                    <p class="index-intro">Este resumen está pensado para que sepas dónde pinchar según lo que quieras consultar en cada momento.</p>
+                </div>
+
+                <nav aria-label="Índice rápido de la web">
+                    <ol class="index-list">
+                        <li class="index-item">
+                            <span class="index-step">1</span>
+                            <div class="index-content">
+                                <h3>Quiero entrar a la zona principal de Fiestas 2026</h3>
+                                <p>Empieza aquí para ver asistencia, bebida, compra, cuentas y accesos directos del año.</p>
+                            </div>
+                            <a href="Fiestas/index.html" class="index-link">Abrir Fiestas 2026</a>
+                        </li>
+                        <li class="index-item">
+                            <span class="index-step">2</span>
+                            <div class="index-content">
+                                <h3>Voy a revisar qué hay que comprar</h3>
+                                <p>Te lleva directamente al objetivo de compra con bebida, comida y varios.</p>
+                            </div>
+                            <a href="Fiestas/index.html#objetivo-bebida" class="index-link">Ir al objetivo de compra</a>
+                        </li>
+                        <li class="index-item">
+                            <span class="index-step">3</span>
+                            <div class="index-content">
+                                <h3>Necesito comparar precios o proveedores</h3>
+                                <p>Usa esta página si estás decidiendo dónde comprar cada producto.</p>
+                            </div>
+                            <a href="Fiestas/2026/proveedores.html" class="index-link">Ver proveedores y precios</a>
+                        </li>
+                        <li class="index-item">
+                            <span class="index-step">4</span>
+                            <div class="index-content">
+                                <h3>Quiero consultar lo que sobró el año pasado</h3>
+                                <p>Accede al inventario de sobrantes para no repetir compra innecesaria.</p>
+                            </div>
+                            <a href="Fiestas/index.html#sobrantes" class="index-link">Ver sobrantes 2025</a>
+                        </li>
+                        <li class="index-item">
+                            <span class="index-step">5</span>
+                            <div class="index-content">
+                                <h3>Busco documentos, PDFs o archivos para descargar</h3>
+                                <p>Desde aquí se agrupan los materiales descargables de la peña.</p>
+                            </div>
+                            <a href="Fiestas/descargas.html" class="index-link">Ir a descargas</a>
+                        </li>
+                        <li class="index-item">
+                            <span class="index-step">6</span>
+                            <div class="index-content">
+                                <h3>Solo quiero ver el programa del pueblo</h3>
+                                <p>Baja al bloque del programa para consultar días, horarios y actividades.</p>
+                            </div>
+                            <a href="#programa" class="index-link">Ver programa 2026</a>
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </section>
 
