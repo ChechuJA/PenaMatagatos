@@ -198,16 +198,22 @@
                     </div>
 
                     <div class="highlight-box">
-                        <p><strong>Objetivo:</strong> comparar lo comprado y el sobrante de 2025 con el objetivo de compra 2026 y anotar la compra real.</p>
+                        <p><strong>Objetivo:</strong> comparar lo comprado y el sobrante de 2025 con la compra real de 2026. Se ha quitado la columna de <em>objetivo de compra</em>: ya está comprado lo que tenemos.</p>
                         <p><strong>Pendiente:</strong> la columna <em>Sobrante 2026</em> se rellenará a finales de septiembre, tras el evento.</p>
-                        <p><strong>Nota cervezas:</strong> el objetivo total de cerveza normal 2026 (~240) se reparte entre Mahou Clásica (96), Mahou 5 Estrellas (72) y Estrella (72) según el consumo de 2025; ajústalo si cambia el gusto del grupo.</p>
-                        <p><strong>Nota sobrantes:</strong> los refrescos y cervezas que sobraron en 2025 estarán caducados, así que su objetivo se compra completo. En destilados (ginebras, rones, whisky) sí se aprovecha el sobrante.</p>
+                    </div>
+
+                    <div class="highlight-box" style="border-left-color:#c0392b;background:#fdecea;">
+                        <p><strong>⚠️ Notas importantes para 2027</strong></p>
+                        <p><strong>Revisar los cl de los botellines antes de comprar.</strong> En 2026 la <strong>Estrella Galicia</strong> nos la vendieron en botellín de <strong>20 cl en lugar de 25 cl</strong>: menos cerveza por el mismo precio. Confirmar el formato real (20 / 25 / 33 cl) de cada marca al hacer el pedido de 2027 y ajustar cantidades y comparación de precios en consecuencia.</p>
                     </div>
 
                     <div class="action-row" style="margin-top: 0; margin-bottom: 1rem;">
                         <a href="../fiestas-2026-plan-bebida.md" class="primary-button" target="_blank" rel="noopener">Ver plan de bebida</a>
                         <a href="../historico/2025/index.html" class="secondary-button" target="_blank" rel="noopener">Ver histórico 2025</a>
                     </div>
+
+                    <input type="search" id="ob-search" placeholder="🔍 Buscar en las tablas (bebida, comida, carne, menaje)…" aria-label="Buscar en las tablas de compra 2026" style="width:100%;max-width:520px;padding:0.7rem 1.1rem;border:2px solid var(--primary-color,#ff6b4a);border-radius:999px;font-size:1rem;font-family:inherit;margin-bottom:1.2rem;">
+                    <p id="ob-empty" style="display:none;color:#999;margin:0 0 1rem;">No hay resultados para tu búsqueda.</p>
 
                     <div class="table-wrap">
                         <table>
@@ -216,35 +222,34 @@
                                     <th>Bebida</th>
                                     <th>Comprada 2025</th>
                                     <th>Sobrante 2025</th>
-                                    <th>Objetivo compra 2026</th>
                                     <th>Compra real 2026</th>
                                     <th>Sobrante 2026</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Cerveza Mahou Clásica</td><td>192 botellines (32 packs de 6)</td><td>53</td><td>96 (16 packs de 6)</td><td></td><td></td></tr>
-                                <tr><td>Cerveza Mahou 5 Estrellas</td><td>144 botellines (24 packs de 6)</td><td>30</td><td>72 (12 packs de 6)</td><td></td><td></td></tr>
-                                <tr><td>Cerveza Estrella (pack 12)</td><td>192 botellines (16 packs de 12: 6 + 10)</td><td>30</td><td>72 (6 packs de 12)</td><td></td><td></td></tr>
-                                <tr><td>Cerveza 0,0 (Estrella botellines)</td><td>16 packs (1 + 15)</td><td>34</td><td>48 (sobrante caducado, compra completa)</td><td></td><td></td></tr>
-                                <tr><td>Coca-Cola normal 2L</td><td>4</td><td>6</td><td>6</td><td></td><td></td></tr>
-                                <tr><td>Coca-Cola Zero 2L</td><td>36</td><td>30</td><td>12</td><td></td><td></td></tr>
-                                <tr><td>Coca-Cola Zero Zero 2L</td><td>4</td><td>10</td><td>6</td><td></td><td></td></tr>
-                                <tr><td>Aquarius naranja</td><td>no figura en compra 2025</td><td>0</td><td>12</td><td></td><td></td></tr>
-                                <tr><td>Aquarius limón</td><td>no figura en compra 2025</td><td>0</td><td>6</td><td></td><td></td></tr>
-                                <tr><td>Agua (garrafas 8L)</td><td>3 garrafas 8L</td><td>0</td><td>8 garrafas (se usan para cocinar también) o botellas de 2 L</td><td></td><td></td></tr>
-                                <tr><td>Sprite</td><td>no figura en compra 2025</td><td>0</td><td>¿?</td><td></td><td></td></tr>
-                                <tr><td>Tónica Schweppes 1L</td><td>15 botellas</td><td>5</td><td>8 (sobrante caducado, compra completa)</td><td></td><td></td></tr>
-                                <tr><td>Ginebra Seagrams</td><td>14 botellas</td><td>7</td><td>10</td><td></td><td></td></tr>
-                                <tr><td>Whisky Cutty Sark</td><td>6 botellas</td><td>1</td><td>2</td><td></td><td></td></tr>
-                                <tr><td>Ron Barceló</td><td>8 botellas</td><td>5</td><td>4</td><td></td><td></td></tr>
-                                <tr><td>Ron Legendario</td><td>2 botellas</td><td>0</td><td>4</td><td></td><td></td></tr>
-                                <tr><td>Ginebra Larios 12</td><td>4 botellas</td><td>2</td><td>2</td><td></td><td></td></tr>
-                                <tr><td>Jägermeister</td><td>no figura en compra 2025</td><td>0</td><td>1</td><td></td><td></td></tr>
-                                <tr><td>Vodka Absolut</td><td>1 botella</td><td>1</td><td>la del año pasado</td><td></td><td></td></tr>
-                                <tr><td>Fanta limón 2L</td><td>24</td><td>6</td><td>usar sobrante (6) como mezclador limón (cubatas: Legendario limón, ginebra limón, Larios 12 limón, Seagrams limón...); comprar según consumo</td><td></td><td></td></tr>
-                                <tr><td>Fanta naranja 2L</td><td>6</td><td>1</td><td>usar sobrante (1) como mezclador naranja (cubatas: Cutty naranja); comprar 1-2 más</td><td></td><td></td></tr>
-                                <tr><td>Mixta (pack-6)</td><td>3 packs</td><td>3</td><td>usar sobrante; hay demanda de radler/clara (Helena)</td><td></td><td></td></tr>
-                                <tr><td>Hielo</td><td>no figura en compra 2025</td><td>13 bolsas</td><td>reponer por tramos</td><td></td><td></td></tr>
+                                <tr><td>Cerveza Mahou Clásica</td><td>192 botellines (32 packs de 6)</td><td>53</td><td></td><td></td></tr>
+                                <tr><td>Cerveza Mahou 5 Estrellas</td><td>144 botellines (24 packs de 6)</td><td>30</td><td></td><td></td></tr>
+                                <tr><td>Cerveza Estrella (pack 12)</td><td>192 botellines (16 packs de 12: 6 + 10)</td><td>30</td><td></td><td></td></tr>
+                                <tr><td>Cerveza 0,0 (Estrella botellines)</td><td>16 packs (1 + 15)</td><td>34</td><td></td><td></td></tr>
+                                <tr><td>Coca-Cola normal 2L</td><td>4</td><td>6</td><td></td><td></td></tr>
+                                <tr><td>Coca-Cola Zero 2L</td><td>36</td><td>30</td><td></td><td></td></tr>
+                                <tr><td>Coca-Cola Zero Zero 2L</td><td>4</td><td>10</td><td></td><td></td></tr>
+                                <tr><td>Aquarius naranja</td><td>no figura en compra 2025</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Aquarius limón</td><td>no figura en compra 2025</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Agua (garrafas 8L)</td><td>3 garrafas 8L</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Sprite</td><td>no figura en compra 2025</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Tónica Schweppes 1L</td><td>15 botellas</td><td>5</td><td></td><td></td></tr>
+                                <tr><td>Ginebra Seagrams</td><td>14 botellas</td><td>7</td><td></td><td></td></tr>
+                                <tr><td>Whisky Cutty Sark</td><td>6 botellas</td><td>1</td><td></td><td></td></tr>
+                                <tr><td>Ron Barceló</td><td>8 botellas</td><td>5</td><td></td><td></td></tr>
+                                <tr><td>Ron Legendario</td><td>2 botellas</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Ginebra Larios 12</td><td>4 botellas</td><td>2</td><td></td><td></td></tr>
+                                <tr><td>Jägermeister</td><td>no figura en compra 2025</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Vodka Absolut</td><td>1 botella</td><td>1</td><td></td><td></td></tr>
+                                <tr><td>Fanta limón 2L</td><td>24</td><td>6</td><td></td><td></td></tr>
+                                <tr><td>Fanta naranja 2L</td><td>6</td><td>1</td><td></td><td></td></tr>
+                                <tr><td>Mixta (pack-6)</td><td>3 packs</td><td>3</td><td></td><td></td></tr>
+                                <tr><td>Hielo</td><td>no figura en compra 2025</td><td>13 bolsas</td><td></td><td></td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -261,31 +266,30 @@
                                     <th>Producto</th>
                                     <th>Comprada 2025</th>
                                     <th>Sobrante 2025</th>
-                                    <th>Objetivo compra 2026</th>
                                     <th>Compra real 2026</th>
                                     <th>Sobrante 2026</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Jamón serrano (pieza)</td><td>1 pieza</td><td>0</td><td>1 pieza</td><td></td><td></td></tr>
-                                <tr><td>Carne carnicería (Luis) — ver tabla</td><td>lote (211,57 €)</td><td>0</td><td>lote similar (ver tabla carne)</td><td></td><td></td></tr>
-                                <tr><td>Fuet espetec extra</td><td>6</td><td>0</td><td>6</td><td></td><td></td></tr>
-                                <tr><td>Chorizo León</td><td>1</td><td>0</td><td>1</td><td></td><td></td></tr>
-                                <tr><td>Longaniza de pavo</td><td>1</td><td>0</td><td>1</td><td></td><td></td></tr>
-                                <tr><td>Set 3 fiambres</td><td>2</td><td>0</td><td>2</td><td></td><td></td></tr>
-                                <tr><td>Quesos (Edam, Cheddar, semi, viejo, sin lactosa)</td><td>12 uds/piezas</td><td>0</td><td>12 uds/piezas</td><td></td><td></td></tr>
-                                <tr><td>Tortillas (cebolla + patata)</td><td>4</td><td>0</td><td>4</td><td></td><td></td></tr>
-                                <tr><td>Empanadas (pollo/setas + atún)</td><td>4</td><td>0</td><td>4</td><td></td><td></td></tr>
-                                <tr><td>Pan cristal (pack 4 uds)</td><td>12 packs</td><td>0</td><td>12 packs</td><td></td><td></td></tr>
-                                <tr><td>Piquitos / picos salvado</td><td>4</td><td>0</td><td>4</td><td></td><td></td></tr>
-                                <tr><td>Trenza de hojaldre</td><td>7</td><td>0</td><td>7</td><td></td><td></td></tr>
-                                <tr><td>Helados de palo grandes</td><td>3 cajas</td><td>34</td><td>2 cajas (sobró bastante en 2025)</td><td></td><td></td></tr>
-                                <tr><td>Postres (mini conos, sandwich, bombones)</td><td>~13 packs</td><td>0</td><td>~13 packs</td><td></td><td></td></tr>
-                                <tr><td>Snacks salados (nachos, cheetos, konos, cocktail, patatas)</td><td>~15 uds</td><td>0</td><td>~15 uds</td><td></td><td></td></tr>
-                                <tr><td>Aceitunas / banderilla / encurtidos</td><td>3</td><td>0</td><td>3</td><td></td><td></td></tr>
-                                <tr><td>Salsas (guacamole, hummus, queso, mexicana, ketchup, mayonesa)</td><td>~8</td><td>0</td><td>~8</td><td></td><td></td></tr>
-                                <tr><td>Patatas clásicas</td><td>2 kg</td><td>0</td><td>2 kg</td><td></td><td></td></tr>
-                                <tr><td>Café cápsulas (varios)</td><td>~6</td><td>0</td><td>~6</td><td></td><td></td></tr>
+                                <tr><td>Jamón serrano (pieza)</td><td>1 pieza</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Carne carnicería (Luis) — ver tabla</td><td>lote (211,57 €)</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Fuet espetec extra</td><td>6</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Chorizo León</td><td>1</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Longaniza de pavo</td><td>1</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Set 3 fiambres</td><td>2</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Quesos (Edam, Cheddar, semi, viejo, sin lactosa)</td><td>12 uds/piezas</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Tortillas (cebolla + patata)</td><td>4</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Empanadas (pollo/setas + atún)</td><td>4</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Pan cristal (pack 4 uds)</td><td>12 packs</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Piquitos / picos salvado</td><td>4</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Trenza de hojaldre</td><td>7</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Helados de palo grandes</td><td>3 cajas</td><td>34</td><td></td><td></td></tr>
+                                <tr><td>Postres (mini conos, sandwich, bombones)</td><td>~13 packs</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Snacks salados (nachos, cheetos, konos, cocktail, patatas)</td><td>~15 uds</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Aceitunas / banderilla / encurtidos</td><td>3</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Salsas (guacamole, hummus, queso, mexicana, ketchup, mayonesa)</td><td>~8</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Patatas clásicas</td><td>2 kg</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Café cápsulas (varios)</td><td>~6</td><td>0</td><td></td><td></td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -304,22 +308,21 @@
                                     <th>Kg comprado 2025</th>
                                     <th>€/kg 2025</th>
                                     <th>Total 2025</th>
-                                    <th>Objetivo compra 2026</th>
                                     <th>Compra real 2026</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>1</td><td>3,435 kg</td><td>7,30 €</td><td>25,08 €</td><td></td><td></td></tr>
-                                <tr><td>2</td><td>2,565 kg</td><td>8,30 €</td><td>21,29 €</td><td></td><td></td></tr>
-                                <tr><td>3</td><td>1,73 kg</td><td>12,00 €</td><td>20,76 €</td><td></td><td></td></tr>
-                                <tr><td>4</td><td>1,735 kg</td><td>7,60 €</td><td>13,19 €</td><td></td><td></td></tr>
-                                <tr><td>5</td><td>1,37 kg</td><td>7,30 €</td><td>10,00 €</td><td></td><td></td></tr>
-                                <tr><td>6</td><td>2,8 kg</td><td>8,90 €</td><td>24,92 €</td><td></td><td></td></tr>
-                                <tr><td>7</td><td>2,83 kg</td><td>9,20 €</td><td>26,04 €</td><td></td><td></td></tr>
-                                <tr><td>8</td><td>5,05 kg</td><td>7,99 €</td><td>40,35 €</td><td></td><td></td></tr>
-                                <tr><td>9</td><td>3,51 kg</td><td>4,30 €</td><td>15,09 €</td><td></td><td></td></tr>
-                                <tr><td>10</td><td>1,5 kg</td><td>9,90 €</td><td>14,85 €</td><td></td><td></td></tr>
-                                <tr><td><strong>Total</strong></td><td>—</td><td>—</td><td><strong>211,57 €</strong></td><td></td><td></td></tr>
+                                <tr><td>1</td><td>3,435 kg</td><td>7,30 €</td><td>25,08 €</td><td></td></tr>
+                                <tr><td>2</td><td>2,565 kg</td><td>8,30 €</td><td>21,29 €</td><td></td></tr>
+                                <tr><td>3</td><td>1,73 kg</td><td>12,00 €</td><td>20,76 €</td><td></td></tr>
+                                <tr><td>4</td><td>1,735 kg</td><td>7,60 €</td><td>13,19 €</td><td></td></tr>
+                                <tr><td>5</td><td>1,37 kg</td><td>7,30 €</td><td>10,00 €</td><td></td></tr>
+                                <tr><td>6</td><td>2,8 kg</td><td>8,90 €</td><td>24,92 €</td><td></td></tr>
+                                <tr><td>7</td><td>2,83 kg</td><td>9,20 €</td><td>26,04 €</td><td></td></tr>
+                                <tr><td>8</td><td>5,05 kg</td><td>7,99 €</td><td>40,35 €</td><td></td></tr>
+                                <tr><td>9</td><td>3,51 kg</td><td>4,30 €</td><td>15,09 €</td><td></td></tr>
+                                <tr><td>10</td><td>1,5 kg</td><td>9,90 €</td><td>14,85 €</td><td></td></tr>
+                                <tr><td><strong>Total</strong></td><td>—</td><td>—</td><td><strong>211,57 €</strong></td><td></td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -335,35 +338,54 @@
                                     <th>Producto</th>
                                     <th>Comprada 2025</th>
                                     <th>Sobrante 2025</th>
-                                    <th>Objetivo compra 2026</th>
                                     <th>Compra real 2026</th>
                                     <th>Sobrante 2026</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><td>Platos (set 12 u)</td><td>16 packs</td><td>11 packs</td><td></td><td></td><td></td></tr>
-                                <tr><td>Vasos (set 24 u)</td><td>3 packs</td><td>0</td><td></td><td></td><td></td></tr>
-                                <tr><td>Tenedores reutilizables</td><td>8</td><td>3 packs (15 u)</td><td></td><td></td><td></td></tr>
-                                <tr><td>Cucharas (set 25 u)</td><td>6 packs</td><td>1 pack</td><td></td><td></td><td></td></tr>
-                                <tr><td>Cucharillas (25 u)</td><td>—</td><td>3 packs</td><td></td><td></td><td></td></tr>
-                                <tr><td>Servilletas</td><td>2 packs</td><td>0</td><td></td><td></td><td></td></tr>
-                                <tr><td>Rollo mantel</td><td>2</td><td>0</td><td></td><td></td><td></td></tr>
-                                <tr><td>Bandeja 3 pisos</td><td>5</td><td>0</td><td></td><td></td><td></td></tr>
-                                <tr><td>Film doméstico</td><td>2</td><td>1</td><td></td><td></td><td></td></tr>
-                                <tr><td>Papel aluminio</td><td>—</td><td>3</td><td></td><td></td><td></td></tr>
-                                <tr><td>Papel transparente</td><td>—</td><td>1</td><td></td><td></td><td></td></tr>
-                                <tr><td>Sacos de basura (10 u)</td><td>2 packs</td><td>1,5</td><td></td><td></td><td></td></tr>
-                                <tr><td>Bayetas Vileda / estropajos</td><td>2</td><td>infinito</td><td></td><td></td><td></td></tr>
-                                <tr><td>Panel multiusos / papel cocina</td><td>2</td><td>0</td><td></td><td></td><td></td></tr>
-                                <tr><td>Pastillas lavavajillas</td><td>1</td><td>0</td><td></td><td></td><td></td></tr>
-                                <tr><td>Jabón de mano</td><td>1</td><td>0</td><td></td><td></td><td></td></tr>
-                                <tr><td>Carbón (Carbos)</td><td>3</td><td>0</td><td></td><td></td><td></td></tr>
+                                <tr><td>Platos (set 12 u)</td><td>16 packs</td><td>11 packs</td><td></td><td></td></tr>
+                                <tr><td>Vasos (set 24 u)</td><td>3 packs</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Tenedores reutilizables</td><td>8</td><td>3 packs (15 u)</td><td></td><td></td></tr>
+                                <tr><td>Cucharas (set 25 u)</td><td>6 packs</td><td>1 pack</td><td></td><td></td></tr>
+                                <tr><td>Cucharillas (25 u)</td><td>—</td><td>3 packs</td><td></td><td></td></tr>
+                                <tr><td>Servilletas</td><td>2 packs</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Rollo mantel</td><td>2</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Bandeja 3 pisos</td><td>5</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Film doméstico</td><td>2</td><td>1</td><td></td><td></td></tr>
+                                <tr><td>Papel aluminio</td><td>—</td><td>3</td><td></td><td></td></tr>
+                                <tr><td>Papel transparente</td><td>—</td><td>1</td><td></td><td></td></tr>
+                                <tr><td>Sacos de basura (10 u)</td><td>2 packs</td><td>1,5</td><td></td><td></td></tr>
+                                <tr><td>Bayetas Vileda / estropajos</td><td>2</td><td>infinito</td><td></td><td></td></tr>
+                                <tr><td>Panel multiusos / papel cocina</td><td>2</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Pastillas lavavajillas</td><td>1</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Jabón de mano</td><td>1</td><td>0</td><td></td><td></td></tr>
+                                <tr><td>Carbón (Carbos)</td><td>3</td><td>0</td><td></td><td></td></tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>
+        (function () {
+            var input = document.getElementById("ob-search");
+            var sec = document.getElementById("objetivo-bebida");
+            var empty = document.getElementById("ob-empty");
+            if (!input || !sec) return;
+            var rows = Array.prototype.slice.call(sec.querySelectorAll("tbody tr"));
+            input.addEventListener("input", function () {
+                var q = input.value.trim().toLowerCase();
+                var visible = 0;
+                rows.forEach(function (r) {
+                    var show = !q || r.textContent.toLowerCase().indexOf(q) > -1;
+                    r.style.display = show ? "" : "none";
+                    if (show) visible++;
+                });
+                if (empty) empty.style.display = (q && visible === 0) ? "block" : "none";
+            });
+        })();
+        </script>
 
         <section id="materiales" class="feature-block alt">
             <div class="container narrow">
