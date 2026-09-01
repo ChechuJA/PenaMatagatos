@@ -150,6 +150,24 @@ document.addEventListener('DOMContentLoaded', function() {
     renderDay(0);
 });
 
+// Ampliar automáticamente las letras al entrar en el apartado Programa
+document.addEventListener('DOMContentLoaded', function() {
+    const programaSection = document.getElementById('programa');
+    if (!programaSection) return;
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                programaSection.classList.toggle('zoomed', entry.isIntersecting);
+            });
+        }, { threshold: 0.25 });
+        observer.observe(programaSection);
+    } else {
+        // Fallback: si se llega con el enlace #programa
+        if (window.location.hash === '#programa') programaSection.classList.add('zoomed');
+    }
+});
+
 // Smooth scrolling para la navegación
 document.addEventListener('DOMContentLoaded', function() {
     // Navegación suave
@@ -609,6 +627,39 @@ document.addEventListener('DOMContentLoaded', function() {
         return `📆 ${dia.titulo}${notaTxt}\n${eventos}`;
     }
 
+    // Texto del programa de un día por su índice
+    function programaPorIndice(index) {
+        const dia = programaFiestas2026.dias[index];
+        if (!dia) return null;
+        const notaTxt = dia.nota ? `\n(${dia.nota})` : '';
+        const eventos = dia.eventos.map(ev => `• ${ev.hora} — ${ev.texto}${ev.organiza ? ` [Organiza: ${ev.organiza}]` : ''}`).join('\n');
+        return `📆 ${dia.titulo}${notaTxt}\n${eventos}`;
+    }
+
+    // Mensaje de Gatito con botones para elegir el día del programa
+    function addBotDayPicker() {
+        const escapeChip = str => String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'gatito-message gatito-bot-message';
+        const chips = programaFiestas2026.dias.map((dia, i) =>
+            `<button type="button" class="gatito-day-chip" data-day="${i}">${escapeChip(dia.corto)}<small>${escapeChip(dia.mes)}</small></button>`
+        ).join('');
+        messageDiv.innerHTML = `
+            <span class="message-avatar">🐱</span>
+            <div class="message-content">📅 ¿De qué día quieres ver el programa? Elige uno:<div class="gatito-day-chips">${chips}</div></div>
+        `;
+        gatitoMessages.appendChild(messageDiv);
+        messageDiv.querySelectorAll('.gatito-day-chip').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const idx = parseInt(this.dataset.day, 10);
+                const dia = programaFiestas2026.dias[idx];
+                addUserMessage(`${dia.corto} (${dia.mes})`);
+                setTimeout(() => addBotMessage(programaPorIndice(idx)), 300);
+            });
+        });
+        gatitoMessages.scrollTop = gatitoMessages.scrollHeight;
+    }
+
     // Resumen de qué peña organiza cada actividad (cruce con el Word de tareas de peñas)
     const organizadoresTexto = (function() {
         const lineas = [];
@@ -635,6 +686,23 @@ document.addEventListener('DOMContentLoaded', function() {
         organizadores: {
             response: organizadoresTexto
         },
+        // === Compra REAL 2026 (prioritaria: ya está comprado) ===
+        gastos2026: {
+            response: "💰 Compra real 2026 (lo que llevamos gastado de verdad):\n\n• 🍖 Comida: 252,89 €\n• 🍺 Bebida: 56,84 €\n• 🍽️ Menaje: 149,87 €\n\n🧾 Total compra fiestas: 459,60 €\n\n🔊 Aparte (gastos generales de toda la peña, fuera del bote): 185,00 € (altavoces Vonyx + tacos/bridas + instalación de enchufes).\n\n⏳ Faltan por meter los tickets de carne, embutidos y trenzas.\n\n👉 Detalle por ticket en Fiestas > Resumen compra real 2026."
+        },
+        bebida2026: {
+            response: "🍺 Bebida comprada en 2026 (real, 56,84 €):\n\n• Cerveza Estrella (Alcampo): 4 packs\n• Mahou 0,0 (Amazon): 5 packs\n• Licor Jägermeister (Merkocash): 1\n• Licor de crema y licor de hierbas (Mercadona): 1 + 1\n• Agua (Merkocash): 1\n\n⚠️ Ojo 2027: la Estrella Galicia vino en botellín de 20 cl en vez de 25 cl. Falta por añadir el pedido grueso de bebida si lo hubo."
+        },
+        comida2026: {
+            response: "🍖 Comida comprada en 2026 (real, 252,89 €):\n\n• Merkocash: aperitivos, frutos secos, salsas, aceite... (144,08 €)\n• Mercadona: fuet, quesos, pan hamburguesa, guacamole, pan cristal... (77,37 €)\n• Alcampo: bacon, humus, pitas, judías... (31,44 €)\n\n⏳ Faltan por meter carne, embutidos y trenzas."
+        },
+        menaje2026: {
+            response: "🍽️ Menaje comprado en 2026 (real, 149,87 €):\n\n• Diseño (bazar): platos, cubiertos y vasos reutilizables (61,08 €)\n• Merkocash: platos, boles, bandejas, lavavajillas, servilletas, bolsas... (86,37 €)\n• Mercadona: 1 bolsa de hielo (para mantener fresco) + bolsas (2,30 €)\n• Alcampo: bolsa (0,12 €)\n\nℹ️ El objetivo de ~10 sacos de hielo se compra aparte."
+        },
+        generales2026: {
+            response: "🔊 Gastos generales 2026 (los paga TODA la peña, vayan o no a fiestas, fuera del bote): 185,00 €\n\n• Altavoces Vonyx VPS082A (sonido activo 400W, 2x8\", BT/USB): 160 € (Mayor Electronics)\n• Tacos y bridas (montaje): 10 € (Leroy Merlin)\n• Instalación de 3 enchufes + cables: 15 € (Hippy)"
+        },
+        // === Histórico 2025 (referencia) ===
         ubicacion: {
             response: "📍 La Peña Matagatos se celebra en un pueblo pequeño de Cuenca, España. Durante las fiestas, el pueblo pasa de 300 habitantes a más de 900 personas. ¡Es toda una experiencia!"
         },
@@ -697,11 +765,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mostrar/ocultar chat
     gatitoButton.addEventListener('click', function() {
         gatitoChat.classList.add('active');
+        gatitoChat.classList.add('fullscreen');
         gatitoButton.style.display = 'none';
     });
 
     gatitoClose.addEventListener('click', function() {
         gatitoChat.classList.remove('active');
+        gatitoChat.classList.remove('fullscreen');
         gatitoButton.style.display = 'flex';
         // Reset quick questions state when closing
         if (isMobile && hasInteracted) {
@@ -736,7 +806,9 @@ document.addEventListener('DOMContentLoaded', function() {
             autoCollapseOnMobile(); // Auto-collapse on mobile
             
             setTimeout(() => {
-                if (gatitoKnowledge[questionType]) {
+                if (questionType === 'programa') {
+                    addBotDayPicker(); // Preguntar primero de qué día
+                } else if (gatitoKnowledge[questionType]) {
                     addBotMessage(gatitoKnowledge[questionType].response);
                 } else {
                     addBotMessage("Lo siento, no tengo información específica sobre eso. ¿Podrías contactar directamente con info@penamatagatos.es?");
@@ -756,7 +828,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
             const response = generateResponse(message);
-            addBotMessage(response);
+            if (response === gatitoKnowledge.programa.response) {
+                addBotDayPicker(); // "programa" genérico: preguntar de qué día
+            } else {
+                addBotMessage(response);
+            }
         }, 500);
     }
 
@@ -797,6 +873,40 @@ document.addEventListener('DOMContentLoaded', function() {
             lowerMessage.includes('quién se encarga') || lowerMessage.includes('reparto') ||
             lowerMessage.includes('tareas') || (lowerMessage.includes('peña') && lowerMessage.includes('encarg'))) {
             return gatitoKnowledge.organizadores.response;
+        }
+
+        // === PRIORIDAD 2026: la compra real ya está hecha, se prioriza sobre 2025 ===
+        const habla2025 = lowerMessage.includes('2025');
+        // Gastos generales / altavoces / sonido
+        if (lowerMessage.includes('altavoz') || lowerMessage.includes('altavoces') || lowerMessage.includes('sonido') ||
+            lowerMessage.includes('general') || lowerMessage.includes('enchufe') || lowerMessage.includes('vonyx')) {
+            return gatitoKnowledge.generales2026.response;
+        }
+        if (!habla2025) {
+            if (lowerMessage.includes('menaje') || lowerMessage.includes('platos') || lowerMessage.includes('vasos') ||
+                lowerMessage.includes('cubiertos') || lowerMessage.includes('servilletas') || lowerMessage.includes('bandeja')) {
+                return gatitoKnowledge.menaje2026.response;
+            }
+            if (lowerMessage.includes('bebida') || lowerMessage.includes('cerveza') || lowerMessage.includes('refresco') ||
+                lowerMessage.includes('licor') || lowerMessage.includes('destilado')) {
+                return gatitoKnowledge.bebida2026.response;
+            }
+            if (lowerMessage.includes('comida') || lowerMessage.includes('embutido') || lowerMessage.includes('queso') ||
+                lowerMessage.includes('fuet') || lowerMessage.includes('trenza') || lowerMessage.includes('carne')) {
+                return gatitoKnowledge.comida2026.response;
+            }
+            if (lowerMessage.includes('gasto') || lowerMessage.includes('cuenta') || lowerMessage.includes('compra') ||
+                lowerMessage.includes('ticket') || lowerMessage.includes('cuánto') || lowerMessage.includes('cuanto') ||
+                lowerMessage.includes('coste') || lowerMessage.includes('presupuesto')) {
+                return gatitoKnowledge.gastos2026.response;
+            }
+        }
+        // Preguntas explícitas por 2026
+        if (lowerMessage.includes('2026')) {
+            if (lowerMessage.includes('menaje')) return gatitoKnowledge.menaje2026.response;
+            if (lowerMessage.includes('bebida') || lowerMessage.includes('cerveza')) return gatitoKnowledge.bebida2026.response;
+            if (lowerMessage.includes('comida') || lowerMessage.includes('carne') || lowerMessage.includes('embutido')) return gatitoKnowledge.comida2026.response;
+            if (lowerMessage.includes('gasto') || lowerMessage.includes('compra') || lowerMessage.includes('cuenta')) return gatitoKnowledge.gastos2026.response;
         }
 
         // Programa de un día concreto (ej. "qué hay el sábado 5", "programa del 3 de septiembre")

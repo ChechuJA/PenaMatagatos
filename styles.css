@@ -1423,6 +1423,24 @@ h3 {
     color: var(--accent-color);
 }
 
+/* Letras ampliadas automáticamente al entrar en el apartado Programa */
+.programa.zoomed .programa-card h3 { font-size: 1.55rem; }
+.programa.zoomed .programa-card .programa-card-note { font-size: 1rem; }
+.programa.zoomed .programa-time { font-size: 1.05rem; padding: 0.3rem 0.65rem; }
+.programa.zoomed .programa-text { font-size: 1.2rem; line-height: 1.5; }
+.programa.zoomed .programa-organiza { font-size: 1rem; }
+.programa.zoomed .programa-day-btn { font-size: 1.05rem; }
+.programa.zoomed .programa-day-btn small { font-size: 0.8rem; }
+.programa-card h3,
+.programa-card-note,
+.programa-time,
+.programa-text,
+.programa-organiza,
+.programa-day-btn,
+.programa-day-btn small {
+    transition: font-size 0.25s ease;
+}
+
 @media (max-width: 768px) {
     .programa-timeline {
         grid-template-columns: 1fr;
@@ -2060,6 +2078,27 @@ h3 {
     display: flex;
 }
 
+/* Pantalla completa al abrir Gatito */
+.gatito-chat-container.fullscreen {
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-height: none;
+    border-radius: 0;
+    z-index: 3000;
+}
+
+.gatito-chat-container.fullscreen .gatito-messages {
+    max-height: none;
+    flex: 1;
+}
+
 .gatito-header {
     background: linear-gradient(135deg, #ff6b35, #f7931e);
     color: white;
@@ -2125,6 +2164,42 @@ h3 {
 
 .gatito-bot-message {
     justify-content: flex-start;
+}
+
+.gatito-day-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+}
+
+.gatito-day-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.1;
+    padding: 0.35rem 0.6rem;
+    border: 1px solid var(--primary-color, #ff6b4a);
+    border-radius: 10px;
+    background: #fff;
+    color: var(--primary-color, #ff6b4a);
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.12s ease, color 0.12s ease, transform 0.12s ease;
+}
+
+.gatito-day-chip small {
+    font-size: 0.66rem;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+.gatito-day-chip:hover {
+    background: var(--primary-color, #ff6b4a);
+    color: #fff;
+    transform: translateY(-1px);
 }
 
 .gatito-user-message {
