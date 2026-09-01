@@ -2,20 +2,85 @@
   "evento": "Fiestas 2026",
   "categoria": "menaje",
   "descripcion": "Datos normalizados de MENAJE (vasos, platos, cubiertos, servilletas, hielo, bolsas, desechables). Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de menaje.",
-  "actualizado": "2026-08-26",
+  "actualizado": "2026-09-01",
   "moneda": "EUR",
   "tickets": [
     {
-      "id": "ejemplo-borrar",
-      "foto": "real_comprado/menaje/alcampo-2026-08-20.jpg",
-      "proveedor": "Alcampo",
-      "fecha": "2026-08-20",
-      "nota": "Ejemplo. Ticket mixto: aqui solo las lineas de menaje. Borrar al meter datos reales.",
+      "id": "merkocash-menaje-2026-08-31",
+      "foto": "real_comprado/comida/merkocash-2026-08-31.jpg",
+      "proveedor": "Merkocash (La Ardosa S.L.)",
+      "fecha": "2026-08-31",
+      "nota": "Ticket mixto Merkocash (FRA 2/100633, 17:19). Aqui solo lineas de menaje/limpieza. Foto guardada en comida (categoria que mas pesa). Total ticket completo 243,50 EUR.",
       "lineas": [
-        { "producto": "Vasos de plastico", "cantidad": 0, "unidad": "paquete", "precio_unitario": 0.0, "importe": 0.0 }
+        { "producto": "Set 12 Platos", "cantidad": 5, "unidad": "set", "precio_unitario": 0.79, "importe": 3.95 },
+        { "producto": "Barreño Redondo", "cantidad": 4, "unidad": "ud", "precio_unitario": 1.45, "importe": 5.80 },
+        { "producto": "Bolsa Merkocash", "cantidad": 4, "unidad": "ud", "precio_unitario": 0.12, "importe": 0.48 },
+        { "producto": "Rollo Mantel", "cantidad": 1, "unidad": "ud", "precio_unitario": 6.09, "importe": 6.09 },
+        { "producto": "Set 12 Boles Plastico", "cantidad": 3, "unidad": "set", "precio_unitario": 0.69, "importe": 2.07 },
+        { "producto": "Bandeja 3 Piezas", "cantidad": 4, "unidad": "ud", "precio_unitario": 1.29, "importe": 5.16 },
+        { "producto": "Bandeja 3 Piezas", "cantidad": 5, "unidad": "ud", "precio_unitario": 2.25, "importe": 11.25 },
+        { "producto": "Bandeja 2 Piezas", "cantidad": 2, "unidad": "ud", "precio_unitario": 1.85, "importe": 3.70 },
+        { "producto": "Set 6 Boles Plastico", "cantidad": 3, "unidad": "set", "precio_unitario": 0.55, "importe": 1.65 },
+        { "producto": "Capsulas Original (lavavajillas)", "cantidad": 2, "unidad": "ud", "precio_unitario": 3.05, "importe": 6.10 },
+        { "producto": "Lavavajillas", "cantidad": 1, "unidad": "ud", "precio_unitario": 1.15, "importe": 1.15 },
+        { "producto": "Capsulas Original (lavavajillas)", "cantidad": 1, "unidad": "ud", "precio_unitario": 8.85, "importe": 8.85 },
+        { "producto": "Capsulas Original (lavavajillas)", "cantidad": 1, "unidad": "ud", "precio_unitario": 8.85, "importe": 8.85 },
+        { "producto": "Set 24 Vasos C", "cantidad": 1, "unidad": "set", "precio_unitario": 0.99, "importe": 0.99 },
+        { "producto": "Servilletas", "cantidad": 2, "unidad": "paquete", "precio_unitario": 0.89, "importe": 1.78 },
+        { "producto": "Set 25 Cucharillas", "cantidad": 1, "unidad": "set", "precio_unitario": 0.29, "importe": 0.29 },
+        { "producto": "Set 25 Cucharas", "cantidad": 3, "unidad": "set", "precio_unitario": 0.45, "importe": 1.35 },
+        { "producto": "Set 400 Palillos", "cantidad": 1, "unidad": "set", "precio_unitario": 0.69, "importe": 0.69 },
+        { "producto": "Pastilla Fuego (encendido barbacoa)", "cantidad": 1, "unidad": "ud", "precio_unitario": 1.25, "importe": 1.25 },
+        { "producto": "Papel Multiusos", "cantidad": 2, "unidad": "ud", "precio_unitario": 2.05, "importe": 4.10 },
+        { "producto": "Film Domestico", "cantidad": 1, "unidad": "ud", "precio_unitario": 1.25, "importe": 1.25 },
+        { "producto": "10 Sacos Basura", "cantidad": 1, "unidad": "paquete", "precio_unitario": 3.19, "importe": 3.19 },
+        { "producto": "Insecticida", "cantidad": 1, "unidad": "ud", "precio_unitario": 5.09, "importe": 5.09 },
+        { "producto": "Ambientador", "cantidad": 1, "unidad": "ud", "precio_unitario": 1.29, "importe": 1.29 }
       ],
-      "subtotal": 0.0
+      "subtotal": 86.37
+    },
+    {
+      "id": "alcampo-menaje-2026-08-31",
+      "foto": "real_comprado/comida/alcampo-2026-08-31.jpg",
+      "proveedor": "Alcampo Cuenca",
+      "fecha": "2026-08-31",
+      "nota": "Ticket mixto Alcampo (19:38). Aqui solo lineas de menaje. Foto guardada en comida (categoria que mas pesa). Total ticket completo 47,04 EUR.",
+      "lineas": [
+        { "producto": "Bolsa 50x60cm", "cantidad": 1, "unidad": "ud", "precio_unitario": 0.12, "importe": 0.12 }
+      ],
+      "subtotal": 0.12
+    },
+    {
+      "id": "mercadona-menaje-2026-08-31",
+      "foto": "real_comprado/comida/mercadona-2026-08-31.jpg",
+      "proveedor": "Mercadona Cuenca",
+      "fecha": "2026-08-31",
+      "nota": "Ticket mixto Mercadona (18:54). Aqui solo lineas de menaje. Foto guardada en comida (categoria que mas pesa). Total ticket completo 92,02 EUR. Precio hielo ajustado a 1,55 para cuadrar el total del ticket. El hielo es solo 1 bolsa para mantener cosas frescas, NO forma parte del objetivo de 10 sacos de hielo que se compran por otro lado.",
+      "lineas": [
+        { "producto": "Hielo Cubito 2 kg (para mantener fresco, no de los 10 sacos)", "cantidad": 1, "unidad": "bolsa", "precio_unitario": 1.55, "importe": 1.55 },
+        { "producto": "Bolsa Plastico", "cantidad": 5, "unidad": "ud", "precio_unitario": 0.15, "importe": 0.75 }
+      ],
+      "subtotal": 2.30
+    },
+    {
+      "id": "diseno-granfamilychen-menaje-2026-08-31",
+      "foto": "real_comprado/menaje/diseno-granfamilychen-2026-08-31.jpg",
+      "proveedor": "Diseño (Gran Family Chen S.L.)",
+      "fecha": "2026-08-31",
+      "nota": "Ticket bazar (17:53, atendio Juan). Todo menaje. Total ticket 61,08 EUR (13 articulos).",
+      "lineas": [
+        { "producto": "Plato Llano Reutilizable", "cantidad": 1, "unidad": "ud", "precio_unitario": 8.99, "importe": 8.99 },
+        { "producto": "Plato Llano Reutilizable", "cantidad": 2, "unidad": "ud", "precio_unitario": 8.49, "importe": 16.98 },
+        { "producto": "Tenedor Alta Calidad", "cantidad": 2, "unidad": "paquete", "precio_unitario": 6.49, "importe": 12.98 },
+        { "producto": "Cuchara Alta Calidad", "cantidad": 1, "unidad": "paquete", "precio_unitario": 6.49, "importe": 6.49 },
+        { "producto": "Cuchillo Alta Calidad", "cantidad": 1, "unidad": "paquete", "precio_unitario": 6.49, "importe": 6.49 },
+        { "producto": "Vaso Irrompible T", "cantidad": 2, "unidad": "paquete", "precio_unitario": 1.29, "importe": 2.58 },
+        { "producto": "Marcador CD Punta (rotulador)", "cantidad": 1, "unidad": "ud", "precio_unitario": 2.79, "importe": 2.79 },
+        { "producto": "Vaso", "cantidad": 2, "unidad": "paquete", "precio_unitario": 1.49, "importe": 2.98 },
+        { "producto": "Articulo Temporal", "cantidad": 1, "unidad": "ud", "precio_unitario": 0.80, "importe": 0.80 }
+      ],
+      "subtotal": 61.08
     }
   ],
-  "total_categoria": 0.0
+  "total_categoria": 149.87
 }

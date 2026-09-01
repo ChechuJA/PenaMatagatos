@@ -15,6 +15,7 @@ cuentas/
 ├── tickets-bebida.json    Datos normalizados de BEBIDA (reconciliados).
 ├── tickets-comida.json    Datos normalizados de COMIDA.
 ├── tickets-menaje.json    Datos normalizados de MENAJE.
+├── tickets-generales.json GASTOS GENERALES de la peña (los paga TODA la peña, no el bote de fiestas).
 └── README.md              Este archivo.
 ```
 La carpeta `../otras_peñas/` guarda presupuestos/albaranes de otras peñas como referencia.
@@ -38,3 +39,38 @@ Un mismo ticket físico (p. ej. Alcampo) puede llevar bebida + comida + menaje.
 ## Al cerrar la temporada
 Esta carpeta ya vive dentro de `historico/2026/`, así que al terminar las fiestas
 queda como archivo del año, igual que `historico/2025/`.
+
+## Estado compra real 2026 (actualizado 2026-09-01)
+Cargados **5 tickets del 31/08/2026** (repartidos por categoría según la regla de arriba):
+
+| Ticket | Proveedor | Total | Comida | Bebida | Menaje |
+|---|---|---|---|---|---|
+| Merkocash | La Ardosa S.L. | 243,50 | 144,08 | 13,05 | 86,37 |
+| Alcampo | Alcampo Cuenca | 47,04 | 31,44 | 15,48 | 0,12 |
+| Mercadona | Mercadona Cuenca | 92,02 | 77,37 | 12,35 | 2,30 |
+| Diseño (bazar) | Gran Family Chen S.L. | 61,08 | — | — | 61,08 |
+| Amazon | Amazon.es (Mahou 0,0) | 15,96 | — | 15,96 | — |
+| **Total** | | **459,60** | **252,89** | **56,84** | **149,87** |
+
+Notas:
+- **Hielo Mercadona**: 1 sola bolsa (2 kg, 1,55 €) para mantener cosas frescas.
+  NO forma parte del objetivo de los ~10 sacos de hielo que se compran por otro lado.
+  Precio ajustado a 1,55 € para cuadrar el total del ticket (línea borrosa).
+- Cerveza Estrella (Alcampo) y Mahou 0,0 (Amazon) registradas como "pack" (el ticket no detalla botellines).
+
+### Pendiente de meter (avisado 2026-09-01)
+Faltan tickets de **carne** (barbacoa), **embutidos**, **trenzas** y similares.
+Probablemente también el **pedido grueso de bebida** (cerveza/refrescos/destilados).
+Cuando lleguen las fotos, añadirlas con el mismo criterio y recalcular `total_categoria`.
+
+### Gastos generales 2026 (`tickets-generales.json`)
+Gastos que paga **toda la peña** (vayan o no a las fiestas), **fuera del bote/cuotas**:
+
+| Concepto | Proveedor | Importe |
+|---|---|---|
+| Altavoces Vonyx VPS082A (sonido activo 400W, 2x8", BT/USB/micro/soportes) | Mayor Electronics | 160,00 |
+| Tacos y bridas (montaje altavoces) | Leroy Merlin | 10,00 |
+| Instalación 3 enchufes + cables (mano de obra) | Hippy | 15,00 |
+| **Total generales** | | **185,00** |
+
+Estos importes **no** cuentan para el balance del bote de fiestas; se reparten entre todos los componentes.

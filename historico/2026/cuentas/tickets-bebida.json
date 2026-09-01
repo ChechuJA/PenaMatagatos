@@ -2,20 +2,55 @@
   "evento": "Fiestas 2026",
   "categoria": "bebida",
   "descripcion": "Datos normalizados de BEBIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de bebida.",
-  "actualizado": "2026-08-26",
+  "actualizado": "2026-09-01",
   "moneda": "EUR",
   "tickets": [
     {
-      "id": "ejemplo-borrar",
-      "foto": "real_comprado/bebida/alcampo-2026-08-20.jpg",
-      "proveedor": "Alcampo",
-      "fecha": "2026-08-20",
-      "nota": "Ejemplo. Ticket mixto (bebida+comida): aqui solo las lineas de bebida. Borrar al meter datos reales.",
+      "id": "merkocash-bebida-2026-08-31",
+      "foto": "real_comprado/comida/merkocash-2026-08-31.jpg",
+      "proveedor": "Merkocash (La Ardosa S.L.)",
+      "fecha": "2026-08-31",
+      "nota": "Ticket mixto Merkocash (FRA 2/100633, 17:19). Aqui solo lineas de bebida. Foto guardada en comida (categoria que mas pesa). Total ticket completo 243,50 EUR.",
       "lineas": [
-        { "producto": "Cerveza Mahou 5 Estrellas", "cantidad": 0, "unidad": "botellin 25cl", "precio_unitario": 0.0, "importe": 0.0 }
+        { "producto": "Agua Fuencisla", "cantidad": 1, "unidad": "botella", "precio_unitario": 0.26, "importe": 0.26 },
+        { "producto": "Licor Jagermeister", "cantidad": 1, "unidad": "botella", "precio_unitario": 12.79, "importe": 12.79 }
       ],
-      "subtotal": 0.0
+      "subtotal": 13.05
+    },
+    {
+      "id": "alcampo-bebida-2026-08-31",
+      "foto": "real_comprado/comida/alcampo-2026-08-31.jpg",
+      "proveedor": "Alcampo Cuenca",
+      "fecha": "2026-08-31",
+      "nota": "Ticket mixto Alcampo (19:38). Aqui solo lineas de bebida. Foto guardada en comida (categoria que mas pesa). Total ticket completo 47,04 EUR.",
+      "lineas": [
+        { "producto": "Cerveza Estrella (Galicia)", "cantidad": 4, "unidad": "pack", "precio_unitario": 3.87, "importe": 15.48 }
+      ],
+      "subtotal": 15.48
+    },
+    {
+      "id": "mercadona-bebida-2026-08-31",
+      "foto": "real_comprado/comida/mercadona-2026-08-31.jpg",
+      "proveedor": "Mercadona Cuenca",
+      "fecha": "2026-08-31",
+      "nota": "Ticket mixto Mercadona (18:54). Aqui solo lineas de bebida. Foto guardada en comida (categoria que mas pesa). Total ticket completo 92,02 EUR.",
+      "lineas": [
+        { "producto": "Licor de Crema", "cantidad": 1, "unidad": "botella", "precio_unitario": 6.25, "importe": 6.25 },
+        { "producto": "Licor de Hierbas", "cantidad": 1, "unidad": "botella", "precio_unitario": 6.10, "importe": 6.10 }
+      ],
+      "subtotal": 12.35
+    },
+    {
+      "id": "amazon-bebida-2026-08-31",
+      "foto": "real_comprado/bebida/amazon-mahou-00-2026-08-31.jpg",
+      "proveedor": "Amazon.es",
+      "fecha": "2026-08-31",
+      "nota": "Pedido Amazon 171-5823303-0309908 (entrega miercoles). Mahou 0,0 Rubia cerveza sin alcohol.",
+      "lineas": [
+        { "producto": "Cerveza Mahou 0,0 Rubia (pack)", "cantidad": 5, "unidad": "pack", "precio_unitario": 3.192, "importe": 15.96 }
+      ],
+      "subtotal": 15.96
     }
   ],
-  "total_categoria": 0.0
+  "total_categoria": 56.84
 }
