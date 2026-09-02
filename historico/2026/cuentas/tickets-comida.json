@@ -2,7 +2,7 @@
   "evento": "Fiestas 2026",
   "categoria": "comida",
   "descripcion": "Datos normalizados de COMIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de comida.",
-  "actualizado": "2026-09-01",
+  "actualizado": "2026-09-02",
   "moneda": "EUR",
   "tickets": [
     {
@@ -91,7 +91,18 @@
         { "producto": "Pan Cristal (4 uds)", "cantidad": 6, "unidad": "paquete", "precio_unitario": 1.85, "importe": 11.10 }
       ],
       "subtotal": 77.37
+    },
+    {
+      "id": "panaderia-comida-2026",
+      "foto": null,
+      "proveedor": "Panadería",
+      "fecha": "2026",
+      "nota": "Pan encargado para fiestas 2026: 2 barras jueves, 8 viernes y 8 sábado (18 barras en total).",
+      "lineas": [
+        { "producto": "Pan (barra)", "cantidad": 18, "unidad": "barra", "precio_unitario": 1.30, "importe": 23.40 }
+      ],
+      "subtotal": 23.40
     }
   ],
-  "total_categoria": 252.89
+  "total_categoria": 276.29
 }
