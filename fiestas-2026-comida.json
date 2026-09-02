@@ -121,17 +121,17 @@
       "alcampo_2": 120.15,
       "mercokash": 17.14,
       "mari_carmen_tienda_del_pueblo": 5,
-      "panaderia": 20.4,
-      "panaderia_extra": 5,
+      "panaderia": 23.4,
+      "panaderia_extra": 0,
       "comida_edu": 20,
       "mercadona_leti": 26.3,
       "carrefour": 12.9,
       "carne_luis_embutidos": 211.57,
-      "gasto_total": 2019.18
+      "gasto_total": 2017.18
     },
     "saldo": {
-      "sobra_total": 20.15,
-      "formula": "2039.33 - 2019.18 = 20.15",
+      "sobra_total": 22.15,
+      "formula": "2039.33 - 2017.18 = 22.15",
       "nota": "5 € son del Pimen."
     }
   },

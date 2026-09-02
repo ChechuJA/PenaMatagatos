@@ -40,8 +40,8 @@ Un mismo ticket físico (p. ej. Alcampo) puede llevar bebida + comida + menaje.
 Esta carpeta ya vive dentro de `historico/2026/`, así que al terminar las fiestas
 queda como archivo del año, igual que `historico/2025/`.
 
-## Estado compra real 2026 (actualizado 2026-09-01)
-Cargados **5 tickets del 31/08/2026** (repartidos por categoría según la regla de arriba):
+## Estado compra real 2026 (actualizado 2026-09-02)
+Cargados **6 tickets** (repartidos por categoría según la regla de arriba):
 
 | Ticket | Proveedor | Total | Comida | Bebida | Menaje |
 |---|---|---|---|---|---|
@@ -50,13 +50,14 @@ Cargados **5 tickets del 31/08/2026** (repartidos por categoría según la regla
 | Mercadona | Mercadona Cuenca | 92,02 | 77,37 | 12,35 | 2,30 |
 | Diseño (bazar) | Gran Family Chen S.L. | 61,08 | — | — | 61,08 |
 | Amazon | Amazon.es (Mahou 0,0) | 15,96 | — | 15,96 | — |
-| **Total** | | **459,60** | **252,89** | **56,84** | **149,87** |
+| **Total** | | **483,00** | **276,29** | **56,84** | **149,87** |
 
 Notas:
 - **Hielo Mercadona**: 1 sola bolsa (2 kg, 1,55 €) para mantener cosas frescas.
   NO forma parte del objetivo de los ~10 sacos de hielo que se compran por otro lado.
   Precio ajustado a 1,55 € para cuadrar el total del ticket (línea borrosa).
 - Cerveza Estrella (Alcampo) y Mahou 0,0 (Amazon) registradas como "pack" (el ticket no detalla botellines).
+- **Pan 2026**: 18 barras registradas a 1,30 € (2 jueves, 8 viernes, 8 sábado) = 23,40 €.
 
 ### Pendiente de meter (avisado 2026-09-01)
 Faltan tickets de **carne** (barbacoa), **embutidos**, **trenzas** y similares.
