@@ -30,6 +30,7 @@
     { "producto": "Rotuladores gruesos y finos", "cantidad": 1, "unidad": "set", "estado": "tener", "prioridad": "media" },
     { "producto": "Pintura / témperas", "cantidad": 1, "unidad": "set", "estado": "tener", "prioridad": "media" },
     { "producto": "Pinceles", "cantidad": 1, "unidad": "set", "estado": "tener", "prioridad": "media" },
+    { "producto": "Toallitas húmedas", "cantidad": 1, "unidad": "paquete", "estado": "tener", "prioridad": "media" },
     { "producto": "Vasos / cubiertos / servilletas", "cantidad": 1, "unidad": "stock base", "estado": "revisar y reponer", "prioridad": "media" }
   ],
   "notas": [
