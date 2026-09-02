@@ -41,7 +41,7 @@ Esta carpeta ya vive dentro de `historico/2026/`, así que al terminar las fiest
 queda como archivo del año, igual que `historico/2025/`.
 
 ## Estado compra real 2026 (actualizado 2026-09-02)
-Cargados **6 tickets** (repartidos por categoría según la regla de arriba):
+Cargados **7 tickets** (repartidos por categoría según la regla de arriba):
 
 | Ticket | Proveedor | Total | Comida | Bebida | Menaje |
 |---|---|---|---|---|---|
@@ -50,7 +50,8 @@ Cargados **6 tickets** (repartidos por categoría según la regla de arriba):
 | Mercadona | Mercadona Cuenca | 92,02 | 77,37 | 12,35 | 2,30 |
 | Diseño (bazar) | Gran Family Chen S.L. | 61,08 | — | — | 61,08 |
 | Amazon | Amazon.es (Mahou 0,0) | 15,96 | — | 15,96 | — |
-| **Total** | | **483,00** | **276,29** | **56,84** | **149,87** |
+| Amazon | Amazon.es (S.Pellegrino agua con gas 24x50cl) | 25,20 | — | 25,20 | — |
+| **Total** | | **508,20** | **276,29** | **82,04** | **149,87** |
 
 Notas:
 - **Hielo Mercadona**: 1 sola bolsa (2 kg, 1,55 €) para mantener cosas frescas.

@@ -2,7 +2,7 @@
   "evento": "Fiestas 2026",
   "categoria": "bebida",
   "descripcion": "Datos normalizados de BEBIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de bebida.",
-  "actualizado": "2026-09-01",
+  "actualizado": "2026-09-02",
   "moneda": "EUR",
   "tickets": [
     {
@@ -50,7 +50,18 @@
         { "producto": "Cerveza Mahou 0,0 Rubia (pack)", "cantidad": 5, "unidad": "pack", "precio_unitario": 3.192, "importe": 15.96 }
       ],
       "subtotal": 15.96
+    },
+    {
+      "id": "amazon-bebida-2026-09-02",
+      "foto": null,
+      "proveedor": "Amazon.es",
+      "fecha": "2026-09-02",
+      "nota": "Pedido Amazon https://amzn.eu/d/0fOtCgQW. S.Pellegrino agua con gas 24x50cl.",
+      "lineas": [
+        { "producto": "S.Pellegrino Agua con Gas 24x50cl", "cantidad": 1, "unidad": "pack", "precio_unitario": 25.20, "importe": 25.20 }
+      ],
+      "subtotal": 25.20
     }
   ],
-  "total_categoria": 56.84
+  "total_categoria": 82.04
 }
