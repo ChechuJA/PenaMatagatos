@@ -1,6 +1,5 @@
 ---
 description: Compara precios de bebida entre proveedores y estima el coste total de la compra de fiestas de la Peña Matagatos. Úsalo para rellenar precios, elegir el proveedor más barato por producto y calcular el gasto final.
-tools: ['read_file', 'grep_search', 'file_search', 'list_dir', 'replace_string_in_file', 'multi_replace_string_in_file', 'create_file', 'get_errors', 'fetch_webpage']
 ---
 
 # Agente Precios y Proveedores Matagatos

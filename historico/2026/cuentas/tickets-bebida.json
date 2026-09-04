@@ -2,7 +2,7 @@
   "evento": "Fiestas 2026",
   "categoria": "bebida",
   "descripcion": "Datos normalizados de BEBIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de bebida.",
-  "actualizado": "2026-09-02",
+  "actualizado": "2026-09-04",
   "moneda": "EUR",
   "tickets": [
     {
@@ -61,7 +61,41 @@
         { "producto": "S.Pellegrino Agua con Gas 24x50cl", "cantidad": 1, "unidad": "pack", "precio_unitario": 25.20, "importe": 25.20 }
       ],
       "subtotal": 25.20
+    },
+    {
+      "id": "licoreo-bebida-2026-08-26",
+      "foto": "../../../Fiestas/2026/proveedores/Licoreo/Presupuestos/PRESUPUESTODEVENTA-03866-PENA_MATAGATOS.PDF",
+      "proveedor": "Distribuciones y Logistica Licoreo, S.L. (B16916710)",
+      "fecha": "2026-08-26",
+      "nota": "PEDIDO GRUESO DE BEBIDA de fiestas (cerveza, refrescos, agua y destilados). Fuente: presupuesto de venta Licoreo PRV03866 (2026-08-26), coincide 1:1 con la lista que pidio la pena. Los 'importe' de cada linea son BASE IMPONIBLE sin IVA; el subtotal es el TOTAL CON IVA pagado (base 772,49 + IVA 160,18). PENDIENTE de cuadrar con la factura/albaran final de Licoreo.",
+      "lineas": [
+        { "producto": "Cerveza Mahou Sin (0,0) - caja 24x25cl", "cantidad": 6, "unidad": "caja", "precio_unitario": 11.75, "importe": 70.50 },
+        { "producto": "Cerveza Estrella de Galicia - caja 24x25cl", "cantidad": 12, "unidad": "caja", "precio_unitario": 11.44, "importe": 137.28 },
+        { "producto": "Cerveza Mahou Clasica - caja 24x25cl", "cantidad": 5, "unidad": "caja", "precio_unitario": 11.52, "importe": 57.60 },
+        { "producto": "Cerveza Mahou 5 Estrellas - caja 24x25cl", "cantidad": 6, "unidad": "caja", "precio_unitario": 10.75, "importe": 64.50 },
+        { "producto": "Coca-Cola 2L", "cantidad": 12, "unidad": "botella", "precio_unitario": 1.58, "importe": 18.96 },
+        { "producto": "Coca-Cola Zero 2L", "cantidad": 24, "unidad": "botella", "precio_unitario": 1.58, "importe": 37.92 },
+        { "producto": "Coca-Cola Zero Zero 2L", "cantidad": 12, "unidad": "botella", "precio_unitario": 1.58, "importe": 18.96 },
+        { "producto": "Sprite 2L", "cantidad": 6, "unidad": "botella", "precio_unitario": 1.28, "importe": 7.68 },
+        { "producto": "Fanta de Limon 2L", "cantidad": 18, "unidad": "botella", "precio_unitario": 1.38, "importe": 24.84 },
+        { "producto": "Fanta de Naranja 2L", "cantidad": 6, "unidad": "botella", "precio_unitario": 1.38, "importe": 8.28 },
+        { "producto": "Aquarius Naranja 1,5L", "cantidad": 12, "unidad": "botella", "precio_unitario": 1.52, "importe": 18.24 },
+        { "producto": "Aquarius Limon 1,5L", "cantidad": 8, "unidad": "botella", "precio_unitario": 1.52, "importe": 12.16 },
+        { "producto": "Tonica Schweppes 1L", "cantidad": 12, "unidad": "botella", "precio_unitario": 1.61, "importe": 19.32 },
+        { "producto": "Gaseosa La Casera (pack 6x1,5L)", "cantidad": 1, "unidad": "pack", "precio_unitario": 5.25, "importe": 5.25 },
+        { "producto": "Tinto de Verano con Limon Don Simon 1,5L", "cantidad": 2, "unidad": "botella", "precio_unitario": 1.41, "importe": 2.82 },
+        { "producto": "Agua Aquadeus garrafa 5L", "cantidad": 4, "unidad": "garrafa", "precio_unitario": 1.24, "importe": 4.96 },
+        { "producto": "Agua Aquadeus 1,5L", "cantidad": 20, "unidad": "botella", "precio_unitario": 0.42, "importe": 8.40 },
+        { "producto": "Ginebra Seagram's Extra Dry 70cl", "cantidad": 4, "unidad": "botella", "precio_unitario": 14.25, "importe": 57.00 },
+        { "producto": "Ginebra Puerto de Indias Strawberry 70cl", "cantidad": 2, "unidad": "botella", "precio_unitario": 12.43, "importe": 24.86 },
+        { "producto": "Ginebra Beefeater 70cl", "cantidad": 2, "unidad": "botella", "precio_unitario": 11.56, "importe": 23.12 },
+        { "producto": "Ron Legendario Elixir 70cl", "cantidad": 4, "unidad": "botella", "precio_unitario": 13.65, "importe": 54.60 },
+        { "producto": "Whisky Cutty Sark 70cl", "cantidad": 3, "unidad": "botella", "precio_unitario": 9.75, "importe": 29.25 },
+        { "producto": "Ron Barcelo 70cl", "cantidad": 4, "unidad": "botella", "precio_unitario": 13.25, "importe": 53.00 },
+        { "producto": "Ginebra Larios 12 70cl", "cantidad": 1, "unidad": "botella", "precio_unitario": 12.99, "importe": 12.99 }
+      ],
+      "subtotal": 932.67
     }
   ],
-  "total_categoria": 82.04
+  "total_categoria": 1014.71
 }

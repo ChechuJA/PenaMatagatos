@@ -1,7 +1,8 @@
 # Plan de bebida - Fiestas 2026
 
 ## 1) Punto de partida
-- Grupo confirmado: 29 personas con la lista definitiva (anadidas Tamara y Zara).
+- Grupo confirmado: 30 integrantes de la peña (anadida Lucia, detras de Josemi; sus dias y bebida estan por confirmar).
+- A las fiestas 2026 vinieron 28; la derrama de altavoces se reparte entre los 30 integrantes.
 - Asistencia estimada total: 101 persona-dias (cota conservadora, ajustada con la lista final).
 - Criterio: comprar en modo conservador y ajustar con el sobrante real 2025.
 
@@ -13,6 +14,7 @@
 | Chechu | todos los días | 5 |
 | Esmeralda | todos los días | 5 |
 | Josemi | todos los días | 5 |
+| Lucía | por confirmar | 0 |
 | Eve | todos los días | 5 |
 | Leti | todos los días | 5 |
 | Javi | sábado y domingo | 2 |

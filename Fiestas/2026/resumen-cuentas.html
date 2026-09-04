@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de cuentas 2026 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .rc-meta { color: #777; font-size: 0.9rem; margin: 0.2rem 0 1.2rem; }
+        .rc-estado { font-size: 0.85rem; color: #7a5b00; background: #fff7db; border-left: 4px solid #f1c40f; border-radius: 10px; padding: 0.8rem 1rem; margin-bottom: 1.4rem; }
+        .rc-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 1.6rem; }
+        .rc-kpi { background: #fff8f1; border-radius: 14px; padding: 1rem 0.7rem; text-align: center; border: 1px solid #ffe3d3; }
+        .rc-kpi .num { font-family: "Fredoka One", cursive; font-size: 1.5rem; line-height: 1; color: var(--primary-color, #ff6b4a); }
+        .rc-kpi .lbl { font-size: 0.78rem; color: #666; margin-top: 0.35rem; }
+        .rc-kpi.ingresos .num { color: #1e8449; }
+        .rc-kpi.gastos .num { color: #c0392b; }
+        .rc-kpi.saldo { grid-column: 1 / -1; background: var(--primary-color, #ff6b4a); border-color: var(--primary-color, #ff6b4a); }
+        .rc-kpi.saldo .num, .rc-kpi.saldo .lbl { color: #fff; }
+        .rc-kpi.saldo .num { font-size: 2.1rem; }
+        .rc-kpi.saldo.neg { background: #c0392b; border-color: #c0392b; }
+        h2.rc-h { font-size: 1.15rem; margin: 1.8rem 0 0.4rem; display: flex; align-items: center; gap: 0.5rem; }
+        .rc-sub { font-size: 0.85rem; color: #888; margin: 0 0 0.7rem; }
+        table.rc-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-bottom: 0.6rem; }
+        table.rc-table th { text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.03em; color: #999; padding: 0.4rem 0.5rem; border-bottom: 2px solid #f0e2d4; }
+        table.rc-table th.num, table.rc-table td.num { text-align: right; white-space: nowrap; }
+        table.rc-table td { padding: 0.5rem 0.5rem; border-bottom: 1px solid #f4f4f4; vertical-align: top; }
+        table.rc-table tr:last-child td { border-bottom: none; }
+        table.rc-table tr.total-row td { font-weight: 700; border-top: 2px solid #f0e2d4; background: #fff8f1; }
+        table.rc-table tr.total-row td.num { color: var(--primary-color, #ff6b4a); font-family: "Fredoka One", cursive; }
+        .rc-badge { display: inline-block; font-size: 0.72rem; padding: 0.12rem 0.5rem; border-radius: 999px; font-weight: 600; }
+        .rc-badge.ok { background: #e8f8ef; color: #1e8449; }
+        .rc-badge.pend { background: #fdecea; color: #c0392b; }
+        .rc-card { border: 1px solid #f0e2d4; border-radius: 14px; padding: 1rem 1.1rem; background: #fff; margin-bottom: 1rem; }
+        .rc-note { font-size: 0.82rem; color: #777; margin: 1.4rem 0 0.6rem; padding: 0.8rem 1rem; background: #fff1ee; border-left: 4px solid var(--primary-color, #ff6b4a); border-radius: 10px; }
+        ul.rc-obs { font-size: 0.85rem; color: #666; padding-left: 1.1rem; margin: 0.3rem 0 0; }
+        ul.rc-obs li { margin-bottom: 0.4rem; }
+        .rc-loading, .rc-error { padding: 1.5rem; text-align: center; color: #999; }
+        .rc-error { color: #c0392b; }
+        @media (max-width: 480px) { .rc-kpis { grid-template-columns: 1fr 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../index.html">Fiestas</a></li>
+                <li><a href="../descargas.html">Descargas</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="fiesta-page-hero">
+            <div class="container">
+                <p class="eyebrow">Fiestas 2026</p>
+                <h1>Resumen de cuentas</h1>
+                <p class="lead">Todo el dinero de las fiestas 2026 en claro: cuánto entra por las cuotas (el bote), cuánto llevamos gastado y cómo queda el saldo. Pensado para consultar rápido desde el móvil.</p>
+            </div>
+        </section>
+
+        <section class="feature-block">
+            <div class="container">
+                <div class="content-panel">
+                    <p class="rc-meta" id="rc-meta">Cargando datos…</p>
+                    <div id="rc-body"><p class="rc-loading">Cargando cuentas…</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Peña Matagatos</p>
+        </div>
+    </footer>
+
+    <script>
+    (function () {
+        const URL = "../../historico/2026/gastos-2026.json";
+        const eur = n => (n || 0).toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+        const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+        fetch(URL)
+            .then(r => { if (!r.ok) throw new Error("no json"); return r.json(); })
+            .then(render)
+            .catch(() => {
+                document.getElementById("rc-body").innerHTML =
+                    '<p class="rc-error">No se pudieron cargar los datos. Ábrelo desde el sitio web (no como archivo local).</p>';
+                document.getElementById("rc-meta").textContent = "";
+            });
+
+        function render(d) {
+            const t = d.totales || {};
+            const ingresos = t.ingresos_totales || 0;
+            const gastos = t.gastos_totales || 0;
+            const saldo = typeof t.saldo === "number" ? t.saldo : ingresos - gastos;
+            const html = [];
+
+            // Meta + estado
+            document.getElementById("rc-meta").textContent =
+                (d.titulo || "Cuentas 2026") + (d.fuente ? " · " + d.fuente : "");
+            if (d.estado) {
+                html.push('<p class="rc-estado">⚠️ <strong>Estado:</strong> ' + esc(d.estado) + '</p>');
+            }
+
+            // KPIs
+            html.push(
+                '<div class="rc-kpis">' +
+                    '<div class="rc-kpi ingresos"><div class="num">' + eur(ingresos) + '</div><div class="lbl">💰 Bote (ingresos por cuotas)</div></div>' +
+                    '<div class="rc-kpi gastos"><div class="num">' + eur(gastos) + '</div><div class="lbl">🧾 Gastos del bote</div></div>' +
+                    '<div class="rc-kpi"><div class="num">' + eur(d.pendiente_cobro || 0) + '</div><div class="lbl">⏳ Pendiente de cobro</div></div>' +
+                    '<div class="rc-kpi saldo ' + (saldo < 0 ? 'neg' : '') + '"><div class="num">' + eur(saldo) + '</div><div class="lbl">' +
+                        (saldo < 0 ? '🔴 Saldo (falta dinero)' : '🟢 Saldo (sobra en el bote)') +
+                        (t.formula ? ' · ' + esc(t.formula) : '') + '</div></div>' +
+                '</div>'
+            );
+
+            // 1) Ingresos: cómo se genera el bote
+            const ing = Array.isArray(d.ingresos) ? d.ingresos : [];
+            if (ing.length) {
+                const rows = ing.map(i =>
+                    '<tr><td>' + esc(i.concepto) + '</td><td class="num">' + eur(i.importe) + '</td></tr>'
+                ).join("");
+                html.push(
+                    '<h2 class="rc-h">💰 De dónde sale el bote (cuotas)</h2>' +
+                    '<p class="rc-sub">Cada persona paga según los días que asiste: 55 € (2 días), 65 € (3 días) o 75 € (todos los días).</p>' +
+                    '<table class="rc-table"><thead><tr><th>Concepto</th><th class="num">Importe</th></tr></thead><tbody>' +
+                        rows +
+                        '<tr class="total-row"><td>Total bote</td><td class="num">' + eur(ingresos) + '</td></tr>' +
+                    '</tbody></table>'
+                );
+            }
+
+            // 2) Cobros realizados
+            const cobros = Array.isArray(d.cobros_realizados) ? d.cobros_realizados : [];
+            const cobrado = cobros.reduce((s, c) => s + (c.cuota || 0), 0);
+            html.push(
+                '<h2 class="rc-h">✅ Cobros</h2>' +
+                '<p class="rc-sub">' + (cobros.length ? cobros.length + ' persona(s) han pagado ya · ' + eur(cobrado) + ' cobrado' : 'Aún no hay cuotas cobradas') +
+                    ' · faltan por cobrar ' + eur(d.pendiente_cobro || (ingresos - cobrado)) + '.</p>'
+            );
+            if (cobros.length) {
+                const crows = cobros.map(c =>
+                    '<tr><td>' + esc(c.persona) + '</td><td>' + esc(c.dias) + ' días</td>' +
+                    '<td class="num">' + eur(c.cuota) + '</td>' +
+                    '<td class="num"><span class="rc-badge ' + (c.estado === 'pagado' ? 'ok">pagado' : 'pend">pendiente') + '</span></td></tr>'
+                ).join("");
+                html.push(
+                    '<table class="rc-table"><thead><tr><th>Persona</th><th>Asistencia</th><th class="num">Cuota</th><th class="num">Estado</th></tr></thead><tbody>' +
+                        crows +
+                        '<tr class="total-row"><td colspan="2">Cobrado</td><td class="num">' + eur(cobrado) + '</td><td></td></tr>' +
+                    '</tbody></table>'
+                );
+            }
+
+            // 3) Gastos por categoría
+            const cats = Array.isArray(d.resumen_por_categoria) ? d.resumen_por_categoria : [];
+            if (cats.length) {
+                const ico = { Comida: "🍖", Bebida: "🍺", Menaje: "🍽️" };
+                const rows = cats.map(c =>
+                    '<tr><td>' + (ico[c.categoria] || "•") + ' ' + esc(c.categoria) + '</td><td class="num">' + eur(c.importe) + '</td></tr>'
+                ).join("");
+                html.push(
+                    '<h2 class="rc-h">🧾 En qué se gasta el bote</h2>' +
+                    '<p class="rc-sub">Resumen por categoría. El detalle ticket a ticket está en <a href="cuentas-resumen.html">Resumen compra real</a>.</p>' +
+                    '<table class="rc-table"><thead><tr><th>Categoría</th><th class="num">Importe</th></tr></thead><tbody>' +
+                        rows +
+                        '<tr class="total-row"><td>Total gastos</td><td class="num">' + eur(gastos) + '</td></tr>' +
+                    '</tbody></table>'
+                );
+            }
+
+            // 4) Gastos detallados (opcional, desde d.gastos)
+            const gast = Array.isArray(d.gastos) ? d.gastos : [];
+            if (gast.length) {
+                const rows = gast.map(g =>
+                    '<tr><td>' + esc(g.concepto) + (g.origen ? '<br><span style="color:#aaa;font-size:0.8rem">' + esc(g.origen) + '</span>' : '') +
+                    '</td><td class="num">' + eur(g.importe) + '</td></tr>'
+                ).join("");
+                html.push(
+                    '<details class="rc-card"><summary style="cursor:pointer;font-weight:600">Ver todos los tickets / conceptos de gasto</summary>' +
+                    '<table class="rc-table" style="margin-top:0.8rem"><thead><tr><th>Concepto</th><th class="num">Importe</th></tr></thead><tbody>' +
+                        rows +
+                        '<tr class="total-row"><td>Total</td><td class="num">' + eur(gast.reduce((s, g) => s + (g.importe || 0), 0)) + '</td></tr>' +
+                    '</tbody></table></details>'
+                );
+            }
+
+            // 5) Extras fuera del bote
+            const ex = d.extras_fuera_del_bote;
+            if (ex && Array.isArray(ex.lineas) && ex.lineas.length) {
+                const rows = ex.lineas.map(l =>
+                    '<tr><td>' + esc(l.concepto) + '</td><td class="num">' + eur(l.importe) + '</td></tr>'
+                ).join("");
+                html.push(
+                    '<h2 class="rc-h">🔌 Extras fuera del bote</h2>' +
+                    '<p class="rc-sub">' + esc(ex.descripcion || "") +
+                        (ex.reparto_por_integrante ? ' · ' + eur(ex.reparto_por_integrante) + ' por integrante.' : '') + '</p>' +
+                    '<table class="rc-table"><thead><tr><th>Concepto</th><th class="num">Importe</th></tr></thead><tbody>' +
+                        rows +
+                        '<tr class="total-row"><td>Total extras</td><td class="num">' + eur(ex.total || 0) + '</td></tr>' +
+                    '</tbody></table>'
+                );
+            }
+
+            // Notas de totales
+            if (t.notas && t.notas.length) {
+                html.push('<div class="rc-note"><strong>Cómo se han calculado estas cuentas:</strong><ul class="rc-obs">' +
+                    t.notas.map(n => '<li>' + esc(n) + '</li>').join("") + '</ul></div>');
+            }
+
+            // Observaciones
+            if (Array.isArray(d.observaciones) && d.observaciones.length) {
+                html.push('<h2 class="rc-h">📝 Observaciones</h2><ul class="rc-obs">' +
+                    d.observaciones.map(o => '<li>' + esc(o) + '</li>').join("") + '</ul>');
+            }
+
+            document.getElementById("rc-body").innerHTML = html.join("");
+        }
+    })();
+    </script>
+</body>
+</html>

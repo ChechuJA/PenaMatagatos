@@ -1,6 +1,5 @@
 ---
 description: Calcula el bote de la Peña Matagatos a partir de las cuotas por asistencia (55€/2 días, 65€/3 días, 75€/todos), lo compara con el coste real de la compra y saca el balance por persona. Úsalo para cuadrar cuentas, ver si el bote cubre el gasto y ajustar tarifas.
-tools: ['read_file', 'grep_search', 'file_search', 'list_dir', 'replace_string_in_file', 'multi_replace_string_in_file', 'create_file', 'get_errors']
 ---
 
 # Agente Cuentas y Cuotas Matagatos

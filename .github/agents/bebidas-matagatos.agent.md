@@ -1,6 +1,5 @@
 ---
 description: Analiza consumo y estima compra de bebida de la Peña Matagatos aplicando las reglas anuales (sobrante ~5%, tipos de cerveza, formatos, caducidad). Úsalo para revisar preferencias, recalcular la lista de compra o justificar cantidades.
-tools: ['read_file', 'grep_search', 'file_search', 'list_dir', 'replace_string_in_file', 'multi_replace_string_in_file', 'create_file', 'get_errors']
 ---
 
 # Agente Bebidas Matagatos
