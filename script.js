@@ -688,13 +688,22 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         // === Compra REAL 2026 (prioritaria: ya está comprado) ===
         gastos2026: {
-            response: "💰 Compra real 2026 (lo que llevamos gastado de verdad):\n\n• 🍖 Comida: 252,89 €\n• 🍺 Bebida: 56,84 €\n• 🍽️ Menaje: 149,87 €\n\n🧾 Total compra fiestas: 459,60 €\n\n🔊 Aparte (gastos generales de toda la peña, fuera del bote): 207,38 € (altavoces Vonyx + tacos/bridas + instalación de enchufes + redes).\n\n⏳ Faltan por meter los tickets de carne, embutidos y trenzas.\n\n👉 Detalle por ticket en Fiestas > Resumen compra real 2026."
+            response: "💰 Compra real 2026 (lo que llevamos gastado del bote):\n\n• 🍖 Comida: 554,13 €\n• 🍺 Bebida: 82,04 €\n• 🍽️ Menaje: 149,87 €\n\n🧾 Total compra fiestas: 786,04 €\n\n💶 Bote por cuotas: 1.925 € → saldo provisional +1.138,96 € (falta cobrar 1.860 €, solo pagó Álvaro).\n\n🔊 Aparte (fuera del bote): altavoces 207,38 € + regalo del dueño 60 €.\n\n⏳ Cifras provisionales: faltan la carne de barbacoa y el pedido grueso de bebida.\n\n👉 Detalle en Fiestas > Resumen compra real 2026 y en Histórico 2026."
+        },
+        cuotas2026: {
+            response: "💶 Cuotas y bote 2026 (según días de asistencia):\n\n• 2 días → 55 € (8 personas = 440 €)\n• 3 días → 65 € (9 personas = 585 €)\n• Todos los días → 75 € (12 personas = 900 €)\n\n🧮 Bote total: 1.925 € (29 personas con asistencia).\n\n✅ Pagado hasta ahora: solo Álvaro (65 €, 3 días).\n⏳ Pendiente de cobro: 1.860 €.\n\nℹ️ La peña son 30 integrantes; la lista de asistencia tiene 29 (el nº30 no tiene días asignados aún)."
+        },
+        saldo2026: {
+            response: "⚖️ Balance provisional 2026:\n\n📥 Bote (cuotas): 1.925,00 €\n📤 Gasto real: 786,04 €\n✅ Saldo: +1.138,96 € (sobra)\n\n⏳ Provisional: el saldo bajará al meter la carne de barbacoa y el pedido grueso de bebida. Cierre definitivo a finales de septiembre."
+        },
+        regalo2026: {
+            response: "🎁 Regalo del dueño de la peña 2026: 60 €\n\nEs el artículo 6 del ticket de Carnes Javi. Se trata como un extra general (como los altavoces): lo paga toda la peña, NO sale del bote de fiestas ni de las cuotas.\n\n👥 Repartido entre 30 integrantes = 2,00 €/persona."
         },
         bebida2026: {
-            response: "🍺 Bebida comprada en 2026 (real, 56,84 €):\n\n• Cerveza Estrella (Alcampo): 4 packs\n• Mahou 0,0 (Amazon): 5 packs\n• Licor Jägermeister (Merkocash): 1\n• Licor de crema y licor de hierbas (Mercadona): 1 + 1\n• Agua (Merkocash): 1\n\n⚠️ Ojo 2027: la Estrella Galicia vino en botellín de 20 cl en vez de 25 cl. Falta por añadir el pedido grueso de bebida si lo hubo."
+            response: "🍺 Bebida comprada en 2026 (real, 82,04 €):\n\n• Cerveza Estrella (Alcampo): pack\n• Mahou 0,0 (Amazon): pack\n• Agua con gas S.Pellegrino (Amazon, 24x50cl): 25,20 €\n• Licores (Merkocash + Mercadona)\n• Agua (Merkocash)\n\n⚠️ Ojo 2027: la Estrella Galicia vino en botellín de 20 cl en vez de 25 cl. Falta por añadir el pedido grueso de bebida (cerveza/refrescos/destilados)."
         },
         comida2026: {
-            response: "🍖 Comida comprada en 2026 (real, 252,89 €):\n\n• Merkocash: aperitivos, frutos secos, salsas, aceite... (144,08 €)\n• Mercadona: fuet, quesos, pan hamburguesa, guacamole, pan cristal... (77,37 €)\n• Alcampo: bacon, humus, pitas, judías... (31,44 €)\n\n⏳ Faltan por meter carne, embutidos y trenzas."
+            response: "🍖 Comida comprada en 2026 (real, 554,13 €):\n\n• Carnes Javi (embutidos): chorizo/salchichón, lomo, jamón, queso semi y curado (153,85 €) + queso sin lactosa (8,04 €)\n• Mercadona 2: trenzas, conos, empanadas, tortillas, repostería (115,95 €)\n• Merkocash: aperitivos, frutos secos, salsas, aceite... (144,08 €)\n• Mercadona: fuet, quesos, pan hamburguesa, guacamole... (77,37 €)\n• Alcampo: bacon, humus, pitas, judías... (31,44 €)\n• Panadería: pan encargado, 18 barras (23,40 €)\n\n⏳ Falta por meter la carne de barbacoa.\n\nℹ️ El regalo del dueño (art 6 de Carnes Javi, 60 €) NO cuenta como comida: es extra general."
         },
         menaje2026: {
             response: "🍽️ Menaje comprado en 2026 (real, 149,87 €):\n\n• Diseño (bazar): platos, cubiertos y vasos reutilizables (61,08 €)\n• Merkocash: platos, boles, bandejas, lavavajillas, servilletas, bolsas... (86,37 €)\n• Mercadona: 1 bolsa de hielo (para mantener fresco) + bolsas (2,30 €)\n• Alcampo: bolsa (0,12 €)\n\nℹ️ El objetivo de ~10 sacos de hielo se compra aparte."
@@ -897,6 +906,22 @@ document.addEventListener('DOMContentLoaded', function() {
             return gatitoKnowledge.generales2026.response;
         }
         if (!habla2025) {
+            // Regalo del dueño de la peña
+            if (lowerMessage.includes('regalo') || lowerMessage.includes('dueño') || lowerMessage.includes('dueno')) {
+                return gatitoKnowledge.regalo2026.response;
+            }
+            // Cuotas / bote / quién ha pagado
+            if (lowerMessage.includes('cuota') || lowerMessage.includes('bote') || lowerMessage.includes('pagad') ||
+                lowerMessage.includes('pagar') || lowerMessage.includes('cobro') || lowerMessage.includes('cobrar') ||
+                lowerMessage.includes('álvaro') || lowerMessage.includes('alvaro') || lowerMessage.includes('55') ||
+                lowerMessage.includes('65') || lowerMessage.includes('75')) {
+                return gatitoKnowledge.cuotas2026.response;
+            }
+            // Saldo / balance / cuánto sobra
+            if (lowerMessage.includes('saldo') || lowerMessage.includes('balance') || lowerMessage.includes('sobra') ||
+                lowerMessage.includes('falta dinero') || lowerMessage.includes('cuadra')) {
+                return gatitoKnowledge.saldo2026.response;
+            }
             if (lowerMessage.includes('menaje') || lowerMessage.includes('platos') || lowerMessage.includes('vasos') ||
                 lowerMessage.includes('cubiertos') || lowerMessage.includes('servilletas') || lowerMessage.includes('bandeja')) {
                 return gatitoKnowledge.menaje2026.response;
