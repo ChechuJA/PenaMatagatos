@@ -2,9 +2,56 @@
   "evento": "Fiestas 2026",
   "categoria": "comida",
   "descripcion": "Datos normalizados de COMIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de comida.",
-  "actualizado": "2026-09-02",
+  "actualizado": "2026-09-04",
   "moneda": "EUR",
   "tickets": [
+    {
+      "id": "carnesjavi-embutidos-comida-2026-09-03",
+      "foto": "real_comprado/comida/carnesjavi-embutidos-2026-09-03.jpg",
+      "proveedor": "Carnes Javi (Jamon a lo Grande SLU)",
+      "fecha": "2026-09-03",
+      "nota": "Ticket Carnes Javi (Belmonte, Cuenca). Fra 0009 00 062483, 07:43. Total ticket completo 213,85 EUR. Aqui solo las lineas de comida (arts 1-5 = 153,85). El art 6 (regalo dueno de la pena, 60,00) NO es gasto de fiestas: va a tickets-generales.json.",
+      "lineas": [
+        { "producto": "Chorizo y salchichon", "cantidad": 2.650, "unidad": "kg", "precio_unitario": 10.50, "importe": 27.83 },
+        { "producto": "Lomo", "cantidad": 2.055, "unidad": "kg", "precio_unitario": 16.80, "importe": 34.52 },
+        { "producto": "Jamon", "cantidad": 3.165, "unidad": "kg", "precio_unitario": 17.50, "importe": 55.39 },
+        { "producto": "Queso semi", "cantidad": 1.145, "unidad": "kg", "precio_unitario": 13.90, "importe": 15.92 },
+        { "producto": "Queso curado", "cantidad": 1.010, "unidad": "kg", "precio_unitario": 19.99, "importe": 20.19 }
+      ],
+      "subtotal": 153.85
+    },
+    {
+      "id": "carnesjavi-queso-comida-2026-09-03",
+      "foto": "real_comprado/comida/carnesjavi-queso-2026-09-03.jpg",
+      "proveedor": "Carnes Javi (Jamon a lo Grande SLU)",
+      "fecha": "2026-09-03",
+      "nota": "Ticket Carnes Javi (copia). Fra 0009 00 062484, 07:45. Queso en barra (sin lactosa). Total ticket 8,04 EUR.",
+      "lineas": [
+        { "producto": "Queso Barra (sin lactosa)", "cantidad": 0.540, "unidad": "kg", "precio_unitario": 14.89, "importe": 8.04 }
+      ],
+      "subtotal": 8.04
+    },
+    {
+      "id": "mercadona2-comida-2026-09-03",
+      "foto": "real_comprado/comida/mercadona2-2026-09-03.jpg",
+      "proveedor": "Mercadona Cuenca",
+      "fecha": "2026-09-03",
+      "nota": "Segundo ticket Mercadona (Hermanos Becerril, 19:54). Fra 4606-016-159760. Todo comida. Total ticket 115,95 EUR.",
+      "lineas": [
+        { "producto": "Mini Bombones 12 uni", "cantidad": 3, "unidad": "ud", "precio_unitario": 3.00, "importe": 9.00 },
+        { "producto": "Trenza de Hojaldre", "cantidad": 6, "unidad": "ud", "precio_unitario": 6.50, "importe": 39.00 },
+        { "producto": "Mini Cono Nata x12", "cantidad": 4, "unidad": "ud", "precio_unitario": 3.30, "importe": 13.20 },
+        { "producto": "Crocan Choc Vainilla", "cantidad": 5, "unidad": "ud", "precio_unitario": 3.00, "importe": 15.00 },
+        { "producto": "Mini Choco-Pistacho", "cantidad": 2, "unidad": "ud", "precio_unitario": 3.30, "importe": 6.60 },
+        { "producto": "Bombon Triple Choco", "cantidad": 2, "unidad": "ud", "precio_unitario": 3.30, "importe": 6.60 },
+        { "producto": "Tortilla Patata", "cantidad": 2, "unidad": "ud", "precio_unitario": 2.60, "importe": 5.20 },
+        { "producto": "Tortilla Patata c/Cebolla", "cantidad": 2, "unidad": "ud", "precio_unitario": 2.60, "importe": 5.20 },
+        { "producto": "Empanada Atun", "cantidad": 2, "unidad": "ud", "precio_unitario": 3.50, "importe": 7.00 },
+        { "producto": "Empanada Pollo Setas", "cantidad": 2, "unidad": "ud", "precio_unitario": 3.65, "importe": 7.30 },
+        { "producto": "Pan Cristal (4 uds)", "cantidad": 1, "unidad": "paquete", "precio_unitario": 1.85, "importe": 1.85 }
+      ],
+      "subtotal": 115.95
+    },
     {
       "id": "merkocash-comida-2026-08-31",
       "foto": "real_comprado/comida/merkocash-2026-08-31.jpg",
@@ -104,5 +151,5 @@
       "subtotal": 23.40
     }
   ],
-  "total_categoria": 276.29
+  "total_categoria": 554.13
 }
