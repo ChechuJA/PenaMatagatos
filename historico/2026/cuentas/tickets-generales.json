@@ -2,7 +2,7 @@
   "evento": "Fiestas 2026",
   "categoria": "generales",
   "descripcion": "GASTOS GENERALES de la peña: se pagan entre TODOS los componentes (vayan o no a las fiestas), NO salen del bote de fiestas ni de las cuotas por asistencia. Ej: material duradero, sonido, etc.",
-  "actualizado": "2026-09-01",
+  "actualizado": "2026-09-04",
   "moneda": "EUR",
   "tickets": [
     {
@@ -32,12 +32,23 @@
       "foto": null,
       "proveedor": "Hippy",
       "fecha": "2026",
-      "nota": "Instalacion de 3 enchufes y sus cables para el sistema de sonido/altavoces. Mano de obra. Gasto general de la peña.",
+      "nota": "Instalacion de 3 enchufes + yeso + interruptor para el sistema de sonido/altavoces. Mano de obra. Gasto general de la peña.",
       "lineas": [
-        { "producto": "Instalacion 3 enchufes + cables (mano de obra)", "cantidad": 1, "unidad": "servicio", "precio_unitario": 15.0, "importe": 15.0 }
+        { "producto": "Instalacion 3 enchufes + yeso + interruptor (mano de obra)", "cantidad": 1, "unidad": "servicio", "precio_unitario": 30.0, "importe": 30.0 }
       ],
-      "subtotal": 15.0
+      "subtotal": 30.0
+    },
+    {
+      "id": "redes-amazon-2026",
+      "foto": null,
+      "proveedor": "Amazon",
+      "fecha": "2026",
+      "nota": "Redes para colgar los altavoces. Gasto general de la peña.",
+      "lineas": [
+        { "producto": "Redes para colgar altavoces", "cantidad": 1, "unidad": "lote", "precio_unitario": 7.38, "importe": 7.38 }
+      ],
+      "subtotal": 7.38
     }
   ],
-  "total_categoria": 185.0
+  "total_categoria": 207.38
 }

@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         // === Compra REAL 2026 (prioritaria: ya está comprado) ===
         gastos2026: {
-            response: "💰 Compra real 2026 (lo que llevamos gastado de verdad):\n\n• 🍖 Comida: 252,89 €\n• 🍺 Bebida: 56,84 €\n• 🍽️ Menaje: 149,87 €\n\n🧾 Total compra fiestas: 459,60 €\n\n🔊 Aparte (gastos generales de toda la peña, fuera del bote): 185,00 € (altavoces Vonyx + tacos/bridas + instalación de enchufes).\n\n⏳ Faltan por meter los tickets de carne, embutidos y trenzas.\n\n👉 Detalle por ticket en Fiestas > Resumen compra real 2026."
+            response: "💰 Compra real 2026 (lo que llevamos gastado de verdad):\n\n• 🍖 Comida: 252,89 €\n• 🍺 Bebida: 56,84 €\n• 🍽️ Menaje: 149,87 €\n\n🧾 Total compra fiestas: 459,60 €\n\n🔊 Aparte (gastos generales de toda la peña, fuera del bote): 207,38 € (altavoces Vonyx + tacos/bridas + instalación de enchufes + redes).\n\n⏳ Faltan por meter los tickets de carne, embutidos y trenzas.\n\n👉 Detalle por ticket en Fiestas > Resumen compra real 2026."
         },
         bebida2026: {
             response: "🍺 Bebida comprada en 2026 (real, 56,84 €):\n\n• Cerveza Estrella (Alcampo): 4 packs\n• Mahou 0,0 (Amazon): 5 packs\n• Licor Jägermeister (Merkocash): 1\n• Licor de crema y licor de hierbas (Mercadona): 1 + 1\n• Agua (Merkocash): 1\n\n⚠️ Ojo 2027: la Estrella Galicia vino en botellín de 20 cl en vez de 25 cl. Falta por añadir el pedido grueso de bebida si lo hubo."
@@ -700,7 +700,10 @@ document.addEventListener('DOMContentLoaded', function() {
             response: "🍽️ Menaje comprado en 2026 (real, 149,87 €):\n\n• Diseño (bazar): platos, cubiertos y vasos reutilizables (61,08 €)\n• Merkocash: platos, boles, bandejas, lavavajillas, servilletas, bolsas... (86,37 €)\n• Mercadona: 1 bolsa de hielo (para mantener fresco) + bolsas (2,30 €)\n• Alcampo: bolsa (0,12 €)\n\nℹ️ El objetivo de ~10 sacos de hielo se compra aparte."
         },
         generales2026: {
-            response: "🔊 Gastos generales 2026 (los paga TODA la peña, vayan o no a fiestas, fuera del bote): 185,00 €\n\n• Altavoces Vonyx VPS082A (sonido activo 400W, 2x8\", BT/USB): 160 € (Mayor Electronics)\n• Tacos y bridas (montaje): 10 € (Leroy Merlin)\n• Instalación de 3 enchufes + cables: 15 € (Hippy)"
+            response: "🔊 Gastos generales 2026 (los paga TODA la peña, vayan o no a fiestas, fuera del bote): 207,38 €\n\n• Altavoces Vonyx VPS082A (sonido activo 400W, 2x8\", BT/USB): 160 € (Mayor Electronics)\n• Tacos y bridas (montaje): 10 € (Leroy Merlin)\n• Instalación de 3 enchufes + yeso + interruptor: 30 € (Hippy)\n• Redes para colgar altavoces: 7,38 € (Amazon)"
+        },
+        altavoces2026: {
+            response: "🔌 Gasto altavoces 2026 (tabla aparte, fuera del bote): 207,38 €\n\n• Altavoces Vonyx VPS082A (sonido activo 400W, 2x8\", BT/USB): 160 € (Mayor Electronics)\n• Tacos y bridas (montaje): 10 € (Leroy Merlin)\n• Instalación de 3 enchufes + yeso + interruptor: 30 € (Hippy)\n• Redes para colgar altavoces: 7,38 € (Amazon)"
         },
         // === Histórico 2025 (referencia) ===
         ubicacion: {
@@ -879,8 +882,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const habla2025 = lowerMessage.includes('2025');
         // Gastos generales / altavoces / sonido
         if (lowerMessage.includes('altavoz') || lowerMessage.includes('altavoces') || lowerMessage.includes('sonido') ||
-            lowerMessage.includes('general') || lowerMessage.includes('enchufe') || lowerMessage.includes('vonyx')) {
-            return gatitoKnowledge.generales2026.response;
+            lowerMessage.includes('general') || lowerMessage.includes('enchufe') || lowerMessage.includes('vonyx') ||
+            lowerMessage.includes('redes')) {
+            return gatitoKnowledge.altavoces2026.response;
         }
         if (!habla2025) {
             if (lowerMessage.includes('menaje') || lowerMessage.includes('platos') || lowerMessage.includes('vasos') ||

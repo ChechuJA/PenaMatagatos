@@ -69,7 +69,7 @@
                     <p class="cr-meta" id="cr-meta">Cargando datos…</p>
                     <div class="cr-kpis" id="cr-kpis"></div>
                     <div id="cr-cats"><p class="cr-loading">Cargando tickets…</p></div>
-                    <p class="cr-note">Los <strong>gastos generales</strong> (altavoces, sonido…) los paga toda la peña, vayan o no a fiestas, y <strong>no salen del bote</strong> de las cuotas. Faltan aún tickets de carne, embutidos y trenzas.</p>
+                    <p class="cr-note">El <strong>gasto de altavoces</strong> se muestra en su tabla aparte: lo paga toda la peña, vayan o no a fiestas, y <strong>no sale del bote</strong> de las cuotas. Faltan aún tickets de carne, embutidos y trenzas.</p>
                 </div>
             </div>
         </section>
@@ -88,7 +88,7 @@
             { key: "comida",    ico: "🍖", label: "Comida",           file: "tickets-comida.json" },
             { key: "bebida",    ico: "🍺", label: "Bebida",           file: "tickets-bebida.json" },
             { key: "menaje",    ico: "🍽️", label: "Menaje",           file: "tickets-menaje.json" },
-            { key: "generales", ico: "🔊", label: "Gastos generales", file: "tickets-generales.json" }
+            { key: "generales", ico: "🔌", label: "Gasto altavoces", file: "tickets-generales.json" }
         ];
 
         const eur = n => (n || 0).toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
@@ -154,7 +154,7 @@
 
             kpiHtml.push('<div class="cr-kpi total"><div class="num">' + eur(totalFiestas) + '</div><div class="lbl">Total compra fiestas</div></div>');
             if (totalGenerales) {
-                kpiHtml.push('<div class="cr-kpi"><div class="num">' + eur(totalGenerales) + '</div><div class="lbl">🔊 Generales (aparte)</div></div>');
+                kpiHtml.push('<div class="cr-kpi"><div class="num">' + eur(totalGenerales) + '</div><div class="lbl">🔌 Gasto altavoces (aparte)</div></div>');
             }
 
             kpisEl.innerHTML = kpiHtml.join("");

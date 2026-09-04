@@ -72,7 +72,8 @@ Gastos que paga **toda la peña** (vayan o no a las fiestas), **fuera del bote/c
 |---|---|---|
 | Altavoces Vonyx VPS082A (sonido activo 400W, 2x8", BT/USB/micro/soportes) | Mayor Electronics | 160,00 |
 | Tacos y bridas (montaje altavoces) | Leroy Merlin | 10,00 |
-| Instalación 3 enchufes + cables (mano de obra) | Hippy | 15,00 |
-| **Total generales** | | **185,00** |
+| Instalación 3 enchufes + yeso + interruptor (mano de obra) | Hippy | 30,00 |
+| Redes para colgar altavoces | Amazon | 7,38 |
+| **Total generales** | | **207,38** |
 
 Estos importes **no** cuentan para el balance del bote de fiestas; se reparten entre todos los componentes.
