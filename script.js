@@ -702,8 +702,14 @@ document.addEventListener('DOMContentLoaded', function() {
         generales2026: {
             response: "🔊 Gastos generales 2026 (los paga TODA la peña, vayan o no a fiestas, fuera del bote): 207,38 €\n\n• Altavoces Vonyx VPS082A (sonido activo 400W, 2x8\", BT/USB): 160 € (Mayor Electronics)\n• Tacos y bridas (montaje): 10 € (Leroy Merlin)\n• Instalación de 3 enchufes + yeso + interruptor: 30 € (Hippy)\n• Redes para colgar altavoces: 7,38 € (Amazon)"
         },
+        generales2025: {
+            response: "🔊 Gastos generales 2025: no tengo un desglose específico de altavoces en Gatito para ese año.\n\nSi quieres el cierre completo de 2025: ingresos 2.039,33 €, gastos 2.019,18 € y saldo +20,15 €."
+        },
         altavoces2026: {
             response: "🔌 Gasto altavoces 2026 (tabla aparte, fuera del bote): 207,38 €\n\n• Altavoces Vonyx VPS082A (sonido activo 400W, 2x8\", BT/USB): 160 € (Mayor Electronics)\n• Tacos y bridas (montaje): 10 € (Leroy Merlin)\n• Instalación de 3 enchufes + yeso + interruptor: 30 € (Hippy)\n• Redes para colgar altavoces: 7,38 € (Amazon)"
+        },
+        altavoces2025: {
+            response: "🔌 Sobre gasto de altavoces en 2025 no tengo un desglose específico cargado en Gatito. Si quieres, te paso el resumen general de gastos 2025."
         },
         // === Histórico 2025 (referencia) ===
         ubicacion: {
@@ -882,9 +888,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const habla2025 = lowerMessage.includes('2025');
         // Gastos generales / altavoces / sonido
         if (lowerMessage.includes('altavoz') || lowerMessage.includes('altavoces') || lowerMessage.includes('sonido') ||
-            lowerMessage.includes('general') || lowerMessage.includes('enchufe') || lowerMessage.includes('vonyx') ||
-            lowerMessage.includes('redes')) {
+            lowerMessage.includes('enchufe') || lowerMessage.includes('vonyx') || lowerMessage.includes('redes')) {
+            if (habla2025) return gatitoKnowledge.altavoces2025.response;
             return gatitoKnowledge.altavoces2026.response;
+        }
+        if (lowerMessage.includes('general') || lowerMessage.includes('generales')) {
+            if (habla2025) return gatitoKnowledge.generales2025.response;
+            return gatitoKnowledge.generales2026.response;
         }
         if (!habla2025) {
             if (lowerMessage.includes('menaje') || lowerMessage.includes('platos') || lowerMessage.includes('vasos') ||
