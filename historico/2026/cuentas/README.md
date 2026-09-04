@@ -15,7 +15,7 @@ cuentas/
 ├── tickets-bebida.json    Datos normalizados de BEBIDA (reconciliados).
 ├── tickets-comida.json    Datos normalizados de COMIDA.
 ├── tickets-menaje.json    Datos normalizados de MENAJE.
-├── tickets-generales.json GASTOS GENERALES de la peña (los paga TODA la peña, no el bote de fiestas).
+├── tickets-altavoces.json GASTO ALTAVOCES de la peña (lo paga TODA la peña, no el bote de fiestas).
 └── README.md              Este archivo.
 ```
 La carpeta `../otras_peñas/` guarda presupuestos/albaranes de otras peñas como referencia.
@@ -65,14 +65,15 @@ Faltan tickets de **carne** (barbacoa), **embutidos**, **trenzas** y similares.
 Probablemente también el **pedido grueso de bebida** (cerveza/refrescos/destilados).
 Cuando lleguen las fotos, añadirlas con el mismo criterio y recalcular `total_categoria`.
 
-### Gastos generales 2026 (`tickets-generales.json`)
+### Gasto altavoces 2026 (`tickets-altavoces.json`)
 Gastos que paga **toda la peña** (vayan o no a las fiestas), **fuera del bote/cuotas**:
 
 | Concepto | Proveedor | Importe |
 |---|---|---|
 | Altavoces Vonyx VPS082A (sonido activo 400W, 2x8", BT/USB/micro/soportes) | Mayor Electronics | 160,00 |
 | Tacos y bridas (montaje altavoces) | Leroy Merlin | 10,00 |
-| Instalación 3 enchufes + cables (mano de obra) | Hippy | 15,00 |
-| **Total generales** | | **185,00** |
+| Instalación 3 enchufes + yeso + interruptor (mano de obra) | Hippy | 30,00 |
+| Redes para colgar altavoces | Amazon | 7,38 |
+| **Total altavoces** | | **207,38** |
 
 Estos importes **no** cuentan para el balance del bote de fiestas; se reparten entre todos los componentes.

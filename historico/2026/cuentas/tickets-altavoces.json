@@ -1,0 +1,54 @@
+{
+  "evento": "Fiestas 2026",
+  "categoria": "altavoces",
+  "descripcion": "GASTO ALTAVOCES de la peña: se paga entre TODOS los componentes (vayan o no a las fiestas), NO sale del bote de fiestas ni de las cuotas por asistencia.",
+  "actualizado": "2026-09-04",
+  "moneda": "EUR",
+  "tickets": [
+    {
+      "id": "altavoces-vonyx-2026",
+      "foto": null,
+      "proveedor": "Mayor Electronics",
+      "fecha": "2026",
+      "nota": "Altavoces Vonyx VPS082A, sistema de sonido activo 400W con 2 altavoces de 8\", Bluetooth, USB, micrófono y soportes. https://mayorelectronics.es/vonyx-vps082a-sistema-de-sonido-activo-400w-con-2-altavoces-8-bluetooth-usb-microfono-y-soportes-ideal-para-discoteca-color-negro/ Material duradero: gasto general de la peña, no del bote de fiestas.",
+      "lineas": [
+        { "producto": "Altavoces Vonyx VPS082A (sistema sonido activo 400W, 2x8\", BT/USB/micro/soportes)", "cantidad": 1, "unidad": "set", "precio_unitario": 160.0, "importe": 160.0 }
+      ],
+      "subtotal": 160.0
+    },
+    {
+      "id": "tacos-bridas-leroy-2026",
+      "foto": null,
+      "proveedor": "Leroy Merlin",
+      "fecha": "2026",
+      "nota": "Tacos y bridas para instalar/fijar los altavoces. Gasto general de la peña.",
+      "lineas": [
+        { "producto": "Tacos y bridas (montaje altavoces)", "cantidad": 1, "unidad": "lote", "precio_unitario": 10.0, "importe": 10.0 }
+      ],
+      "subtotal": 10.0
+    },
+    {
+      "id": "instalacion-hippy-2026",
+      "foto": null,
+      "proveedor": "Hippy",
+      "fecha": "2026",
+      "nota": "Instalación de 3 enchufes + yeso + interruptor para el sistema de sonido/altavoces. Mano de obra. Gasto general de la peña.",
+      "lineas": [
+        { "producto": "Instalación 3 enchufes + yeso + interruptor (mano de obra)", "cantidad": 1, "unidad": "servicio", "precio_unitario": 30.0, "importe": 30.0 }
+      ],
+      "subtotal": 30.0
+    },
+    {
+      "id": "redes-amazon-2026",
+      "foto": null,
+      "proveedor": "Amazon",
+      "fecha": "2026",
+      "nota": "Redes para colgar los altavoces. Gasto general de la peña.",
+      "lineas": [
+        { "producto": "Redes para colgar altavoces", "cantidad": 1, "unidad": "lote", "precio_unitario": 7.38, "importe": 7.38 }
+      ],
+      "subtotal": 7.38
+    }
+  ],
+  "total_categoria": 207.38
+}
