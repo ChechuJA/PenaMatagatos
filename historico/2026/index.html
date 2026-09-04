@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos 2026 - Peña Matagatos</title>
+    <link rel="icon" type="image/png" href="../../LogoMatagatos.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .historico-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        .historico-card {
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .historico-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #fffaf3, #fff1d6);
+            border-radius: 14px;
+            border: 1px solid rgba(231, 76, 60, 0.12);
+            padding: 1rem;
+        }
+
+        .metric-box span {
+            display: block;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .metric-box strong {
+            display: block;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+        }
+
+        .historico-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .historico-table th,
+        .historico-table td {
+            border: 1px solid #f1d9d7;
+            padding: 0.8rem 0.9rem;
+            text-align: left;
+        }
+
+        .historico-table th {
+            background: #fff0ef;
+            color: var(--primary-color);
+        }
+
+        .table-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .note-list {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        .provisional-banner {
+            background: #fff1ee;
+            border-left: 4px solid var(--primary-color, #ff6b4a);
+            border-radius: 10px;
+            padding: 0.8rem 1rem;
+            margin: 1rem 0 0;
+            font-size: 0.9rem;
+            color: #a0432f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../LogoMatagatos.png" alt="Logo Peña Matagatos" class="logo-img">
+                <h1>Peña Matagatos</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../Fiestas/index.html">Fiestas</a></li>
+                <li><a href="../index.html">Histórico</a></li>
+                <li><a href="../../vuelta2000.html">Vuelta a los 2000</a></li>
+                <li><a href="../../romeria/index.html">Romerías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="historico-shell">
+        <section>
+            <div class="panel-head">
+                <span class="tag">Histórico 2026</span>
+                <h2>Gastos y cuentas</h2>
+            </div>
+
+            <div class="historico-card">
+                <p>Este cierre recoge las cuotas por asistencia (bote) y la compra real registrada en 2026 para comparar costes y ajustar el evento.</p>
+
+                <div class="provisional-banner">
+                    <strong>⚠️ Cifras provisionales:</strong> faltan compras por registrar (carne de barbacoa y pedido grueso de bebida) y casi todas las cuotas por cobrar. Cierre definitivo a finales de septiembre.
+                </div>
+
+                <div class="historico-metrics">
+                    <div class="metric-box">
+                        <span>Ingresos (bote)</span>
+                        <strong>1.925,00 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Gastos reales</span>
+                        <strong>786,04 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Saldo provisional</span>
+                        <strong>+1.138,96 €</strong>
+                    </div>
+                    <div class="metric-box">
+                        <span>Pendiente de cobro</span>
+                        <strong>1.860,00 €</strong>
+                    </div>
+                </div>
+
+                <h3>Resumen por categoría</h3>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Comida</td><td>554,13 €</td></tr>
+                        <tr><td>Bebida</td><td>82,04 €</td></tr>
+                        <tr><td>Menaje</td><td>149,87 €</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Gastos detallados</h3>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Importe</th>
+                            <th>Origen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Merkocash (mixto)</td><td>243,50 €</td><td>Merkocash (La Ardosa S.L.)</td></tr>
+                        <tr><td>Alcampo (mixto)</td><td>47,04 €</td><td>Alcampo Cuenca</td></tr>
+                        <tr><td>Mercadona (mixto)</td><td>92,02 €</td><td>Mercadona Cuenca</td></tr>
+                        <tr><td>Diseño (bazar)</td><td>61,08 €</td><td>Gran Family Chen S.L.</td></tr>
+                        <tr><td>Amazon (Mahou 0,0)</td><td>15,96 €</td><td>Amazon.es</td></tr>
+                        <tr><td>Amazon (S.Pellegrino agua con gas)</td><td>25,20 €</td><td>Amazon.es</td></tr>
+                        <tr><td>Carnes Javi (embutidos)</td><td>153,85 €</td><td>Carnes Javi</td></tr>
+                        <tr><td>Carnes Javi (queso sin lactosa)</td><td>8,04 €</td><td>Carnes Javi</td></tr>
+                        <tr><td>Mercadona 2 (trenzas y repostería)</td><td>115,95 €</td><td>Mercadona Cuenca</td></tr>
+                        <tr><td>Panadería (pan encargado, 18 barras)</td><td>23,40 €</td><td>Panadería</td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Ingresos detallados (cuotas por asistencia)</h3>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cuotas 2 días (55 € × 8)</td><td>440,00 €</td></tr>
+                        <tr><td>Cuotas 3 días (65 € × 9)</td><td>585,00 €</td></tr>
+                        <tr><td>Cuotas todos los días (75 € × 12)</td><td>900,00 €</td></tr>
+                        <tr><td><strong>Total bote (29 personas)</strong></td><td><strong>1.925,00 €</strong></td></tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 0.6rem; font-size: 0.9rem; color: #777;">Cobrado hasta la fecha: solo Álvaro (65 €, 3 días). Pendiente de cobro: 1.860,00 €.</p>
+
+                <h3 style="margin-top: 2rem;">Extras fuera del bote</h3>
+                <p style="font-size: 0.9rem; color: #777;">Los paga toda la peña (30 integrantes), no salen del bote de fiestas ni de las cuotas.</p>
+                <table class="historico-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Importe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Altavoces y montaje</td><td>207,38 €</td></tr>
+                        <tr><td>Regalo dueño de la peña</td><td>60,00 €</td></tr>
+                        <tr><td><strong>Total extras (8,91 €/integrante)</strong></td><td><strong>267,38 €</strong></td></tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 2rem;">Observaciones</h3>
+                <ul class="note-list">
+                    <li>La bebida real registrada (82,04 €) es baja porque el pedido grueso de cerveza/refrescos/destilados aún no está hecho o registrado.</li>
+                    <li>Falta añadir el gasto de carne de barbacoa.</li>
+                    <li>El pan encargado (18 barras, 23,40 €) va dentro de comida.</li>
+                    <li>El regalo del dueño de la peña (60 €) se saca del bote y se trata como extra general, igual que los altavoces.</li>
+                    <li>Discrepancia 29 vs 30: la lista de asistencia tiene 29 personas; la peña son 30 integrantes. El nº30 no tiene días asignados, así que no genera cuota. Revisar si asiste y cuántos días.</li>
+                    <li>Cierre real y saldo definitivo a finales de septiembre, tras el evento.</li>
+                </ul>
+
+                <div class="table-actions">
+                    <a href="../../Fiestas/index.html" class="primary-button">← Volver atrás</a>
+                    <a href="gastos-2026.json" class="secondary-button" target="_blank" rel="noopener">Ver JSON</a>
+                    <a href="../../Fiestas/2026/cuentas-resumen.html" class="secondary-button">Resumen compra real 2026</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

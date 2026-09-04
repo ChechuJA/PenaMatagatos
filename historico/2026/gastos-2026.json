@@ -1,0 +1,62 @@
+{
+  "anio": 2026,
+  "titulo": "Gastos y cuentas 2026 - Peña Matagatos",
+  "fuente": "Datos consolidados a partir de las cuotas por asistencia y la compra real registrada en historico/2026/cuentas/ (tickets-*.json).",
+  "estado": "PROVISIONAL / en curso: faltan compras por registrar (carne de barbacoa y pedido grueso de bebida) y casi todas las cuotas por cobrar.",
+  "totales": {
+    "ingresos_totales": 1925.00,
+    "gastos_totales": 786.04,
+    "saldo": 1138.96,
+    "formula": "1925.00 - 786.04 = 1138.96",
+    "notas": [
+      "Ingresos = bote esperado por cuotas de asistencia (29 personas con asistencia registrada).",
+      "Gastos = compra real del bote de fiestas registrada hasta 2026-09-04 (comida + bebida + menaje).",
+      "El saldo es provisional y alto porque aun faltan compras por hacer/registrar (carne de barbacoa y pedido grueso de bebida).",
+      "Cobrado real hasta la fecha: solo Alvaro (65 EUR, 3 dias). El resto de cuotas estan pendientes de cobro (1.860 EUR).",
+      "Los altavoces (207,38 EUR) y el regalo del dueno de la pena (60,00 EUR) NO salen del bote; son extras que paga toda la pena (30 integrantes) y van aparte."
+    ]
+  },
+  "ingresos": [
+    { "concepto": "Cuotas 2 dias (55 EUR x 8)", "importe": 440.00, "categoria": "ingresos" },
+    { "concepto": "Cuotas 3 dias (65 EUR x 9)", "importe": 585.00, "categoria": "ingresos" },
+    { "concepto": "Cuotas todos los dias (75 EUR x 12)", "importe": 900.00, "categoria": "ingresos" }
+  ],
+  "cobros_realizados": [
+    { "persona": "Alvaro", "dias": 3, "cuota": 65.00, "estado": "pagado" }
+  ],
+  "pendiente_cobro": 1860.00,
+  "gastos": [
+    { "concepto": "Merkocash (mixto)", "importe": 243.50, "categoria": "mixto", "origen": "Merkocash (La Ardosa S.L.)", "desglose": { "comida": 144.08, "bebida": 13.05, "menaje": 86.37 } },
+    { "concepto": "Alcampo (mixto)", "importe": 47.04, "categoria": "mixto", "origen": "Alcampo Cuenca", "desglose": { "comida": 31.44, "bebida": 15.48, "menaje": 0.12 } },
+    { "concepto": "Mercadona (mixto)", "importe": 92.02, "categoria": "mixto", "origen": "Mercadona Cuenca", "desglose": { "comida": 77.37, "bebida": 12.35, "menaje": 2.30 } },
+    { "concepto": "Diseno (bazar)", "importe": 61.08, "categoria": "menaje", "origen": "Gran Family Chen S.L." },
+    { "concepto": "Amazon (Mahou 0,0)", "importe": 15.96, "categoria": "bebida", "origen": "Amazon.es" },
+    { "concepto": "Amazon (S.Pellegrino agua con gas 24x50cl)", "importe": 25.20, "categoria": "bebida", "origen": "Amazon.es" },
+    { "concepto": "Carnes Javi (embutidos)", "importe": 153.85, "categoria": "comida", "origen": "Carnes Javi (Jamon a lo Grande SLU)" },
+    { "concepto": "Carnes Javi (queso sin lactosa)", "importe": 8.04, "categoria": "comida", "origen": "Carnes Javi (Jamon a lo Grande SLU)" },
+    { "concepto": "Mercadona 2 (trenzas y reposteria)", "importe": 115.95, "categoria": "comida", "origen": "Mercadona Cuenca" },
+    { "concepto": "Panaderia (pan encargado, 18 barras)", "importe": 23.40, "categoria": "comida", "origen": "Panaderia" }
+  ],
+  "resumen_por_categoria": [
+    { "categoria": "Comida", "importe": 554.13 },
+    { "categoria": "Bebida", "importe": 82.04 },
+    { "categoria": "Menaje", "importe": 149.87 }
+  ],
+  "extras_fuera_del_bote": {
+    "descripcion": "Extras que paga toda la pena (30 integrantes), no salen del bote de fiestas ni de las cuotas.",
+    "lineas": [
+      { "concepto": "Altavoces y montaje (tickets-altavoces.json)", "importe": 207.38 },
+      { "concepto": "Regalo dueno de la pena (tickets-generales.json)", "importe": 60.00 }
+    ],
+    "total": 267.38,
+    "reparto_por_integrante": 8.91
+  },
+  "observaciones": [
+    "La bebida real registrada (82,04 EUR) es baja porque el pedido grueso de cerveza/refrescos/destilados aun no esta hecho o registrado.",
+    "Falta anadir el gasto de carne de barbacoa.",
+    "El pan encargado (18 barras, 23,40 EUR) va dentro de comida, sin fila propia en la web de resumen.",
+    "El regalo del dueno de la pena (art 6 del ticket Carnes Javi, 60 EUR) se saca del bote y se trata como extra general, igual que los altavoces.",
+    "Discrepancia 29 vs 30: la lista de asistencia tiene 29 personas; la pena son 30 integrantes. El integrante nº30 no tiene dias asignados, asi que no genera cuota. Revisar si asiste y cuantos dias.",
+    "Cierre real y saldo definitivo a finales de septiembre, tras el evento y con todas las compras y cobros registrados."
+  ]
+}
