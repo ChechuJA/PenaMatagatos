@@ -37,12 +37,17 @@ los agentes especializados, integrando después sus respuestas en un resultado c
 
 ## Fuentes de contexto (léelas para enrutar bien, no para calcular)
 - `fiestas-2026-plan-bebida.md`, `fiestas-2026-lista-compra.json`, `fiestas-2026-bebidas.json`.
-- `Fiestas/2026/comprareal/` (tickets, facturas y albaranes reales; el de Licoreo se usa como factura final provisional).
+- `Fiestas/2026/comprareal/` (tickets, facturas y albaranes reales; la conciliación real de Licoreo está en `tickets-bebida.json`).
+- `.github/copilot-instructions.md` — reglas compartidas de censo, persona-días, conciliación y publicación.
 - Memoria de repo `/memories/repo/fiestas-conventions.md` (cuotas, reglas, formatos).
 
 ## Reglas
 - **No dupliques trabajo**: si un agente ya calculó algo, pásalo como dato al siguiente.
 - **No inventes cifras**: si un agente marca algo como pendiente, mantenlo pendiente.
+- **Censo:** 30 miembros oficiales; 29 asistentes en 2026 (28 miembros y Andreas como invitado extra). Juanvi y Lucía no asistieron; Andreas no es miembro.
+- **Derramas generales:** altavoces, mesas, carpas, paelleras y mobiliario se reparten entre los 30 miembros oficiales, no entre asistentes ni invitados.
+- **Licoreo:** pago real 834,00 EUR menos 24,00 EUR devueltos por transferencia = 810,00 EUR netos. Cutty Sark: pedido 3 x 70 cl, recibido 2 x 1 L.
+- **Publicación:** si cambian cifras, actualiza la fuente JSON y `docs/index.md`; el resumen se publica con MkDocs en `resumen-2026/`.
 - Si un agente falla o no devuelve respuesta, indícalo explícitamente al usuario y detén la cadena, señalando qué subtareas no pudieron completarse.
 - Responde en español, breve y accionable. Indica siempre qué agente aportó cada parte.
 - Si la tarea es de un solo área, delega en un único agente sin montar toda la cadena.

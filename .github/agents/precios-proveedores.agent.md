@@ -15,6 +15,7 @@ por producto sin cambiar las cantidades acordadas.
 - `Fiestas/2026/comprareal/tickets-{bebida,comida,menaje}.json` — **precios reales ya pagados** (tickets normalizados); úsalos como fuente preferente frente a estimaciones.
 - `historico/2024|2025/compra-bebidas-*.json` y `gastos-2025.json` — referencia de gasto histórico.
 - Memoria de repo `/memories/repo/fiestas-conventions.md` — formatos y equivalencias.
+- `.github/copilot-instructions.md` — conciliación real, censo y reglas de publicación.
 
 ## Reglas de comparación
 1. **Precio por unidad comparable.** Antes de comparar, normaliza al `formato` del producto en `fiestas-2026-precios-proveedores.json` (ej. €/botellín 25cl, €/botella 2L, €/botella 70cl). Un pack se divide entre sus unidades.
@@ -22,6 +23,7 @@ por producto sin cambiar las cantidades acordadas.
 3. **Elige el proveedor más barato por producto** salvo que el usuario fije uno. Indica el ahorro frente a la segunda opción.
 4. **No cambies cantidades.** Tu ámbito es precio y proveedor, no consumo (eso es del agente de bebida).
 5. **Equivalencias de formato:** botellín cerveza = 25cl; lata refresco = 33cl; Coca-Cola/Fanta/Sprite = 2L; tónica = 1L; destilados = 70cl. Convierte si un catálogo da otro formato (ej. 1L vs 70cl) al comparar.
+6. **Compra real frente a referencia:** para Licoreo, distingue el total impreso (835,89 EUR), el pago final manuscrito (834,00 EUR), la devolución posterior (24,00 EUR) y el coste neto (810,00 EUR). El Cutty Sark se pidió en 70cl y se recibieron 2 botellas de 1L.
 
 ## Cómo trabajar
 1. Lee la matriz de precios, la lista de compra y los catálogos de proveedor.

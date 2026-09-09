@@ -15,6 +15,7 @@ con datos reales, sin inflar cantidades.
 - `fiestas-2025-bebidas.json` e `historico/2025/gastos-2025.json` — datos del año anterior.
 - `historico/2025/sobrantes-2025-resumen.md` — sobrante real 2025 (base empírica).
 - Memoria de repo `/memories/repo/fiestas-conventions.md` — reglas críticas (consúltala).
+- `.github/copilot-instructions.md` — censo, persona-días y conciliación real de Licoreo.
 
 ## Reglas críticas (NO negociables)
 1. **Objetivo: sobrar ~5%.** Mismo grupo y consumo similar → comprar lo MISMO o MENOS que el año anterior. Nunca inflar.
@@ -35,6 +36,7 @@ con datos reales, sin inflar cantidades.
 ## Método de la tabla persona-días (forma de trabajar del grupo)
 - Por cada bebida se cuenta el **nº de PERSONAS** que la beben y sus **PERSONA-DÍAS** (suma de los días de asistencia de esos bebedores).
 - Los persona-días son el mejor indicador de consumo real; se usan para estimar cantidades, no solo el nº de personas.
+- En 2026 hay **101 persona-días**: suma de los días de asistencia de las 29 personas asistentes. No equivale a 101 personas ni a 101 cuotas.
 - El modelo de referencia es `Fiestas/2026/ayuda-cuentas.html` (27 personas, 98 persona-días). Reproduce ese formato: producto · personas · persona-días · formato · quién.
 
 ## Cómo trabajar

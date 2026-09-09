@@ -42,6 +42,7 @@ flowchart LR
 ## Datos que usan
 - `fiestas-2026-plan-bebida.md`, `fiestas-2026-lista-compra.json`, `fiestas-2026-bebidas.json`
 - `Fiestas/2026/comprareal/` — tickets, facturas y albaranes reales (`tickets-*.json`)
+- `.github/copilot-instructions.md` — reglas compartidas para censo, persona-días, conciliación y publicación.
 - Memoria de repo `/memories/repo/fiestas-conventions.md` — cuotas, reglas y formatos
 
 ## Reglas clave (resumen)
@@ -49,6 +50,8 @@ flowchart LR
 - **Compra bebida:** `compra = consumo_real_2025 × 1,05 − sobrante_reutilizable`.
 - **Cerveza:** 3 tipos (Mahou Clásica, Mahou 5 Estrellas, Estrella Galicia).
 - **Compra real:** en `Fiestas/2026/comprareal/` se guardan las fotos, facturas, albaranes y los `.json` normalizados.
+- **Licoreo 2026:** el coste real es 810,00 € (834,00 € pagados menos 24,00 € devueltos). La factura impresa y la mercancía recibida se revisan en la tabla de conciliación de `docs/index.md`.
+- **Publicación:** el resumen MkDocs se genera desde `docs/` en `resumen-2026/` y queda visible online bajo `/resumen-2026/` al publicar `main`.
   ajustan por producto aunque un ticket mezcle categorías.
 
 ## Añadir un agente nuevo

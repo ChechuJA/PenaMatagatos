@@ -23,7 +23,7 @@ de forma justa y transparente.
 - `fiestas-2026-bebidas.json` — miembros y días de asistencia (para asignar cuota).
 - `fiestas-2026-plan-bebida.md` y `Fiestas/2026/ayuda-cuentas.html` — tabla persona-días y asistencia por persona.
 - `Fiestas/2026/comprareal/tickets-{bebida,comida,menaje}.json` — **coste real** de la compra (tickets normalizados). Suma sus `total_categoria`.
-- `Fiestas/2026/comprareal/` — facturas, albaranes y fotos de la compra real. El albarán de Licoreo se usa provisionalmente como factura final.
+- `Fiestas/2026/comprareal/` — facturas, albaranes y fotos de la compra real. La factura final de Licoreo se concilia con el pago real y la devolución bancaria en `tickets-bebida.json`.
 - `fiestas-2026-precios-proveedores.json` y catálogos de proveedor — precios si aún no hay tickets reales.
 - `historico/2025/gastos-2025.json` — gasto histórico de referencia.
 - Memoria de repo `/memories/repo/fiestas-conventions.md` — cuotas y criterios.
@@ -31,6 +31,9 @@ de forma justa y transparente.
 ## Coste real desde tickets
 - El coste real de la compra sale de sumar `total_categoria` de los tres JSON de `Fiestas/2026/comprareal/`.
 - Los tickets mixtos ya vienen repartidos por categoría (bebida/comida/menaje); no los sumes dos veces.
+- Para Licoreo, usa el coste neto real de **810,00 EUR**: pago final 834,00 EUR menos devolución posterior 24,00 EUR. No uses el total impreso como gasto neto.
+- El bote de 1.925,00 EUR corresponde a 29 asistentes/cuotas registradas. No confundas asistentes con el censo de 30 miembros oficiales.
+- Las derramas generales quedan fuera del bote y se reparten entre los 30 miembros oficiales: 267,38 EUR / 30 = 8,91 EUR por miembro.
 - Si los JSON aún están vacíos (importes a 0), usa la estimación/precios y márcalo como provisional.
 
 ## Cómo trabajar
