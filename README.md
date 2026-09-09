@@ -30,6 +30,14 @@ El sitio web se despliega automáticamente en GitHub Pages cuando se hace push a
 - **URL del sitio**: [matagatos.ddns.net](https://matagatos.ddns.net)
 - **Workflow**: Se ejecuta automáticamente en cada push a `main`
 - **Dominio personalizado**: Configurado para usar `matagatos.ddns.net`
+- **Resumen 2026**: además del HTML actual, el workflow genera `resumen-2026/` con MkDocs para ofrecer una vista más tipo blog.
+
+### Generar el apartado MkDocs en local
+
+```bash
+python3 -m pip install mkdocs==1.6.1 mkdocs-material==9.7.7
+mkdocs build --clean
+```
 
 ## 🎯 Actividades que destacamos
 

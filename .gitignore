@@ -21,6 +21,9 @@ Thumbs.db
 # Logs
 *.log
 
+# Build artifacts
+resumen-2026/
+
 # Uploaded files (keep folder structure but not content)
 documents/*
 !documents/README.md

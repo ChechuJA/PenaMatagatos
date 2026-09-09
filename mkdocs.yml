@@ -1,0 +1,22 @@
+site_name: Resumen 2026 · Peña Matagatos
+site_description: Resumen visual de asistencia, compra y cuentas de Fiestas 2026.
+site_url: https://matagatos.ddns.net/resumen-2026/
+docs_dir: docs
+site_dir: resumen-2026
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: amber
+  features:
+    - navigation.top
+    - navigation.sections
+    - toc.integrate
+nav:
+  - Resumen 2026: index.md
+markdown_extensions:
+  - tables
+extra_css:
+  - stylesheets/resumen-2026.css
