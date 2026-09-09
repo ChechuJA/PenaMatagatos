@@ -728,13 +728,13 @@ document.addEventListener('DOMContentLoaded', function() {
             response: "📧 Puedes contactar con nosotros:\n\n• Email general: info@penamatagatos.es\n• Documentos: documentos@penamatagatos.es\n• WhatsApp: +34 123 456 789\n\n¡Estaremos encantados de conocerte!"
         },
         actividades: {
-            response: "🎯 Actividades 2026 confirmadas: mural a las 11:00 h.\n\nSi se confirman más actividades, las añadiremos aquí."
+            response: "🎯 Actividades 2026 de la peña: mural a las 11:00 h y propuesta Minimatagatos (3-9 años) de juegos musicales con movimiento y baile.\n\nSi se confirman más actividades, las añadiremos aquí."
         },
         documentos: {
             response: "📎 Para subir documentos:\n\n1. Ve al formulario de contacto\n2. Busca la sección 'Compartir archivos'\n3. Puedes subir: inventarios, cuentas, fotos, propuestas\n4. Los procesamos y añadimos a nuestro sistema\n5. Si es útil, lo compartimos con toda la peña"
         },
         niños: {
-            response: "👶 Sobre actividades para niños en 2026, ahora mismo solo tenemos confirmada una actividad general: mural a las 11:00 h."
+            response: "👶 Para niños en 2026 tenemos el mural (11:00 h) y una propuesta Minimatagatos (3-9 años) de juegos musicales de movimiento: estatuas musicales, seguir el ritmo, tren de bailes y baile del globo."
         },
         // Nuevas FAQ expandidas
         alojamiento: {
