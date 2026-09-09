@@ -22,14 +22,14 @@ de forma justa y transparente.
 ## Fuentes de verdad
 - `fiestas-2026-bebidas.json` — miembros y días de asistencia (para asignar cuota).
 - `fiestas-2026-plan-bebida.md` y `Fiestas/2026/ayuda-cuentas.html` — tabla persona-días y asistencia por persona.
-- `historico/2026/cuentas/tickets-{bebida,comida,menaje}.json` — **coste real** de la compra (tickets normalizados). Suma sus `total_categoria`.
-- `historico/2026/cuentas/estimacion/` — presupuesto/estimación previa. `historico/2026/cuentas/real_comprado/` — fotos de tickets.
+- `Fiestas/2026/comprareal/tickets-{bebida,comida,menaje}.json` — **coste real** de la compra (tickets normalizados). Suma sus `total_categoria`.
+- `Fiestas/2026/comprareal/` — facturas, albaranes y fotos de la compra real. El albarán de Licoreo se usa provisionalmente como factura final.
 - `fiestas-2026-precios-proveedores.json` y catálogos de proveedor — precios si aún no hay tickets reales.
 - `historico/2025/gastos-2025.json` — gasto histórico de referencia.
 - Memoria de repo `/memories/repo/fiestas-conventions.md` — cuotas y criterios.
 
 ## Coste real desde tickets
-- El coste real de la compra sale de sumar `total_categoria` de los tres JSON de `historico/2026/cuentas/`.
+- El coste real de la compra sale de sumar `total_categoria` de los tres JSON de `Fiestas/2026/comprareal/`.
 - Los tickets mixtos ya vienen repartidos por categoría (bebida/comida/menaje); no los sumes dos veces.
 - Si los JSON aún están vacíos (importes a 0), usa la estimación/precios y márcalo como provisional.
 

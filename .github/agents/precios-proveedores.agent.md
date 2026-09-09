@@ -12,7 +12,7 @@ por producto sin cambiar las cantidades acordadas.
 - `fiestas-2026-precios-proveedores.json` — matriz producto × proveedor (rellenar `precios`).
 - `fiestas-2026-lista-compra.json` — cantidades definitivas a comprar.
 - `Fiestas/2026/proveedores/Licoreo/*.json` — catálogos de precios de Licoreo por categoría.
-- `historico/2026/cuentas/tickets-{bebida,comida,menaje}.json` — **precios reales ya pagados** (tickets normalizados); úsalos como fuente preferente frente a estimaciones.
+- `Fiestas/2026/comprareal/tickets-{bebida,comida,menaje}.json` — **precios reales ya pagados** (tickets normalizados); úsalos como fuente preferente frente a estimaciones.
 - `historico/2024|2025/compra-bebidas-*.json` y `gastos-2025.json` — referencia de gasto histórico.
 - Memoria de repo `/memories/repo/fiestas-conventions.md` — formatos y equivalencias.
 

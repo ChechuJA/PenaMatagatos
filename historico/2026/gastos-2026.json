@@ -1,7 +1,7 @@
 {
   "anio": 2026,
   "titulo": "Gastos y cuentas 2026 - Peña Matagatos",
-  "fuente": "Datos consolidados a partir de las cuotas por asistencia y la compra real registrada en historico/2026/cuentas/ (tickets-*.json).",
+  "fuente": "Datos consolidados a partir de las cuotas por asistencia y la compra real registrada en Fiestas/2026/comprareal/ (tickets-*.json).",
   "estado": "PROVISIONAL / en curso: registrado el pedido grueso de bebida de Licoreo con ajuste final por penalizacion de Estrella Galicia (-24,00 EUR). Falta por registrar la carne de barbacoa. Casi todas las cuotas siguen pendientes de cobro.",
   "totales": {
     "ingresos_totales": 1925.00,

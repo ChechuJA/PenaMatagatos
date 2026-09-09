@@ -1,13 +1,13 @@
 {
   "evento": "Fiestas 2026",
   "categoria": "comida",
-  "descripcion": "Datos normalizados de COMIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de comida.",
+  "descripcion": "Datos normalizados de COMIDA. Cada linea referencia un documento de compra real en comprareal/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de comida.",
   "actualizado": "2026-09-04",
   "moneda": "EUR",
   "tickets": [
     {
       "id": "carnesjavi-embutidos-comida-2026-09-03",
-      "foto": "real_comprado/comida/carnesjavi-embutidos-2026-09-03.jpg",
+      "foto": "Embutidos Javi.jpeg",
       "proveedor": "Carnes Javi (Jamon a lo Grande SLU)",
       "fecha": "2026-09-03",
       "nota": "Ticket Carnes Javi (Belmonte, Cuenca). Fra 0009 00 062483, 07:43. Total ticket completo 213,85 EUR. Aqui solo las lineas de comida (arts 1-5 = 153,85). El art 6 (regalo dueno de la pena, 60,00) NO es gasto de fiestas: va a tickets-generales.json.",
@@ -22,7 +22,7 @@
     },
     {
       "id": "carnesjavi-queso-comida-2026-09-03",
-      "foto": "real_comprado/comida/carnesjavi-queso-2026-09-03.jpg",
+      "foto": "Embutidos Javi Queso sin Lactosa.jpeg",
       "proveedor": "Carnes Javi (Jamon a lo Grande SLU)",
       "fecha": "2026-09-03",
       "nota": "Ticket Carnes Javi (copia). Fra 0009 00 062484, 07:45. Queso en barra (sin lactosa). Total ticket 8,04 EUR.",
@@ -33,7 +33,7 @@
     },
     {
       "id": "mercadona2-comida-2026-09-03",
-      "foto": "real_comprado/comida/mercadona2-2026-09-03.jpg",
+      "foto": "Mercadona 2.jpeg",
       "proveedor": "Mercadona Cuenca",
       "fecha": "2026-09-03",
       "nota": "Segundo ticket Mercadona (Hermanos Becerril, 19:54). Fra 4606-016-159760. Todo comida. Total ticket 115,95 EUR.",
@@ -54,7 +54,7 @@
     },
     {
       "id": "merkocash-comida-2026-08-31",
-      "foto": "real_comprado/comida/merkocash-2026-08-31.jpg",
+      "foto": "Mercocash.jpeg",
       "proveedor": "Merkocash (La Ardosa S.L.)",
       "fecha": "2026-08-31",
       "nota": "Ticket mixto Merkocash (FRA 2/100633, 17:19). Aqui solo lineas de comida. Total ticket completo 243,50 EUR (comida 144,08 + menaje 86,37 + bebida 13,05).",
@@ -98,7 +98,7 @@
     },
     {
       "id": "alcampo-comida-2026-08-31",
-      "foto": "real_comprado/comida/alcampo-2026-08-31.jpg",
+      "foto": "Alcampo.jpeg",
       "proveedor": "Alcampo Cuenca",
       "fecha": "2026-08-31",
       "nota": "Ticket mixto Alcampo (19:38). Aqui solo lineas de comida. Total ticket completo 47,04 EUR (comida 31,44 + bebida 15,48 cerveza Estrella + menaje 0,12 bolsa).",
@@ -113,7 +113,7 @@
     },
     {
       "id": "mercadona-comida-2026-08-31",
-      "foto": "real_comprado/comida/mercadona-2026-08-31.jpg",
+      "foto": "Mercadona.jpeg",
       "proveedor": "Mercadona Cuenca",
       "fecha": "2026-08-31",
       "nota": "Ticket mixto Mercadona (18:54). Aqui solo lineas de comida. Total ticket completo 92,02 EUR (comida 77,37 + bebida 12,35 licores + menaje 2,30 hielo y bolsas).",

@@ -1,13 +1,13 @@
 {
   "evento": "Fiestas 2026",
   "categoria": "bebida",
-  "descripcion": "Datos normalizados de BEBIDA. Cada linea referencia la foto del ticket en real_comprado/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de bebida.",
+  "descripcion": "Datos normalizados de BEBIDA. Cada linea referencia un documento de compra real en comprareal/. Un ticket mixto se reparte entre varios JSON: aqui solo van las lineas de bebida.",
   "actualizado": "2026-09-04",
   "moneda": "EUR",
   "tickets": [
     {
       "id": "merkocash-bebida-2026-08-31",
-      "foto": "real_comprado/comida/merkocash-2026-08-31.jpg",
+      "foto": "Mercocash.jpeg",
       "proveedor": "Merkocash (La Ardosa S.L.)",
       "fecha": "2026-08-31",
       "nota": "Ticket mixto Merkocash (FRA 2/100633, 17:19). Aqui solo lineas de bebida. Foto guardada en comida (categoria que mas pesa). Total ticket completo 243,50 EUR.",
@@ -19,7 +19,7 @@
     },
     {
       "id": "alcampo-bebida-2026-08-31",
-      "foto": "real_comprado/comida/alcampo-2026-08-31.jpg",
+      "foto": "Alcampo.jpeg",
       "proveedor": "Alcampo Cuenca",
       "fecha": "2026-08-31",
       "nota": "Ticket mixto Alcampo (19:38). Aqui solo lineas de bebida. Foto guardada en comida (categoria que mas pesa). Total ticket completo 47,04 EUR.",
@@ -30,7 +30,7 @@
     },
     {
       "id": "mercadona-bebida-2026-08-31",
-      "foto": "real_comprado/comida/mercadona-2026-08-31.jpg",
+      "foto": "Mercadona.jpeg",
       "proveedor": "Mercadona Cuenca",
       "fecha": "2026-08-31",
       "nota": "Ticket mixto Mercadona (18:54). Aqui solo lineas de bebida. Foto guardada en comida (categoria que mas pesa). Total ticket completo 92,02 EUR.",
@@ -42,7 +42,7 @@
     },
     {
       "id": "amazon-bebida-2026-08-31",
-      "foto": "real_comprado/bebida/amazon-mahou-00-2026-08-31.jpg",
+      "foto": "Amazon Cerveza 0,0.jpeg",
       "proveedor": "Amazon.es",
       "fecha": "2026-08-31",
       "nota": "Pedido Amazon 171-5823303-0309908 (entrega miercoles). Mahou 0,0 Rubia cerveza sin alcohol.",
@@ -64,10 +64,10 @@
     },
     {
       "id": "licoreo-bebida-2026-08-26",
-      "foto": "../../../Fiestas/2026/proveedores/Licoreo/Presupuestos/PRESUPUESTODEVENTA-03866-PENA_MATAGATOS.PDF",
+      "foto": "Compra final Licoreo 2026 Matagatos.PDF",
       "proveedor": "Distribuciones y Logistica Licoreo, S.L. (B16916710)",
       "fecha": "2026-08-26",
-      "nota": "PEDIDO GRUESO DE BEBIDA de fiestas (cerveza, refrescos, agua y destilados). Fuente: presupuesto de venta Licoreo PRV03866 (2026-08-26) con ajuste final aplicado: penalizacion de -2 EUR por cada caja de Estrella Galicia recibida en 20cl en vez de 25cl (12 cajas = -24 EUR sobre el total pagado). Los 'importe' de cada linea son BASE IMPONIBLE sin IVA; el subtotal es el TOTAL CON IVA pagado.",
+      "nota": "FACTURA FINAL usada para el gasto real de fiestas (el documento recibido es un albaran). Fuente: albaran/factura final de Licoreo, antes presupuesto de venta PRV03866 (2026-08-26), con ajuste final aplicado: penalizacion de -2 EUR por cada caja de Estrella Galicia recibida en 20cl en vez de 25cl (12 cajas = -24 EUR sobre el total pagado). Los 'importe' de cada linea son BASE IMPONIBLE sin IVA; el subtotal es el TOTAL CON IVA pagado.",
       "lineas": [
         { "producto": "Cerveza Mahou Sin (0,0) - caja 24x25cl", "cantidad": 6, "unidad": "caja", "precio_unitario": 11.75, "importe": 70.50 },
         { "producto": "Cerveza Estrella de Galicia - caja 24x20cl", "cantidad": 12, "unidad": "caja", "precio_unitario": 9.44, "importe": 113.28 },

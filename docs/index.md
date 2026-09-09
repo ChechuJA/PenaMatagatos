@@ -122,7 +122,7 @@ La lista general de compra 2026 (`fiestas-2026-lista-compra.json`) ya recoge qu�
 
 ## 3) Compra real y cuentas del bote
 
-El consolidado actual está en `historico/2026/gastos-2026.json`, alimentado por los JSON de tickets normalizados dentro de `historico/2026/cuentas/`.
+El consolidado actual está en `historico/2026/gastos-2026.json`, alimentado por los JSON de tickets normalizados dentro de `Fiestas/2026/comprareal/`.
 
 | Concepto | Origen | Importe |
 |---|---|---:|
@@ -214,6 +214,6 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md`:
 - `fiestas-2026-bebidas.json` → asistentes, asistencia y preferencias.
 - `fiestas-2026-plan-bebida.md` → persona-días, reglas de compra y contexto de la reunión.
 - `fiestas-2026-lista-compra.json` → lista de compra orientativa y prioridades.
-- `historico/2026/cuentas/README.md` → criterio para tickets mixtos y estructura de compra real.
+- `Fiestas/2026/comprareal/` → tickets, facturas, albaranes y criterio para tickets mixtos.
 - `historico/2026/gastos-2026.json` → cifras provisionales consolidadas de ingresos, gastos y saldo.
 - `historico/2026/README.md` → notas internas y aprendizajes para el año siguiente.

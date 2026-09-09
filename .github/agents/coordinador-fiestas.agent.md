@@ -37,7 +37,7 @@ los agentes especializados, integrando después sus respuestas en un resultado c
 
 ## Fuentes de contexto (léelas para enrutar bien, no para calcular)
 - `fiestas-2026-plan-bebida.md`, `fiestas-2026-lista-compra.json`, `fiestas-2026-bebidas.json`.
-- `historico/2026/cuentas/` (tickets reales, estimación `MATAGATOS-2026-estimacion.md`).
+- `Fiestas/2026/comprareal/` (tickets, facturas y albaranes reales; el de Licoreo se usa como factura final provisional).
 - Memoria de repo `/memories/repo/fiestas-conventions.md` (cuotas, reglas, formatos).
 
 ## Reglas

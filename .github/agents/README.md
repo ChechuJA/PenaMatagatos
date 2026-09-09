@@ -41,14 +41,14 @@ flowchart LR
 
 ## Datos que usan
 - `fiestas-2026-plan-bebida.md`, `fiestas-2026-lista-compra.json`, `fiestas-2026-bebidas.json`
-- `historico/2026/cuentas/` — tickets reales y estimación (`MATAGATOS-2026-estimacion.md`)
+- `Fiestas/2026/comprareal/` — tickets, facturas y albaranes reales (`tickets-*.json`)
 - Memoria de repo `/memories/repo/fiestas-conventions.md` — cuotas, reglas y formatos
 
 ## Reglas clave (resumen)
 - **Cuotas:** 55 € (2 días), 65 € (3 días), 75 € (todos los días), por persona.
 - **Compra bebida:** `compra = consumo_real_2025 × 1,05 − sobrante_reutilizable`.
 - **Cerveza:** 3 tipos (Mahou Clásica, Mahou 5 Estrellas, Estrella Galicia).
-- **Tickets:** en `real_comprado/` se guardan las fotos; los `.json`/`.md` se
+- **Compra real:** en `Fiestas/2026/comprareal/` se guardan las fotos, facturas, albaranes y los `.json` normalizados.
   ajustan por producto aunque un ticket mezcle categorías.
 
 ## Añadir un agente nuevo
