@@ -141,16 +141,37 @@ Esta es la tabla de comprobación de la compra real. Los importes de tickets mix
 | 31/08/2026 | Mercadona | Bebida | 12,35 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 31/08/2026 | Mercadona | Menaje | 2,30 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
 | 31/08/2026 | Diseño (bazar) | Menaje | 61,08 € | [Foto](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 31/08/2026 | Diseño · ticket REGALO | Menaje | 12,00 € | [Foto](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
 | 31/08/2026 | Amazon | Bebida | 15,96 € | [Foto](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 02/09/2026 | Amazon | Bebida | 25,20 € | [Pedido](https://amzn.eu/d/0fOtCgQW) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 03/09/2026 | Carnes Javi | Comida | 153,85 € | [Foto embutidos](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
 | 03/09/2026 | Carnes Javi | Comida | 8,04 € | [Foto queso](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
 | 03/09/2026 | Mercadona 2 | Comida | 115,95 € | [Foto](../Fiestas/2026/comprareal/Mercadona%202.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
-| 2026 | Panadería | Comida | 23,40 € | [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 2026 | Panadería | Comida | 23,40 € | 18 barras × 1,30 € · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
 
 **Totales normalizados:** comida `554,13 €` · bebida `892,04 €` · menaje `149,87 €` · **compra del bote `1.596,04 €`**.
 
 El detalle de cada línea, con cantidad, unidad, precio unitario e importe, está disponible en los JSON finales: [bebida](../Fiestas/2026/comprareal/tickets-bebida.json), [comida](../Fiestas/2026/comprareal/tickets-comida.json), [menaje](../Fiestas/2026/comprareal/tickets-menaje.json), [altavoces](../Fiestas/2026/comprareal/tickets-altavoces.json) y [generales](../Fiestas/2026/comprareal/tickets-generales.json).
+
+### Conciliación por ticket físico
+
+Esta tabla comprueba que las líneas repartidas entre comida, bebida, menaje y gastos generales vuelven a sumar el importe del documento original. En los tickets mixtos, cada categoría se cuenta una sola vez.
+
+| Documento físico | Comida | Bebida | Menaje | Generales | Suma normalizada | Total de la foto/documento | Diferencia |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Merkocash | 144,08 € | 13,05 € | 86,37 € | — | **243,50 €** | 243,50 € | 0,00 € |
+| Alcampo | 31,44 € | 15,48 € | 0,12 € | — | **47,04 €** | 47,04 € | 0,00 € |
+| Mercadona | 77,37 € | 12,35 € | 2,30 € | — | **92,02 €** | 92,02 € | 0,00 € |
+| Diseño Chino | — | — | 61,08 € | — | **61,08 €** | 61,08 € | 0,00 € |
+| Amazon · Mahou 0,0 | — | 15,96 € | — | — | **15,96 €** | 15,96 € | 0,00 € |
+| Amazon · S.Pellegrino | — | 25,20 € | — | — | **25,20 €** | 25,20 € | 0,00 € |
+| Carnes Javi · embutidos + regalo | 153,85 € | — | — | 60,00 € | **213,85 €** | 213,85 € | 0,00 € |
+| Carnes Javi · queso sin lactosa | 8,04 € | — | — | — | **8,04 €** | 8,04 € | 0,00 € |
+| Mercadona 2 | 115,95 € | — | — | — | **115,95 €** | 115,95 € | 0,00 € |
+| Panadería (encargo) | 23,40 € | — | — | — | **23,40 €** | 18 barras × 1,30 € · sin foto de ticket | — |
+| **Total conciliado con documento** | **554,13 €** | **82,04 €** | **149,87 €** | **60,00 €** | **846,04 €** | **846,04 €** | **0,00 €** |
+
+El total de esta tabla (`846,04 €`) incluye el regalo general de `60,00 €`, pero no incluye el saco de carbón regalado por Diseño Chino, porque no existe ticket ni fue un gasto pagado por la peña. Tampoco incluye Licoreo, porque su documento tiene una conciliación económica específica: total impreso `835,89 €`, pago final `834,00 €`, devolución `24,00 €` y coste neto `810,00 €`. Al excluir el regalo general de los gastos del bote y sumar Licoreo como compra de bebida, el gasto del bote queda en **1.596,04 €**.
 
 ### Factura final de Licoreo
 
@@ -175,17 +196,23 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 
 ### Tickets y facturas para comprobación visual
 
-| Documento | Vista previa | Descarga |
-|---|---|---|
-| Merkocash | [Abrir imagen](../Fiestas/2026/comprareal/Mercocash.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercocash.jpeg) |
-| Alcampo | [Abrir imagen](../Fiestas/2026/comprareal/Alcampo.jpeg) | [JPEG](../Fiestas/2026/comprareal/Alcampo.jpeg) |
-| Mercadona | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona.jpeg) |
-| Diseño (bazar) | [Abrir imagen](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | [JPEG](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) |
-| Amazon Mahou 0,0 | [Abrir imagen](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | [JPEG](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) |
-| Carnes Javi embutidos | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) |
-| Carnes Javi queso | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) |
-| Mercadona 2 | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona%202.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona%202.jpeg) |
-| Factura final Licoreo | [Ver en la página](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | [JPEG](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) |
+| Documento | Vista previa | Descarga | Gasto | Nota |
+|---|---|---|---:|---|
+| Merkocash | [Abrir imagen](../Fiestas/2026/comprareal/Mercocash.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercocash.jpeg) | **243,50 €** | Ticket mixto: comida, bebida y menaje |
+| Alcampo | [Abrir imagen](../Fiestas/2026/comprareal/Alcampo.jpeg) | [JPEG](../Fiestas/2026/comprareal/Alcampo.jpeg) | **47,04 €** | Ticket mixto: comida, bebida y menaje |
+| Mercadona | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona.jpeg) | **92,02 €** | Ticket mixto: comida, bebida y menaje |
+| Diseño (bazar) | [Abrir imagen](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | [JPEG](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | **61,08 €** | Menaje |
+| Amazon · Mahou 0,0 | [Abrir imagen](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | [JPEG](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | **15,96 €** | Bebida |
+| Amazon · S.Pellegrino agua con gas | [Pedido](https://amzn.eu/d/0fOtCgQW) | [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) | **25,20 €** | Bebida; pedido 24x50 cl |
+| Carnes Javi · embutidos | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | **213,85 €** | 153,85 € comida + 60,00 € regalo general |
+| Carnes Javi · queso sin lactosa | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) | **8,04 €** | Comida |
+| Mercadona 2 · trenzas y repostería | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona%202.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona%202.jpeg) | **115,95 €** | Comida |
+| Panadería · encargo | Sin foto | [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) | **23,40 €** | 18 barras × 1,30 € |
+| Licoreo · factura final | [Ver imagen](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | [JPEG](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | **810,00 €** | 834,00 € pagados − 24,00 € devueltos |
+| **Total documentos** |  |  | **1.656,04 €** | Incluye 60,00 € de regalo general |
+| **Total gasto del bote** |  |  | **1.596,04 €** | Total documentos − regalo general |
+
+> **Nota informativa:** Diseño Chino nos regaló un saco grande de carbón valorado en 12,00 €. No tenemos ticket ni fue una compra pagada por la peña, así que no aparece como línea de gasto ni se suma a estos totales.
 
 <details class="evidence-disclosure">
   <summary>Mostrar todas las fotos dentro de MkDocs</summary>
