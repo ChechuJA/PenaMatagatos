@@ -1,8 +1,9 @@
 # Plan de bebida - Fiestas 2026
 
 ## 1) Punto de partida
-- Grupo confirmado: 30 integrantes de la peña (anadida Lucia, detras de Josemi; sus dias y bebida estan por confirmar).
-- A las fiestas 2026 vinieron 28; la derrama de altavoces se reparte entre los 30 integrantes.
+- Grupo confirmado: 30 integrantes oficiales de la peña; Juanvi y Lucía no asistieron en 2026. Andreas fue una persona extra solo para 2026.
+- La lista operativa tiene 29 asistentes: 28 integrantes oficiales y Andreas como invitado extra.
+- La derrama de altavoces, mesas, carpas, paelleras y demás mobiliario se reparte entre los 30 integrantes oficiales.
 - Asistencia estimada total: 101 persona-dias (cota conservadora, ajustada con la lista final).
 - Criterio: comprar en modo conservador y ajustar con el sobrante real 2025.
 
@@ -14,11 +15,10 @@
 | Chechu | todos los días | 5 |
 | Esmeralda | todos los días | 5 |
 | Josemi | todos los días | 5 |
-| Lucía | por confirmar | 0 |
 | Eve | todos los días | 5 |
 | Leti | todos los días | 5 |
 | Javi | sábado y domingo | 2 |
-| Andreas | todos los días | 5 |
+| Andreas (extra 2026) | todos los días | 5 |
 | Álvaro | jueves a sábado | 3 |
 | Elisa | jueves a sábado | 3 |
 | Laura | todos los días | 5 |
@@ -39,7 +39,7 @@
 | Helena | viernes y sábado (jueves incógnita) | 3 |
 | Tamara | 2 días | 2 |
 | Zara | viernes y sábado | 2 |
-| **TOTAL** | | **101** |
+| **TOTAL asistentes** | | **101** |
 
 ## 2) Preferencias confirmadas 2026
 - Cerveza normal: bebida principal del grupo.

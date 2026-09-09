@@ -64,10 +64,20 @@
     },
     {
       "id": "licoreo-bebida-2026-08-26",
-      "foto": "Compra final Licoreo 2026 Matagatos.PDF",
+      "foto": "Factura Final Licoreo Matagatos 2026.jpeg",
       "proveedor": "Distribuciones y Logistica Licoreo, S.L. (B16916710)",
       "fecha": "2026-08-26",
-      "nota": "FACTURA FINAL usada para el gasto real de fiestas (el documento recibido es un albaran). Fuente: albaran/factura final de Licoreo, antes presupuesto de venta PRV03866 (2026-08-26), con ajuste final aplicado: penalizacion de -2 EUR por cada caja de Estrella Galicia recibida en 20cl en vez de 25cl (12 cajas = -24 EUR sobre el total pagado). Los 'importe' de cada linea son BASE IMPONIBLE sin IVA; el subtotal es el TOTAL CON IVA pagado.",
+      "conciliacion": {
+        "total_impreso_factura": 835.89,
+        "pago_final_anotado": 834.00,
+        "devolucion_posterior_transferencia": 24.00,
+        "motivo_devolucion": "12 cajas de Estrella Galicia servidas en botellines de 20cl en vez de 25cl",
+        "coste_neto_real": 810.00,
+        "pedido_cutty_sark": "3 botellas de 70cl",
+        "recibido_cutty_sark": "2 botellas de 1L",
+        "ajuste_cutty_sark": "La diferencia de suministro queda reflejada en el importe manuscrito del pago final"
+      },
+      "nota": "FACTURA FINAL pagada de Licoreo, documentada en la foto de esta carpeta. El total impreso es 835,89 EUR, pero el importe final cobrado y anotado a mano fue 834,00 EUR. Después, Licoreo devolvió 24,00 EUR por transferencia por las 12 cajas de Estrella Galicia servidas en botellines de 20cl en vez de 25cl; la devolución no aparece como descuento en la factura. Coste neto real contabilizado: 810,00 EUR. Además, se pidieron 3 botellas de Whisky Cutty Sark de 70cl y se recibieron 2 botellas de 1L; el ajuste del cobro manuscrito recoge la incidencia. Los 'importe' de cada linea son BASE IMPONIBLE de referencia; el subtotal es el COSTE NETO REAL tras el pago y la transferencia.",
       "lineas": [
         { "producto": "Cerveza Mahou Sin (0,0) - caja 24x25cl", "cantidad": 6, "unidad": "caja", "precio_unitario": 11.75, "importe": 70.50 },
         { "producto": "Cerveza Estrella de Galicia - caja 24x20cl", "cantidad": 12, "unidad": "caja", "precio_unitario": 9.44, "importe": 113.28 },
@@ -90,12 +100,12 @@
         { "producto": "Ginebra Puerto de Indias Strawberry 70cl", "cantidad": 2, "unidad": "botella", "precio_unitario": 12.43, "importe": 24.86 },
         { "producto": "Ginebra Beefeater 70cl", "cantidad": 2, "unidad": "botella", "precio_unitario": 11.56, "importe": 23.12 },
         { "producto": "Ron Legendario Elixir 70cl", "cantidad": 4, "unidad": "botella", "precio_unitario": 13.65, "importe": 54.60 },
-        { "producto": "Whisky Cutty Sark 70cl", "cantidad": 3, "unidad": "botella", "precio_unitario": 9.75, "importe": 29.25 },
+        { "producto": "Whisky Cutty Sark 1L (recibido; pedido 70cl)", "cantidad": 2, "unidad": "botella", "precio_unitario": 9.75, "importe": 19.50 },
         { "producto": "Ron Barcelo 70cl", "cantidad": 4, "unidad": "botella", "precio_unitario": 13.25, "importe": 53.00 },
         { "producto": "Ginebra Larios 12 70cl", "cantidad": 1, "unidad": "botella", "precio_unitario": 12.99, "importe": 12.99 }
       ],
-      "subtotal": 908.67
+      "subtotal": 810.00
     }
   ],
-  "total_categoria": 990.71
+  "total_categoria": 892.04
 }

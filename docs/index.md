@@ -16,13 +16,13 @@
   </article>
   <article class="summary-card">
     <p class="summary-label">Gasto provisional</p>
-    <p class="summary-value">1.718,71 €</p>
-    <p class="summary-note">Compra real consolidada registrada hasta el 04/09/2026.</p>
+    <p class="summary-value">1.596,04 €</p>
+    <p class="summary-note">Compra real consolidada, incluida la factura de Licoreo y su devolución posterior.</p>
   </article>
   <article class="summary-card">
     <p class="summary-label">Saldo del bote</p>
-    <p class="summary-value">+206,29 €</p>
-    <p class="summary-note">Pendiente de cerrar carne de barbacoa, Licoreo final y cobros.</p>
+    <p class="summary-value">+328,96 €</p>
+    <p class="summary-note">Pendiente de cerrar la carne de barbacoa y los cobros.</p>
   </article>
 </div>
 
@@ -32,9 +32,9 @@
 
 ## Lo importante en dos minutos
 
-- **La peña son 30 integrantes**, pero la lista de asistencia actual tiene **29 personas con días asignados**.
+- **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
 - El plan de bebida trabaja con **101 persona-días** y una regla muy simple: comprar conservador, reutilizar solo lo que aguanta y dejar apenas un **~5% de sobrante**.
-- El bote previsto por cuotas suma **1.925 €**, frente a un gasto provisional de **1.718,71 €**.
+- El bote previsto por cuotas suma **1.925 €**, frente a un gasto provisional de **1.596,04 €**.
 - Fuera del bote van los **altavoces (207,38 €)** y el **regalo del dueño (60,00 €)**, que se reparten entre toda la peña.
 
 ## 1) Asistencia y bebidas registradas
@@ -51,7 +51,7 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 | Eve | todos los días | cerveza, Legendario limón |
 | Leti | todos los días | cerveza, Cutty naranja, Coca-Cola Zero |
 | Javi | sábado y domingo | cerveza, ginebra con Sprite, Coca-Cola |
-| Andreas | todos los días | gin-tonic |
+| Andreas (extra 2026) | todos los días | gin-tonic |
 | Álvaro | jueves a sábado | cerveza, ginebra limón, ginebra tónica |
 | Elisa | jueves a sábado | cerveza, ginebra limón |
 | Laura | todos los días | cerveza, Coca-Cola, agua |
@@ -75,7 +75,7 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 
 ### Notas de contexto
 
-- El plan humano (`fiestas-2026-plan-bebida.md`) añade un integrante más (**Lucía**) pendiente de confirmar, por eso aparece la discrepancia **29 asistentes registrados vs 30 integrantes de la peña**.
+- El plan humano (`fiestas-2026-plan-bebida.md`) mantiene separados los 30 miembros oficiales de los 29 asistentes de 2026 y de Andreas, que fue invitado extra.
 - La estimación operativa que se estaba usando para compra y cuotas es de **101 persona-días**.
 - El pico de consumo sigue concentrado en **viernes y sábado**.
 
@@ -124,26 +124,89 @@ La lista general de compra 2026 (`fiestas-2026-lista-compra.json`) ya recoge qu�
 
 El consolidado actual está en `historico/2026/gastos-2026.json`, alimentado por los JSON de tickets normalizados dentro de `Fiestas/2026/comprareal/`.
 
-| Concepto | Origen | Importe |
-|---|---|---:|
-| Merkocash (mixto) | Merkocash (La Ardosa S.L.) | 243.50 € |
-| Alcampo (mixto) | Alcampo Cuenca | 47.04 € |
-| Mercadona (mixto) | Mercadona Cuenca | 92.02 € |
-| Diseno (bazar) | Gran Family Chen S.L. | 61.08 € |
-| Amazon (Mahou 0,0) | Amazon.es | 15.96 € |
-| Amazon (S.Pellegrino agua con gas 24x50cl) | Amazon.es | 25.20 € |
-| Carnes Javi (embutidos) | Carnes Javi (Jamon a lo Grande SLU) | 153.85 € |
-| Carnes Javi (queso sin lactosa) | Carnes Javi (Jamon a lo Grande SLU) | 8.04 € |
-| Mercadona 2 (trenzas y reposteria) | Mercadona Cuenca | 115.95 € |
-| Panaderia (pan encargado, 18 barras) | Panaderia | 23.40 € |
-| Licoreo (pedido grueso de bebida, IVA incl.) | Distribuciones y Logistica Licoreo, S.L. | 932.67 € |
+### Auditoría de tickets finales
+
+Esta es la tabla de comprobación de la compra real. Los importes de tickets mixtos son solo la parte asignada a la categoría; por eso el mismo documento puede aparecer en varias filas, pero nunca se suma dos veces dentro del total global.
+
+| Fecha | Proveedor | Categoría | Importe normalizado | Evidencia |
+|---|---|---|---:|---|
+| 26/08/2026 | Licoreo | Bebida | 810,00 € netos | [Factura final](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
+| 31/08/2026 | Merkocash | Comida | 144,08 € | [Foto](../Fiestas/2026/comprareal/Mercocash.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 31/08/2026 | Merkocash | Bebida | 13,05 € | [Foto](../Fiestas/2026/comprareal/Mercocash.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
+| 31/08/2026 | Merkocash | Menaje | 86,37 € | [Foto](../Fiestas/2026/comprareal/Mercocash.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 31/08/2026 | Alcampo | Comida | 31,44 € | [Foto](../Fiestas/2026/comprareal/Alcampo.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 31/08/2026 | Alcampo | Bebida | 15,48 € | [Foto](../Fiestas/2026/comprareal/Alcampo.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
+| 31/08/2026 | Alcampo | Menaje | 0,12 € | [Foto](../Fiestas/2026/comprareal/Alcampo.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 31/08/2026 | Mercadona | Comida | 77,37 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 31/08/2026 | Mercadona | Bebida | 12,35 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
+| 31/08/2026 | Mercadona | Menaje | 2,30 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 31/08/2026 | Diseño (bazar) | Menaje | 61,08 € | [Foto](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 31/08/2026 | Amazon | Bebida | 15,96 € | [Foto](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
+| 02/09/2026 | Amazon | Bebida | 25,20 € | [Pedido](https://amzn.eu/d/0fOtCgQW) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
+| 03/09/2026 | Carnes Javi | Comida | 153,85 € | [Foto embutidos](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 03/09/2026 | Carnes Javi | Comida | 8,04 € | [Foto queso](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 03/09/2026 | Mercadona 2 | Comida | 115,95 € | [Foto](../Fiestas/2026/comprareal/Mercadona%202.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 2026 | Panadería | Comida | 23,40 € | [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+
+**Totales normalizados:** comida `554,13 €` · bebida `892,04 €` · menaje `149,87 €` · **compra del bote `1.596,04 €`**.
+
+El detalle de cada línea, con cantidad, unidad, precio unitario e importe, está disponible en los JSON finales: [bebida](../Fiestas/2026/comprareal/tickets-bebida.json), [comida](../Fiestas/2026/comprareal/tickets-comida.json), [menaje](../Fiestas/2026/comprareal/tickets-menaje.json), [altavoces](../Fiestas/2026/comprareal/tickets-altavoces.json) y [generales](../Fiestas/2026/comprareal/tickets-generales.json).
+
+### Factura final de Licoreo
+
+<div class="evidence-grid">
+  <figure class="evidence-card">
+    <a href="../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg"><img src="../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg" alt="Factura final de Licoreo 2026"></a>
+    <figcaption>Total impreso: 835,89 €. Pago final manuscrito: 834,00 €. Haz clic para verla a tamaño completo.</figcaption>
+  </figure>
+</div>
+
+El total impreso de la factura es `835,89 €`, pero el pago final anotado a mano fue `834,00 €`. Después, Licoreo devolvió `24,00 €` por transferencia por las cajas de Estrella Galicia servidas en 20 cl en vez de 25 cl. El coste neto usado en las cuentas es `810,00 €`. Se pidieron 3 botellas de Cutty Sark de 70 cl y se recibieron 2 botellas de 1 litro.
+
+| Conciliación Licoreo | Dato final |
+|---|---:|
+| Total impreso en factura | 835,89 € |
+| Pago final anotado a mano | 834,00 € |
+| Devolución posterior por transferencia | −24,00 € |
+| Coste neto real contabilizado | **810,00 €** |
+| Cutty Sark pedido | 3 botellas de 70 cl |
+| Cutty Sark recibido | 2 botellas de 1 litro |
+| Incidencia Estrella Galicia | 12 cajas de 20 cl en vez de 25 cl |
+
+### Tickets y facturas para comprobación visual
+
+| Documento | Vista previa | Descarga |
+|---|---|---|
+| Merkocash | [Abrir imagen](../Fiestas/2026/comprareal/Mercocash.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercocash.jpeg) |
+| Alcampo | [Abrir imagen](../Fiestas/2026/comprareal/Alcampo.jpeg) | [JPEG](../Fiestas/2026/comprareal/Alcampo.jpeg) |
+| Mercadona | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona.jpeg) |
+| Diseño (bazar) | [Abrir imagen](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | [JPEG](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) |
+| Amazon Mahou 0,0 | [Abrir imagen](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | [JPEG](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) |
+| Carnes Javi embutidos | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) |
+| Carnes Javi queso | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) |
+| Mercadona 2 | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona%202.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona%202.jpeg) |
+| Factura final Licoreo | [Ver en la página](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | [JPEG](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) |
+
+<details class="evidence-disclosure">
+  <summary>Mostrar todas las fotos dentro de MkDocs</summary>
+  <div class="evidence-grid">
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Mercocash.jpeg" alt="Ticket Mercocash"><figcaption>Mercocash</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Alcampo.jpeg" alt="Ticket Alcampo"><figcaption>Alcampo</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Mercadona.jpeg" alt="Ticket Mercadona"><figcaption>Mercadona</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Diseño%20Chino.jpeg" alt="Ticket Diseño Chino"><figcaption>Diseño Chino</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg" alt="Pedido Amazon Mahou 0,0"><figcaption>Amazon · Mahou 0,0</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg" alt="Ticket Embutidos Javi"><figcaption>Embutidos Javi</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg" alt="Ticket queso sin lactosa"><figcaption>Queso sin lactosa</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Mercadona%202.jpeg" alt="Segundo ticket Mercadona"><figcaption>Mercadona 2</figcaption></figure>
+  </div>
+</details>
 
 ### Resumen por categoría
 
 | Categoría | Importe |
 |---|---:|
 | Comida | 554.13 € |
-| Bebida | 1014.71 € |
+| Bebida | 892.04 € |
 | Menaje | 149.87 € |
 
 ### Ingresos previstos por cuotas
@@ -157,11 +220,11 @@ El consolidado actual está en `historico/2026/gastos-2026.json`, alimentado por
 ### Situación del cierre
 
 - **Bote esperado:** 1.925,00 €
-- **Gasto provisional registrado:** 1.718,71 €
-- **Saldo provisional:** +206,29 €
+- **Gasto provisional registrado:** 1.596,04 €
+- **Saldo provisional:** +328,96 €
 - **Cobrado de verdad hasta la fecha:** 65,00 € (solo Álvaro)
 - **Pendiente de cobro:** 1.860,00 €
-- **Pendientes de cerrar:** la carne de barbacoa y el cuadrado final del pedido grueso de Licoreo
+- **Pendientes de cerrar:** la carne de barbacoa y el cobro de las cuotas. Licoreo ya está cerrado: pago 834,00 € menos 24,00 € devueltos por transferencia = 810,00 € netos.
 
 ### Extras que no salen del bote
 

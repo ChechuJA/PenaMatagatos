@@ -2,18 +2,18 @@
   "anio": 2026,
   "titulo": "Gastos y cuentas 2026 - Peña Matagatos",
   "fuente": "Datos consolidados a partir de las cuotas por asistencia y la compra real registrada en Fiestas/2026/comprareal/ (tickets-*.json).",
-  "estado": "PROVISIONAL / en curso: registrado el pedido grueso de bebida de Licoreo con ajuste final por penalizacion de Estrella Galicia (-24,00 EUR). Falta por registrar la carne de barbacoa. Casi todas las cuotas siguen pendientes de cobro.",
+  "estado": "PROVISIONAL / en curso: registrado el pago final de Licoreo (834,00 EUR) y la devolución posterior por transferencia de 24,00 EUR por los botellines de Estrella Galicia. Coste neto Licoreo: 810,00 EUR. Falta por registrar la carne de barbacoa. Casi todas las cuotas siguen pendientes de cobro.",
   "totales": {
     "ingresos_totales": 1925.00,
-    "gastos_totales": 1694.71,
-    "saldo": 230.29,
-    "formula": "1925.00 - 1694.71 = 230.29",
+    "gastos_totales": 1596.04,
+    "saldo": 328.96,
+    "formula": "1925.00 - 1596.04 = 328.96",
     "notas": [
-      "Ingresos = bote esperado por cuotas de asistencia (29 personas con asistencia registrada).",
-      "Gastos = compra real del bote de fiestas registrada hasta 2026-09-09 (comida + bebida + menaje), incluido el pedido grueso de bebida de Licoreo con ajuste final por penalizacion de Estrella Galicia (-24,00 EUR).",
+      "Ingresos = bote esperado por cuotas de asistencia (29 asistentes: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron).",
+      "Gastos = compra real del bote de fiestas registrada hasta 2026-09-09 (comida + bebida + menaje), incluido el coste neto de Licoreo tras la devolución bancaria de 24,00 EUR.",
       "El saldo es provisional; aun falta por registrar la carne de barbacoa.",
       "Cobrado real hasta la fecha: solo Alvaro (65 EUR, 3 dias). El resto de cuotas estan pendientes de cobro (1.860 EUR).",
-      "Los altavoces (207,38 EUR) y el regalo del dueno de la pena (60,00 EUR) NO salen del bote; son extras que paga toda la pena (30 integrantes) y van aparte."
+      "Los altavoces (207,38 EUR) y el regalo del dueno de la pena (60,00 EUR) NO salen del bote; son derramas generales que se reparten entre los 30 miembros oficiales y van aparte."
     ]
   },
   "ingresos": [
@@ -36,15 +36,15 @@
     { "concepto": "Carnes Javi (queso sin lactosa)", "importe": 8.04, "categoria": "comida", "origen": "Carnes Javi (Jamon a lo Grande SLU)" },
     { "concepto": "Mercadona 2 (trenzas y reposteria)", "importe": 115.95, "categoria": "comida", "origen": "Mercadona Cuenca" },
     { "concepto": "Panaderia (pan encargado, 18 barras)", "importe": 23.40, "categoria": "comida", "origen": "Panaderia" },
-    { "concepto": "Licoreo (pedido grueso de bebida, IVA incl.)", "importe": 908.67, "categoria": "bebida", "origen": "Distribuciones y Logistica Licoreo, S.L.", "nota": "Presupuesto PRV03866 (2026-08-26) con ajuste final: -2 EUR por cada caja de Estrella Galicia servida en 20cl en vez de 25cl (12 cajas = -24 EUR)." }
+    { "concepto": "Licoreo (pago final, IVA incl.; coste neto)", "importe": 810.00, "categoria": "bebida", "origen": "Distribuciones y Logistica Licoreo, S.L.", "nota": "Total impreso: 835,89 EUR. Pago final anotado a mano: 834,00 EUR. Devolución posterior por transferencia: 24,00 EUR por las 12 cajas de Estrella Galicia servidas en 20cl en vez de 25cl. Coste neto: 810,00 EUR. Se pidieron 3 Cutty Sark de 70cl y se recibieron 2 de 1L." }
   ],
   "resumen_por_categoria": [
     { "categoria": "Comida", "importe": 554.13 },
-    { "categoria": "Bebida", "importe": 990.71 },
+    { "categoria": "Bebida", "importe": 892.04 },
     { "categoria": "Menaje", "importe": 149.87 }
   ],
   "extras_fuera_del_bote": {
-    "descripcion": "Extras que paga toda la pena (30 integrantes), no salen del bote de fiestas ni de las cuotas.",
+    "descripcion": "Derramas generales que pagan los 30 miembros oficiales, vayan o no a fiestas; no salen del bote de fiestas ni de las cuotas.",
     "lineas": [
       { "concepto": "Altavoces y montaje (tickets-altavoces.json)", "importe": 207.38 },
       { "concepto": "Regalo dueno de la pena (tickets-generales.json)", "importe": 60.00 }
@@ -53,12 +53,13 @@
     "reparto_por_integrante": 8.91
   },
   "observaciones": [
-    "La bebida real (990,71 EUR) incluye ya el pedido grueso de Licoreo (908,67 EUR IVA incl.) mas las compras sueltas (Merkocash, Alcampo, Mercadona, Amazon).",
-    "Al pedido de Licoreo se le aplico una penalizacion de -2 EUR por caja de Estrella Galicia servida en 20cl en vez de 25cl (12 cajas = -24 EUR).",
+    "La bebida real (892,04 EUR) incluye el pedido de Licoreo (810,00 EUR netos) mas las compras sueltas (Merkocash, Alcampo, Mercadona y Amazon).",
+    "El total impreso de Licoreo es 835,89 EUR; el pago final anotado a mano fue 834,00 EUR. Posteriormente se recibieron 24,00 EUR por transferencia por las 12 cajas de Estrella Galicia servidas en 20cl en vez de 25cl, dejando un coste neto de 810,00 EUR.",
+    "Se pidieron 3 botellas de Cutty Sark de 70cl y se recibieron 2 botellas de 1L; la diferencia queda recogida en el ajuste manuscrito del pago.",
     "Falta anadir el gasto de carne de barbacoa.",
     "El pan encargado (18 barras, 23,40 EUR) va dentro de comida, sin fila propia en la web de resumen.",
     "El regalo del dueno de la pena (art 6 del ticket Carnes Javi, 60 EUR) se saca del bote y se trata como extra general, igual que los altavoces.",
-    "Discrepancia 29 vs 30: la lista de asistencia tiene 29 personas; la pena son 30 integrantes. El integrante nº30 no tiene dias asignados, asi que no genera cuota. Revisar si asiste y cuantos dias.",
+    "Composicion 2026: 30 miembros oficiales. La lista de asistencia registra 29 personas: 28 miembros oficiales y Andreas como invitado extra. Juanvi y Lucía no asistieron.",
     "Cierre real y saldo definitivo a finales de septiembre, tras el evento y con todas las compras y cobros registrados."
   ]
 }
