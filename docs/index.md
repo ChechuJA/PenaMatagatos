@@ -33,7 +33,7 @@
 ## Lo importante en dos minutos
 
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
-- El plan de bebida trabaja con **101 persona-días** y una regla muy simple: comprar conservador, reutilizar solo lo que aguanta y dejar apenas un **~5% de sobrante**.
+- El plan de bebida trabaja con **101 persona-días**: se suman los días que estuvo cada una de las 29 personas asistentes. No son 101 personas ni 101 cuotas; es una medida de presencia acumulada para estimar el consumo.
 - El bote previsto por cuotas suma **1.925 €**, frente a un gasto provisional de **1.596,04 €**.
 - Fuera del bote van los **altavoces (207,38 €)** y el **regalo del dueño (60,00 €)**, que se reparten entre toda la peña.
 
@@ -76,7 +76,7 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 ### Notas de contexto
 
 - El plan humano (`fiestas-2026-plan-bebida.md`) mantiene separados los 30 miembros oficiales de los 29 asistentes de 2026 y de Andreas, que fue invitado extra.
-- La estimación operativa que se estaba usando para compra y cuotas es de **101 persona-días**.
+- **101 persona-días** significa sumar la asistencia individual: por ejemplo, una persona que estuvo 5 días aporta 5 persona-días y una que estuvo 2 días aporta 2. La suma de las 29 personas asistentes da 101 y sirve para estimar bebida; las cuotas se calculan por persona según su tramo de asistencia.
 - El pico de consumo sigue concentrado en **viernes y sábado**.
 
 ## 2) Compra orientativa antes de salir
