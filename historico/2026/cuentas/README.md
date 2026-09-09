@@ -39,7 +39,7 @@ Un mismo ticket físico (p. ej. Alcampo) puede llevar bebida + comida + menaje.
 Esta carpeta ya vive dentro de `historico/2026/`, así que al terminar las fiestas
 queda como archivo del año, igual que `historico/2025/`.
 
-## Estado compra real 2026 (actualizado 2026-09-04)
+## Estado compra real 2026 (actualizado 2026-09-09)
 Cargados **10 tickets** (5 del 31/08, pedido Amazon agua, pan encargado y 3 del 03/09):
 
 | Ticket | Proveedor | Total | Comida | Bebida | Menaje |
@@ -53,7 +53,7 @@ Cargados **10 tickets** (5 del 31/08, pedido Amazon agua, pan encargado y 3 del 
 | Carnes Javi (embutidos) | Jamon a lo Grande SLU | 153,85* | 153,85 | — | — |
 | Carnes Javi (queso s/lactosa) | Jamon a lo Grande SLU | 8,04 | 8,04 | — | — |
 | Mercadona 2 | Mercadona Cuenca | 115,95 | 115,95 | — | — |
-| **Total** | | **786,04** | **554,13** | **82,04** | **149,87** |
+| **Total** | | **762,04** | **554,13** | **58,04** | **149,87** |
 
 *El ticket físico Carnes Javi Fra 062483 suma 213,85 €, pero incluye el **art 6 (60,00 € = regalo dueño de la peña)** que NO es gasto de fiestas: va a `tickets-generales.json`. Aquí solo se computan los 153,85 € de comida. (El pan encargado, 23,40 €, va en el total de comida sin fila propia.)
 
@@ -63,10 +63,10 @@ Notas:
   Precio ajustado a 1,55 € para cuadrar el total del ticket (línea borrosa).
 - Cerveza Estrella (Alcampo) y Mahou 0,0 (Amazon) registradas como "pack" (el ticket no detalla botellines).
 - **Pan 2026**: 18 barras registradas a 1,30 € (2 jueves, 8 viernes, 8 sábado) = 23,40 €.
+- **Ajuste Licoreo (Estrella Galicia)**: descuento/penalización aplicada de **-2 € por caja** al servir 20cl en vez de 25cl (12 cajas => **-24,00 €** sobre el total de bebida).
 
 ### Pendiente de meter (avisado 2026-09-01)
-Faltan tickets de **carne** (barbacoa) y probablemente el **pedido grueso de bebida**
-(cerveza/refrescos/destilados). Los **embutidos** (Carnes Javi) y las **trenzas/repostería**
+Faltan tickets de **carne** (barbacoa). Los **embutidos** (Carnes Javi) y las **trenzas/repostería**
 (Mercadona 2) ya están metidos (03/09/2026).
 Cuando lleguen las fotos restantes, añadirlas con el mismo criterio y recalcular `total_categoria`.
 
