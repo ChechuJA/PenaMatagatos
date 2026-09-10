@@ -12,7 +12,7 @@
   <article class="summary-card">
     <p class="summary-label">Ingresos</p>
     <p class="summary-value" id="summary-ingresos">Cargando...</p>
-    <p class="summary-note">Bote efectivo de fiestas, según la tabla consolidada de ingresos.</p>
+    <p class="summary-note" id="summary-ingresos-note">Bote efectivo de fiestas, según la tabla consolidada de ingresos.</p>
   </article>
   <article class="summary-card">
     <p class="summary-label">Gastos</p>
@@ -33,6 +33,13 @@
     .then(data => {
       document.getElementById("summary-ingresos").textContent = formatEur(data.totales.ingresos_totales);
       document.getElementById("summary-gastos").textContent = formatEur(data.totales.gastos_totales);
+      const cuotas = (data.cobros_realizados || []).reduce((sum, item) => sum + Number(item.importe || 0), 0);
+      const laura = (data.aportaciones_realizadas || []).reduce((sum, item) => sum + Number(item.importe || 0), 0);
+      const sillas = (data.ingresos || [])
+        .filter(item => String(item.concepto || "").toLowerCase().includes("sillas"))
+        .reduce((sum, item) => sum + Number(item.importe || 0), 0);
+      document.getElementById("summary-ingresos-note").textContent =
+        `${formatEur(cuotas)} cuotas + ${formatEur(laura)} Laura + ${formatEur(sillas)} sillas`;
     })
     .catch(() => {
       document.getElementById("summary-ingresos").textContent = "-";
@@ -63,12 +70,12 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 | Esmeralda | todos los días | Coca-Cola Zero, Aquarius naranja | 75,00 € | — | 75,00 € |
 | Josemi | todos los días | cerveza, Legendario limón | 75,00 € | — | 75,00 € |
 | Eve | todos los días | cerveza, Legendario limón | 75,00 € | — | 75,00 € |
-| Leti | todos los días | cerveza, Cutty naranja, Coca-Cola Zero | 75,00 € | +50,00 € sillas | 125,00 € |
+| Leti | todos los días | cerveza, Cutty naranja, Coca-Cola Zero | 75,00 € | +50,00 € sillas | **125,00 €** |
 | Javi | sábado y domingo | cerveza, ginebra con Sprite, Coca-Cola | 55,00 € | — | 55,00 € |
 | Andreas (extra 2026) | todos los días | gin-tonic | 75,00 € | — | 75,00 € |
 | Álvaro | jueves a sábado | cerveza, ginebra limón, ginebra tónica | 65,00 € | −65,00 € altavoces | **0,00 €** |
 | Elisa | jueves a sábado | cerveza, ginebra limón | 65,00 € | — | 65,00 € |
-| Laura | todos los días | cerveza, Coca-Cola, agua | 75,00 € | +30,00 € aportación | 105,00 € |
+| Laura | todos los días | cerveza, Coca-Cola, agua | 75,00 € | +30,00 € aportación | **105,00 €** |
 | Nacho | todos los días | cerveza, Coca-Cola, agua | 75,00 € | — | 75,00 € |
 | David | jueves a sábado | cerveza, Larios 12 limón | 65,00 € | — | 65,00 € |
 | Malu | viernes y sábado | Aquarius naranja, Barceló Coca-Cola Zero | 55,00 € | — | 55,00 € |
@@ -136,7 +143,7 @@ Esta es la tabla de comprobación de la compra real. Los importes de tickets mix
 | 03/09/2026 | Carnicería Loli · pedido BBQ | Comida | 218,64 € | [Foto/ticket](../Fiestas/2026/comprareal/Carniceria%20Luis%202026.jpeg) · 20 hamburguesas pollo, 20 ternera, 7 kg magro, 35 pancetas, 35 lomos, 40 bacon, 20 chorizos, 15 morcillas, 2 kg pollo, 1 kg conejo |
 | 2026 | Compra posterior de helados | Comida | 9,90 € | Ticket pendiente de traer |
 | 2026 | Cuchillos y tabla de partir | Menaje | 20,00 € | [Precio/foto](../Fiestas/2026/comprareal/Precio%20tabla%20con%20cuchillos.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
-| 10/09/2026 | Compra conjunta Comisión/peñas · hielo | Menaje | 60,50 € | 10 sacos × 5 bolsas = 50 bolsas; sin ticket individual adjunto |
+| 10/09/2026 | Hielo | Menaje | 60,50 € | 10 sacos × 5 bolsas = 50 bolsas; sin ticket individual adjunto |
 | 2026 | Devolución de reserva de sillas | Ajuste | −50,00 € | Se devolvió al bote; las sillas no se compraron |
 
 **Totales normalizados:** comida `782,67 €` · bebida `901,04 €` · menaje `230,37 €` · generales del bote `60,00 €` · **gasto bruto del bote `1.974,08 €`**.
@@ -161,7 +168,7 @@ Esta tabla comprueba que las líneas repartidas entre comida, bebida, menaje y g
 | Mercadona 2 | 115,95 € | — | — | — | **115,95 €** | 115,95 € | 0,00 € |
 | Panadería (encargo) | 23,40 € | — | — | — | **23,40 €** | 18 barras × 1,30 € · sin foto de ticket | — |
 | Compras posteriores | 9,90 € | 9,00 € | 20,00 € | — | **38,90 €** | sin documento completo | — |
-| Compra conjunta Comisión/peñas · hielo | — | — | 60,50 € | — | **60,50 €** | sin ticket individual | — |
+| Hielo | — | — | 60,50 € | — | **60,50 €** | sin ticket individual | — |
 | Licoreo · conciliación económica | — | 810,00 € netos | — | — | **810,00 €** | 834,00 € pagados − 24,00 € devueltos | — |
 | **Total gasto bruto documentado** | **782,67 €** | **901,04 €** | **230,37 €** | **60,00 €** | **1.974,08 €** | **1.974,08 €** | **0,00 €** |
 
