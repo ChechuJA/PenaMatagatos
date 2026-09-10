@@ -34,9 +34,8 @@
 
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
 - El plan de bebida trabaja con **101 persona-días**: se suman los días que estuvo cada una de las 29 personas asistentes. No son 101 personas ni 101 cuotas; es una medida de presencia acumulada para estimar el consumo.
-- El bote de fiestas suma **1.940 €**: 1.860 € de cuotas efectivas (sin Álvaro) más 30 € de Laura y 50 € devueltos de la reserva de sillas. El total global recibido, contando los 65 € de Álvaro para altavoces, es **2.005 €**.
-- Con la carne de BBQ incluida, el saldo del bote de fiestas queda en **+26,42 €**, antes de cualquier gasto nuevo.
-- Fuera del bote van los **altavoces (207,38 €)**, que se reparten entre los 30 miembros oficiales. El regalo del dueño (`60,00 €`) sí sale del bote de los asistentes de 2026.
+- El bote de fiestas suma **1.940 €**: 1.860 € de cuotas efectivas, 30 € de Laura y 50 € devueltos de la reserva de sillas.
+- El regalo del dueño (`60,00 €`) está incluido en los gastos de fiestas 2026.
 
 ## 1) Asistencia y bebidas registradas
 
@@ -44,7 +43,7 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 
 | Persona | Asistencia | Bebidas | Cuota | Ajustes | Aporta al bote |
 |---|---|---|---:|---|---:|
-| Marta | jueves a domingo | cerveza 0,0 casera, Coca-Cola Zero Zero (0,0) | 65,00 €* | — | 65,00 € |
+| Marta | jueves a domingo | cerveza 0,0 casera, Coca-Cola Zero Zero (0,0) | 65,00 € | — | 65,00 € |
 | Flores | jueves a domingo | cerveza, Seagrams Sprite | 75,00 € | — | 75,00 € |
 | Chechu | todos los días | cerveza, ron con limón (Ron: Barceló, Brugal Legendario o similar, con limón.) | 75,00 € | — | 75,00 € |
 | Esmeralda | todos los días | Coca-Cola Zero, Aquarius naranja | 75,00 € | — | 75,00 € |
@@ -74,7 +73,7 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 | Tamara | 2 días | cerveza con gaseosa, Coca-Cola Zero | 55,00 € | — | 55,00 € |
 | Zara | viernes y sábado | cerveza, Seagrams limón | 55,00 € | — | 55,00 € |
 
-**Resumen de pagos:** cuotas teóricas `1.925,00 €` · cuotas efectivas para el bote `1.860,00 €` (sin Álvaro) · aportación Laura `30,00 €` · devolución de sillas recogida por Leti `50,00 €` · **bote de fiestas `1.940,00 €`**. Sumando los `65,00 €` de Álvaro aplicados a altavoces, el dinero global recibido es `2.005,00 €`. *Marta queda en el tramo de 65,00 € para conservar el reparto contable ya cerrado de 8 cuotas de 2 días, 9 de 3 días y 12 de todos los días; conviene confirmarlo si queréis que la tarifa siga exactamente los días.*
+**Resumen de pagos:** cuotas teóricas `1.925,00 €` · cuotas efectivas para el bote `1.860,00 €` (sin Álvaro) · aportación Laura `30,00 €` · devolución de sillas recogida por Leti `50,00 €` · **bote de fiestas `1.940,00 €`**. Marta ha pagado correctamente su cuota de `65,00 €`.
 
 ### Notas de contexto
 
@@ -96,7 +95,6 @@ Primero se reúne el dinero disponible; después se registran las compras y fina
 | Aportación monetaria de Laura | 30,00 € | Cobrada y utilizada en compras nuevas |
 | Devolución de sillas no compradas | 50,00 € | Cobrada y reutilizada en compras |
 | **Bote efectivo para fiestas** | **1.940,00 €** | |
-| Dinero recibido incluyendo altavoces | 2.005,00 € | Incluye los 65,00 € de Álvaro fuera del bote |
 
 ### Auditoría de tickets finales
 
@@ -154,7 +152,11 @@ Esta tabla comprueba que las líneas repartidas entre comida, bebida, menaje y g
 | Licoreo · conciliación económica | — | 810,00 € netos | — | — | **810,00 €** | 834,00 € pagados − 24,00 € devueltos | — |
 | **Total gasto bruto documentado** | **782,67 €** | **901,04 €** | **230,37 €** | **60,00 €** | **1.974,08 €** | **1.974,08 €** | **0,00 €** |
 
-El total documental/provisional de esta tabla (`1.974,08 €`) incluye el regalo del dueño de `60,00 €`, el pedido BBQ, las compras posteriores, los 10 sacos de hielo y Licoreo a coste neto. No incluye el saco de carbón regalado por Diseño Chino ni el ingreso de `50,00 €` de las sillas, que se muestra aparte como ingreso del bote. Los `30,00 €` de Laura ya están cobrados como aportación monetaria y se han utilizado para compras nuevas.
+| Concepto | Importe |
+|---|---:|
+| Bote efectivo de fiestas | 1.940,00 € |
+| Gasto bruto registrado | 1.974,08 € |
+| **Saldo del bote** | **−34,08 €** |
 
 ### Factura final de Licoreo
 
@@ -197,9 +199,17 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 | Devolución sillas no compradas | Sin foto | [JSON de cuentas](../historico/2026/gastos-2026.json) | **+50,00 €** | Ingreso extra del bote, posteriormente gastado |
 | Licoreo · factura final | [Ver imagen](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | [JPEG](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | **810,00 €** | 834,00 € pagados − 24,00 € devueltos |
 | Carnicería Loli · pedido BBQ | [Abrir imagen](../Fiestas/2026/comprareal/Carniceria%20Luis%202026.jpeg) | [JPEG](../Fiestas/2026/comprareal/Carniceria%20Luis%202026.jpeg) | **218,64 €** | Pedido completo de carne para la barbacoa |
-| **Total gasto bruto** |  |  | **1.913,58 €** | Compras realizadas, incluido BBQ y regalo dentro del bote |
-| **Total ingresos extra** |  |  | **+50,00 €** | Devolución de sillas no compradas |
-| **Gasto neto financiado por cuotas/aportaciones** |  |  | **1.863,58 €** | Gasto bruto menos devolución recibida |
+| **Total gasto bruto** |  |  | **1.974,08 €** | Compras realizadas, incluido BBQ, hielo y regalo dentro del bote |
+
+### Derrama de altavoces fuera del bote
+
+| Gasto general | Proveedor | Importe |
+|---|---|---:|
+| Altavoces Vonyx VPS082A | Mayor Electronics | 160,00 € |
+| Tacos y bridas | Leroy Merlin | 10,00 € |
+| Instalación de enchufes, yeso e interruptor | Hippy | 30,00 € |
+| Redes para colgar los altavoces | Amazon | 7,38 € |
+| **Total altavoces y montaje** |  | **207,38 €** |
 
 > **Nota informativa:** Diseño Chino nos regaló un saco grande de carbón valorado en 12,00 €. No tenemos ticket ni fue una compra pagada por la peña, así que no aparece como línea de gasto ni se suma a estos totales.
 
@@ -247,7 +257,6 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 | Altavoces y montaje | 207.38 € |
 | **Total** | **207.38 €** |
 
-Eso deja un reparto adicional de **6,91 € por miembro oficial** fuera de las cuotas de fiestas. El regalo del dueño, de `60,00 €`, sí está dentro del gasto del bote 2026.
 
 ## 3) Cómo se está guardando la compra real
 
