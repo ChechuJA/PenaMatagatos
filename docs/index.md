@@ -15,14 +15,14 @@
     <p class="summary-note">Cota de trabajo usada para planificar la compra del año.</p>
   </article>
   <article class="summary-card">
-    <p class="summary-label">Gasto provisional</p>
+    <p class="summary-label">Gasto bruto registrado</p>
     <p class="summary-value">1.913,58 €</p>
     <p class="summary-note">Compra real consolidada, incluida la factura de Licoreo y su devolución posterior.</p>
   </article>
   <article class="summary-card">
     <p class="summary-label">Saldo de caja</p>
     <p class="summary-value">−1.833,58 €</p>
-    <p class="summary-note">30,00 € aportados por Laura y 0,00 € de cuotas cobradas.</p>
+    <p class="summary-note">80,00 € cobrados: 30,00 € de Laura + 50,00 € de devolución de sillas; 0,00 € de cuotas cobradas.</p>
   </article>
 </div>
 
