@@ -10,16 +10,36 @@
     <p class="summary-note">Miembros con asistencia y bebida cargadas en la lista actual.</p>
   </article>
   <article class="summary-card">
-    <p class="summary-label">Gasto bruto registrado</p>
-    <p class="summary-value">1.913,58 €</p>
-    <p class="summary-note">Compra real consolidada, incluida la factura de Licoreo y su devolución posterior.</p>
+    <p class="summary-label">Ingresos</p>
+    <p class="summary-value" id="summary-ingresos">Cargando...</p>
+    <p class="summary-note">Bote efectivo de fiestas, según la tabla consolidada de ingresos.</p>
   </article>
   <article class="summary-card">
-    <p class="summary-label">Saldo de caja</p>
-    <p class="summary-value">+26,42 €</p>
-    <p class="summary-note">Bote fiestas: 1.940,00 € − 1.913,58 € gastados; Álvaro pagó sus 65,00 € a altavoces.</p>
+    <p class="summary-label">Gastos</p>
+    <p class="summary-value" id="summary-gastos">Cargando...</p>
+    <p class="summary-note">Compra real consolidada, incluida la factura de Licoreo y la compra de hielo.</p>
   </article>
 </div>
+
+<script>
+(function () {
+  const formatEur = value => Number(value || 0).toLocaleString("es-ES", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  }) + " €";
+
+  fetch("../historico/2026/gastos-2026.json")
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("summary-ingresos").textContent = formatEur(data.totales.ingresos_totales);
+      document.getElementById("summary-gastos").textContent = formatEur(data.totales.gastos_totales);
+    })
+    .catch(() => {
+      document.getElementById("summary-ingresos").textContent = "-";
+      document.getElementById("summary-gastos").textContent = "-";
+    });
+})();
+</script>
 
 <div class="summary-callout">
   <strong>Lectura rápida:</strong> este resumen unifica lo que ya estaba repartido entre los README, la lista de asistencia/bebida y los JSON de compra real. Para las cifras actuales mandan los datos consolidados de <code>historico/2026/gastos-2026.json</code>; algunas páginas HTML antiguas siguen mostrando un corte anterior.
