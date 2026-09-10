@@ -6,14 +6,14 @@
   "totales": {
     "ingresos_totales": 1940.00,
     "ingresos_totales_con_altavoces": 2005.00,
-    "gastos_totales": 1913.58,
-    "saldo": 26.42,
-    "saldo_teorico_si_se_cobra_todo": 26.42,
-    "formula": "30.00 Laura + 50.00 sillas + 1860.00 cuotas efectivas (1925.00 - 65.00 Álvaro) - 1913.58 gastado = 26.42",
+    "gastos_totales": 1974.08,
+    "saldo": -34.08,
+    "saldo_teorico_si_se_cobra_todo": -34.08,
+    "formula": "30.00 Laura + 50.00 sillas + 1860.00 cuotas efectivas (1925.00 - 65.00 Álvaro) - 1974.08 gastado = -34.08",
     "notas": [
       "Ingresos del bote de fiestas = 1.860,00 EUR de cuotas efectivas (1.925,00 EUR menos los 65,00 EUR de Álvaro aplicados a altavoces), más 30,00 EUR de Laura y 50,00 EUR devueltos de sillas. Total bote de fiestas: 1.940,00 EUR. El dinero global recibido, contando altavoces, es 2.005,00 EUR.",
       "Gastos = compra real bruta del bote de fiestas registrada hasta 2026-09-10 (comida + bebida + menaje + regalo del dueño pagado por los asistentes), incluido el pedido de carne BBQ de Carnicería Loli y el coste neto de Licoreo tras la devolución bancaria de 24,00 EUR.",
-      "El saldo es provisional porque puede aparecer algún gasto adicional pendiente de registrar, pero la carne BBQ ya está registrada.",
+      "El saldo es provisional porque puede aparecer algún gasto adicional pendiente de registrar. La carne BBQ y la compra grande de hielo ya están registradas.",
       "Las cuotas teóricas suman 1.925,00 EUR, pero Álvaro no aporta cuota al bote: sus 65,00 EUR se aplicaron a altavoces. Cuotas efectivas para el bote: 1.860,00 EUR; todas las cantidades ya están cobradas o aplicadas.",
       "Los altavoces (207,38 EUR) son una derrama general de los 30 miembros oficiales. El regalo del dueño (60,00 EUR) sí sale del bote 2026 y se reparte entre los asistentes de este año."
     ]
@@ -56,7 +56,7 @@
   "resumen_por_categoria": [
     { "categoria": "Comida", "importe": 782.67 },
     { "categoria": "Bebida", "importe": 901.04 },
-    { "categoria": "Menaje", "importe": 169.87 },
+    { "categoria": "Menaje", "importe": 230.37 },
     { "categoria": "Generales del bote", "importe": 60.00 }
   ],
   "extras_fuera_del_bote": {

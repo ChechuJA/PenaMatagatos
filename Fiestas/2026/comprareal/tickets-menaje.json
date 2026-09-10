@@ -91,7 +91,18 @@
         { "producto": "Cuchillos y tabla de partir", "cantidad": 1, "unidad": "lote", "precio_unitario": 20.00, "importe": 20.00 }
       ],
       "subtotal": 20.00
+    },
+    {
+      "id": "hielo-grupo-comision-2026",
+      "foto": null,
+      "proveedor": "Compra conjunta grupo de la Comisión/peñas",
+      "fecha": "2026-09-10",
+      "nota": "Compra grande de hielo para las fiestas 2026. 10 sacos, con 5 bolsas por saco: 50 bolsas en total. Compra conjunta del grupo de la Comisión/peñas; no hay foto individual de ticket adjunta.",
+      "lineas": [
+        { "producto": "Sacos grandes de hielo (5 bolsas por saco)", "cantidad": 10, "unidad": "saco", "precio_unitario": 6.05, "importe": 60.50 }
+      ],
+      "subtotal": 60.50
     }
   ],
-  "total_categoria": 169.87
+  "total_categoria": 230.37
 }

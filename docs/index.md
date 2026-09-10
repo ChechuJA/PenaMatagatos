@@ -125,9 +125,10 @@ Esta es la tabla de comprobación de la compra real. Los importes de tickets mix
 | 03/09/2026 | Carnicería Loli · pedido BBQ | Comida | 218,64 € | [Foto/ticket](../Fiestas/2026/comprareal/Carniceria%20Luis%202026.jpeg) · 20 hamburguesas pollo, 20 ternera, 7 kg magro, 35 pancetas, 35 lomos, 40 bacon, 20 chorizos, 15 morcillas, 2 kg pollo, 1 kg conejo |
 | 2026 | Compra posterior de helados | Comida | 9,90 € | Ticket pendiente de traer |
 | 2026 | Cuchillos y tabla de partir | Menaje | 20,00 € | [Precio/foto](../Fiestas/2026/comprareal/Precio%20tabla%20con%20cuchillos.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 10/09/2026 | Compra conjunta Comisión/peñas · hielo | Menaje | 60,50 € | 10 sacos × 5 bolsas = 50 bolsas; sin ticket individual adjunto |
 | 2026 | Devolución de reserva de sillas | Ajuste | −50,00 € | Se devolvió al bote; las sillas no se compraron |
 
-**Totales normalizados:** comida `782,67 €` · bebida `901,04 €` · menaje `169,87 €` · generales del bote `60,00 €` · **gasto bruto del bote `1.913,58 €`**.
+**Totales normalizados:** comida `782,67 €` · bebida `901,04 €` · menaje `230,37 €` · generales del bote `60,00 €` · **gasto bruto del bote `1.974,08 €`**.
 
 El detalle de cada línea, con cantidad, unidad, precio unitario e importe, está disponible en los JSON finales: [bebida](../Fiestas/2026/comprareal/tickets-bebida.json), [comida](../Fiestas/2026/comprareal/tickets-comida.json), [menaje](../Fiestas/2026/comprareal/tickets-menaje.json), [altavoces](../Fiestas/2026/comprareal/tickets-altavoces.json) y [generales](../Fiestas/2026/comprareal/tickets-generales.json).
 
@@ -149,10 +150,11 @@ Esta tabla comprueba que las líneas repartidas entre comida, bebida, menaje y g
 | Mercadona 2 | 115,95 € | — | — | — | **115,95 €** | 115,95 € | 0,00 € |
 | Panadería (encargo) | 23,40 € | — | — | — | **23,40 €** | 18 barras × 1,30 € · sin foto de ticket | — |
 | Compras posteriores | 9,90 € | 9,00 € | 20,00 € | — | **38,90 €** | sin documento completo | — |
+| Compra conjunta Comisión/peñas · hielo | — | — | 60,50 € | — | **60,50 €** | sin ticket individual | — |
 | Licoreo · conciliación económica | — | 810,00 € netos | — | — | **810,00 €** | 834,00 € pagados − 24,00 € devueltos | — |
-| **Total gasto bruto documentado** | **782,67 €** | **901,04 €** | **169,87 €** | **60,00 €** | **1.913,58 €** | **1.913,58 €** | **0,00 €** |
+| **Total gasto bruto documentado** | **782,67 €** | **901,04 €** | **230,37 €** | **60,00 €** | **1.974,08 €** | **1.974,08 €** | **0,00 €** |
 
-El total documental/provisional de esta tabla (`1.863,58 €`) incluye el regalo del dueño de `60,00 €`, el pedido BBQ, las compras posteriores y Licoreo a coste neto. No incluye el saco de carbón regalado por Diseño Chino ni el ingreso de `50,00 €` de las sillas, que se muestra aparte como ingreso del bote. Los `30,00 €` de Laura ya están cobrados como aportación monetaria y se han utilizado para compras nuevas.
+El total documental/provisional de esta tabla (`1.974,08 €`) incluye el regalo del dueño de `60,00 €`, el pedido BBQ, las compras posteriores, los 10 sacos de hielo y Licoreo a coste neto. No incluye el saco de carbón regalado por Diseño Chino ni el ingreso de `50,00 €` de las sillas, que se muestra aparte como ingreso del bote. Los `30,00 €` de Laura ya están cobrados como aportación monetaria y se han utilizado para compras nuevas.
 
 ### Factura final de Licoreo
 
@@ -226,17 +228,17 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 |---|---:|
 | Comida | 782.67 € |
 | Bebida | 901.04 € |
-| Menaje | 169.87 € |
+| Menaje | 230.37 € |
 
 ### Situación del cierre
 
 - **Bote de fiestas:** 1.940,00 € (cuotas efectivas + Laura + devolución de sillas)
 - **Dinero total recibido contando altavoces:** 2.005,00 €
-- **Gasto bruto registrado:** 1.913,58 €
-- **Saldo de caja del bote:** +26,42 € (1.940,00 € cobrados/aportados − 1.913,58 € gastados)
+- **Gasto bruto registrado:** 1.974,08 €
+- **Saldo de caja del bote:** −34,08 € (1.940,00 € cobrados/aportados − 1.974,08 € gastados)
 - **Cuotas cobradas para el bote:** 1.860,00 €; Álvaro no aporta cuota y sus 65,00 € van a altavoces
 - **Pendiente de cobro:** 0,00 €
-- **Pendientes de cerrar:** puede aparecer algún gasto adicional. La carne BBQ de Carnicería Loli está registrada: 218,64 €. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas están incorporados al bote. Licoreo está cerrado: pago 834,00 € menos 24,00 € devueltos = 810,00 € netos.
+- **Pendientes de cerrar:** puede aparecer algún gasto adicional. La carne BBQ y los 10 sacos de hielo ya están registrados. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas están incorporados al bote. Licoreo está cerrado: pago 834,00 € menos 24,00 € devueltos = 810,00 € netos.
 
 ### Extras que no salen del bote
 

@@ -43,18 +43,18 @@ El importe de `810,00 EUR` es el que entra en las cuentas reales. No usar como c
 
 ## Totales actuales
 
-Con la carne BBQ de Carnicería Loli ya registrada:
+Con la carne BBQ de Carnicería Loli y la compra grande de hielo ya registradas:
 
 - Comida: `782,67 EUR`.
 - Bebida: `901,04 EUR`.
-- Menaje: `169,87 EUR`.
+- Menaje: `230,37 EUR`.
 - Generales dentro del bote: regalo del dueño `60,00 EUR`.
 - Ingreso extra del bote: devolución de sillas `50,00 EUR`, posteriormente gastada en compras de 2026.
-- Gasto bruto del bote confirmado: `1.913,58 EUR`.
+- Gasto bruto del bote confirmado: `1.974,08 EUR`.
 - Bote de fiestas: `1.940,00 EUR` (`1.860,00 EUR` de cuotas efectivas sin Álvaro + `30,00 EUR` de Laura + `50,00 EUR` devueltos de sillas). Dinero global recibido contando altavoces: `2.005,00 EUR`.
 - Cuotas cobradas para el bote: `0,00 EUR`; los `65,00 EUR` de Álvaro se aplicaron a altavoces, no a su cuota.
-- Saldo de caja actual: `-1.833,58 EUR` (`30,00 EUR` aportados por Laura - `1.863,58 EUR` gastados).
-- Saldo teórico/final del bote de fiestas: `26,42 EUR`.
+- Saldo de caja/final del bote: `-34,08 EUR` (`1.940,00 EUR` efectivos - `1.974,08 EUR` gastados).
+- Saldo final del bote de fiestas: `-34,08 EUR`.
 - Derramas generales fuera del bote: altavoces `207,38 EUR`, repartidas entre 30 miembros, `6,91 EUR` por miembro.
 - Laura aporta `30,00 EUR` en dinero al bote de 2026; se registra como ingreso monetario cobrado y se utiliza para financiar compras nuevas, no como ingreso en especie.
 
