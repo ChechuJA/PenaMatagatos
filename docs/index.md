@@ -21,8 +21,8 @@
   </article>
   <article class="summary-card">
     <p class="summary-label">Saldo de caja</p>
-    <p class="summary-value">+91,42 €</p>
-    <p class="summary-note">Cuotas cobradas: 1.925,00 € + 80,00 € de ingresos extra − 1.913,58 € gastados.</p>
+    <p class="summary-value">+26,42 €</p>
+    <p class="summary-note">Bote fiestas: 1.940,00 € − 1.913,58 € gastados; Álvaro pagó sus 65,00 € a altavoces.</p>
   </article>
 </div>
 
@@ -34,45 +34,47 @@
 
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
 - El plan de bebida trabaja con **101 persona-días**: se suman los días que estuvo cada una de las 29 personas asistentes. No son 101 personas ni 101 cuotas; es una medida de presencia acumulada para estimar el consumo.
-- El bote cobrado suma **2.005 €**: 1.925 € de cuotas más 30 € de aportación monetaria de Laura y 50 € devueltos de la reserva de sillas.
-- Con la carne de BBQ incluida, el saldo actual queda en **+91,42 €**, antes de cualquier gasto nuevo.
+- El bote de fiestas suma **1.940 €**: 1.860 € de cuotas efectivas (sin Álvaro) más 30 € de Laura y 50 € devueltos de la reserva de sillas. El total global recibido, contando los 65 € de Álvaro para altavoces, es **2.005 €**.
+- Con la carne de BBQ incluida, el saldo del bote de fiestas queda en **+26,42 €**, antes de cualquier gasto nuevo.
 - Fuera del bote van los **altavoces (207,38 €)**, que se reparten entre los 30 miembros oficiales. El regalo del dueño (`60,00 €`) sí sale del bote de los asistentes de 2026.
 
 ## 1) Asistencia y bebidas registradas
 
 La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda para revisar quién viene y qué bebe cada uno.
 
-| Persona | Asistencia | Bebidas |
-|---|---|---|
-| Marta | jueves a domingo | cerveza 0,0 casera, Coca-Cola Zero Zero (0,0) |
-| Flores | jueves a domingo | cerveza, Seagrams Sprite |
-| Chechu | todos los días | cerveza, ron con limón (Ron: Barceló, Brugal Legendario o similar, con limón.) |
-| Esmeralda | todos los días | Coca-Cola Zero, Aquarius naranja |
-| Josemi | todos los días | cerveza, Legendario limón |
-| Eve | todos los días | cerveza, Legendario limón |
-| Leti | todos los días | cerveza, Cutty naranja, Coca-Cola Zero |
-| Javi | sábado y domingo | cerveza, ginebra con Sprite, Coca-Cola |
-| Andreas (extra 2026) | todos los días | gin-tonic |
-| Álvaro | jueves a sábado | cerveza, ginebra limón, ginebra tónica |
-| Elisa | jueves a sábado | cerveza, ginebra limón |
-| Laura | todos los días | cerveza, Coca-Cola, agua |
-| Nacho | todos los días | cerveza, Coca-Cola, agua |
-| David | jueves a sábado | cerveza, Larios 12 limón |
-| Malu | viernes y sábado | Aquarius naranja, Barceló Coca-Cola Zero |
-| Ernesto | viernes y sábado | cerveza, gin-tonic Seagrams |
-| Cristina | todos los días | cerveza 0,0, Coca-Cola Zero Zero (0,0) |
-| Blanca | jueves a sábado | cerveza, ginebra tónica |
-| María | jueves, viernes y sábado | cerveza, Coca-Cola, ginebra limón |
-| Samuel | viernes y sábado | cerveza, Coca-Cola, ginebra tónica |
-| María Rubia | viernes y sábado | cerveza, Cutty limón, Jägermeister |
-| Pimen | hasta el sábado por la tarde | agua, Coca-Cola Zero, helados (Trae tortillas o comida preparada si es posible.) |
-| Albert | todos los días | cerveza 0,0 sin tostada, Coca-Cola Zero |
-| Sonia | jueves a sábado | cerveza 0,0, Coca-Cola Zero Zero (0,0), Aquarius limón, agua |
-| Raúl | todos los días | cerveza 0,0, Coca-Cola |
-| Edu | viernes y sábado | cerveza Estrella Galicia |
-| Helena | viernes y sábado (jueves incógnita) | radler, tinto de verano, Barceló con Coca-Cola Zero |
-| Tamara | 2 días | cerveza con gaseosa, Coca-Cola Zero |
-| Zara | viernes y sábado | cerveza, Seagrams limón |
+| Persona | Asistencia | Bebidas | Cuota | Ajustes | Aporta al bote |
+|---|---|---|---:|---|---:|
+| Marta | jueves a domingo | cerveza 0,0 casera, Coca-Cola Zero Zero (0,0) | 65,00 €* | — | 65,00 € |
+| Flores | jueves a domingo | cerveza, Seagrams Sprite | 75,00 € | — | 75,00 € |
+| Chechu | todos los días | cerveza, ron con limón (Ron: Barceló, Brugal Legendario o similar, con limón.) | 75,00 € | — | 75,00 € |
+| Esmeralda | todos los días | Coca-Cola Zero, Aquarius naranja | 75,00 € | — | 75,00 € |
+| Josemi | todos los días | cerveza, Legendario limón | 75,00 € | — | 75,00 € |
+| Eve | todos los días | cerveza, Legendario limón | 75,00 € | — | 75,00 € |
+| Leti | todos los días | cerveza, Cutty naranja, Coca-Cola Zero | 75,00 € | +50,00 € sillas | 125,00 € |
+| Javi | sábado y domingo | cerveza, ginebra con Sprite, Coca-Cola | 55,00 € | — | 55,00 € |
+| Andreas (extra 2026) | todos los días | gin-tonic | 75,00 € | — | 75,00 € |
+| Álvaro | jueves a sábado | cerveza, ginebra limón, ginebra tónica | 65,00 € | −65,00 € altavoces | **0,00 €** |
+| Elisa | jueves a sábado | cerveza, ginebra limón | 65,00 € | — | 65,00 € |
+| Laura | todos los días | cerveza, Coca-Cola, agua | 75,00 € | +30,00 € aportación | 105,00 € |
+| Nacho | todos los días | cerveza, Coca-Cola, agua | 75,00 € | — | 75,00 € |
+| David | jueves a sábado | cerveza, Larios 12 limón | 65,00 € | — | 65,00 € |
+| Malu | viernes y sábado | Aquarius naranja, Barceló Coca-Cola Zero | 55,00 € | — | 55,00 € |
+| Ernesto | viernes y sábado | cerveza, gin-tonic Seagrams | 55,00 € | — | 55,00 € |
+| Cristina | todos los días | cerveza 0,0, Coca-Cola Zero Zero (0,0) | 75,00 € | — | 75,00 € |
+| Blanca | jueves a sábado | cerveza, ginebra tónica | 65,00 € | — | 65,00 € |
+| María | jueves, viernes y sábado | cerveza, Coca-Cola, ginebra limón | 65,00 € | — | 65,00 € |
+| Samuel | viernes y sábado | cerveza, Coca-Cola, ginebra tónica | 55,00 € | — | 55,00 € |
+| María Rubia | viernes y sábado | cerveza, Cutty limón, Jägermeister | 55,00 € | — | 55,00 € |
+| Pimen | hasta el sábado por la tarde | agua, Coca-Cola Zero, helados (Trae tortillas o comida preparada si es posible.) | 65,00 € | — | 65,00 € |
+| Albert | todos los días | cerveza 0,0 sin tostada, Coca-Cola Zero | 75,00 € | — | 75,00 € |
+| Sonia | jueves a sábado | cerveza 0,0, Coca-Cola Zero Zero (0,0), Aquarius limón, agua | 65,00 € | — | 65,00 € |
+| Raúl | todos los días | cerveza 0,0, Coca-Cola | 75,00 € | — | 75,00 € |
+| Edu | viernes y sábado | cerveza Estrella Galicia | 55,00 € | — | 55,00 € |
+| Helena | viernes y sábado (jueves incógnita) | radler, tinto de verano, Barceló con Coca-Cola Zero | 65,00 € | — | 65,00 € |
+| Tamara | 2 días | cerveza con gaseosa, Coca-Cola Zero | 55,00 € | — | 55,00 € |
+| Zara | viernes y sábado | cerveza, Seagrams limón | 55,00 € | — | 55,00 € |
+
+**Resumen de pagos:** cuotas teóricas `1.925,00 €` · cuotas efectivas para el bote `1.860,00 €` (sin Álvaro) · aportación Laura `30,00 €` · devolución de sillas recogida por Leti `50,00 €` · **bote de fiestas `1.940,00 €`**. Sumando los `65,00 €` de Álvaro aplicados a altavoces, el dinero global recibido es `2.005,00 €`. *Marta queda en el tramo de 65,00 € para conservar el reparto contable ya cerrado de 8 cuotas de 2 días, 9 de 3 días y 12 de todos los días; conviene confirmarlo si queréis que la tarifa siga exactamente los días.*
 
 ### Notas de contexto
 
@@ -83,6 +85,18 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 ## 2) Compra real y cuentas del bote
 
 El consolidado actual está en `historico/2026/gastos-2026.json`, alimentado por los JSON de tickets normalizados dentro de `Fiestas/2026/comprareal/`.
+
+### Ingresos del bote antes de comprar
+
+Primero se reúne el dinero disponible; después se registran las compras y finalmente se hace el balance.
+
+| Ingreso | Importe | Tratamiento |
+|---|---:|---|
+| Cuotas teóricas de asistentes | 1.925,00 € | 1.860,00 € van al bote; los 65,00 € de Álvaro se aplicaron a altavoces |
+| Aportación monetaria de Laura | 30,00 € | Cobrada y utilizada en compras nuevas |
+| Devolución de sillas no compradas | 50,00 € | Cobrada y reutilizada en compras |
+| **Bote efectivo para fiestas** | **1.940,00 €** | |
+| Dinero recibido incluyendo altavoces | 2.005,00 € | Incluye los 65,00 € de Álvaro fuera del bote |
 
 ### Auditoría de tickets finales
 
@@ -101,7 +115,6 @@ Esta es la tabla de comprobación de la compra real. Los importes de tickets mix
 | 31/08/2026 | Mercadona | Bebida | 12,35 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 31/08/2026 | Mercadona | Menaje | 2,30 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
 | 31/08/2026 | Diseño (bazar) | Menaje | 61,08 € | [Foto](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
-| 31/08/2026 | Diseño · ticket REGALO | Menaje | 12,00 € | [Foto](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
 | 31/08/2026 | Amazon | Bebida | 15,96 € | [Foto](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 02/09/2026 | Amazon | Bebida | 25,20 € | [Pedido](https://amzn.eu/d/0fOtCgQW) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 03/09/2026 | Carnes Javi | Comida | 153,85 € | [Foto embutidos](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
@@ -132,12 +145,14 @@ Esta tabla comprueba que las líneas repartidas entre comida, bebida, menaje y g
 | Amazon · S.Pellegrino | — | 25,20 € | — | — | **25,20 €** | 25,20 € | 0,00 € |
 | Carnes Javi · embutidos + regalo | 153,85 € | — | — | 60,00 € | **213,85 €** | 213,85 € | 0,00 € |
 | Carnes Javi · queso sin lactosa | 8,04 € | — | — | — | **8,04 €** | 8,04 € | 0,00 € |
+| Carnicería Loli · pedido BBQ | 218,64 € | — | — | — | **218,64 €** | 218,64 € | 0,00 € |
 | Mercadona 2 | 115,95 € | — | — | — | **115,95 €** | 115,95 € | 0,00 € |
 | Panadería (encargo) | 23,40 € | — | — | — | **23,40 €** | 18 barras × 1,30 € · sin foto de ticket | — |
-| Compras posteriores y ajustes | 9,90 € | 9,00 € | 20,00 € | — | **−11,10 €** | sin documento completo | — |
-| **Total conciliado con documento** | **782,67 €** | **91,04 €** | **169,87 €** | **60,00 €** | **1.053,58 €** | **1.053,58 €** | **0,00 €** |
+| Compras posteriores | 9,90 € | 9,00 € | 20,00 € | — | **38,90 €** | sin documento completo | — |
+| Licoreo · conciliación económica | — | 810,00 € netos | — | — | **810,00 €** | 834,00 € pagados − 24,00 € devueltos | — |
+| **Total gasto bruto documentado** | **782,67 €** | **901,04 €** | **169,87 €** | **60,00 €** | **1.913,58 €** | **1.913,58 €** | **0,00 €** |
 
-El total documental/provisional de esta tabla (`1.053,58 €`) incluye el regalo del dueño de `60,00 €`, el pedido BBQ y las compras posteriores, pero no incluye el saco de carbón regalado por Diseño Chino ni Licoreo. Al sumar Licoreo, el gasto del bote queda en **1.863,58 €**. Los `30,00 €` de Laura ya están cobrados como aportación monetaria y se han utilizado para compras nuevas.
+El total documental/provisional de esta tabla (`1.863,58 €`) incluye el regalo del dueño de `60,00 €`, el pedido BBQ, las compras posteriores y Licoreo a coste neto. No incluye el saco de carbón regalado por Diseño Chino ni el ingreso de `50,00 €` de las sillas, que se muestra aparte como ingreso del bote. Los `30,00 €` de Laura ya están cobrados como aportación monetaria y se han utilizado para compras nuevas.
 
 ### Factura final de Licoreo
 
@@ -213,24 +228,15 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 | Bebida | 901.04 € |
 | Menaje | 169.87 € |
 
-### Ingresos previstos por cuotas
-
-| Ingreso | Importe |
-|---|---:|
-| Cuotas 2 dias (55 EUR x 8) | 440.00 € |
-| Cuotas 3 dias (65 EUR x 9) | 585.00 € |
-| Cuotas todos los dias (75 EUR x 12) | 900.00 € |
-| Aportación monetaria de Laura al bote 2026 | 30.00 € |
-| Devolución de sillas no compradas, reutilizada en compras | 50.00 € |
-
 ### Situación del cierre
 
-- **Bote disponible:** 2.005,00 € (cuotas + Laura + devolución de sillas)
+- **Bote de fiestas:** 1.940,00 € (cuotas efectivas + Laura + devolución de sillas)
+- **Dinero total recibido contando altavoces:** 2.005,00 €
 - **Gasto bruto registrado:** 1.913,58 €
-- **Saldo de caja actual:** +91,42 € (2.005,00 € de ingresos cobrados − 1.913,58 € gastados)
-- **Cuotas cobradas para el bote:** 1.925,00 €
+- **Saldo de caja del bote:** +26,42 € (1.940,00 € cobrados/aportados − 1.913,58 € gastados)
+- **Cuotas cobradas para el bote:** 1.860,00 €; Álvaro no aporta cuota y sus 65,00 € van a altavoces
 - **Pendiente de cobro:** 0,00 €
-- **Pendientes de cerrar:** puede aparecer algún gasto adicional. La carne BBQ de Carnicería Loli está registrada: 218,64 €. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas están incorporados como ingresos cobrados. Licoreo está cerrado: pago 834,00 € menos 24,00 € devueltos = 810,00 € netos.
+- **Pendientes de cerrar:** puede aparecer algún gasto adicional. La carne BBQ de Carnicería Loli está registrada: 218,64 €. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas están incorporados al bote. Licoreo está cerrado: pago 834,00 € menos 24,00 € devueltos = 810,00 € netos.
 
 ### Extras que no salen del bote
 
