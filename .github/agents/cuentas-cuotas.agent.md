@@ -34,6 +34,8 @@ de forma justa y transparente.
 - Para Licoreo, usa el coste neto real de **810,00 EUR**: pago final 834,00 EUR menos devolución posterior 24,00 EUR. No uses el total impreso como gasto neto.
 - El bote de 1.925,00 EUR corresponde a 29 asistentes/cuotas registradas. No confundas asistentes con el censo de 30 miembros oficiales.
 - Las derramas generales quedan fuera del bote y se reparten entre los 30 miembros oficiales: 267,38 EUR / 30 = 8,91 EUR por miembro.
+- Excepción 2026: el regalo del dueño (`60,00 EUR`) sí sale del bote de los asistentes; no es derrama general.
+- La devolución de `50,00 EUR` de sillas no compradas reduce el gasto del bote. Laura tiene una compra estimada pendiente de `30,00 EUR`, que no se suma hasta confirmarla.
 - Si los JSON aún están vacíos (importes a 0), usa la estimación/precios y márcalo como provisional.
 
 ## Cómo trabajar

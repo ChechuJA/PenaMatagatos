@@ -149,7 +149,30 @@
         { "producto": "Pan (barra)", "cantidad": 18, "unidad": "barra", "precio_unitario": 1.30, "importe": 23.40 }
       ],
       "subtotal": 23.40
+    },
+    {
+      "id": "carniceria-loli-bbq-comida-2026-09-03",
+      "foto": "Carniceria Luis 2026.jpeg",
+      "proveedor": "Carnicería Loli (Castejón, Cuenca)",
+      "fecha": "2026-09-03",
+      "nota": "Pedido de carne para la barbacoa 2026. El ticket/foto muestra un total de 218,64 EUR. Se conserva el desglose del pedido sin repartir importes por producto porque el ticket no identifica de forma legible cada línea con su nombre.",
+      "pedido": [
+        { "producto": "Hamburguesas de pollo", "cantidad": 20, "unidad": "ud" },
+        { "producto": "Hamburguesas de ternera", "cantidad": 20, "unidad": "ud" },
+        { "producto": "Magro", "cantidad": 7, "unidad": "kg" },
+        { "producto": "Filetes de panceta", "cantidad": 35, "unidad": "ud" },
+        { "producto": "Filetes de lomo", "cantidad": 35, "unidad": "ud" },
+        { "producto": "Tiras de bacon", "cantidad": 40, "unidad": "ud" },
+        { "producto": "Chorizos", "cantidad": 20, "unidad": "ud" },
+        { "producto": "Morcillas", "cantidad": 15, "unidad": "ud" },
+        { "producto": "Pollo", "cantidad": 2, "unidad": "kg" },
+        { "producto": "Conejo", "cantidad": 1, "unidad": "kg" }
+      ],
+      "lineas": [
+        { "producto": "Pedido completo de carne para barbacoa", "cantidad": 1, "unidad": "pedido", "precio_unitario": 218.64, "importe": 218.64 }
+      ],
+      "subtotal": 218.64
     }
   ],
-  "total_categoria": 554.13
+  "total_categoria": 772.77
 }

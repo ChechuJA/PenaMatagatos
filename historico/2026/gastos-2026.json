@@ -2,29 +2,36 @@
   "anio": 2026,
   "titulo": "Gastos y cuentas 2026 - Peña Matagatos",
   "fuente": "Datos consolidados a partir de las cuotas por asistencia y la compra real registrada en Fiestas/2026/comprareal/ (tickets-*.json).",
-  "estado": "PROVISIONAL / en curso: registrado el pago final de Licoreo (834,00 EUR) y la devolución posterior por transferencia de 24,00 EUR por los botellines de Estrella Galicia. Coste neto Licoreo: 810,00 EUR. Falta por registrar la carne de barbacoa. Casi todas las cuotas siguen pendientes de cobro.",
+  "estado": "PROVISIONAL / en curso: registrada la carne BBQ de Carnicería Loli (218,64 EUR), además del pago final de Licoreo (834,00 EUR) y su devolución posterior de 24,00 EUR. Falta cerrar el cobro de las cuotas.",
   "totales": {
-    "ingresos_totales": 1925.00,
-    "gastos_totales": 1596.04,
-    "saldo": 328.96,
-    "formula": "1925.00 - 1596.04 = 328.96",
+    "ingresos_totales": 2005.00,
+    "gastos_totales": 1913.58,
+    "saldo": -1833.58,
+    "saldo_teorico_si_se_cobra_todo": 91.42,
+    "formula": "30.00 aportado por Laura + 50.00 devueltos de sillas + 0.00 de cuotas cobradas - 1913.58 gastado = -1833.58 de caja; saldo teórico 2005.00 - 1913.58 = 91.42",
     "notas": [
-      "Ingresos = bote esperado por cuotas de asistencia (29 asistentes: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron).",
-      "Gastos = compra real del bote de fiestas registrada hasta 2026-09-09 (comida + bebida + menaje), incluido el coste neto de Licoreo tras la devolución bancaria de 24,00 EUR.",
-      "El saldo es provisional; aun falta por registrar la carne de barbacoa.",
-      "Cobrado real hasta la fecha: solo Alvaro (65 EUR, 3 dias). El resto de cuotas estan pendientes de cobro (1.860 EUR).",
-      "Los altavoces (207,38 EUR) y el regalo del dueno de la pena (60,00 EUR) NO salen del bote; son derramas generales que se reparten entre los 30 miembros oficiales y van aparte."
+      "Ingresos = bote de cuotas de asistencia (1.925,00 EUR), aportación monetaria de Laura (30,00 EUR) y devolución de 50,00 EUR de sillas no compradas, posteriormente gastada en compras nuevas de 2026.",
+      "Gastos = compra real bruta del bote de fiestas registrada hasta 2026-09-10 (comida + bebida + menaje + regalo del dueño pagado por los asistentes), incluido el pedido de carne BBQ de Carnicería Loli y el coste neto de Licoreo tras la devolución bancaria de 24,00 EUR.",
+      "El saldo es provisional; pueden aparecer gastos adicionales, pero la carne BBQ ya está registrada.",
+      "Cobrado real para el bote hasta la fecha: 0,00 EUR. Los 65,00 EUR de Alvaro se aplicaron como pago de su derrama de altavoces, no como cuota de fiestas. Las cuotas pendientes del bote son 1.925,00 EUR.",
+      "Los altavoces (207,38 EUR) son una derrama general de los 30 miembros oficiales. El regalo del dueño (60,00 EUR) sí sale del bote 2026 y se reparte entre los asistentes de este año."
     ]
   },
   "ingresos": [
     { "concepto": "Cuotas 2 dias (55 EUR x 8)", "importe": 440.00, "categoria": "ingresos" },
     { "concepto": "Cuotas 3 dias (65 EUR x 9)", "importe": 585.00, "categoria": "ingresos" },
-    { "concepto": "Cuotas todos los dias (75 EUR x 12)", "importe": 900.00, "categoria": "ingresos" }
+    { "concepto": "Cuotas todos los dias (75 EUR x 12)", "importe": 900.00, "categoria": "ingresos" },
+    { "concepto": "Aportación monetaria de Laura al bote 2026", "importe": 30.00, "categoria": "ingresos", "nota": "Dinero aportado al bote y utilizado para financiar compras nuevas de 2026. No es bebida en especie ni una cuota individual." },
+    { "concepto": "Devolución de reserva de sillas no compradas", "importe": 50.00, "categoria": "ingresos", "nota": "Dinero devuelto a la peña y posteriormente utilizado en compras nuevas de 2026; se trata como ingreso extra del bote." }
   ],
-  "cobros_realizados": [
-    { "persona": "Alvaro", "dias": 3, "cuota": 65.00, "estado": "pagado" }
+  "cobros_realizados": [],
+  "pendiente_cobro": 1925.00,
+  "aportaciones_realizadas": [
+    { "persona": "Laura", "importe": 30.00, "concepto": "Aportación monetaria al bote 2026", "estado": "cobrada y utilizada en compras de 2026" }
   ],
-  "pendiente_cobro": 1860.00,
+  "pagos_derramas": [
+    { "persona": "Alvaro", "importe": 65.00, "concepto": "Derrama de altavoces", "estado": "pagado; no computa como cuota del bote" }
+  ],
   "gastos": [
     { "concepto": "Merkocash (mixto)", "importe": 243.50, "categoria": "mixto", "origen": "Merkocash (La Ardosa S.L.)", "desglose": { "comida": 144.08, "bebida": 13.05, "menaje": 86.37 } },
     { "concepto": "Alcampo (mixto)", "importe": 47.04, "categoria": "mixto", "origen": "Alcampo Cuenca", "desglose": { "comida": 31.44, "bebida": 15.48, "menaje": 0.12 } },
@@ -36,29 +43,37 @@
     { "concepto": "Carnes Javi (queso sin lactosa)", "importe": 8.04, "categoria": "comida", "origen": "Carnes Javi (Jamon a lo Grande SLU)" },
     { "concepto": "Mercadona 2 (trenzas y reposteria)", "importe": 115.95, "categoria": "comida", "origen": "Mercadona Cuenca" },
     { "concepto": "Panaderia (pan encargado, 18 barras)", "importe": 23.40, "categoria": "comida", "origen": "Panaderia" },
+    { "concepto": "Carnicería Loli (pedido carne BBQ)", "importe": 218.64, "categoria": "comida", "origen": "Carniceria Loli", "nota": "Ticket del 03/09/2026. Pedido: 20 hamburguesas de pollo, 20 de ternera, 7 kg de magro, 35 pancetas, 35 lomos, 40 tiras de bacon, 20 chorizos, 15 morcillas, 2 kg de pollo y 1 kg de conejo." },
+    { "concepto": "Agua adicional", "importe": 9.00, "categoria": "bebida", "origen": "Compra posterior", "nota": "Compra posterior de agua, pendiente de asociar a ticket." },
+    { "concepto": "Helados (compra posterior)", "importe": 9.90, "categoria": "comida", "origen": "Compra posterior", "nota": "Ticket de helados pendiente de traer/adjuntar." },
+    { "concepto": "Regalo del dueño de la peña", "importe": 60.00, "categoria": "generales_bote", "origen": "Carnes Javi", "nota": "El regalo se paga este año con el bote de los asistentes, no como derrama de los 30 miembros." },
+    { "concepto": "Cuchillos y tabla de partir", "importe": 20.00, "categoria": "menaje", "origen": "Compra posterior", "nota": "Compra posterior; ticket pendiente de asociar." },
     { "concepto": "Licoreo (pago final, IVA incl.; coste neto)", "importe": 810.00, "categoria": "bebida", "origen": "Distribuciones y Logistica Licoreo, S.L.", "nota": "Total impreso: 835,89 EUR. Pago final anotado a mano: 834,00 EUR. Devolución posterior por transferencia: 24,00 EUR por las 12 cajas de Estrella Galicia servidas en 20cl en vez de 25cl. Coste neto: 810,00 EUR. Se pidieron 3 Cutty Sark de 70cl y se recibieron 2 de 1L." }
   ],
   "resumen_por_categoria": [
-    { "categoria": "Comida", "importe": 554.13 },
-    { "categoria": "Bebida", "importe": 892.04 },
-    { "categoria": "Menaje", "importe": 149.87 }
+    { "categoria": "Comida", "importe": 782.67 },
+    { "categoria": "Bebida", "importe": 901.04 },
+    { "categoria": "Menaje", "importe": 169.87 },
+    { "categoria": "Generales del bote", "importe": 60.00 }
   ],
   "extras_fuera_del_bote": {
     "descripcion": "Derramas generales que pagan los 30 miembros oficiales, vayan o no a fiestas; no salen del bote de fiestas ni de las cuotas.",
     "lineas": [
       { "concepto": "Altavoces y montaje (tickets-altavoces.json)", "importe": 207.38 },
-      { "concepto": "Regalo dueno de la pena (tickets-generales.json)", "importe": 60.00 }
     ],
-    "total": 267.38,
-    "reparto_por_integrante": 8.91
+    "total": 207.38,
+    "reparto_por_integrante": 6.91
   },
   "observaciones": [
-    "La bebida real (892,04 EUR) incluye el pedido de Licoreo (810,00 EUR netos) mas las compras sueltas (Merkocash, Alcampo, Mercadona y Amazon).",
+    "La bebida real (901,04 EUR) incluye el pedido de Licoreo (810,00 EUR netos), las compras sueltas y los 9,00 EUR de agua adicional.",
+    "El regalo del dueño de la peña (60,00 EUR) sí sale del bote de los asistentes de 2026; no se reparte como derrama entre los 30 miembros.",
+    "Se añadieron 9,90 EUR de helados, 20,00 EUR de cuchillos y tabla de partir y se devolvieron 50,00 EUR reservados para sillas que finalmente no se compraron.",
+    "Los 30,00 EUR de Laura son bebida comprada en 2025 y aportada como ingreso en especie al bote 2026; no son un gasto pendiente.",
     "El total impreso de Licoreo es 835,89 EUR; el pago final anotado a mano fue 834,00 EUR. Posteriormente se recibieron 24,00 EUR por transferencia por las 12 cajas de Estrella Galicia servidas en 20cl en vez de 25cl, dejando un coste neto de 810,00 EUR.",
     "Se pidieron 3 botellas de Cutty Sark de 70cl y se recibieron 2 botellas de 1L; la diferencia queda recogida en el ajuste manuscrito del pago.",
     "Falta anadir el gasto de carne de barbacoa.",
     "El pan encargado (18 barras, 23,40 EUR) va dentro de comida, sin fila propia en la web de resumen.",
-    "El regalo del dueno de la pena (art 6 del ticket Carnes Javi, 60 EUR) se saca del bote y se trata como extra general, igual que los altavoces.",
+    "El regalo del dueno de la pena (art 6 del ticket Carnes Javi, 60 EUR) se carga al bote de asistentes 2026.",
     "Composicion 2026: 30 miembros oficiales. La lista de asistencia registra 29 personas: 28 miembros oficiales y Andreas como invitado extra. Juanvi y Lucía no asistieron.",
     "Cierre real y saldo definitivo a finales de septiembre, tras el evento y con todas las compras y cobros registrados."
   ]

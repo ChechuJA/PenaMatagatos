@@ -1,7 +1,7 @@
 {
   "evento": "Fiestas 2026",
   "categoria": "generales",
-  "descripcion": "OTROS EXTRAS GENERALES de la peña (no altavoces): se pagan entre TODOS los componentes (vayan o no a las fiestas), NO salen del bote de fiestas ni de las cuotas por asistencia. Los altavoces y su montaje viven en tickets-altavoces.json.",
+  "descripcion": "GASTO SEPARADO REGISTRADO EN 2026: el regalo del dueño se carga al bote de los asistentes de 2026. No es una derrama general de los 30 miembros; los altavoces y su montaje viven en tickets-altavoces.json.",
   "actualizado": "2026-09-04",
   "moneda": "EUR",
   "tickets": [
@@ -10,7 +10,7 @@
       "foto": "Embutidos Javi.jpeg",
       "proveedor": "Carnes Javi (Jamon a lo Grande SLU)",
       "fecha": "2026-09-03",
-      "nota": "Regalo para el dueno de la pena (art 6 del ticket Carnes Javi Fra 062483, 1 unidad x 60,00). Es un extra como los altavoces: NO cuenta como gasto de fiestas ni sale del bote/cuotas.",
+      "nota": "Regalo para el dueno de la pena (art 6 del ticket Carnes Javi Fra 062483, 1 unidad x 60,00). En 2026 se paga con el bote de los asistentes del año y no se reparte como derrama entre los 30 miembros oficiales.",
       "lineas": [
         { "producto": "Regalo dueno de la pena", "cantidad": 1, "unidad": "ud", "precio_unitario": 60.0, "importe": 60.0 }
       ],

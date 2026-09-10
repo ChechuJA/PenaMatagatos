@@ -16,13 +16,13 @@
   </article>
   <article class="summary-card">
     <p class="summary-label">Gasto provisional</p>
-    <p class="summary-value">1.596,04 €</p>
+    <p class="summary-value">1.913,58 €</p>
     <p class="summary-note">Compra real consolidada, incluida la factura de Licoreo y su devolución posterior.</p>
   </article>
   <article class="summary-card">
-    <p class="summary-label">Saldo del bote</p>
-    <p class="summary-value">+328,96 €</p>
-    <p class="summary-note">Pendiente de cerrar la carne de barbacoa y los cobros.</p>
+    <p class="summary-label">Saldo de caja</p>
+    <p class="summary-value">−1.833,58 €</p>
+    <p class="summary-note">30,00 € aportados por Laura y 0,00 € de cuotas cobradas.</p>
   </article>
 </div>
 
@@ -34,8 +34,9 @@
 
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
 - El plan de bebida trabaja con **101 persona-días**: se suman los días que estuvo cada una de las 29 personas asistentes. No son 101 personas ni 101 cuotas; es una medida de presencia acumulada para estimar el consumo.
-- El bote previsto por cuotas suma **1.925 €**, frente a un gasto provisional de **1.596,04 €**.
-- Fuera del bote van los **altavoces (207,38 €)** y el **regalo del dueño (60,00 €)**, que se reparten entre toda la peña.
+- El bote previsto suma **2.005 €**: 1.925 € de cuotas más 30 € de aportación monetaria de Laura y 50 € devueltos de la reserva de sillas. El saldo de caja actual es **−1.833,58 €**: se han recibido 80 €, pero todavía no se ha cobrado ninguna cuota.
+- Con la carne de BBQ incluida, el saldo teórico al cobrar todo queda en **+91,42 €**, antes de cualquier gasto nuevo.
+- Fuera del bote van los **altavoces (207,38 €)**, que se reparten entre los 30 miembros oficiales. El regalo del dueño (`60,00 €`) sí sale del bote de los asistentes de 2026.
 
 ## 1) Asistencia y bebidas registradas
 
@@ -79,48 +80,7 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 - **101 persona-días** significa sumar la asistencia individual: por ejemplo, una persona que estuvo 5 días aporta 5 persona-días y una que estuvo 2 días aporta 2. La suma de las 29 personas asistentes da 101 y sirve para estimar bebida; las cuotas se calculan por persona según su tramo de asistencia.
 - El pico de consumo sigue concentrado en **viernes y sábado**.
 
-## 2) Compra orientativa antes de salir
-
-La lista general de compra 2026 (`fiestas-2026-lista-compra.json`) ya recoge qué había que comprar, qué se considera cubierto por sobrante y qué material conviene revisar.
-
-| Producto | Cantidad | Estado | Prioridad |
-|---|---:|---|---|
-| Cerveza normal | 176 botellines 25cl | comprar | alta |
-| Cerveza 0,0 | 48 botellines 25cl | comprar completo (caduca, no reutilizar) | alta |
-| Coca-Cola normal 2L | 5 botellas 2L | comprar completo (caduca) | alta |
-| Coca-Cola Zero 2L | 21 botellas 2L | comprar completo (caduca) | alta |
-| Coca-Cola Zero Zero 2L | 12 botellas 2L | comprar completo (caduca); nueva demanda: Marta, Cristina, Sonia | media |
-| Aquarius naranja | 26 latas 33cl | comprar | alta |
-| Aquarius limón | 6 latas 33cl | comprar | media |
-| Agua para beber 1,5L | 60 botellas 1,5L | comprar | alta |
-| Agua para cocinar | 2 garrafas | comprar | media |
-| Sprite 2L | 6 botellas 2L | comprar completo (caduca); gin+Sprite: Flores, Javi | media |
-| Fanta limón 2L (mezclador cubatas) | 19 botellas 2L | comprar completo (caduca) | media |
-| Fanta naranja 2L (mezclador cubatas) | 6 botellas 2L | comprar completo (caduca) | media |
-| Tónica 1L | 12 botellas 1L | comprar completo (caduca) | media |
-| Radler | 6 botellines 25cl | comprar (nuevo 2026: Helena) | baja |
-| Tinto de verano 1,5L | 3 botellas 1,5L | comprar (nuevo 2026: Helena) | baja |
-| Cutty (naranja/limón) 70cl | 2 botellas | comprar | media |
-| Legendario 70cl | 5 botellas | comprar | media |
-| Seagrams 70cl | 2 botellas | comprar (revisar estado sobrante: 7) | media |
-| Barceló 70cl | 0 botellas | cubierto por sobrante (5, revisar estado) | baja |
-| Larios 12 70cl | 0 botellas | cubierto por sobrante (2, revisar estado) | baja |
-| Jägermeister 70cl | 1 botella | comprar | baja |
-| Hielo | 15 bolsas aprox. | comprar por tramos | alta |
-| Papel continuo / kraft | 2 rollos | tener | media |
-| Rotuladores gruesos y finos | 1 set | tener | media |
-| Pintura / témperas | 1 set | tener | media |
-| Pinceles | 1 set | tener | media |
-| Toallitas húmedas | 1 paquete | tener | media |
-| Vasos / cubiertos / servilletas | 1 stock base | revisar y reponer | media |
-
-### Regla de compra del año
-
-- **Compra = consumo real 2025 × 1,05 − sobrante reutilizable**
-- Solo se reutiliza lo que realmente aguanta bien: **cerveza normal y destilados**.
-- **Refrescos, tónica y cerveza 0,0 se compran completos**, porque caducan o salen peor de un año para otro.
-
-## 3) Compra real y cuentas del bote
+## 2) Compra real y cuentas del bote
 
 El consolidado actual está en `historico/2026/gastos-2026.json`, alimentado por los JSON de tickets normalizados dentro de `Fiestas/2026/comprareal/`.
 
@@ -148,8 +108,13 @@ Esta es la tabla de comprobación de la compra real. Los importes de tickets mix
 | 03/09/2026 | Carnes Javi | Comida | 8,04 € | [Foto queso](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
 | 03/09/2026 | Mercadona 2 | Comida | 115,95 € | [Foto](../Fiestas/2026/comprareal/Mercadona%202.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
 | 2026 | Panadería | Comida | 23,40 € | 18 barras × 1,30 € · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
+| 2026 | Compra posterior de agua | Bebida | 9,00 € | Sin ticket adjunto |
+| 03/09/2026 | Carnicería Loli · pedido BBQ | Comida | 218,64 € | [Foto/ticket](../Fiestas/2026/comprareal/Carniceria%20Luis%202026.jpeg) · 20 hamburguesas pollo, 20 ternera, 7 kg magro, 35 pancetas, 35 lomos, 40 bacon, 20 chorizos, 15 morcillas, 2 kg pollo, 1 kg conejo |
+| 2026 | Compra posterior de helados | Comida | 9,90 € | Ticket pendiente de traer |
+| 2026 | Cuchillos y tabla de partir | Menaje | 20,00 € | [Precio/foto](../Fiestas/2026/comprareal/Precio%20tabla%20con%20cuchillos.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 2026 | Devolución de reserva de sillas | Ajuste | −50,00 € | Se devolvió al bote; las sillas no se compraron |
 
-**Totales normalizados:** comida `554,13 €` · bebida `892,04 €` · menaje `149,87 €` · **compra del bote `1.596,04 €`**.
+**Totales normalizados:** comida `782,67 €` · bebida `901,04 €` · menaje `169,87 €` · generales del bote `60,00 €` · **gasto bruto del bote `1.913,58 €`**.
 
 El detalle de cada línea, con cantidad, unidad, precio unitario e importe, está disponible en los JSON finales: [bebida](../Fiestas/2026/comprareal/tickets-bebida.json), [comida](../Fiestas/2026/comprareal/tickets-comida.json), [menaje](../Fiestas/2026/comprareal/tickets-menaje.json), [altavoces](../Fiestas/2026/comprareal/tickets-altavoces.json) y [generales](../Fiestas/2026/comprareal/tickets-generales.json).
 
@@ -169,9 +134,10 @@ Esta tabla comprueba que las líneas repartidas entre comida, bebida, menaje y g
 | Carnes Javi · queso sin lactosa | 8,04 € | — | — | — | **8,04 €** | 8,04 € | 0,00 € |
 | Mercadona 2 | 115,95 € | — | — | — | **115,95 €** | 115,95 € | 0,00 € |
 | Panadería (encargo) | 23,40 € | — | — | — | **23,40 €** | 18 barras × 1,30 € · sin foto de ticket | — |
-| **Total conciliado con documento** | **554,13 €** | **82,04 €** | **149,87 €** | **60,00 €** | **846,04 €** | **846,04 €** | **0,00 €** |
+| Compras posteriores y ajustes | 9,90 € | 9,00 € | 20,00 € | — | **−11,10 €** | sin documento completo | — |
+| **Total conciliado con documento** | **782,67 €** | **91,04 €** | **169,87 €** | **60,00 €** | **1.053,58 €** | **1.053,58 €** | **0,00 €** |
 
-El total de esta tabla (`846,04 €`) incluye el regalo general de `60,00 €`, pero no incluye el saco de carbón regalado por Diseño Chino, porque no existe ticket ni fue un gasto pagado por la peña. Tampoco incluye Licoreo, porque su documento tiene una conciliación económica específica: total impreso `835,89 €`, pago final `834,00 €`, devolución `24,00 €` y coste neto `810,00 €`. Al excluir el regalo general de los gastos del bote y sumar Licoreo como compra de bebida, el gasto del bote queda en **1.596,04 €**.
+El total documental/provisional de esta tabla (`1.053,58 €`) incluye el regalo del dueño de `60,00 €`, el pedido BBQ y las compras posteriores, pero no incluye el saco de carbón regalado por Diseño Chino ni Licoreo. Al sumar Licoreo, el gasto del bote queda en **1.863,58 €**. Los `30,00 €` de Laura ya están cobrados como aportación monetaria y se han utilizado para compras nuevas.
 
 ### Factura final de Licoreo
 
@@ -204,15 +170,25 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 | Diseño (bazar) | [Abrir imagen](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | [JPEG](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | **61,08 €** | Menaje |
 | Amazon · Mahou 0,0 | [Abrir imagen](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | [JPEG](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | **15,96 €** | Bebida |
 | Amazon · S.Pellegrino agua con gas | [Pedido](https://amzn.eu/d/0fOtCgQW) | [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) | **25,20 €** | Bebida; pedido 24x50 cl |
-| Carnes Javi · embutidos | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | **213,85 €** | 153,85 € comida + 60,00 € regalo general |
+| Carnes Javi · embutidos | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | **213,85 €** | 153,85 € comida + 60,00 € regalo dentro del bote |
 | Carnes Javi · queso sin lactosa | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg) | **8,04 €** | Comida |
 | Mercadona 2 · trenzas y repostería | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona%202.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona%202.jpeg) | **115,95 €** | Comida |
 | Panadería · encargo | Sin foto | [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) | **23,40 €** | 18 barras × 1,30 € |
+| Agua adicional | Sin foto | [JSON de cuentas](../historico/2026/gastos-2026.json) | **9,00 €** | Compra posterior |
+| Helados | Sin foto | [JSON de cuentas](../historico/2026/gastos-2026.json) | **9,90 €** | Ticket pendiente de traer |
+| Cuchillos y tabla de partir | [Abrir imagen](../Fiestas/2026/comprareal/Precio%20tabla%20con%20cuchillos.jpeg) | [JPEG](../Fiestas/2026/comprareal/Precio%20tabla%20con%20cuchillos.jpeg) | **20,00 €** | Compra posterior dentro del bote 2026 |
+| Devolución sillas no compradas | Sin foto | [JSON de cuentas](../historico/2026/gastos-2026.json) | **+50,00 €** | Ingreso extra del bote, posteriormente gastado |
 | Licoreo · factura final | [Ver imagen](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | [JPEG](../Fiestas/2026/comprareal/Factura%20Final%20Licoreo%20Matagatos%202026.jpeg) | **810,00 €** | 834,00 € pagados − 24,00 € devueltos |
-| **Total documentos** |  |  | **1.656,04 €** | Incluye 60,00 € de regalo general |
-| **Total gasto del bote** |  |  | **1.596,04 €** | Total documentos − regalo general |
+| Carnicería Loli · pedido BBQ | [Abrir imagen](../Fiestas/2026/comprareal/Carniceria%20Luis%202026.jpeg) | [JPEG](../Fiestas/2026/comprareal/Carniceria%20Luis%202026.jpeg) | **218,64 €** | Pedido completo de carne para la barbacoa |
+| **Total gasto bruto** |  |  | **1.913,58 €** | Compras realizadas, incluido BBQ y regalo dentro del bote |
+| **Total ingresos extra** |  |  | **+50,00 €** | Devolución de sillas no compradas |
+| **Gasto neto financiado por cuotas/aportaciones** |  |  | **1.863,58 €** | Gasto bruto menos devolución recibida |
 
 > **Nota informativa:** Diseño Chino nos regaló un saco grande de carbón valorado en 12,00 €. No tenemos ticket ni fue una compra pagada por la peña, así que no aparece como línea de gasto ni se suma a estos totales.
+
+> **Aportación de Laura:** Laura aportó `30,00 €` en dinero al bote de cuotas. Ese dinero se utilizó para financiar compras nuevas de 2026; se registra como ingreso monetario, no como bebida en especie ni como gasto pendiente.
+
+> **Hielo:** ya está contabilizada una bolsa de hielo de 2 kg por `1,55 €` en el ticket de Mercadona, usada para mantener productos frescos. Los sacos grandes de hielo previstos para la fiesta no tienen todavía un ticket o importe registrado.
 
 <details class="evidence-disclosure">
   <summary>Mostrar todas las fotos dentro de MkDocs</summary>
@@ -225,6 +201,7 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
     <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg" alt="Ticket Embutidos Javi"><figcaption>Embutidos Javi</figcaption></figure>
     <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Embutidos%20Javi%20Queso%20sin%20Lactosa.jpeg" alt="Ticket queso sin lactosa"><figcaption>Queso sin lactosa</figcaption></figure>
     <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Mercadona%202.jpeg" alt="Segundo ticket Mercadona"><figcaption>Mercadona 2</figcaption></figure>
+    <figure class="evidence-card"><img src="../Fiestas/2026/comprareal/Precio%20tabla%20con%20cuchillos.jpeg" alt="Precio de tabla con cuchillos"><figcaption>Tabla con cuchillos · 20,00 €</figcaption></figure>
   </div>
 </details>
 
@@ -232,9 +209,9 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 
 | Categoría | Importe |
 |---|---:|
-| Comida | 554.13 € |
-| Bebida | 892.04 € |
-| Menaje | 149.87 € |
+| Comida | 782.67 € |
+| Bebida | 901.04 € |
+| Menaje | 169.87 € |
 
 ### Ingresos previstos por cuotas
 
@@ -243,27 +220,29 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 | Cuotas 2 dias (55 EUR x 8) | 440.00 € |
 | Cuotas 3 dias (65 EUR x 9) | 585.00 € |
 | Cuotas todos los dias (75 EUR x 12) | 900.00 € |
+| Aportación monetaria de Laura al bote 2026 | 30.00 € |
+| Devolución de sillas no compradas, reutilizada en compras | 50.00 € |
 
 ### Situación del cierre
 
-- **Bote esperado:** 1.925,00 €
-- **Gasto provisional registrado:** 1.596,04 €
-- **Saldo provisional:** +328,96 €
-- **Cobrado de verdad hasta la fecha:** 65,00 € (solo Álvaro)
-- **Pendiente de cobro:** 1.860,00 €
-- **Pendientes de cerrar:** la carne de barbacoa y el cobro de las cuotas. Licoreo ya está cerrado: pago 834,00 € menos 24,00 € devueltos por transferencia = 810,00 € netos.
+- **Bote disponible:** 2.005,00 € (cuotas + Laura + devolución de sillas)
+- **Gasto bruto registrado:** 1.913,58 €
+- **Saldo de caja actual:** −1.833,58 € (80,00 € de ingresos cobrados y 0,00 € de cuotas cobradas)
+- **Saldo teórico al cobrar todo:** +91,42 €
+- **Cobrado para el bote:** 0,00 €
+- **Pendiente de cobro:** 1.925,00 €
+- **Pendientes de cerrar:** el cobro de las cuotas. La carne BBQ de Carnicería Loli ya está registrada: 218,64 €. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas ya están incorporados como ingresos cobrados y utilizados en compras nuevas de 2026. Licoreo ya está cerrado: pago 834,00 € menos 24,00 € devueltos por transferencia = 810,00 € netos.
 
 ### Extras que no salen del bote
 
 | Extra general | Importe |
 |---|---:|
 | Altavoces y montaje | 207.38 € |
-| Regalo del dueño de la peña | 60.00 € |
-| **Total** | **267.38 €** |
+| **Total** | **207.38 €** |
 
-Eso deja un reparto adicional de **8,91 € por integrante** fuera de las cuotas de fiestas.
+Eso deja un reparto adicional de **6,91 € por miembro oficial** fuera de las cuotas de fiestas. El regalo del dueño, de `60,00 €`, sí está dentro del gasto del bote 2026.
 
-## 4) Cómo se está guardando la compra real
+## 3) Cómo se está guardando la compra real
 
 > **Regla clave del README de cuentas:** los tickets se mezclan, los datos no.
 
@@ -274,7 +253,7 @@ Eso deja un reparto adicional de **8,91 € por integrante** fuera de las cuotas
 
 Este criterio es importante porque la página de resumen usa esos JSON normalizados y no las capturas o tablas viejas de HTML.
 
-## 5) Notas internas y cosas aprendidas para 2027
+## 4) Notas internas y cosas aprendidas para 2027
 
 Lo que ya ha quedado apuntado en `historico/2026/README.md`:
 
@@ -299,7 +278,7 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md`:
   <p><strong>Preparación resumida:</strong> sofreír la carne con sal, añadir el resto bien picado, dejar hacer al menos 3 horas a fuego medio y ajustar la sal al reposar.</p>
 </details>
 
-## 6) Fuentes usadas para este apartado
+## 5) Fuentes usadas para este apartado
 
 - `fiestas-2026-bebidas.json` → asistentes, asistencia y preferencias.
 - `fiestas-2026-plan-bebida.md` → persona-días, reglas de compra y contexto de la reunión.

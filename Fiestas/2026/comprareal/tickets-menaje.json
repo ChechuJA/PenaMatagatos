@@ -80,7 +80,18 @@
         { "producto": "Articulo Temporal", "cantidad": 1, "unidad": "ud", "precio_unitario": 0.80, "importe": 0.80 }
       ],
       "subtotal": 61.08
+    },
+    {
+      "id": "compra-posterior-cuchillos-tabla-2026",
+      "foto": "Precio tabla con cuchillos.jpeg",
+      "proveedor": "Compra posterior",
+      "fecha": "2026-09-10",
+      "nota": "Imagen del precio de la tabla con cuchillos. Compra para el bote de fiestas 2026.",
+      "lineas": [
+        { "producto": "Cuchillos y tabla de partir", "cantidad": 1, "unidad": "lote", "precio_unitario": 20.00, "importe": 20.00 }
+      ],
+      "subtotal": 20.00
     }
   ],
-  "total_categoria": 149.87
+  "total_categoria": 169.87
 }

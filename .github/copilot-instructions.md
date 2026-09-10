@@ -43,15 +43,20 @@ El importe de `810,00 EUR` es el que entra en las cuentas reales. No usar como c
 
 ## Totales actuales
 
-Mientras no se registre la carne de barbacoa:
+Con la carne BBQ de Carnicería Loli ya registrada:
 
-- Comida: `554,13 EUR`.
-- Bebida: `892,04 EUR`.
-- Menaje: `149,87 EUR`.
-- Gasto del bote: `1.596,04 EUR`.
-- Bote previsto: `1.925,00 EUR`.
-- Saldo provisional: `328,96 EUR`.
-- Derramas generales fuera del bote: `267,38 EUR`, repartidas entre 30 miembros, `8,91 EUR` por miembro.
+- Comida: `782,67 EUR`.
+- Bebida: `901,04 EUR`.
+- Menaje: `169,87 EUR`.
+- Generales dentro del bote: regalo del dueño `60,00 EUR`.
+- Ingreso extra del bote: devolución de sillas `50,00 EUR`, posteriormente gastada en compras de 2026.
+- Gasto bruto del bote confirmado: `1.913,58 EUR`.
+- Bote disponible: `2.005,00 EUR` (`1.925,00 EUR` de cuotas + `30,00 EUR` de Laura + `50,00 EUR` devueltos de sillas).
+- Cuotas cobradas para el bote: `0,00 EUR`; los `65,00 EUR` de Álvaro se aplicaron a altavoces, no a su cuota.
+- Saldo de caja actual: `-1.833,58 EUR` (`30,00 EUR` aportados por Laura - `1.863,58 EUR` gastados).
+- Saldo teórico al cobrar todas las cuotas: `91,42 EUR`.
+- Derramas generales fuera del bote: altavoces `207,38 EUR`, repartidas entre 30 miembros, `6,91 EUR` por miembro.
+- Laura aporta `30,00 EUR` en dinero al bote de 2026; se registra como ingreso monetario cobrado y se utiliza para financiar compras nuevas, no como ingreso en especie.
 
 ## Publicación y cambios
 
