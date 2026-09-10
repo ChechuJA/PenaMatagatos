@@ -21,8 +21,8 @@
   </article>
   <article class="summary-card">
     <p class="summary-label">Saldo de caja</p>
-    <p class="summary-value">−1.833,58 €</p>
-    <p class="summary-note">80,00 € cobrados: 30,00 € de Laura + 50,00 € de devolución de sillas; 0,00 € de cuotas cobradas.</p>
+    <p class="summary-value">+91,42 €</p>
+    <p class="summary-note">Cuotas cobradas: 1.925,00 € + 80,00 € de ingresos extra − 1.913,58 € gastados.</p>
   </article>
 </div>
 
@@ -34,8 +34,8 @@
 
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
 - El plan de bebida trabaja con **101 persona-días**: se suman los días que estuvo cada una de las 29 personas asistentes. No son 101 personas ni 101 cuotas; es una medida de presencia acumulada para estimar el consumo.
-- El bote previsto suma **2.005 €**: 1.925 € de cuotas más 30 € de aportación monetaria de Laura y 50 € devueltos de la reserva de sillas. El saldo de caja actual es **−1.833,58 €**: se han recibido 80 €, pero todavía no se ha cobrado ninguna cuota.
-- Con la carne de BBQ incluida, el saldo teórico al cobrar todo queda en **+91,42 €**, antes de cualquier gasto nuevo.
+- El bote cobrado suma **2.005 €**: 1.925 € de cuotas más 30 € de aportación monetaria de Laura y 50 € devueltos de la reserva de sillas.
+- Con la carne de BBQ incluida, el saldo actual queda en **+91,42 €**, antes de cualquier gasto nuevo.
 - Fuera del bote van los **altavoces (207,38 €)**, que se reparten entre los 30 miembros oficiales. El regalo del dueño (`60,00 €`) sí sale del bote de los asistentes de 2026.
 
 ## 1) Asistencia y bebidas registradas
@@ -227,11 +227,10 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 
 - **Bote disponible:** 2.005,00 € (cuotas + Laura + devolución de sillas)
 - **Gasto bruto registrado:** 1.913,58 €
-- **Saldo de caja actual:** −1.833,58 € (80,00 € de ingresos cobrados y 0,00 € de cuotas cobradas)
-- **Saldo teórico al cobrar todo:** +91,42 €
-- **Cobrado para el bote:** 0,00 €
-- **Pendiente de cobro:** 1.925,00 €
-- **Pendientes de cerrar:** el cobro de las cuotas. La carne BBQ de Carnicería Loli ya está registrada: 218,64 €. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas ya están incorporados como ingresos cobrados y utilizados en compras nuevas de 2026. Licoreo ya está cerrado: pago 834,00 € menos 24,00 € devueltos por transferencia = 810,00 € netos.
+- **Saldo de caja actual:** +91,42 € (2.005,00 € de ingresos cobrados − 1.913,58 € gastados)
+- **Cuotas cobradas para el bote:** 1.925,00 €
+- **Pendiente de cobro:** 0,00 €
+- **Pendientes de cerrar:** puede aparecer algún gasto adicional. La carne BBQ de Carnicería Loli está registrada: 218,64 €. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas están incorporados como ingresos cobrados. Licoreo está cerrado: pago 834,00 € menos 24,00 € devueltos = 810,00 € netos.
 
 ### Extras que no salen del bote
 
