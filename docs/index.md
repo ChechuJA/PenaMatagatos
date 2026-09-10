@@ -287,3 +287,20 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md`:
 - `Fiestas/2026/comprareal/` → tickets, facturas, albaranes y criterio para tickets mixtos.
 - `historico/2026/gastos-2026.json` → cifras provisionales consolidadas de ingresos, gastos y saldo.
 - `historico/2026/README.md` → notas internas y aprendizajes para el año siguiente.
+
+## Nota final: criterio de Álvaro y altavoces
+
+Esta nota explica por qué el primer reparto de las cuentas parecía estar hecho "mal". No cambia los gastos reales ni los tickets; solo compara dos formas de imputar los `65,00 €` de Álvaro.
+
+| Comparativa | Situación aplicada | Situación alternativa |
+|---|---:|---:|
+| Cuota de Álvaro dentro del bote | 0,00 € | 65,00 € |
+| Pago de Álvaro a altavoces | 65,00 € | 6,91 € |
+| Total altavoces y montaje | 207,38 € | 207,38 € |
+| Parte por miembro oficial (30) | 6,91 € | 6,91 € |
+| Resto de altavoces tras el pago de Álvaro | 142,38 € · **4,91 € por cada uno de los otros 29** | 200,47 € · 6,91 € por cada uno de los otros 29 |
+| Bote efectivo de fiestas | 1.940,00 € | 2.005,00 € |
+| Gasto de fiestas | 1.974,08 € | 1.974,08 € |
+| Saldo final | **−34,08 €** | **+30,92 €** |
+
+La forma correcta para separar ambos conceptos habría sido: Álvaro paga su cuota de `65,00 €` al bote de fiestas y los `207,38 €` de altavoces se reparten entre los **30 miembros oficiales**, incluidos Juanvi y Lucía, a `6,91 €` por miembro. En la situación registrada, los `65,00 €` de Álvaro se aplicaron directamente a los altavoces; por eso no entraron como cuota del bote y el saldo real de fiestas quedó en `−34,08 €`.
