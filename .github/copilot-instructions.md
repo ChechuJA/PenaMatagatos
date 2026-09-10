@@ -69,3 +69,13 @@ Cuando se modifiquen cifras, actualizar la fuente estructurada y el resumen púb
 5. No borrar documentos originales: las fotos y facturas de `Fiestas/2026/comprareal/` son la evidencia visual.
 
 Las tablas públicas deben distinguir siempre importe impreso, pago real, devoluciones y coste neto cuando exista una conciliación.
+
+## Configuración de agentes
+
+Modelo por defecto para los agentes coordinadores de fiestas: **Claude Haiku 4.5**
+
+Los siguientes agentes usan Haiku 4.5 como modelo por defecto para coordinación rápida y eficiente:
+- `bebidas-matagatos`: Análisis de consumo y cálculo de compra de bebidas.
+- `cuentas-cuotas`: Cálculo de bote y balances por persona.
+- `precios-proveedores`: Comparativa de precios entre proveedores.
+- `coordinador-fiestas`: Coordinador central que integra resultados de agentes especializados.
