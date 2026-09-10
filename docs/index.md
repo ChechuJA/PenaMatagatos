@@ -10,11 +10,6 @@
     <p class="summary-note">Miembros con asistencia y bebida cargadas en la lista actual.</p>
   </article>
   <article class="summary-card">
-    <p class="summary-label">Persona-días</p>
-    <p class="summary-value">101</p>
-    <p class="summary-note">Cota de trabajo usada para planificar la compra del año.</p>
-  </article>
-  <article class="summary-card">
     <p class="summary-label">Gasto bruto registrado</p>
     <p class="summary-value">1.913,58 €</p>
     <p class="summary-note">Compra real consolidada, incluida la factura de Licoreo y su devolución posterior.</p>
@@ -33,7 +28,6 @@
 ## Lo importante en dos minutos
 
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
-- El plan de bebida trabaja con **101 persona-días**: se suman los días que estuvo cada una de las 29 personas asistentes. No son 101 personas ni 101 cuotas; es una medida de presencia acumulada para estimar el consumo.
 - El bote de fiestas suma **1.940 €**: 1.860 € de cuotas efectivas, 30 € de Laura y 50 € devueltos de la reserva de sillas.
 - El regalo del dueño (`60,00 €`) está incluido en los gastos de fiestas 2026.
 
@@ -78,7 +72,6 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 ### Notas de contexto
 
 - El plan humano (`fiestas-2026-plan-bebida.md`) mantiene separados los 30 miembros oficiales de los 29 asistentes de 2026 y de Andreas, que fue invitado extra.
-- **101 persona-días** significa sumar la asistencia individual: por ejemplo, una persona que estuvo 5 días aporta 5 persona-días y una que estuvo 2 días aporta 2. La suma de las 29 personas asistentes da 101 y sirve para estimar bebida; las cuotas se calculan por persona según su tramo de asistencia.
 - El pico de consumo sigue concentrado en **viernes y sábado**.
 
 ## 2) Compra real y cuentas del bote
@@ -297,7 +290,7 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md`:
 ## 5) Fuentes usadas para este apartado
 
 - `fiestas-2026-bebidas.json` → asistentes, asistencia y preferencias.
-- `fiestas-2026-plan-bebida.md` → persona-días, reglas de compra y contexto de la reunión.
+- `fiestas-2026-plan-bebida.md` → contexto operativo de la reunión.
 - `fiestas-2026-lista-compra.json` → lista de compra orientativa y prioridades.
 - `Fiestas/2026/comprareal/` → tickets, facturas, albaranes y criterio para tickets mixtos.
 - `historico/2026/gastos-2026.json` → cifras provisionales consolidadas de ingresos, gastos y saldo.
