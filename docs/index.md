@@ -11,42 +11,15 @@
   </article>
   <article class="summary-card">
     <p class="summary-label">Ingresos</p>
-    <p class="summary-value" id="summary-ingresos">Cargando...</p>
-    <p class="summary-note" id="summary-ingresos-note">Bote efectivo de fiestas, según la tabla consolidada de ingresos.</p>
+    <p class="summary-value">1.940,00 €</p>
+    <p class="summary-note">Bote efectivo de fiestas.</p>
   </article>
   <article class="summary-card">
     <p class="summary-label">Gastos</p>
-    <p class="summary-value" id="summary-gastos">Cargando...</p>
+    <p class="summary-value">1.974,08 €</p>
     <p class="summary-note">Compra real consolidada, incluida la factura de Licoreo y la compra de hielo.</p>
   </article>
 </div>
-
-<script>
-(function () {
-  const formatEur = value => Number(value || 0).toLocaleString("es-ES", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-  }) + " €";
-
-  fetch("../historico/2026/gastos-2026.json")
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById("summary-ingresos").textContent = formatEur(data.totales.ingresos_totales);
-      document.getElementById("summary-gastos").textContent = formatEur(data.totales.gastos_totales);
-      const cuotas = (data.cobros_realizados || []).reduce((sum, item) => sum + Number(item.importe || 0), 0);
-      const laura = (data.aportaciones_realizadas || []).reduce((sum, item) => sum + Number(item.importe || 0), 0);
-      const sillas = (data.ingresos || [])
-        .filter(item => String(item.concepto || "").toLowerCase().includes("sillas"))
-        .reduce((sum, item) => sum + Number(item.importe || 0), 0);
-      document.getElementById("summary-ingresos-note").textContent =
-        `${formatEur(cuotas)} cuotas + ${formatEur(laura)} Laura + ${formatEur(sillas)} sillas`;
-    })
-    .catch(() => {
-      document.getElementById("summary-ingresos").textContent = "-";
-      document.getElementById("summary-gastos").textContent = "-";
-    });
-})();
-</script>
 
 <div class="summary-callout">
   <strong>Lectura rápida:</strong> este resumen unifica lo que ya estaba repartido entre los README, la lista de asistencia/bebida y los JSON de compra real. Para las cifras actuales mandan los datos consolidados de <code>historico/2026/gastos-2026.json</code>; algunas páginas HTML antiguas siguen mostrando un corte anterior.
