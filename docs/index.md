@@ -67,7 +67,7 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 | Tamara | 2 días | cerveza con gaseosa, Coca-Cola Zero | 55,00 € | — | 55,00 € |
 | Zara | viernes y sábado | cerveza, Seagrams limón | 55,00 € | — | 55,00 € |
 
-**Resumen de pagos:** cuotas teóricas `1.925,00 €` · cuotas efectivas para el bote `1.860,00 €` (sin Álvaro) · aportación Laura `30,00 €` · devolución de sillas recogida por Leti `50,00 €` · **bote de fiestas `1.940,00 €`**. Marta ha pagado correctamente su cuota de `65,00 €`.
+**Resumen de pagos:** cuotas teóricas `1.925,00 €` · cuotas efectivas para el bote `1.860,00 €` (sin Álvaro) · aportación Laura `30,00 €` · devolución de sillas recogida por Leti `50,00 €` · **bote de fiestas `1.940,00 €`**.
 
 ### Notas de contexto
 
@@ -242,14 +242,6 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 - **Cuotas cobradas para el bote:** 1.860,00 €; Álvaro no aporta cuota y sus 65,00 € van a altavoces
 - **Pendiente de cobro:** 0,00 €
 - **Pendientes de cerrar:** puede aparecer algún gasto adicional. La carne BBQ y los 10 sacos de hielo ya están registrados. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas están incorporados al bote. Licoreo está cerrado: pago 834,00 € menos 24,00 € devueltos = 810,00 € netos.
-
-### Extras que no salen del bote
-
-| Extra general | Importe |
-|---|---:|
-| Altavoces y montaje | 207.38 € |
-| **Total** | **207.38 €** |
-
 
 ## 3) Cómo se está guardando la compra real
 
