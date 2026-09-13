@@ -16,6 +16,7 @@ theme:
     - toc.integrate
 nav:
   - Resumen 2026: index.md
+  - Fiestas 2027: fiestas-2027.md
 markdown_extensions:
   - tables
 extra_css:

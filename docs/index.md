@@ -30,7 +30,7 @@
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
 - El bote de fiestas suma **1.940 €**: 1.860 € de cuotas efectivas, 30 € de Laura y 50 € devueltos de la reserva de sillas.
 - El regalo del dueño (`60,00 €`) está incluido en los gastos de fiestas 2026.
-- La diferencia entre ingresos y gastos no es un hueco real del bote: **Leti adelantó dinero** para cubrir compras y luego se ha recuperado con el valor de las sobras; además, **Laura le pagó a Sonia 5 €** por algunas Coca-Colas que se quedó y que no estaban contabilizadas como gasto del bote.
+- La diferencia de caja se explica así: **Leti adelantó dinero** para la compra y luego se recuperó con las sobras; **Laura también pagó 5 € a Sonia** por unas Coca-Colas que se quedó.
 
 ## 1) Asistencia y bebidas registradas
 
@@ -257,12 +257,12 @@ Este criterio es importante porque la página de resumen usa esos JSON normaliza
 
 ## 4) Sobrantes 2026 y ajuste de caja
 
-La compra real del 2026 dejó un excedente útil que se ha dejado recogido como referencia para el siguiente año. El valor real de las sobras no se suma al bote ni se considera ingreso del año, sino que sirve para compensar parte de los adelantos que hubo durante la fiesta.
+La compra dejó un sobrante útil para el año que viene. No entra en el bote, pero sirve para compensar algunos adelantos.
 
-- **Leti adelantó dinero** para cubrir compras y después se recuperó parte de ese importe con materiales y bebidas que quedaron como sobrantes.
-- **Laura pagó a Sonia 5 €** porque Sonia tenía un importe pendiente y Laura se quedó algunas Coca-Colas de la reserva, así que ese valor se compensó directamente.
-- La lista completa queda en [historico/2026/sobras-2026-original.txt](../historico/2026/sobras-2026-original.txt) y en el resumen normalizado [historico/2026/sobras-2026.md](../historico/2026/sobras-2026.md).
-- Lo más notable del excedente es el stock de cerveza, refrescos, agua con gas y menaje; el punto más sensible para 2027 sigue siendo reforzar Coca-Cola Zero y Sprite.
+- **Leti adelantó dinero** y luego se fue recuperando con lo que quedó de sobras.
+- **Laura pagó 5 € a Sonia** por unas Coca-Colas que se quedó.
+- El texto original está en [historico/2026/sobras-2026-original.txt](../historico/2026/sobras-2026-original.txt), y el resumen claro está en [historico/2026/sobras-2026.md](../historico/2026/sobras-2026.md).
+- Lo más útil para 2027 es tener en cuenta que faltó Coca-Cola Zero y Sprite.
 
 ## 5) Notas internas y cosas aprendidas para 2027
 
@@ -277,7 +277,7 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md` y la lista de sobran
 - En menaje hay material útil para el año siguiente: bandejas de aluminio, platos, vasos y cuchillos.
 - Hay comida acumulada en embutidos, café, aperitivos y sal, pero el punto más importante para 2027 es reforzar el stock de Coca-Cola Zero y Sprite.
 
-> **Nota clave para 2027:** faltó Coca-Cola Zero fácil: 2 botellas más de Coca-Cola Zero y otra de Sprite. La fuente completa del texto original queda en [historico/2026/sobras-2026-original.txt](../historico/2026/sobras-2026-original.txt) y el resumen normalizado en [historico/2026/sobras-2026.md](../historico/2026/sobras-2026.md).
+> **Nota clave para 2027:** faltó Coca-Cola Zero y Sprite. La fuente del texto original está en [historico/2026/sobras-2026-original.txt](../historico/2026/sobras-2026-original.txt) y el resumen breve, en [historico/2026/sobras-2026.md](../historico/2026/sobras-2026.md).
 
 <details class="recipe-card">
   <summary>Ver receta rápida de la caldereta</summary>
@@ -295,7 +295,36 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md` y la lista de sobran
   <p><strong>Preparación resumida:</strong> sofreír la carne con sal, añadir el resto bien picado, dejar hacer al menos 3 horas a fuego medio y ajustar la sal al reposar.</p>
 </details>
 
-## 6) Fuentes usadas para este apartado
+## Fiestas 2027 mirando al futuro
+
+Si 2027 fuera con los **30 miembros oficiales** de la peña, la cota máxima sería **150 persona-días** (30 personas × 5 días). Pero la tendencia real de 2025 y 2026 está más cerca de **100-130 persona-días**, así que el escenario más sensato es:
+
+- **Rango realista 2027:** 120-130 persona-días.
+- **Equivalente aproximado:** unos **4 días por persona** en media, con pico en viernes y sábado.
+- **Escenario máximo:** si se llena mucho la gente y casi todos vienen a casi todos los días, se puede ir a **140-150 persona-días**.
+
+### Estimación práctica para comprar
+
+| Concepto | Base realista 2027 |
+|---|---:|
+| Cerveza normal | 160-200 unidades |
+| Cerveza 0,0 | 35-45 unidades |
+| Coca-Cola Zero | 30-40 unidades |
+| Coca-Cola original | 10-15 unidades |
+| Agua | 60-75 botellas |
+| Aquarius / refrescos | 20-30 unidades |
+| Mezcladores y limón | 20-30 unidades |
+| Ginebra / mezclas | 10-15 botellas |
+| Ron / whisky / licores | 8-12 botellas |
+| Hielo | 10-15 bolsas |
+
+### Regla simple para 2027
+
+- Si la asistencia se parece a 2026, con 4 días por persona y una media conservadora, el punto de partida correcto es **120-130 persona-días**.
+- Si casi todo el mundo se apunta a todo, hay que subir un **15-20%** sobre esa base.
+- Con esos números, no hace falta comprar “para 30 personas todos los días”; basta con ir a una estimación sensata y dejar margen de sobra, como se hizo con los sobrantes 2026.
+
+## 7) Fuentes usadas para este apartado
 
 - `fiestas-2026-bebidas.json` → asistentes, asistencia y preferencias.
 - `fiestas-2026-plan-bebida.md` → contexto operativo de la reunión.
@@ -304,6 +333,8 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md` y la lista de sobran
 - `historico/2026/gastos-2026.json` → cifras provisionales consolidadas de ingresos, gastos y saldo.
 - `historico/2026/README.md` → notas internas y aprendizajes para el año siguiente.
 - `historico/2026/sobras-2026-original.txt` y `historico/2026/sobras-2026.md` → texto original y resumen normalizado de sobrantes.
+
+> **Siguiente paso 2027:** si quieres ir más allá del resumen, la estimación operativa está en [fiestas-2027.md](fiestas-2027.md).
 
 ## Nota final: criterio de Álvaro y altavoces
 
