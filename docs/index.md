@@ -30,6 +30,7 @@
 - **La peña tiene 30 miembros oficiales**. La lista de fiestas tiene **29 asistentes**: 28 miembros oficiales y Andreas como invitado extra; Juanvi y Lucía no asistieron.
 - El bote de fiestas suma **1.940 €**: 1.860 € de cuotas efectivas, 30 € de Laura y 50 € devueltos de la reserva de sillas.
 - El regalo del dueño (`60,00 €`) está incluido en los gastos de fiestas 2026.
+- La diferencia entre ingresos y gastos no es un hueco real del bote: **Leti adelantó dinero** para cubrir compras y luego se ha recuperado con el valor de las sobras; además, **Laura le pagó a Sonia 5 €** por algunas Coca-Colas que se quedó y que no estaban contabilizadas como gasto del bote.
 
 ## 1) Asistencia y bebidas registradas
 
@@ -254,14 +255,29 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 
 Este criterio es importante porque la página de resumen usa esos JSON normalizados y no las capturas o tablas viejas de HTML.
 
-## 4) Notas internas y cosas aprendidas para 2027
+## 4) Sobrantes 2026 y ajuste de caja
 
-Lo que ya ha quedado apuntado en `historico/2026/README.md`:
+La compra real del 2026 dejó un excedente útil que se ha dejado recogido como referencia para el siguiente año. El valor real de las sobras no se suma al bote ni se considera ingreso del año, sino que sirve para compensar parte de los adelantos que hubo durante la fiesta.
+
+- **Leti adelantó dinero** para cubrir compras y después se recuperó parte de ese importe con materiales y bebidas que quedaron como sobrantes.
+- **Laura pagó a Sonia 5 €** porque Sonia tenía un importe pendiente y Laura se quedó algunas Coca-Colas de la reserva, así que ese valor se compensó directamente.
+- La lista completa queda en [historico/2026/sobras-2026-original.txt](../historico/2026/sobras-2026-original.txt) y en el resumen normalizado [historico/2026/sobras-2026.md](../historico/2026/sobras-2026.md).
+- Lo más notable del excedente es el stock de cerveza, refrescos, agua con gas y menaje; el punto más sensible para 2027 sigue siendo reforzar Coca-Cola Zero y Sprite.
+
+## 5) Notas internas y cosas aprendidas para 2027
+
+Lo que ya ha quedado apuntado en `historico/2026/README.md` y la lista de sobrantes del año queda resumido aquí para que sirva de referencia en 2027.
 
 - Comprar **más mantel**: en 2026 se gastó un rollo y medio.
 - En embutidos, pedir **media caña de chorizo y media de salchichón**.
 - De las dos medias de lomo, **coger solo una**.
 - Con ese ajuste de embutidos, las cuentas deberían cuadrar mejor.
+- El excedente principal se concentra en cerveza y refrescos: Mahou 0,0 rubia, Estrella Galicia mini, agua con gas, Coca-Cola original y varios refrescos sin alcohol.
+- También sobran varias botellas y mezclas de alcohol: Ron Barceló, Seagrams, Cutty Sark, Larios 12 y licores varios.
+- En menaje hay material útil para el año siguiente: bandejas de aluminio, platos, vasos y cuchillos.
+- Hay comida acumulada en embutidos, café, aperitivos y sal, pero el punto más importante para 2027 es reforzar el stock de Coca-Cola Zero y Sprite.
+
+> **Nota clave para 2027:** faltó Coca-Cola Zero fácil: 2 botellas más de Coca-Cola Zero y otra de Sprite. La fuente completa del texto original queda en [historico/2026/sobras-2026-original.txt](../historico/2026/sobras-2026-original.txt) y el resumen normalizado en [historico/2026/sobras-2026.md](../historico/2026/sobras-2026.md).
 
 <details class="recipe-card">
   <summary>Ver receta rápida de la caldereta</summary>
@@ -279,7 +295,7 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md`:
   <p><strong>Preparación resumida:</strong> sofreír la carne con sal, añadir el resto bien picado, dejar hacer al menos 3 horas a fuego medio y ajustar la sal al reposar.</p>
 </details>
 
-## 5) Fuentes usadas para este apartado
+## 6) Fuentes usadas para este apartado
 
 - `fiestas-2026-bebidas.json` → asistentes, asistencia y preferencias.
 - `fiestas-2026-plan-bebida.md` → contexto operativo de la reunión.
@@ -287,6 +303,7 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md`:
 - `Fiestas/2026/comprareal/` → tickets, facturas, albaranes y criterio para tickets mixtos.
 - `historico/2026/gastos-2026.json` → cifras provisionales consolidadas de ingresos, gastos y saldo.
 - `historico/2026/README.md` → notas internas y aprendizajes para el año siguiente.
+- `historico/2026/sobras-2026-original.txt` y `historico/2026/sobras-2026.md` → texto original y resumen normalizado de sobrantes.
 
 ## Nota final: criterio de Álvaro y altavoces
 
