@@ -70,6 +70,35 @@ Cuando se modifiquen cifras, actualizar la fuente estructurada y el resumen púb
 
 Las tablas públicas deben distinguir siempre importe impreso, pago real, devoluciones y coste neto cuando exista una conciliación.
 
+## Fuentes canónicas 2027
+
+- Plan de bebida: `Fiestas/2027/plan-bebida.html` (públicamente en web).
+- Sobrantes 2026 a usar como primer filtro: `Fiestas/index.html#sobrantes-2026`.
+- Aprendizajes de 2026: sección 7 de `Fiestas/2027/plan-bebida.html`.
+- Archivo original de sobrantes 2026: `historico/2026/sobras-2026.md`.
+
+## Aprendizajes clave 2026 → 2027
+
+### Crítico: lo que faltó en 2026
+- **Coca-Cola Zero:** faltaron 2 botellas. **Obligatorio reforzar en 2027.**
+- **Sprite:** faltó 1 botella. **Revisar stock de 2026 y comprar si es necesario.**
+- **Mantel:** se gastó 1,5 rollos. **Comprar 2 rollos para 2027.**
+
+### Comida: ajustes de cantidad para 2027
+- **Embutidos:** pedir media caña de chorizo + media de salchichón (no enteras).
+- **Lomo:** de dos medias de 2026, coger solo una en 2027.
+- Con estos ajustes, el gasto en comida cuadrará mejor.
+
+### Stock disponible 2026 (revisar ANTES de comprar 2027)
+Usar como primer filtro antes de hacer compra nueva:
+- **Cerveza y refrescos:** Mahou 0,0 (36 u), agua con gas (15), Coca-Cola original (8), Estrella 0,0 (4), Aquarius, La Casera, Schweppes, Fanta, etc.
+- **Alcohol:** Ron Barceló (6), Seagrams (5), Cutty Sark, Larios, licores y vinos (revisar caducidades).
+- **Menaje:** ~230 platos, ~150 vasos de cubata, ~175 cucharas, ~100 cuchillos, 48 bandejas aluminio.
+- **Comida:** embutidos variados, jamón, bacon (3 paquetes), judías verdes, 71 cápsulas de café, sal.
+
+### Escenario base 2027: 120–130 persona-días
+2026 fue 101 persona-días. Escenario realista para 2027 es 120–130. No comprar para "30 personas todos los días".
+
 ## Configuración de agentes
 
 Modelo por defecto para los agentes coordinadores de fiestas: **Claude Haiku 4.5**
