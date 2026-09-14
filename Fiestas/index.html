@@ -89,6 +89,21 @@
                     </a>
                 </div>
 
+                <p class="dashboard-label secondary">Planificación 2027</p>
+                <div class="dashboard-grid">
+                    <a href="#sobrantes-2026" class="fiesta-dashboard-card accent-orange">
+                        <span class="dashboard-icon">📦</span>
+                        <h3>Sobrantes 2026</h3>
+                        <p>Inventario de lo que sobró de 2026, para evitar comprar lo mismo y planificar compra de 2027.</p>
+                    </a>
+
+                    <a href="2027/plan-bebida.html" class="fiesta-dashboard-card accent-green">
+                        <span class="dashboard-icon">🔮</span>
+                        <h3>Hoja de ruta 2027</h3>
+                        <p>Plan operativo para 2027: escenarios, estimaciones y criterios de compra basados en 2026.</p>
+                    </a>
+                </div>
+
                 <p class="dashboard-label secondary">Consulta y apoyo</p>
                 <div class="dashboard-grid">
                     <a href="#materiales" class="fiesta-dashboard-card accent-orange">
@@ -585,6 +600,93 @@
                             </div>
                         </div>
                     </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobrantes-2026" class="feature-block alt">
+            <div class="container">
+                <div class="content-panel">
+                    <div class="panel-head">
+                        <span class="tag">Inventario</span>
+                        <h2>Sobrantes 2026</h2>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>Uso frecuente:</strong> consulta lo que sobró de 2026 antes de comprar para 2027 y no repetir stock.</p>
+                        <p><strong>Nota importante para 2027:</strong> falta reforzar stock de <strong>Coca-Cola Zero</strong> y <strong>Sprite</strong>. Revisar stock previo antes de la compra antes de repetir.</p>
+                    </div>
+
+                    <div class="summary-cards">
+                        <div class="mini-stat"><strong>92</strong><span>Cerveza y refrescos</span></div>
+                        <div class="mini-stat"><strong>18</strong><span>Alcohol (botellas)</span></div>
+                        <div class="mini-stat"><strong>5</strong><span>Comida (productos)</span></div>
+                        <div class="mini-stat"><strong>700+</strong><span>Menaje (piezas)</span></div>
+                    </div>
+
+                    <div class="category-filters" aria-label="Filtrar sobrantes por categoría">
+                        <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+                        <button class="filter-btn" type="button" data-filter="Cerveza y refrescos">Cerveza y refrescos</button>
+                        <button class="filter-btn" type="button" data-filter="Alcohol">Alcohol</button>
+                        <button class="filter-btn" type="button" data-filter="Comida">Comida</button>
+                        <button class="filter-btn" type="button" data-filter="Menaje">Menaje</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Categoría</th>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Notas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Estrella Galicia mini</td><td>24</td><td>Leti se lleva 24</td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Mahou 0,0 rubia</td><td>60</td><td>Leti se lleva 24</td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Mahou clásica</td><td>2</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Mahou 5 estrellas</td><td>6</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Estrella Galicia 0,0</td><td>4</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Coca-Cola original</td><td>8</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Coca-Cola Zero Zero</td><td>3</td><td>Laura se lleva 3</td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Agua con gas</td><td>15</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Aquarius</td><td>3</td><td>Leti se lleva 1</td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Aquarius naranja</td><td>4</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Schweppes</td><td>2</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>La Casera</td><td>5</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Fanta limón</td><td>2</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Cerveza y refrescos"><td>Cerveza y refrescos</td><td>Tinto de verano</td><td>1</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Ron Barceló</td><td>6</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Seagrams</td><td>5</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Cutty Sark</td><td>1</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Puerto de Indias</td><td>1,25</td><td>1 botella + 1/4</td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Larios 12</td><td>1</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Tanqueray 0,0</td><td>0,75</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Licor crema</td><td>0,5</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Licor hierbas</td><td>0,5</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Vino tinto</td><td>1</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Alcohol"><td>Alcohol</td><td>Verdejo</td><td>1</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Comida"><td>Comida</td><td>Judías verdes anchas</td><td>2</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Comida"><td>Comida</td><td>Bacon</td><td>3 paquetes</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Comida"><td>Comida</td><td>Embutido variado</td><td>2 blister</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Comida"><td>Comida</td><td>Jamón</td><td>2 blister</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Comida"><td>Comida</td><td>Sal sin abrir</td><td>1 paquete</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Platos llanos</td><td>231 u aprox.</td><td>7x74u + 50u + 100u medianos</td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Vasos de cubata</td><td>150 aprox.</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Cucharas grandes</td><td>175 aprox.</td><td>3x75u + 1x100u</td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Cuchillos</td><td>~100</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Tenedores</td><td>15</td><td></td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Bandejas de aluminio</td><td>48 u</td><td>4 paquetes x 12u</td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Bol pequeño</td><td>24 u</td><td>2 paquetes</td></tr>
+                                <tr class="inventory-row" data-category="Menaje"><td>Menaje</td><td>Bol mediano</td><td>36 u</td><td>3 paquetes x 12u</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="action-row">
+                        <a href="../historico/2026/sobras-2026.md" class="primary-button" target="_blank" rel="noopener">Ver resumen completo</a>
+                    </div>
                 </div>
             </div>
         </section>

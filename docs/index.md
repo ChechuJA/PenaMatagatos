@@ -242,7 +242,6 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 - **Saldo de caja del bote:** −34,08 € (1.940,00 € cobrados/aportados − 1.974,08 € gastados)
 - **Cuotas cobradas para el bote:** 1.860,00 €; Álvaro no aporta cuota y sus 65,00 € van a altavoces
 - **Pendiente de cobro:** 0,00 €
-- **Pendientes de cerrar:** puede aparecer algún gasto adicional. La carne BBQ y los 10 sacos de hielo ya están registrados. Álvaro pagó 65,00 € de altavoces, no de cuota. Los 30,00 € de Laura y los 50,00 € devueltos de sillas están incorporados al bote. Licoreo está cerrado: pago 834,00 € menos 24,00 € devueltos = 810,00 € netos.
 
 ## 3) Cómo se está guardando la compra real
 
