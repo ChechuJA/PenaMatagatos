@@ -70,11 +70,6 @@ La tabla base sale de `fiestas-2026-bebidas.json`, que es la lista más cómoda 
 
 **Resumen de pagos:** cuotas teóricas `1.925,00 €` · cuotas efectivas para el bote `1.860,00 €` (sin Álvaro) · aportación Laura `30,00 €` · devolución de sillas recogida por Leti `50,00 €` · **bote de fiestas `1.940,00 €`**.
 
-### Notas de contexto
-
-- El plan humano (`fiestas-2026-plan-bebida.md`) mantiene separados los 30 miembros oficiales de los 29 asistentes de 2026 y de Andreas, que fue invitado extra.
-- El pico de consumo sigue concentrado en **viernes y sábado**.
-
 ## 2) Compra real y cuentas del bote
 
 El consolidado actual está en `historico/2026/gastos-2026.json`, alimentado por los JSON de tickets normalizados dentro de `Fiestas/2026/comprareal/`.
@@ -294,35 +289,6 @@ Lo que ya ha quedado apuntado en `historico/2026/README.md` y la lista de sobran
   <p><strong>Preparación resumida:</strong> sofreír la carne con sal, añadir el resto bien picado, dejar hacer al menos 3 horas a fuego medio y ajustar la sal al reposar.</p>
 </details>
 
-## Fiestas 2027 mirando al futuro
-
-Si 2027 fuera con los **30 miembros oficiales** de la peña, la cota máxima sería **150 persona-días** (30 personas × 5 días). Pero la tendencia real de 2025 y 2026 está más cerca de **100-130 persona-días**, así que el escenario más sensato es:
-
-- **Rango realista 2027:** 120-130 persona-días.
-- **Equivalente aproximado:** unos **4 días por persona** en media, con pico en viernes y sábado.
-- **Escenario máximo:** si se llena mucho la gente y casi todos vienen a casi todos los días, se puede ir a **140-150 persona-días**.
-
-### Estimación práctica para comprar
-
-| Concepto | Base realista 2027 |
-|---|---:|
-| Cerveza normal | 160-200 unidades |
-| Cerveza 0,0 | 35-45 unidades |
-| Coca-Cola Zero | 30-40 unidades |
-| Coca-Cola original | 10-15 unidades |
-| Agua | 60-75 botellas |
-| Aquarius / refrescos | 20-30 unidades |
-| Mezcladores y limón | 20-30 unidades |
-| Ginebra / mezclas | 10-15 botellas |
-| Ron / whisky / licores | 8-12 botellas |
-| Hielo | 10-15 bolsas |
-
-### Regla simple para 2027
-
-- Si la asistencia se parece a 2026, con 4 días por persona y una media conservadora, el punto de partida correcto es **120-130 persona-días**.
-- Si casi todo el mundo se apunta a todo, hay que subir un **15-20%** sobre esa base.
-- Con esos números, no hace falta comprar “para 30 personas todos los días”; basta con ir a una estimación sensata y dejar margen de sobra, como se hizo con los sobrantes 2026.
-
 ## 7) Fuentes usadas para este apartado
 
 - `fiestas-2026-bebidas.json` → asistentes, asistencia y preferencias.
@@ -351,3 +317,4 @@ Esta nota explica por qué el primer reparto de las cuentas parecía estar hecho
 | Saldo final | **−34,08 €** | **+30,92 €** |
 
 La forma correcta para separar ambos conceptos habría sido: Álvaro paga su cuota de `65,00 €` al bote de fiestas y los `207,38 €` de altavoces se reparten entre los **30 miembros oficiales**, incluidos Juanvi y Lucía, a `6,91 €` por miembro. En la situación registrada, los `65,00 €` de Álvaro se aplicaron directamente a los altavoces; por eso no entraron como cuota del bote y el saldo real de fiestas quedó en `−34,08 €`.
+
