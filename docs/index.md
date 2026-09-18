@@ -102,6 +102,7 @@ Esta es la tabla de comprobación de la compra real. Los importes de tickets mix
 | 31/08/2026 | Mercadona | Bebida | 12,35 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 31/08/2026 | Mercadona | Menaje | 2,30 € | [Foto](../Fiestas/2026/comprareal/Mercadona.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
 | 31/08/2026 | Diseño (bazar) | Menaje | 61,08 € | [Foto](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
+| 02/09/2026 | Diseño (bazar) | Menaje | 1,15 € | [Foto](../Fiestas/2026/comprareal/Diseno_Chino_Carbon_y_Abridores.jpeg) · [JSON menaje](../Fiestas/2026/comprareal/tickets-menaje.json) |
 | 31/08/2026 | Amazon | Bebida | 15,96 € | [Foto](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 02/09/2026 | Amazon | Bebida | 25,20 € | [Pedido](https://amzn.eu/d/0fOtCgQW) · [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) |
 | 03/09/2026 | Carnes Javi | Comida | 153,85 € | [Foto embutidos](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) · [JSON comida](../Fiestas/2026/comprareal/tickets-comida.json) |
@@ -176,6 +177,7 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 | Alcampo | [Abrir imagen](../Fiestas/2026/comprareal/Alcampo.jpeg) | [JPEG](../Fiestas/2026/comprareal/Alcampo.jpeg) | **47,04 €** | Ticket mixto: comida, bebida y menaje |
 | Mercadona | [Abrir imagen](../Fiestas/2026/comprareal/Mercadona.jpeg) | [JPEG](../Fiestas/2026/comprareal/Mercadona.jpeg) | **92,02 €** | Ticket mixto: comida, bebida y menaje |
 | Diseño (bazar) | [Abrir imagen](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | [JPEG](../Fiestas/2026/comprareal/Diseño%20Chino.jpeg) | **61,08 €** | Menaje |
+| Diseño (bazar) · carbón y abridores | [Abrir imagen](../Fiestas/2026/comprareal/Diseno_Chino_Carbon_y_Abridores.jpeg) | [JPEG](../Fiestas/2026/comprareal/Diseno_Chino_Carbon_y_Abridores.jpeg) | **1,15 €** | Abridores; carbón de regalo; pagado por Leti |  
 | Amazon · Mahou 0,0 | [Abrir imagen](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | [JPEG](../Fiestas/2026/comprareal/Amazon%20Cerveza%200,0.jpeg) | **15,96 €** | Bebida |
 | Amazon · S.Pellegrino agua con gas | [Pedido](https://amzn.eu/d/0fOtCgQW) | [JSON bebida](../Fiestas/2026/comprareal/tickets-bebida.json) | **25,20 €** | Bebida; pedido 24x50 cl |
 | Carnes Javi · embutidos | [Abrir imagen](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | [JPEG](../Fiestas/2026/comprareal/Embutidos%20Javi.jpeg) | **213,85 €** | 153,85 € comida + 60,00 € regalo dentro del bote |
@@ -200,7 +202,7 @@ El total impreso de la factura es `835,89 €`, pero el pago final anotado a man
 | Redes para colgar los altavoces | Amazon | 7,38 € |
 | **Total altavoces y montaje** |  | **207,38 €** |
 
-> **Nota informativa:** Diseño Chino nos regaló un saco grande de carbón valorado en 12,00 €. No tenemos ticket ni fue una compra pagada por la peña, así que no aparece como línea de gasto ni se suma a estos totales.
+> **Nota informativa:** Diseño Chino nos regaló un saco grande de carbón valorado en 12,00 €. No tenemos ticket ni fue una compra pagada por la peña, así que no aparece como línea de gasto ni se suma a estos totales. En el ticket posterior del 02/09/2026 figuran abridores por 1,15 €, que Leti pagó de su bolsillo y perdona al bote para no alterar las cuentas consolidadas.
 
 > **Aportación de Laura:** Laura aportó `30,00 €` en dinero al bote de cuotas. Ese dinero se utilizó para financiar compras nuevas de 2026; se registra como ingreso monetario, no como bebida en especie ni como gasto pendiente.
 
