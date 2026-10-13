@@ -702,6 +702,9 @@ document.addEventListener('DOMContentLoaded', function() {
         bebida2026: {
             response: "🍺 Bebida comprada en 2026 (real, 892,04 €):\n\n• Pedido Licoreo: pago final 834,00 €\n• Devolución posterior de Licoreo: 24,00 € por transferencia\n• Coste neto Licoreo: 810,00 €\n• Compras sueltas: Alcampo, Amazon, Merkocash y Mercadona\n\n⚠️ Incidencias: 12 cajas de Estrella Galicia llegaron en botellín de 20 cl en vez de 25 cl y se recibieron 2 botellas de Cutty Sark de 1 litro en vez de las 3 botellas de 70 cl solicitadas."
         },
+        sobrantes2026: {
+            response: "📦 Consulta el inventario y las asignaciones de los sobrantes de 2026: <a href=\"Fiestas/index.html#sobrantes-2026\" target=\"_blank\" rel=\"noopener\">Ver sobrantes 2026</a>."
+        },
         comida2026: {
             response: "🍖 Comida comprada en 2026 (real, 782,67 €):\n\n• Carnicería Loli: pedido BBQ (218,64 €): 20 hamburguesas de pollo, 20 de ternera, 7 kg de magro, 35 pancetas, 35 lomos, 40 tiras de bacon, 20 chorizos, 15 morcillas, 2 kg de pollo y 1 kg de conejo\n• Carnes Javi (embutidos): chorizo/salchichón, lomo, jamón, queso semi y curado (153,85 €) + queso sin lactosa (8,04 €)\n• Mercadona 2: trenzas, conos, empanadas, tortillas, repostería (115,95 €)\n• Merkocash: aperitivos, frutos secos, salsas, aceite... (144,08 €)\n• Mercadona: fuet, quesos, pan hamburguesa, guacamole... (77,37 €)\n• Alcampo: bacon, humus, pitas, judías... (31,44 €)\n• Panadería: pan encargado, 18 barras (23,40 €)\n\nℹ️ El regalo del dueño (art 6 de Carnes Javi, 60 €) sale del bote, pero se mantiene separado de comida."
         },
