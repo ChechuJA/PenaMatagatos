@@ -35,6 +35,7 @@
 - Leti se lleva 24 Mahou 0,0 rubia.
 - Leti se lleva 1 Aquarius.
 - Laura se lleva las 3 Coca-Cola Zero Zero.
+- Zara se lleva las 2 Fanta limón y 2 bolsas de hielo.
 
 ## Alcohol
 
