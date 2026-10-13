@@ -78,4 +78,4 @@ Si se hace una estimación útil para la organización, la mejor forma es esta:
 ## 7) Enlace útil
 
 - [Resumen 2026](index.md)
-- [Documentos de sobrantes 2026](historico/2026/sobras-2026.md)
+- [Inventario público de sobrantes 2026](../../Fiestas/index.html#sobrantes-2026): Zara se lleva las 2 Fanta limón y 2 bolsas de hielo.

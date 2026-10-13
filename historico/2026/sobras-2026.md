@@ -2,6 +2,8 @@
 
 > Fuente: nota enviada por la peña y guardada en [sobras-2026-original.txt](sobras-2026-original.txt).
 
+> **Asignación añadida (2026-10-13):** Zara se lleva las 2 Fanta limón y 2 bolsas de hielo.
+
 ## Resumen rápido
 
 - Refrescos y cerveza: la mayor parte de sobrantes está en cerveza, agua con gas, Coca-Cola original y Mahou 0,0.

@@ -257,7 +257,7 @@ La compra dejó un sobrante útil para el año que viene. No entra en el bote, p
 
 - **Leti adelantó dinero** y luego se fue recuperando con lo que quedó de sobras.
 - **Laura pagó 5 € a Sonia** por unas Coca-Colas que se quedó.
-- El texto original está en [historico/2026/sobras-2026-original.txt](../historico/2026/sobras-2026-original.txt), y el resumen claro está en [historico/2026/sobras-2026.md](../historico/2026/sobras-2026.md).
+- **Asignación de sobrantes:** Zara se lleva las 2 Fanta limón y 2 bolsas de hielo. [Ver inventario público de sobrantes 2026](../Fiestas/index.html#sobrantes-2026).
 - Lo más útil para 2027 es tener en cuenta que faltó Coca-Cola Zero y Sprite.
 
 ## 5) Notas internas y cosas aprendidas para 2027
